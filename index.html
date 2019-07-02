@@ -1,0 +1,204 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <script src='file:///android_asset/app.js'></script>
+  </head>
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+
+    .btns {
+      margin: 5px;
+      border-radius: 5px;
+      background: #aaffaa;
+      font-size:16px;
+     // font-weight:bold;
+      width:30%;
+    }
+
+  </style>
+
+
+  <body onload="app.Start()">
+
+    <div id=t odo>
+      <div id=dclases></div>
+  
+  <ul id="myList">
+ 
+</ul>
+
+
+    </div>
+
+  </body>
+  <script>
+    edc = document.getElementById('dclases');
+    eli = document.getElementById('myList');
+    var repertorio = "el 701-rc-corridos nuevos alterados," +
+      "el chaparrito-mib-corridos alterados," +
+      "la muerte del comandante-do-corridos alterados," +
+      "el caballero-do-corridos nuevos," +
+      "pio diaz-do-corridos nuevos alterados," +
+      "el costal lleno de piedras-sol-corridos nuevos cajon clasicas," +
+      "el centenario-mib-clasicas corridos cajon," +
+      "el guero bastidas-fa-corridos nuevos alterados," +
+      "la fuga del jefe-fa-corridos nuevos alterados," +
+      "comboy del pelo chino-fa-corridos nuevos," +
+      "muchacho alegre-fa-cajon zapateados movidas," +
+      "catarino y los rurales-fa-cajon clasicas corridos rancheras movidas," +
+      "los rubos del dorado-fa-corridos nuevos alterados," +
+      "gallo de calidad-do-corridos clasicas," +
+      "rafael caro quintero-sol-corridos," +
+      "mi 45-mib-corridos movidas," +
+      "gente de accionar-mib-corridos alterados nuevos," +
+      "18 libras-do-alterados nuevos," +
+      "gente del chapo-fa-corridos nuevos alterados," +
+      "el ayudante-fa-corridos nuevos alterados," +
+      "comando x-sib-corridos nuevos alterados," +
+      "soy mencho-so-corridos nuevos alterados," +
+      "javier diaz-sol-corridos nuevos alterados," +
+      "chiquen little-do-nuevos alterados," +
+      "surcando el camino-fa-corridos nuevos alterados," +
+      "flor hermosa-fa-cancion clasicas cajon sierreno," +
+      "sonora y sus ojos negros-sol-cancion clasicas cajon sierreno," +
+      "dos mares de lagrimas-do-cancion," +
+      "tragos de amargo licor-sib-cancion cajon clasicas pisteadoras ramonayala vailables," +
+      "alma enamorada-sib-cancion cajon pisteadoras chalino," +
+      "entre copa y copa-do-cancion pisteadoras cajon," +
+      "el columpio-do-cancion pisteadoras," +
+      "dos botellas de mescal-fa-pisteadoras cancion," +
+      "porque se habra ido-fa-pisteadoras cancion romanticas," +
+      "juan marta-sol-corridos clasicas cajon movidas rancheras vailables," +
+      "24 de nunio-sib-corridos clasicas old," +
+      "cuerno de chivo-mib-corridos clasicas movidas rancheras vailables," +
+      "se les pelo baltazar-sol*-corridos cajon movidas rancheras vailables," +
+      "los traficantes-re-corridos old," +
+      "dimas de leon-fa-corridos clasicas cajon vailables rancheras," +
+      "los dos amigos-fa-corridos old rancheras pisteadoras," +
+      "laurita garza-sol-corridos clasicas rancheras vailables," +
+      "caballo de la acordada-do-corridos old clasicas," +
+      "los contrabandistas-fa-corridos old rancheras," +
+      "me dan celos-fa-cancion cajon romanticas," +
+      "amores finjidos-fa-cancion clasicas rancheras cajon vailables movidas pisteadoras," +
+      "la canelera-fa-cumbias movidas cajon," +
+      "de esta sierra a la otra sierra-fa-vailables movidas clasicas rancheras cajon," +
+      "mi caballo ensillado-fa-vailables movidas rancheras clasicas cajon," +
+      "porque te vas de mi-fa-cancion romanticas clasicas cajon," +
+      "la delgadina-re-old corridos clasicas," +
+      "un rinconcito en el cielo-fa-clasicas rancheras cajon vailables," +
+      "prenda querida-mi-cancion clasicas cajon vailables rancheras," +
+      "flor de capono-mi-cancion clasicas cajon vailables rancheras," +
+      "cuanto me gusta ese rancho-do-clasicas cajon vailables movidas," +
+      "celos del viento-re-cancion romanticas cajon," +
+      "me voy a cortar las venas-sol*-rancheras movidas clasicas vailables," +
+      "a qui en mi corazon tu mandas-do-movidas pisteadoras vailables," +
+      "el palomito-fa-rancheras movidas vailables clasicas cajon," +
+      "piquito de oro-sol*-rancheras movidas vailables clasicas cajon," +
+      "la yaquesita-fa-cumbias clasicas movidas cajon," +
+      "el tao tao-fa-cumbias clasicas movidas cajon," +
+      "el mono colorado-fa-cumbias clasicas movidas cajon," +
+      "la gilbertona-sol-cumbias movidas," +
+      "agua de te-fa-cumbias movidas clasicas cajon," +
+      "loba del mar-fa-cumbias zapateados movidas old cajon," +
+      "pavido navido-fa-cumbias zapateados movidas old cajon," +
+      "el sinaloense-fa-zapateados cajon movidas," +
+      "el tejanito-mi-movidas huapangos," +
+      "el fronterizo-mi-huapangos movidas," +
+      "mi primer servo-mi-huapangos movidas," +
+      "el pistolero-mi-huapangos movidas," +
+      "clavelito chino chino-fa-rancheras movidas" +
+      "" +
+      "" +
+      "" +
+      "" +
+      "" +
+      "" +
+      ""
+    repertorio = repertorio.split(",");
+    //alert(repertorio.length);
+    var r = [];
+
+    var clases = [];
+    extract()
+
+
+    function extract() {
+      for (i = 0; i < repertorio.length; i++) {
+        var rp = repertorio[i].split("-")
+      }
+
+
+      createbtns(getclases(repertorio))
+    }
+
+    function getclases(r) {
+      var cl = [],
+        rp = [],
+        clt = "";
+      for (i = 0; i < repertorio.length; i++) {
+        rp = repertorio[i].split("-");
+        clt += rp[2] + " "
+      }
+
+      cl = depurar(clt);
+      return cl;
+
+    }
+
+
+    function depurar(ob) {
+      var t = ob.split(' '),
+        ac1 = [];
+      ac1.push(t[0]);
+      for (i = 0; i < t.length - 1; i++) {
+        if (ac1.indexOf(t[i]) < 0) {
+          ac1.push(t[i])
+        } else {}
+      }
+      return ac1;
+    }
+
+    function createbtns(li) {
+      for (i = 0; i < li.length; i++) {
+        var bt = document.createElement('button');
+        bt.innerHTML = li[i];
+        bt.setAttribute('onclick', "addcl('" + li[i] + "')");
+        bt.setAttribute("class", "btns")
+        edc.appendChild(bt);
+      }
+    }
+
+    function addcl(cl) {
+        eli.innerHTML=cl+"<br><br>";
+   //   alert(cl);
+      var a, b = [],
+        c=[];
+      for (i = 0; i < repertorio.length; i++) {
+        a = repertorio[i].split("-");
+        c = a[2];
+     //   alert(a[0])
+        if (c.indexOf(cl) >= 0) {
+          b.push(repertorio[i])
+           var node = document.createElement("LI");
+  var textnode = document.createTextNode(a[0]+" Tono "+a[1]);
+  node.appendChild(textnode);
+  eli.appendChild(node);
+        }
+   
+
+      }
+      //return b;
+      }
+function myFunction() {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
+  </script>
+
+
+</html>
