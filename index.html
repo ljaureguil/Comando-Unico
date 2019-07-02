@@ -6,10 +6,18 @@
   </head>
   <style>
     body {
-      background-color: #ffffff;
-    }
+        color:white;
+      background-color: #ffffff; font-weight:bold;
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 
+    }
+    #dclases{
+//            background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7yCpP0RT3_hZhroqjyV6I1S_9rhLSB0p9Bg-kNERELOzdIAaemw);
+ //   background-size:100% 100%;
+    }
     .btns {
+        font-weight:bold;
       margin: 5px;
       border-radius: 5px;
       background: #aaffaa;
@@ -17,7 +25,6 @@
      // font-weight:bold;
       width:30%;
     }
-
   </style>
 
 
@@ -120,20 +127,14 @@
     repertorio = repertorio.split(",");
     //alert(repertorio.length);
     var r = [];
-
     var clases = [];
     extract()
-
-
     function extract() {
       for (i = 0; i < repertorio.length; i++) {
         var rp = repertorio[i].split("-")
       }
-
-
       createbtns(getclases(repertorio))
     }
-
     function getclases(r) {
       var cl = [],
         rp = [],
@@ -142,13 +143,9 @@
         rp = repertorio[i].split("-");
         clt += rp[2] + " "
       }
-
       cl = depurar(clt);
       return cl;
-
     }
-
-
     function depurar(ob) {
       var t = ob.split(' '),
         ac1 = [];
@@ -160,7 +157,6 @@
       }
       return ac1;
     }
-
     function createbtns(li) {
       for (i = 0; i < li.length; i++) {
         var bt = document.createElement('button');
@@ -170,7 +166,6 @@
         edc.appendChild(bt);
       }
     }
-
     function addcl(cl) {
         eli.innerHTML=cl+"<br><br>";
    //   alert(cl);
@@ -188,7 +183,6 @@
   eli.appendChild(node);
         }
    
-
       }
       //return b;
       }
