@@ -58,7 +58,7 @@
     var clases = [];
     // carga de letra     
     loadDoc('https://docs.google.com/document/d/10kKlaNhpy91i_nQci2EbYhx30mVwGMjq4dA9QYiCJPk/edit?usp=sharing', function(rr) {
-     //        https://docs.google.com/document/d/10kKlaNhpy91i_nQci2EbYhx30mVwGMjq4dA9QYiCJPk/edit?usp=sharing
+
         //    eifr.innerHTML=rr;
 
     })
@@ -71,18 +71,19 @@
         var a = rr.indexOf("@@@")
         var b = rr.indexOf("###");
         var t = rr.slice(a, b);
+        alert(t);
 
         var tt = t.split('*');
         var ttt = [];
         var pr = ""
         for (i = 1; i < tt.length; i++) {
-            pr = tt[i].slice(0, tt[i].indexOf("-@"));
+            pr = tt[i].slice(0, tt[i].indexOf("<"));
             repertorio.push(pr)
             ttt.push(pr);
         }
         //repertorio=ttt;
         //    alert(ttt)
-        //    alert(repertorio);
+           alert(repertorio);
         extract()
 
 
@@ -105,6 +106,7 @@
             clt = "";
         for (i = 0; i < repertorio.length; i++) {
             rp = repertorio[i].split("-");
+            
             clt += rp[2] + " "
         }
         cl = depurar(clt);
