@@ -64,14 +64,12 @@
     })
 
 
-
-
     loadDoc('https://docs.google.com/document/d/1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0/edit?usp=sharing', function(rr) {
 
         var a = rr.indexOf("@@@")
         var b = rr.indexOf("###");
         var t = rr.slice(a, b);
-        alert(t);
+     //   alert(t);
 
         var tt = t.split('*');
         var ttt = [];
@@ -83,7 +81,7 @@
         }
         //repertorio=ttt;
         //    alert(ttt)
-           alert(repertorio);
+       //    alert(repertorio);
         extract()
 
 
