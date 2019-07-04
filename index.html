@@ -28,13 +28,30 @@
     #ifr {
         background-color: #ffffff;
         // color: white;
-        display: none;
+      display: none;
     }
 </style>
 
 
 <body onload="app.Start()">
-    <div id=ifr></div>
+    <div id=ifr>
+<form method="get" action="http://www.google.com/search">
+
+<div style="border:2px dotted black;padding:4px;width:15em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input id="barra" type="text"   name="q" size="25" style="color:#808080; 
+maxlength="255" value="el foco letra""
+onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+<input id="srch" type="submit" value="Go!" />
+</td></tr>
+</table>
+</div>
+
+</form>
+
+
+</div>
     <div id=t odo>
         <div id=dclases></div>
 
@@ -50,6 +67,8 @@
     edc = document.getElementById('dclases');
     eli = document.getElementById('myList');
     eifr = document.getElementById('ifr');
+   esrch = document.getElementById('srch');
+  ebarra = document.getElementById('barra');
 
     repertorio = [];
     // repertorio.split(",");
@@ -58,8 +77,9 @@
     var clases = [];
     // carga de letra     
     loadDoc('https://docs.google.com/document/d/10kKlaNhpy91i_nQci2EbYhx30mVwGMjq4dA9QYiCJPk/edit?usp=sharing', function(rr) {
+ //   loadDoc('https://www.musica.com/', function(rr) {
 
-        //    eifr.innerHTML=rr;
+  //          eifr.innerHTML=rr;
 
     })
 
@@ -75,7 +95,8 @@
         var ttt = [];
         var pr = ""
         for (i = 1; i < tt.length; i++) {
-            pr = tt[i].slice(0, tt[i].indexOf("<"));
+            pr = tt[i].slice(0, tt[i].indexOf("</"));
+         //   alert(pr)
             repertorio.push(pr)
             ttt.push(pr);
         }
@@ -86,10 +107,6 @@
 
 
     })
-
-
-
-
     function extract() {
         //     for (i = 0; i < repertorio.length; i++) {
         //       var rp = repertorio[i].split("-")
@@ -161,7 +178,10 @@
     }
 
     function showletra(cancion) {
-        alert(cancion);
+      //  alert(cancion);
+ebarra.value=cancion+" letra";
+//alert(esrch.value)
+esrch.click()
     }
 
     function myFunction() {
