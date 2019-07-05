@@ -25,48 +25,109 @@
         // font-weight: bold;
         width: 30%;
     }
-    #ifr {
+    #dsr {
         background-color: #ffffff;
         // color: white;
-      display: none;
+        display: none;
+    }
+    .linkpractica {
+        appearance: button;
+        text-decoration: none;
+        color: initial;
+        // border: solid;
+        // border-radius: 5px;
+        // background: red;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 20px;
+        color: #ffffff;
+    }
+    #ifr {
+        // position: relative;
+        width: 100%;
+        // height: 80%;
+        border: solid;
+        border-radius: 15px;
+        border-color: red;
+        background: #000000;
+        background-size: 100% 100%;
+        scroll: auto;
+        display: none;
+        // box-shadow: -6px 10px 20px #ffffff;
+    }
+    #menu {
+        font-weight: bold;
+        margin: 3%;
+        height: 5%;
+        width: 94%;
+        background: #ffffff;
+        //color: white;
+        // box-shadow: -6px 10px 20px #ffffff;
+        left: 3%;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
     }
 </style>
 
-
 <body onload="app.Start()">
-    <div id=ifr>
-<form method="get" action="http://www.google.com/search">
+    <div id=dsr>
+        <form method="get" action="http://www.google.com/search">
 
-<div style="border:2px dotted black;padding:4px;width:15em;">
-<table border="0" align="center" cellpadding="0">
-<tr><td>
-<input id="barra" type="text"   name="q" size="25" style="color:#808080; 
-maxlength="255" value="el foco letra""
-onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
-<input id="srch" type="submit" value="Go!" />
-</td></tr>
-</table>
-</div>
+            <div style="border:2px dotted black;padding:4px;width:15em;">
+                <table border="0" align="center" cellpadding="0">
+                    <tr>
+                        <td>
+                            <input id="barra" type="text" name="q" size="25" style="color:#808080; 
+maxlength=" 255 " value="el foco letra "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />
+                            <input id="srch" type="submit" value="Go!" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-</form>
+        </form>
 
 
-</div>
+    </div>
     <div id=t odo>
+        <button id=menu onclick="openmen()">Open Menu</button>
+
+        <div id=ifr>
+            <br>
+            <a class=linkpractica href="https://docs.google.com/document/d/1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw/edit?usp=sharing" target="_blank">-Canciones por practicar</a>
+            <br>
+            <br>
+            <a class=linkpractica href="https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0" target="_blank">-Anotar al Repertorio</a>
+            <br>
+            <br>
+            <a class=linkpractica href="https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY" target="_blank">-Abrir Agenda</a>
+            <br>
+            <br>
+            <a class=linkpractica href="https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU" target="_blank">-Abrir Contrato</a>
+            <br>
+            <br>
+
+        </div>
+
         <div id=dclases></div>
 
         <ul id="myList">
 
         </ul>
-  </div>
+
+
+    </div>
 
 </body>
 <script>
+    bmenu = false;
     edc = document.getElementById('dclases');
     eli = document.getElementById('myList');
     eifr = document.getElementById('ifr');
-   esrch = document.getElementById('srch');
-  ebarra = document.getElementById('barra');
+    esrch = document.getElementById('srch');
+    ebarra = document.getElementById('barra');
+    emenu = document.getElementById('menu');
 
     repertorio = [];
     // repertorio.split(",");
@@ -75,31 +136,53 @@ onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black
     var clases = [];
     // carga de letra     
     loadDoc('https://docs.google.com/document/d/10kKlaNhpy91i_nQci2EbYhx30mVwGMjq4dA9QYiCJPk/edit?usp=sharing', function(rr) {
- //   loadDoc('https://www.musica.com/', function(rr) {
+        //   loadDoc('https://www.musica.com/', function(rr) {
 
-  //          eifr.innerHTML=rr;
-
+        //           eifr.contentWindow.document.write(rr);
+        //eifr.innerHTML=rr;
     })
+
+
     loadDoc('https://docs.google.com/document/d/1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0/edit?usp=sharing', function(rr) {
 
         var a = rr.indexOf("@@@")
         var b = rr.indexOf("###");
         var t = rr.slice(a, b);
-     //   alert(t);
+        //   alert(t);
 
         var tt = t.split('*');
         var ttt = [];
         var pr = ""
         for (i = 1; i < tt.length; i++) {
             pr = tt[i].slice(0, tt[i].indexOf("</"));
-         //   alert(pr)
+            //   alert(pr)
             repertorio.push(pr)
             ttt.push(pr);
         }
+
         extract()
+
+
     })
+
+    function openmen() {
+        if (bmenu) {
+            emenu.style.color = "black";
+            emenu.innerHTML = "Open Menu";
+            emenu.style.background = "#ffffff";
+            eifr.style.display = "none";
+            bmenu = false
+        } else {
+            emenu.style.color = "blue";
+            emenu.innerHTML = "Close Menu";
+            emenu.style.background = "#00ff00";
+            eifr.style.display = "block";
+            bmenu = true
+        }
+    }
+
     function extract() {
-       var x=1
+
         createbtns(getclases(repertorio))
     }
 
@@ -109,7 +192,7 @@ onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black
             clt = "";
         for (i = 0; i < repertorio.length; i++) {
             rp = repertorio[i].split("-");
-            
+
             clt += rp[2] + " "
         }
         cl = depurar(clt);
@@ -166,9 +249,11 @@ onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black
     }
 
     function showletra(cancion) {
-ebarra.value=cancion+" letra";
-//alert(esrch.value)
-esrch.click()
+        //  alert(cancion);
+        ebarra.value = cancion + " letra";
+        //alert(esrch.value)
+        esrch.click()
+        //eifr.innerHTML=rr;
     }
 
     function myFunction() {
@@ -193,4 +278,6 @@ esrch.click()
         return rte
     }
 </script>
+
+
 </html>
