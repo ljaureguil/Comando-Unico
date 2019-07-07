@@ -18,10 +18,11 @@
         // background-size: 100% 100%;
     }
     .btns {
+        color:white;
         font-weight: bold;
         margin: 5px;
         border-radius: 5px;
-        background: #aaffaa;
+        background: #000070;
         font-size: 16px;
         // font-weight: bold;
         width: 30%;
@@ -61,7 +62,277 @@
         font-weight: bold;
     }
     #lbtns {
+        width: 100%;
+        border-radius: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        background: red;
+    }
+</style>
+
+<body>
+    <div id=dsr>
+        <form method="get" action="http://www.google.com/search">
+
+            <div style="border:2px dotted black;padding:4px;width:15em;">
+                <table border="0" align="center" cellpadding="0">
+                    <tr>
+                        <td>
+                            <input id="barra" type="text" name="q" size="25" style="color:#808080; 
+maxlength=" 255 " value="el foco letra "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />
+                            <input id="srch" type="submit" value="Go!" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+
+
+    </div>
+    <div id=t odo>
+        <button id=menu onclick="openmen()">. . . Open Menu . . .</button>
+
+        <div id=ifr>
+
+            <br>
+            <br>
+            <a class=linkpractica href="https://docs.google.com/document/d/1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw/edit?usp=sharing" target="_blank">
+                <button class="lbtns">-Canciones por practicar</button>
+            </a>
+            <br>
+            <br>
+            <a class=linkpractica href="https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0" target="_blank">
+                <button class="lbtns">-Anotar al Repertorio</button>
+            </a>
+            <br>
+            <br>
+            <a class=linkpractica href="https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY" target="_blank">
+                <button class="lbtns">-Abrir Agenda</button>
+            </a>
+            <br>
+            <br>
+            <a class=linkpractica href="https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU" target="_blank">
+                <button class="lbtns">-Abrir Contrato</button>
+            </a>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <div id=dclases></div>
+
+        <ul id="myList">
+
+        </ul>
+
+
+    </div>
+
+</body>
+<script>
+    bmenu = false;
+    edc = document.getElementById('dclases');
+    eli = document.getElementById('myList');
+    eifr = document.getElementById('ifr');
+    esrch = document.getElementById('srch');
+    ebarra = document.getElementById('barra');
+    emenu = document.getElementById('menu');
+
+    repertorio = [];
+    // repertorio.split(",");
+    //alert(repertorio.length);
+    var r = [];
+    var clases = [];
+    // carga de letra     
+    loadDoc('https://docs.google.com/document/d/10kKlaNhpy91i_nQci2EbYhx30mVwGMjq4dA9QYiCJPk/edit?usp=sharing', function(rr) {
+
+    })
+
+
+    loadDoc('https://docs.google.com/document/d/1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0/edit?usp=sharing', function(rr) {
+
+        var a = rr.indexOf("@@@")
+        var b = rr.indexOf("###");
+        var t = rr.slice(a, b);
+        //   alert(t);
+
+        var tt = t.split('</span></p>');
+        var ttt = [];
+        var pr = ""
+        //alert(tt)
+        /*      for (i = 1; i < tt.length; i++) {
+            pr = tt[i].slice(0, tt[i].indexOf("</"));
+            //   alert(pr)
+            repertorio.push(pr)
+            ttt.push(pr);
+        }*/
+        var cr = ""
+        for (i = 1; i < tt.length; i++) {
+            pr = tt[i].split(">");
+            cr = pr[pr.length - 1];
+            //      alert(pr);
+            //    pr = tt[i].slice(0, tt[i].indexOf("</"));
+            //           alert(cr)
+
+            if (cr != "" || cr != " ") repertorio.push(cr)
+            ttt.push(pr);
+        }
+        extract()
+
+
+    })
+
+    function openmen() {
+        if (bmenu) {
+            emenu.style.color = "black";
+            emenu.innerHTML = ". . . Open Menu . . .";
+            emenu.style.background = "#ffffff";
+            eifr.style.display = "none";
+            bmenu = false
+        } else {
+            emenu.style.color = "white";
+            emenu.innerHTML = ". . . Close Menu . . .";
+            emenu.style.background = "#000000";
+            eifr.style.display = "block";
+            bmenu = true
+        }
+    }
+
+    function extract() {
+
+        createbtns(getclases(repertorio))
+    }
+
+    function getclases(r) {
+        var cl = [],
+            rp = [],
+            clt = "";
+        //alert(repertorio)
+        for (i = 0; i < repertorio.length; i++) {
+
+            rp = repertorio[i].split("-");
+            //alert(rp)
+            if (rp != "" || rp != null || rp != undefinef) clt += rp[2] + " "
+        }
+        //alert(clt)
+        cl = depurar(clt); //alert(cl)
+        return cl;
+    }
+
+    function depurar(ob) {
+        var t = ob.split(' '),
+            ac1 = [];
+        ac1.push(t[0]);
+        for (i = 0; i < t.length - 1; i++) {
+            if (ac1.indexOf(t[i]) < 0) {
+
+                if (t[i] != "undefined") ac1.push(t[i])
+            } else {}
+        }
+        //alert(ac1)
+        return ac1;
+    }
+
+    function createbtns(li) {
+        for (i = 0; i < li.length; i++) {
+            var bt = document.createElement('button');
+            bt.innerHTML = li[i];
+            //alert(li[i])
+            bt.setAttribute('onclick', "addcl('" + li[i] + "')");
+            bt.setAttribute("class", "btns")
+            edc.appendChild(bt);
+        }
+    }
+
+    function addcl(cl) {
+        if (cl != undefined) {
+            eli.innerHTML = cl + "<br><br>";
+            //   alert(cl);
+            var a, b = [],
+                c = [];
+            for (i = 0; i < repertorio.length; i++) {
+                a = repertorio[i].split("-");
+                c = a[2];
+                //       alert(a)
+                if (c != undefined) {
+                    if (c.indexOf(cl) >= 0) { //alert("%%%%%%%%")
+                        b.push(repertorio[i])
+                        var node = document.createElement("LI");
+                        // var textnode = document.createTextNode(a[0]+"    . . . . Tono "+a[1]);
+                        var textnode = document.createElement('div')
+                        textnode.innerHTML = a[0] + "    . . . . Tono " + a[1];
+                        textnode.setAttribute('onclick', 'showletra("' + a[0] + '")');
+                        var se = document.createElement("br");
+                        eli.appendChild(se);
+                        node.appendChild(textnode);
+                        eli.appendChild(node);
+     <html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="http://cdn.onlinewebfonts.com/svg/img_563951.png" type="image/x-icon" />
+
+</head>
+<style>
+    body {
+        color: white;
+        background-color: #ffffff;
+        font-weight: bold;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+    #dclases {
+        // background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7yCpP0RT3_hZhroqjyV6I1S_9rhLSB0p9Bg-kNERELOzdIAaemw);
+        // background-size: 100% 100%;
+    }
+    .btns {
+        color:white;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 5px;
+        background: #000070;
+        font-size: 16px;
+        // font-weight: bold;
+        width: 30%;
+    }
+    #dsr {
+        background-color: #ffffff;
+        display: none;
+    }
+    .linkpractica {
+        overflow: auto;
         width: 80%;
+        border-radius: 15px;
+        background: red;
+        margin: 35px;
+    }
+    #ifr {
+        // position: relative;
+        width: 100%;
+        // height: 80%;
+        border: solid;
+        border-radius: 15px;
+        border-color: red;
+        background: #000000;
+        background-size: 100% 100%;
+        scroll: auto;
+        display: none;
+    }
+    #menu {
+        font-weight: bold;
+        margin: 3%;
+        height: 5%;
+        width: 94%;
+        background: #ffffff;
+        left: 3%;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #lbtns {
+        width: 100%;
         border-radius: 15px;
         font-size: 25px;
         font-weight: bold;
