@@ -99,22 +99,22 @@ maxlength=" 255 " value="el foco letra "" onfocus="if(this.value==this.defaultVa
             <br>
             <br>
             <a class=linkpractica href="https://docs.google.com/document/d/1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw/edit?usp=sharing" target="_blank">
-                <button class="lbtns">-Canciones por practicar</button>
+                <button class="lbtns">-Canciones por Practicar...</button>
             </a>
             <br>
             <br>
             <a class=linkpractica href="https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0" target="_blank">
-                <button class="lbtns">-Anotar al Repertorio</button>
+                <button class="lbtns">-Abrir Repertorio...</button>
             </a>
             <br>
             <br>
             <a class=linkpractica href="https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY" target="_blank">
-                <button class="lbtns">-Abrir Agenda</button>
+                <button class="lbtns">-Abrir Agenda...</button>
             </a>
             <br>
             <br>
             <a class=linkpractica href="https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU" target="_blank">
-                <button class="lbtns">-Abrir Contrato</button>
+                <button class="lbtns">-Abrir Contrato...</button>
             </a>
             <br>
             <br>
@@ -175,11 +175,8 @@ maxlength=" 255 " value="el foco letra "" onfocus="if(this.value==this.defaultVa
         for (i = 1; i < tt.length; i++) {
             pr = tt[i].split(">");
             cr = pr[pr.length - 1];
-            //      alert(pr);
-            //    pr = tt[i].slice(0, tt[i].indexOf("</"));
-            //           alert(cr)
-
-            if (cr != "" || cr != " ") repertorio.push(cr)
+   
+            if (cr != "" || cr != " "  && cr.indexOf("-")>1) repertorio.push(cr)
             ttt.push(pr);
         }
         extract()
@@ -251,7 +248,7 @@ maxlength=" 255 " value="el foco letra "" onfocus="if(this.value==this.defaultVa
 
     function addcl(cl) {
         if (cl != undefined) {
-            eli.innerHTML = cl + "<br><br>";
+            eli.innerHTML = '<font color="#00ff00" fontWeight="bold"><u>'+cl+'</u></font>' + "<br><br>";
             //   alert(cl);
             var a, b = [],
                 c = [];
