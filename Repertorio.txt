@@ -1,0 +1,115 @@
+﻿ Nota:
+-Para adicionar canciónes:
+
+escribir el nombre de la canción.
+type -
+escribir tono
+type -
+escribir clasificación
+
+todo el repertorio debe estar entre @......  Y   #.....
+
+ @@@@@@@@@@@@@@@@@@@@@@
+
+
+*Corridos
+
+el 701-rc
+el chaparrito-mib
+la muerte del comandante-do
+el caballero-do
+pio diaz-do
+el costal lleno de piedras-sol
+ el centenario-mib
+el guero bastidas-fa
+la fuga del jefe-fa
+comboy del pelo chino-fa
+muchacho alegre-fa
+catarino y los rurales-fa
+los rumbos del dorado-fa
+gallo de calidad-do
+rafael caro quintero-sol
+ mi 45-mib
+gente de accionar-mib
+18 libras-do
+gente del chapo-fa
+el ayudante-fa
+ comando x-sib
+ soy mencho-so
+javier díaz-sol
+chiquen little-do
+surcando el camino-fa
+
+*Canciones
+
+
+flor hermosa-fa
+sonora y sus ojos negros-sol
+dos mares de lagrimas-do
+tragos de amargo licor-sib 
+alma enamorada-sib
+entre copa y copa-do
+ el columpio-do
+dos botellas de mescal-sol
+porque se habra ido-fa
+
+*Corridos Clasicos
+
+Juan marta-sol
+ 24 de junio-sib
+cuerno de chivo-mib
+ se les pelo baltazar-sol#
+ Los traficantes-re
+dimas de leon-fa
+los dos amigos-fa
+laurita garza-sol
+caballo de la acordada-do
+los contrabandistas-fa
+me dan celos-fa
+amores fingidos-fa
+la canelera-fa
+de esta sierra a la otra sierra-fa
+mi caballo ensillado-fa
+porque te vas de mi-fa
+la delgadina-re
+
+*Rancheritas
+
+un rinconcito en el cielo-fa
+prenda querida-mi
+flor de capono-mi
+cuanto me gusta ese rancho-do
+celos del viento-re
+me voy a cortar las venas-sol#
+ a qui en mi corazon tu mandas-do
+el palomito-fa
+piquito de oro-sol#
+
+*Cumbias
+
+la yaquesita-fa
+ el tao tao-fa
+el mono colorado-fa
+la gilbertona-sol
+agua de te-fa
+La loba del mar-fa
+pavido navido-fa
+el sinaloense-fa
+el tejanito-mi
+ el fronterizo-mi
+ mi primer servo-mi
+ el pistolero-mi
+ clavelito chino chino-fa
+ La chona-fa
+%%%%% PRACTICAR la vecina me puso el dedo-fa
+
+
+
+
+
+
+
+
+#######################################
+
+
