@@ -100,7 +100,7 @@ maxlength=" 255 " value="Write the song "" onfocus="if(this.value==this.defaultV
 
     function loadText() {
         fetch('http://localhost/foo.txt')
-            .then(response = > response.text())
+            .then(response => response.text())
             .then((data) => {
                 console.log(data)
             })
