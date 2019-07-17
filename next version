@@ -1,0 +1,107 @@
+<style>
+  
+    body {
+        color: white;
+        background-color: #ffffff;
+        font-weight: bold;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }  
+  
+  
+  
+  #todo{
+    width:100%;
+    height:100%;
+ 
+  }
+  #ifr{
+    width:100%;
+    height:80%;
+    
+  }
+   .btns {
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 5px;
+        background: #000070;
+        font-size: 16px;
+        // font-weight: bold;
+        width: 30%;
+    }
+  
+</style>
+<div id=todo>
+<button class=btns onclick=opendoc("https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw")>Canciones por practicar</button><br>
+ <button class=btns onclick=opendoc("https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")>Repertorio</button><br> 
+ <button class=btns onclick=opendoc("https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")>Agenda</button><br> 
+<button class=btns onclick=opendoc("https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")>Contrato</button><br>  
+  <button class=btns onclick=opendoc("letra")>Letras</button><br>
+  <button class=btns onclick=opendoc("https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")>open rep</button><br>
+
+  <div id=ifrs>
+
+      
+            <br>
+   <div id=dsr>
+        <form method="get" action="http://www.google.com/search">
+
+            <div style="border:2px dotted black;padding:4px;width:100$;">
+                <table border="0" align="center" cellpadding="0">
+                    <tr>
+                        <td>
+                            <input id="barra" type="text" name="q" size="25" style="color:#808080; 
+maxlength=" 255 " value="Write the song "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />
+                            <input id="srch" type="submit"  style="display:none" />
+                            <button onclick="getletra()">Get Letra</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+
+
+    </div>
+        </div>
+
+  
+  
+  
+<iframe id="ifr"></iframe>
+  
+  
+  
+  
+  
+  
+</div>
+
+<script>
+  efr=document.getElementById("ifr")
+  function opendoc(op){
+    if(op.indexOf("https")>=0) ifr.src=op;
+    if(op==="letra");
+ 
+    
+  }
+  
+      function showletra(cancion) {
+        //  alert(cancion);
+        ebarra.value = cancion + " letra";
+        //alert(esrch.value)
+        esrch.click()
+        //eifr.innerHTML=rr;
+    }
+  function loadText(){
+    fetch('http://localhost/foo.txt')
+  .then(response => response.text())
+  .then((data) => {
+    console.log(data)
+  })
+    
+  }
+  
+</script>
+
