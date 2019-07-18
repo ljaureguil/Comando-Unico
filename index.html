@@ -31,8 +31,28 @@
         width: 30%;
       height:8%;
     }
+#ed{
+     background:rgba(0,255,0,.5);
+	color:white;
+	position:absolute;
+	top:90%;
+	bottom:right:5%;
+	
+}
+#edventana{
+    font-size:20px;
+    background:rgba(0,200,0,.5);
+	//color:white;
+	position:absolute;
+	right:5%;
+	bottom:5%;
+	border-radius:500px;
+	padding:4px;
+}
 </style>
 <div id="todo">
+	<a id="edventana"  target="_blank">Edit</a>																														
+
     <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw")'>Por practicar</button>
     <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Repertorio</button>
     <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
@@ -77,21 +97,18 @@
 //maxlength=" 255 " value="Write the song "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; 
     esrch = document.getElementById('srch');
     ebarra = document.getElementById('barra');
+   eedventana = document.getElementById('edventana');
 
     efr = document.getElementById("ifr")
-
     function opendoc(op) {
-        if (op.indexOf("https") >= 0) ifr.src = op;
+	eedventana. href=op;//eedventana.click();
+        if (op.indexOf("https") >= 0) { ifr.src = op;}
+	else{}
         if (op === "letra");
-
-
     }
-
     function getletra() {
         showletra(ebarra.value)
-
     }
-
     function showletra(cancion) {
         //  alert(cancion);
         ebarra.value = cancion + " letra";
@@ -99,14 +116,12 @@
         esrch.click()
         //eifr.innerHTML=rr;
     }
-
     function loadText() {
         fetch('http://localhost/foo.txt')
             .then(response => response.text())
             .then((data) => {
                 console.log(data)
             })
-
     }
 </script>
   </body>
