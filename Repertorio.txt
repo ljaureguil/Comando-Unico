@@ -1,115 +1,156 @@
-﻿ Nota:
--Para adicionar canciónes:
-
-escribir el nombre de la canción.
-type -
-escribir tono
-type -
-escribir clasificación
-
-todo el repertorio debe estar entre @......  Y   #.....
 
  @@@@@@@@@@@@@@@@@@@@@@
 
 
-*Corridos
+el 701-rc-corridos nuevos alterados
 
-el 701-rc
-el chaparrito-mib
-la muerte del comandante-do
-el caballero-do
-pio diaz-do
-el costal lleno de piedras-sol
- el centenario-mib
-el guero bastidas-fa
-la fuga del jefe-fa
-comboy del pelo chino-fa
-muchacho alegre-fa
-catarino y los rurales-fa
-los rumbos del dorado-fa
-gallo de calidad-do
-rafael caro quintero-sol
- mi 45-mib
-gente de accionar-mib
-18 libras-do
-gente del chapo-fa
-el ayudante-fa
- comando x-sib
- soy mencho-so
-javier díaz-sol
-chiquen little-do
-surcando el camino-fa
+el chaparrito-mib-corridos alterados
 
-*Canciones
+la muerte del comandante-do-corridos alterados
 
+el caballero-do-corridos nuevos
 
-flor hermosa-fa
-sonora y sus ojos negros-sol
-dos mares de lagrimas-do
-tragos de amargo licor-sib 
-alma enamorada-sib
-entre copa y copa-do
- el columpio-do
-dos botellas de mescal-sol
-porque se habra ido-fa
+pio diaz-do-corridos nuevos alterados
 
-*Corridos Clasicos
+el costal lleno de piedras-sol-corridos nuevos cajon clasicas
 
-Juan marta-sol
- 24 de junio-sib
-cuerno de chivo-mib
- se les pelo baltazar-sol#
- Los traficantes-re
-dimas de leon-fa
-los dos amigos-fa
-laurita garza-sol
-caballo de la acordada-do
-los contrabandistas-fa
-me dan celos-fa
-amores fingidos-fa
-la canelera-fa
-de esta sierra a la otra sierra-fa
-mi caballo ensillado-fa
-porque te vas de mi-fa
-la delgadina-re
+ el centenario-mib-clasicas corridos cajon
 
-*Rancheritas
+el guero bastidas-fa-corridos nuevos alterados
 
-un rinconcito en el cielo-fa
-prenda querida-mi
-flor de capono-mi
-cuanto me gusta ese rancho-do
-celos del viento-re
-me voy a cortar las venas-sol#
- a qui en mi corazon tu mandas-do
-el palomito-fa
-piquito de oro-sol#
+la fuga del jefe-fa-corridos nuevos alterados
 
-*Cumbias
+comboy del pelo chino-fa-corridos nuevos
 
-la yaquesita-fa
- el tao tao-fa
-el mono colorado-fa
-la gilbertona-sol
-agua de te-fa
-La loba del mar-fa
-pavido navido-fa
-el sinaloense-fa
-el tejanito-mi
- el fronterizo-mi
- mi primer servo-mi
- el pistolero-mi
- clavelito chino chino-fa
- La chona-fa
-%%%%% PRACTICAR la vecina me puso el dedo-fa
+muchacho alegre-fa-cajon zapateados movidas
 
+catarino y los rurales-fa-cajon clasicas corridos rancheras movidas
 
+los rumbos del dorado-fa-corridos nuevos alterados
 
+gallo de calidad-do-corridos clasicas
 
+rafael caro quintero-sol-corridos
 
+ mi 45-mib-corridos movidas
 
+gente de accionar-mib-corridos alterados nuevos
 
+18 libras-do-alterados nuevos
 
-#######################################
+gente del chapo-fa-corridos nuevos alterados
 
+el ayudante-fa-corridos nuevos alterados
 
+ comando x-sib-corridos nuevos alterados
+
+ soy mencho-so-corridos nuevos alterados
+
+javier díaz-sol-corridos nuevos alterados
+
+chiquen little-do-nuevos alterados
+
+surcando el camino-fa-corridos nuevos alterados
+
+flor hermosa-fa-cancion clasicas cajón sierreno
+
+sonora y sus ojos negros-sol-cancion clasicas cajon sierreno
+
+dos mares de lagrimas-do-cancion
+
+tragos de amargo licor-sib-canción cajon clasicas pisteadoras ramonayala bailables
+ 
+alma enamorada-sib-cancion cajon pisteadoras chalino
+
+entre copa y copa-do-cancion pisteadoras cajon
+
+ el columpio-do-cancion pisteadoras
+
+dos botellas de mescal-fa-pisteadoras cancion
+
+porque se habra ido-fa-pisteadoras cancion románticas
+
+ Juan marta-sol-corridos clasicas cajon movidas rancheras bailables
+
+ 24 de junio-sib-corridos clasicas old
+
+cuerno de chivo-mib-corridos clasicas movidas rancheras bailables
+
+ se les pelo baltazar-sol#-corridos cajon movidas rancheras bailables
+
+ Los traficantes-re-corridos old
+
+dimas de leon-fa-corridos clasicas cajon bailables rancheras
+
+los dos amigos-fa-corridos old rancheras pisteadoras
+
+laurita garza-sol-corridos clasicas rancheras bailables
+
+caballo de la acordada-do-corridos old clasicas
+
+los contrabandistas-fa-corridos old rancheras
+
+me dan celos-fa-cancion cajon romanticas
+
+amores fingidos-fa-cancion clasicas rancheras cajon bailables movidas pisteadoras
+
+la canelera-fa-cumbias movidas cajon
+
+de esta sierra a la otra sierra-fa-bailables movidas clasicas rancheras cajon
+
+mi caballo ensillado-fa-bailables movidas rancheras clasicas cajon
+
+porque te vas de mi-fa-cancion romanticas clasicas cajon
+
+la delgadina-re-old corridos clasicas
+
+un rinconcito en el cielo-fa-clasicas rancheras cajon bailables
+
+prenda querida-mi-cancion clasicas cajon bailables rancheras
+
+flor de capono-mi-cancion clasicas cajon bailables rancheras
+
+cuanto me gusta ese rancho-do-clasicas cajon bailables movidas
+
+celos del viento-re-cancion romanticas cajon
+
+me voy a cortar las venas-sol#-rancheras movidas clasicas bailables
+
+ a qui en mi corazon tu 
+mandas-do-movidas pisteadoras bailables
+
+el palomito-fa-rancheras movidas bailables clasicas cajon
+
+piquito de oro-sol#-rancheras movidas bailables clasicas cajon
+
+la yaquesita-fa-cumbias clasicas movidas cajon
+
+ el tao tao-fa-cumbias clasicas movidas cajon
+
+el mono colorado-fa-cumbias clasicas movidas cajon
+
+la gilbertona-sol-cumbias movidas
+
+agua de te-fa-cumbias movidas clasicas cajon
+
+La loba del mar-fa-cumbias zapateados movidas old cajon
+
+pavido navido-fa-cumbias zapateados movidas old cajon
+
+el sinaloense-fa-zapateados cajon movidas
+
+el tejanito-mi-movidas huapangos
+
+ el fronterizo-mi-huapangos movidas
+
+ mi primer servo-mi-huapangos movidas
+
+ el pistolero-mi-huapangos movidas
+
+ clavelito chino chino-fa-rancheras movidas
+
+ La chona-fa-cumbias cajon movidas-pendiente
+
+la vecina me puso el dedo-fa-cumbias rancheras ramonayala-pendiente
+
+########################################
