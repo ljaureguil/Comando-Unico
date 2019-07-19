@@ -136,8 +136,8 @@
 
         function loadText(file, callback) {
             fetch(file)
-                .then(response = > response.text())
-                .then((data) = > { //  alert(data);
+                .then(response => response.text())
+                .then((data) => { //  alert(data);
                     callback(data); //
                 })
         }
