@@ -1,89 +1,97 @@
 <html>
 
-<body>
+  <body>
     <style>
-        body {
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-            font-size: 30px;
-        }
-        #todo {
-            width: 100%;
-            height: 100%;
-        }
-        #ifr {
-            width: 100%;
-            height: 75%;
-            background: white;
-        }
-        #ifrs {
-            width: 100%;
-            // height: 40%;
-            font-size: 25px;
-        }
-        .btns {
-            color: white;
-            font-weight: bold;
-            margin: 5px;
-            border-radius: 5px;
-            background: #000070;
-            font-size: 40px;
-            // font-weight: bold;
-            width: 30%;
-            height: 8%;
-        }
-        #ed {
-            background: rgba(0, 255, 0, .5);
-            color: white;
-            position: absolute;
-            top: 90%;
-            bottom: right: 5%;
-        }
-        #edventana {
-            font-size: 20px;
-            background: rgba(0, 200, 0, .5);
-            //color: white;
-            position: absolute;
-            right: 5%;
-            bottom: 5%;
-            border-radius: 500px;
-            padding: 4px;
-        }
+      body {
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        font-size: 30px;
+      }
+
+      #todo {
+        width: 100%;
+        height: 100%;
+      }
+
+      #ifr {
+        width: 100%;
+        height: 75%;
+        background: white;
+      }
+
+      #ifrs {
+        width: 100%; // height:40%;
+        font-size: 25px;
+      }
+
+      .btns {
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 5px;
+        background: #000070;
+        font-size: 40px; // font-weight: bold;
+        width: 30%;
+        height: 8%;
+      }
+
+      #ed {
+        background: rgba(0, 255, 0, .5);
+        color: white;
+        position: absolute;
+        top: 90%;
+        bottom: right:5%;
+      }
+
+      #edventana {
+        font-size: 60px;
+        background: rgba(0, 200, 0, .5);
+        color: red;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        border-radius: 500px;
+        border-style: double;
+        border-color: blue;
+        border-width: 15px;
+        padding: 4px;
+      }
+
     </style>
     <div id="todo">
-        <a id="edventana" target="_blank">Edit</a>	
+ 
 
-        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw")'>Por practicar</button>
-        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Repertorio</button>
-        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
-        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
-        <button class=btns onclick='opendoc( "letra")'>Letras</button>
-        <button class=btns onclick='opendoc( "open rep")'>open rep</button>
+      <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw")'>Por practicar</button>
+      <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Repertorio</button>
+      <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
+      <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
+      <button class=btns onclick='opendoc( "letra")'>Letras</button>
+      <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. Temp</button>
 
-        <div id=ifrs>
+      <div id=ifrs>
 
 
-            <br>
-            <div id="dsr">
-                <form method="get" action="http://www.google.com/search">
+        <br>
+        <div id="dsr">
+          <form method="get" action="http://www.google.com/search">
 
-                    <div style="border:2px dotted white;padding:4px;width:100&;">
-                        <table border="0" align="center" cellpadding="0">
-                            <tr>
-                                <td>
-                                    <input id="barra" type="text" name="q" style=" font-size:40px;" placeholder="Write a song..." />
-                                    <input id="srch" type="submit" style="display:none" />
-                                    <button onclick="getletra()" style=" font-size:40px;border-radius:10px;">Get Letra</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </form>
+            <div style="border:2px dotted white;padding:4px;width:100&;">
+              <table border="0" align="center" cellpadding="0">
+                <tr>
+                  <td>
+                    <input id="barra" type="text" name="q" style=" font-size:40px;" placeholder="Write a song..." />
+                    <input id="srch" type="submit" style="display:none" />
+                    <button onclick="getletra()" style=" font-size:40px;border-radius:10px;">Get Letra</button>
+                  </td>
+                </tr>
+              </table>
             </div>
+
+          </form>
         </div>
-        <iframe id="ifr"></iframe>
+      </div>
+      <iframe id="ifr"></iframe>
 
-
+     <a id="edventana" target="_blank">Edit</a>
 
 
 
@@ -91,57 +99,57 @@
     </div>
 
     <script>
-        //size="25" style="color:#808080; 
-         //maxlength=" 255 " value="Write the song "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; 
-        esrch = document.getElementById('srch');
-        ebarra = document.getElementById('barra');
-        eedventana = document.getElementById('edventana');
+      //size="25" style="color:#808080; 
+      //maxlength=" 255 " value="Write the song "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; 
+      esrch = document.getElementById('srch');
+      ebarra = document.getElementById('barra');
+      eedventana = document.getElementById('edventana');
 
-        efr = document.getElementById("ifr")
+      efr = document.getElementById("ifr")
 
-        function opendoc(op) {
-            eedventana.href = op; //eedventana.click();
-            if (op.indexOf("https") >= 0) {
-                ifr.src = op;
-            } else {}
-            if (op === "open rep") { //alert(cont);
-                loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Repertorio.txt', function(cont) {
+      function opendoc(op) {
+        eedventana.href = op; //eedventana.click();
+        if (op.indexOf("https") >= 0) {
+          ifr.src = op;
+        } else {}
+        if (op === "open rep") { //alert(cont);
+          loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Repertorio.txt', function(cont) {
 
-                    var doc = ifr.contentWindow.document;
-                    doc.open();
-                    //doc.write(cont);
-                    doc.write('<html><head><title></title></head><body><p style="color:blue">"' + cont + '"</p></body></html>');
-                    doc.close();
+            var doc = ifr.contentWindow.document;
+            doc.open();
+            //doc.write(cont);
+            doc.write('<html><head><title></title></head><body><p style="color:blue">"' + cont + '"</p></body></html>');
+            doc.close();
 
-                    //ifr.innerHTML=cont;
-
-
+            //ifr.innerHTML=cont;
 
 
-                });
-            }
+
+
+          });
         }
 
         function getletra() {
-            showletra(ebarra.value)
+          showletra(ebarra.value)
         }
 
         function showletra(cancion) {
-            //  alert(cancion);
-            ebarra.value = cancion + " letra";
-            //alert(esrch.value)
-            esrch.click()
-            //eifr.innerHTML=rr;
+          //  alert(cancion);
+          ebarra.value = cancion + " letra";
+          //alert(esrch.value)
+          esrch.click()
+          //eifr.innerHTML=rr;
         }
 
         function loadText(file, callback) {
-            fetch(file)
-                .then(response => response.text())
-                .then((data) => { //  alert(data);
-                    callback(data); //
-                })
+          fetch(file)
+            .then(response => response.text())
+            .then((data) => { //  alert(data);
+              callback(data); //
+            })
         }
+
     </script>
-</body>
+  </body>
 
 </html>
