@@ -6,27 +6,22 @@
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
         font-size: 30px;
       }
-
       #todo {
         width: 100%;
         height: 100%;
         overflow: hidden;
       }
-
       #ifr {
         width: 100%;
         height: 75%;
         background: white;
         border-radius: 15px;
-
       }
-
       #ifrs {
         width: 100%; // height:40%;
         font-size: 25px;
         border-radius: 15px;
       }
-
       .btns {
         color: white;
         font-weight: bold;
@@ -37,7 +32,6 @@
         width: 30%;
         height: 8%;
       }
-
       #ed {
         background: rgba(0, 255, 0, .5);
         color: white;
@@ -45,7 +39,6 @@
         top: 90%;
         bottom: right:5%;
       }
-
       #edventana {
         font-size: 60px;
         background: rgba(0, 200, 0, .5);
@@ -59,12 +52,10 @@
         border-width: 15px;
         padding: 4px;
       }
-
       #divrep {
         font-size: 14px;
         //position:absolute;
         bottom: 2%;
-
         width: 100%;
         height: 85%;
       //  background: white;
@@ -72,9 +63,7 @@
         display: none;
         border-radius: 15px;
         padding: 5%;
-
       }
-
     </style>
     <div id="todo">
 
@@ -130,22 +119,18 @@
       eedventana = document.getElementById('edventana');
       edivrep = document.getElementById('divrep');
       efr = document.getElementById("ifr")
-
       loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Repertorio.txt', function(cont) {
      //   alert(cont);
         //   repmix=cont;
         //alert(cont);
         rremix = cont.split("\n")
-
         remix = [];
         for (i = 0; i < rremix.length; i++) {
           if (rremix[i].indexOf("-") >= 0) remix.push(rremix[i])
         }
         getclases(remix)
-
        // edivrep.innerHTML = cont
       });
-
       function opendoc(op) {
         doc.close();
         //alert(op);
@@ -156,19 +141,15 @@
           ifr.src = op;
         } else {
           if (op === "open rep") {
-
             edivrep.style.display = "block";
             ifr.style.display = "none";
            
-
           }
         }
       }
-
       function getletra() {
         showletra(ebarra.value)
       }
-
       function showletra(cancion) {
         //  alert(cancion);
         ebarra.value = cancion + " letra";
@@ -176,7 +157,6 @@
         esrch.click()
         //eifr.innerHTML=rr;
       }
-
       function loadText(file, callback) {
         fetch(file)
           .then(response => response.text())
@@ -184,7 +164,6 @@
             callback(data); //
           })
       }
-
       function createbtns(li) {
         //   alert(li)
         for (i = 0; i < li.length; i++) {
@@ -196,7 +175,6 @@
           edivrep.appendChild(bt);
         }
       }
-
       function getclases(repertorio) {
    //     alert(repertorio)
         var cl = [],
@@ -214,37 +192,28 @@
         cl = depurar(clt); //alert(cl)
         return cl;
       }
-
-
       function depurar(ob) { //alert("obbb       \n"+ob);
         //    alert(JSON.stringify(ob))
-
         ob = ob.replace(/(\r\n|\n|\r)/gm, "");
         //      alert(JSON.stringify(ob)) 
         var t = ob.split(' '),
           ac1 = [];
-
         //   alert("obarray   "+t)
         //     alert(JSON.stringify(t))
         //  ac1.push(t[0]);
         //    alert(t.length)
         for (i = 0; i < t.length; i++) { // - 1
           // alert(ac1.indexOf(t[i]))
-          if (ac1.indexOf(t[i]) < 0 && t[i] != "\n") {
-
+          if (ac1.indexOf(t[i]) < 0 && t[i] != "") {
             ac1.push(t[i]);
             //   alert(ac1+"\n"+t[i].length+"\n"+t[i][t[i].length-1])
           }
         }
         //     alert(ac1.length)
         //     alert(ac1)
-
         createbtns(ac1)
-
         return ac1;
       }
-
-
       function addcl(cl) {
         if (cl != undefined) {
           eli.innerHTML = '<font color="#00ff00" fontWeight="bold"><u>' + cl + '</u></font>' + "<br><br>";
@@ -269,12 +238,10 @@
                 eli.appendChild(node);
               }
             }
-
           }
           //return b;
         }
       }
-
     </script>
   </body>
 
