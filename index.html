@@ -1,14 +1,5 @@
 <html>
-<head>
 
-<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#4285f4">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#4285f4">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
-
-</head>
   <body>
     <style>
       body {
@@ -19,21 +10,21 @@
       #todo {
         width: 100%;
         height: 100%;
-overflow:hidden;
+        overflow: hidden;
       }
 
       #ifr {
         width: 100%;
         height: 75%;
         background: white;
- border-radius: 15px;
+        border-radius: 15px;
 
       }
 
       #ifrs {
         width: 100%; // height:40%;
         font-size: 25px;
- border-radius: 15px;
+        border-radius: 15px;
       }
 
       .btns {
@@ -68,25 +59,26 @@ overflow:hidden;
         border-width: 15px;
         padding: 4px;
       }
-#divrep{
-font-size:14px;
-//position:absolute;
-bottom:2%;
 
-      width:95%;
-      height:85%;
-     background:white;
-overflow-y:auto;
-     display:none;
+      #divrep {
+        font-size: 14px;
+        //position:absolute;
+        bottom: 2%;
+
+        width: 100%;
+        height: 85%;
+      //  background: white;
+        overflow-y: auto;
+        display: none;
         border-radius: 15px;
-     padding:5%;
+        padding: 5%;
 
-}
+      }
 
     </style>
     <div id="todo">
-      
-    <a id="edventana" target="_blank">Edit</a>
+
+      <a id="edventana" target="_blank">Edit</a>
 
 
       <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw")'>Por practicar</button>
@@ -120,76 +112,170 @@ overflow-y:auto;
       </div>
       <iframe id="ifr"></iframe>
 
-  <textarea  id="divrep" readonly></textarea>
+      <div id="divrep" readonly></div>
+      <div id="bclas"></div>
 
 
 
     </div>
 
     <script>
-
+      edc = document.getElementById("todo")
       doc = ifr.contentWindow.document;
-      repmix="";
+      repmix = "";
       //size="25" style="color:#808080; 
       //maxlength=" 255 " value="Write the song "" onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; 
       esrch = document.getElementById('srch');
       ebarra = document.getElementById('barra');
       eedventana = document.getElementById('edventana');
- edivrep = document.getElementById('divrep');
+      edivrep = document.getElementById('divrep');
       efr = document.getElementById("ifr")
 
-       loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Repertorio.txt', function(cont) {
+      loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Repertorio.txt', function(cont) {
+     //   alert(cont);
+        //   repmix=cont;
+        //alert(cont);
+        rremix = cont.split("\n")
 
-    repmix=cont;
-//alert(cont);
-cont=repmix.split("\n")
-//alert(cont)
-//f(cont.indexOf("/\/n")>0) alert("###)
-edivrep.innerHTML=repmix
-          });
+        remix = [];
+        for (i = 0; i < rremix.length; i++) {
+          if (rremix[i].indexOf("-") >= 0) remix.push(rremix[i])
+        }
+        getclases(remix)
 
-
+       // edivrep.innerHTML = cont
+      });
 
       function opendoc(op) {
-     doc.close();
-    //alert(op);
+        doc.close();
+        //alert(op);
         eedventana.href = op; //eedventana.click();
         if (op.indexOf("https") >= 0) {
-ifr.style.display="block";
-      edivrep.style.display="none";
+          ifr.style.display = "block";
+          edivrep.style.display = "none";
           ifr.src = op;
         } else {
-        if (op === "open rep") {
+          if (op === "open rep") {
 
-edivrep.style.display="block";
-ifr.style.display="none";
-            
-        }
-}
-}
+            edivrep.style.display = "block";
+            ifr.style.display = "none";
+           
 
-        function getletra() {
-          showletra(ebarra.value)
+          }
         }
+      }
 
-        function showletra(cancion) {
-          //  alert(cancion);
-          ebarra.value = cancion + " letra";
-          //alert(esrch.value)
-          esrch.click()
-          //eifr.innerHTML=rr;
-        }
+      function getletra() {
+        showletra(ebarra.value)
+      }
 
-        function loadText(file, callback) {
-          fetch(file)
-            .then(response => response.text())
-            .then((data) => { //  alert(data);
-              callback(data); //
-            })
+      function showletra(cancion) {
+        //  alert(cancion);
+        ebarra.value = cancion + " letra";
+        //alert(esrch.value)
+        esrch.click()
+        //eifr.innerHTML=rr;
+      }
+
+      function loadText(file, callback) {
+        fetch(file)
+          .then(response => response.text())
+          .then((data) => { //  alert(data);
+            callback(data); //
+          })
+      }
+
+      function createbtns(li) {
+        //   alert(li)
+        for (i = 0; i < li.length; i++) {
+          var bt = document.createElement('button');
+          bt.innerHTML = li[i];
+          //      alert(li[i])
+          bt.setAttribute('onclick', "addcl('" + li[i] + "')");
+          bt.setAttribute("class", "btns")
+          edivrep.appendChild(bt);
         }
+      }
+
+      function getclases(repertorio) {
+   //     alert(repertorio)
+        var cl = [],
+          rp = [],
+          clt = "";
+        //   alert(repertorio)
+        for (i = 0; i < repertorio.length; i++) {
+          if (repertorio[i] != "undefined" || repertorio[i] != "" || repertorio[i] != " ") {
+            rp = repertorio[i].split("-");
+            //alert(rp)
+            if (rp != "" || rp != null || rp != undefinef) clt += rp[2] + " "
+          }
+        }
+        //     alert(clt)
+        cl = depurar(clt); //alert(cl)
+        return cl;
+      }
+
+
+      function depurar(ob) { //alert("obbb       \n"+ob);
+        //    alert(JSON.stringify(ob))
+
+        ob = ob.replace(/(\r\n|\n|\r)/gm, "");
+        //      alert(JSON.stringify(ob)) 
+        var t = ob.split(' '),
+          ac1 = [];
+
+        //   alert("obarray   "+t)
+        //     alert(JSON.stringify(t))
+        //  ac1.push(t[0]);
+        //    alert(t.length)
+        for (i = 0; i < t.length; i++) { // - 1
+          // alert(ac1.indexOf(t[i]))
+          if (ac1.indexOf(t[i]) < 0 && t[i] != "\n") {
+
+            ac1.push(t[i]);
+            //   alert(ac1+"\n"+t[i].length+"\n"+t[i][t[i].length-1])
+          }
+        }
+        //     alert(ac1.length)
+        //     alert(ac1)
+
+        createbtns(ac1)
+
+        return ac1;
+      }
+
+
+      function addcl(cl) {
+        if (cl != undefined) {
+          eli.innerHTML = '<font color="#00ff00" fontWeight="bold"><u>' + cl + '</u></font>' + "<br><br>";
+          //   alert(cl);
+          var a, b = [],
+            c = [];
+          for (i = 0; i < repertorio.length; i++) {
+            a = repertorio[i].split("-");
+            c = a[2];
+            //       alert(a)
+            if (c != undefined) {
+              if (c.indexOf(cl) >= 0) { //alert("%%%%%%%%")
+                b.push(repertorio[i])
+                var node = document.createElement("LI");
+                // var textnode = document.createTextNode(a[0]+"    . . . . Tono "+a[1]);
+                var textnode = document.createElement('div')
+                textnode.innerHTML = a[0] + "    . . . . Tono " + a[1];
+                textnode.setAttribute('onclick', 'showletra("' + a[0] + '")');
+                var se = document.createElement("br");
+                eli.appendChild(se);
+                node.appendChild(textnode);
+                eli.appendChild(node);
+              }
+            }
+
+          }
+          //return b;
+        }
+      }
 
     </script>
   </body>
-
 
 </html>
