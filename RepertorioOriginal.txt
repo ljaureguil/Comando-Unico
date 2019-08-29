@@ -54,65 +54,65 @@ Buscando al cholo-?-a
 *Canciones
 
 
-flor hermosa-fa-c j
-sonora y sus ojos negros-sol-c j
-dos mares de lagrimas-do-c j h
-tragos de amargo licor-sib-c j d
-alma enamorada-sib-c j
-entre copa y copa-do-c j
- el columpio-do-c j h
+flor hermosa-fa-c j i
+sonora y sus ojos negros-sol-c j i
+dos mares de lagrimas-do-c j h i
+tragos de amargo licor-sib-c j d 
+alma enamorada-sib-c j i
+entre copa y copa-do-c j i
+ el columpio-do-c j h i
 dos botellas de mescal-sol-c j h
 porque se habra ido-fa-c j h
 Arriba de 120-re-c
-Las iluciones-mi#-c
-El ausente-sol-c j
+Las iluciones-mi#-c i
+El ausente-sol-c j i
 30 cartas-mi-c j
-porque te vas de mi-fa-c j
-me dan celos-fa-c j
+porque te vas de mi-fa-c j i
+me dan celos-fa-c j 
 Tatuajes-do--c
-dolor y amor-do--c j d  h
+dolor y amor-do--c j d  h i
 
 
 *Corridos Clasicos
 
 Juan marta-sol-b d
- 24 de junio-sib-b j d
+ 24 de junio-sib-b j d i
 cuerno de chivo-mib-b j
  se les pelo baltazar-sol#-b j d
  Los traficantes-re-b
 dimas de leon-fa-b j d 
-los dos amigos-fa-b j d
-laurita garza-sol-b j d
-caballo de la acordada-do-b j d
+los dos amigos-fa-b j d i
+laurita garza-sol-b j d i
+caballo de la acordada-do-b j d i
 los contrabandistas-fa-b 
 El albañil-re-b j 
 La carcel de cananea-sol-b j d
 
 
-la delgadina-re-b d
+la delgadina-re-b d i
 
 
 *Rancheritas
 
-un rinconcito en el cielo-fa-d
-prenda querida-mi-d
-flor de capono-mi-d
-cuanto me gusta ese rancho-do-d
-celos del viento-re-d
-me voy a cortar las venas-sol#-d
- a qui en mi corazon tu mandas-do-d
-el palomito-fa-d
-piquito de oro-sol#-d
-amores fingidos-fa-d
+un rinconcito en el cielo-fa-d i e
+prenda querida-mi-d i
+flor de capono-mi-d i
+cuanto me gusta ese rancho-do-d e
+celos del viento-re-d 
+me voy a cortar las venas-sol#-d i e
+ a qui en mi corazon tu mandas-do-d e
+el palomito-fa-d i e
+piquito de oro-sol#-d i e
+amores fingidos-fa-d i e
 Que tal si te vas conmigo-do-d
 Quiero que sepas-sol#-d
-Mi casa nueva-fa-d
-Linda morena-mi-d
-Noches tenebrosas-sol-d
-Golpe traidor-mi-d
-la canelera-fa-d
-de esta sierra a la otra sierra-fa-d
-mi caballo ensillado-fa-d
+Mi casa nueva-fa-d i 
+Linda morena-mi-d i
+Noches tenebrosas-sol-d i
+Golpe traidor-mi-d h
+la canelera-fa-d e j
+de esta sierra a la otra sierra-fa-d j e 
+mi caballo ensillado-fa-d e j
 
 
 
@@ -122,14 +122,14 @@ mi caballo ensillado-fa-d
 la yaquesita-fa-g
  el tao tao-fa-g
 el mono colorado-fa-g
-la gilbertona-sol-g
+el gilberton-sol-g
 agua de te-fa-g
 La loba del mar-fa-g
 pavido navido-fa-g
 
 el sinaloense-fa-k
- el pistolero-mi-k u
- clavelito chino chino-fa-b d
+ el pistolero-mi-k l
+ clavelito chino chino-fa-b d i
  La chona-fa-g e j
 El pito de mi carrito-mimol-g j
 La pelota de lolita-fa-g j
@@ -142,9 +142,9 @@ PRACTICAR la vecina me puso el dedo-fa-g j e
 
 *huapangos
 
-El caballo de la sierra-sol-u
-el tejanito-mi-u
- el fronterizo-mi-u
- mi primer servo-mi-u
-pistoleros-mi-u
+El caballo de la sierra-sol-l
+el tejanito-mi-l
+ el fronterizo-mi-l
+ mi primer servo-mi-l
+pistoleros-mi-l
 
