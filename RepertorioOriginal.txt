@@ -1,17 +1,19 @@
 Clases:
 
 a-corridos
-b-corridos clasicos
+b-corr. clasicos
 c-canciones
 d-rancheritas
 e-bailables
 g-cumbias
 h-pisteadoras
-f-romanticas
+f-sierreño
 i-clasicas
 j-cajon
 k-zapateados
 l-huapangos
+
+
 /clases
 
 *Corridos
@@ -147,4 +149,7 @@ el tejanito-mi-l
  el fronterizo-mi-l
  mi primer servo-mi-l
 pistoleros-mi-l
+
+*sierreño
+elenita-?-f d
 
