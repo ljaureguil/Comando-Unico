@@ -119,13 +119,13 @@ mi caballo ensillado-fa-d
 
 *Cumbias
 
-la yaquesita-fa
- el tao tao-fa
-el mono colorado-fa
-la gilbertona-sol
-agua de te-fa
-La loba del mar-fa
-pavido navido-fa
+la yaquesita-fa-g
+ el tao tao-fa-g
+el mono colorado-fa-g
+la gilbertona-sol-g
+agua de te-fa-g
+La loba del mar-fa-g
+pavido navido-fa-g
 
 el sinaloense-fa
  el pistolero-mi
@@ -142,9 +142,9 @@ PRACTICAR la vecina me puso el dedo-fa
 
 *huapangos
 
-El caballo de la sierra-sol
-el tejanito-mi
- el fronterizo-mi
- mi primer servo-mi
-pistoleros-mi
+El caballo de la sierra-sol-u
+el tejanito-mi-u
+ el fronterizo-mi-u
+ mi primer servo-mi-u
+pistoleros-mi-u
 
