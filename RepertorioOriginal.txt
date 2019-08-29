@@ -121,7 +121,7 @@ mi caballo ensillado-fa-d e j
 
 *Cumbias
 
-la yaquesita-fa-g
+
  el tao tao-fa-g
 el mono colorado-fa-g
 el gilberton-sol-g
@@ -134,9 +134,10 @@ El pito de mi carrito-mimol-g j
 La pelota de lolita-fa-g j
 Camaron pelao-do-g j
 Cumbia sampusana-la-g j e
- 
-*Zapateados
+ la vecina me puso el dedo-fa-g j e
 
+*Zapateados
+la yaquesita-fa-k g
 el sinaloense-fa-k
  el pistolero-mi-k l
 
@@ -144,7 +145,6 @@ el sinaloense-fa-k
 
 
 
-PRACTICAR la vecina me puso el dedo-fa-g j e
 
 *huapangos
 
