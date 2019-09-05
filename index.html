@@ -124,8 +124,9 @@
             height: 48px;
             font-size: 30px;
             border-radius: 8px;
-             box-shadow: inset 0 0 20px #ffffff;
-		opacity:.65;
+             box-shadow: inset 0 0 15px #ffffff;
+		opacity:.75;
+visibility:visible;
         }
     </style>
     <div id="todo">
@@ -324,7 +325,6 @@
 
                 }
                 if (op === "rep") {
-                    
                     sortear("");
 
                 }
@@ -518,17 +518,11 @@
         }
 
         function update(v) {
-     
+            //   alert(v+"ffffff");
         }
 
         function sortear(filter) {
-             //  ifr.style.display = "none";
-                                 edivrep.style.display = "block";
-                    ifr.style.display = "none";
-                    eli.style.display = "block";
-             
             if (filter === "") {
-              
                 addca("");
                 ectrls.style.display = "";
                 edivrep.style.display = "";
