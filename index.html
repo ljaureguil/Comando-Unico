@@ -324,6 +324,7 @@
 
                 }
                 if (op === "rep") {
+                    
                     sortear("");
 
                 }
@@ -517,11 +518,17 @@
         }
 
         function update(v) {
-            //   alert(v+"ffffff");
+     
         }
 
         function sortear(filter) {
+             //  ifr.style.display = "none";
+                                 edivrep.style.display = "block";
+                    ifr.style.display = "none";
+                    eli.style.display = "block";
+             
             if (filter === "") {
+              
                 addca("");
                 ectrls.style.display = "";
                 edivrep.style.display = "";
