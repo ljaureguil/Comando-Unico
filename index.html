@@ -199,9 +199,7 @@ visibility:visible;
         efr = document.getElementById("ifr")
          arindex = [];
         arsongs = [];
-
          //////////////////////////////////////
-
         loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
             etitulo.innerHTML = ". . . Repertorio:"
             var cc = cont.split("/clases")
@@ -219,64 +217,47 @@ visibility:visible;
             for (i = 0; i < cmi.length; i++) {
                 if (cmi[i].indexOf("-") > 0) {
                     arcmi.push(cmi[i].replace(/(\r\n|\n|\r)/gm, ""))
-
                     var f = cmi[i].split("-");
                     cclas.push(f[1]); //clase
                     cid.push(f[0]); //letra
                 }
-
             }
-
             for (i = 0; i < orremix.length; i++) {
                 //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
                 if (orremix[i].indexOf("-") > 0 || orremix[i].indexOf("*") >= 0) {
                     if (orremix[i].indexOf("*") >= 0) {
                         arindex.push([rca.length, orremix[i]])
-
                         eli.appendChild(crnode(orremix[i]));
-
                     } else {
                         var f = orremix[i].split("-");
-
-
                         var ca = f[2].split(" "),
                             tt = "";
                         var ff = [];
                         for (ii = 0; ii < ca.length; ii++) {
                             var ind = cid.indexOf(ca[ii]);
-
                             if (ind >= 0) {
                                 //alert(cclas[ind])
                                 ff.push(cclas[ind]);
-
                             }
                         }
-
                         /* hacer la rutina para cambiar letras por normbres de clases
                          
                         */
-
                         rca.push(f[0]);
                         rto.push(f[1]);
                         rcl.push(ff);
-
-
                         eli.appendChild(crnode(f[0], f[1], ff));
                     }
                 }
             }
             //   alert(arindex);
             createbtns(cclas)
-
             //   preparesongs()     
-
         });
-
         function setclasesmix(repertorio) {
             var cl = [],
                 rp = [],
                 clt = "";
-
             for (i = 0; i < repertorio.length; i++) {
                 if (repertorio[i] != "undefined" || repertorio[i] != "" || repertorio[i] != " ") {
                     rp = repertorio[i].split("-");
@@ -287,10 +268,7 @@ visibility:visible;
             //  alert(clt);
             return cl;
         }
-
-
          ///////////////////////////////////////   
-
         function opendoc(op) {
             doc.close();
             //alert(op);
@@ -311,8 +289,10 @@ visibility:visible;
                     else{
                         alert("Wrong Pasword");
                   //   edivrep.style.display = "block";
+                    edivrep.style.display = "block";
                     ifr.style.display = "none";
                     eli.style.display = "block";
+                    
                     }
             } else {
                 if (op === "open rep") {
@@ -321,38 +301,29 @@ visibility:visible;
                     edivrep.style.display = "block";
                     ifr.style.display = "none";
                     eli.style.display = "block";
-
-
                 }
                 if (op === "rep") {
+                    
+                                   edivrep.style.display = "block";
+                    ifr.style.display = "none";
+                    eli.style.display = "block";
                     sortear("");
-
                 }
-
-
-
-
             }
         }
-
         function getletra() {
             showletra(ebarra.value)
         }
-
         function showletra(cancion) {
-
             ebarra.value = cancion + " letra";
             //   window.open(ebarra.value, '_blank');
             esrch.click()
-
         }
-
         function loadText(file, callback) {
             fetch(file).then(response => response.text()).then((data) => {
                 callback(data); //
             })
         }
-
         function createbtns(li) {
             for (i = 0; i < li.length; i++) {
                 var bt = document.createElement('button');
@@ -362,14 +333,11 @@ visibility:visible;
                 edivrep.appendChild(bt);
             }
         }
-
-
          //      function showletra(cancion) {
          //         ebarra.value = cancion + " letra";
          //        esrch.click()
          //    }
         /*
-
        function addca(cl) {
             if (cl != undefined) {
          //       eli.innerHTML = '<font color="#50ff50" fontWeight="bold" fontSize="25"><u>' + cl + '</u></font>' + "<br><br>";
@@ -385,7 +353,6 @@ visibility:visible;
             }
             edc.scrollTop = 400
       }
-
         function addca(cl) {
             alert(cl);
             if (cl != undefined) {
@@ -394,14 +361,11 @@ visibility:visible;
                     c = [];
                 var tcid = cid[cclas.indexOf(cl)];
                 var ch = eli.children;
-
                 for (i = 0; i < ch.length; i++) {
                     if (ch[i].clase === cl) {
                         alert(ch[1].clase);
                         //    eli.appendChild(rsongs[i]);
                         ch[i].style.display = "";
-
-
                     } else {
                         //  if(ch[i].title!=undefined)  ch[i].style.display="none";
                     }
@@ -409,7 +373,6 @@ visibility:visible;
              }
             edc.scrollTop = 400
         }
-
 */
         function addca(cl) {
             //     alert(cl); 
@@ -419,16 +382,9 @@ visibility:visible;
                 for (i = 0; i < ch.length; i++) {
                     ch[i].style.display = "";
                 }
-
             } else {
-
-
-
                 if (cl != undefined) {
-
-
                     //              eli.innerHTML = '<font color="#50ff50" fontWeight="bold" fontSize="25"><u>' + cl + '</u></font>' + "<br><br>";
-
                     for (i = 0; i < ch.length; i++) {
                         //  alert(ch[i].clase);
                         //  alert(ch[0].innerHTML);
@@ -437,8 +393,6 @@ visibility:visible;
                                 //  alert(ch[1].clase);
                                 //    eli.appendChild(rsongs[i]);
                                 ch[i].style.display = "";
-
-
                             } else {
                                 if (ch[i].title != undefined) ch[i].style.display = "none";
                             }
@@ -451,18 +405,13 @@ visibility:visible;
             edc.scrollTop = 200;
             etitulo.innerHTML = ". . . " + cl + " . . .";
         }
-
         function preparesongs() {
             var ix = arindex[0][0] * 1,
                 ixx = 0;
             // alert(arindex.length);
-
             for (i = 0; i < rca.length; i++) {
-
-
                 var node = document.createElement("LI");
                 var textnode = document.createElement('p');
-
                 textnode.innerHTML = rca[i] + "    . . . . Tono " + rto[i];
                 textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + rca[i] + '")');
                 node.appendChild(textnode);
@@ -480,20 +429,14 @@ visibility:visible;
                     ixx++;
                     if (arindex.length > ixx) ix = arindex[ixx][0];
                     eli.appendChild(t);
-
                 }
-
                 eli.appendChild(node);
-
                 //   rsongs.push(node);
-
             }
             //          alert(rsongs[10].estado);
             //   
         }
-
         function crnode(song, to, cl) {
-
             if (song.indexOf("*") === 0) {
                 var t = document.createElement("p");
                 t.setAttribute("class", "cind");
@@ -513,20 +456,16 @@ visibility:visible;
                 node.tono = to;
                 return node;
             }
-
-
         }
-
         function update(v) {
             //   alert(v+"ffffff");
         }
-
         function sortear(filter) {
             if (filter === "") {
                 addca("");
+                
                 ectrls.style.display = "";
                 edivrep.style.display = "";
-
             } else {
                 settot(false)
                 ectrls.style.display = "none";
@@ -536,7 +475,6 @@ visibility:visible;
                 ul = eli;
                 li = ul.getElementsByTagName("li");
                 for (i = 0; i < li.length; i++) {
-
                     txtValue = li[i].textContent || li[i].innerText;
                     var aa = txtValue.split(" . .");
                     txtValue = aa[0];
@@ -550,7 +488,6 @@ visibility:visible;
                 }
             }
         }
-
         function settot(op) {
             //getElementsByClassName()
             var a = document.getElementsByClassName("cind");
@@ -561,7 +498,6 @@ visibility:visible;
                         a[i].style.display = "";
                         a[0].visible = true
                     }
-
                 } else return;
             } else {
                 if (a[0].style.display === "") {
@@ -570,38 +506,10 @@ visibility:visible;
                         a[i].style.display = "none"
                         a[0].visible = false
                     }
-
-
-                }
-            }
-
-        }
-
-        /*
-       function sortear(filter) {
-  //           edc.scrollTop = 400;
-           ectrls.style.display="none";
-            edivrep.style.display="none";
-            var ul, li, a, i, txtValue;
-            filter = filter.toUpperCase(); //input.value.toUpperCase();
-            ul = eli;
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-
-                txtValue = li[i].textContent || li[i].innerText;
-                var aa = txtValue.split(" . .");
-                txtValue = aa[0];
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                    if (txtValue != ""); //ebarra.value=txtValue;
-                    else; //ebarra.value="";
-                } else {
-                    li[i].style.display = "none";
                 }
             }
         }
 
-*/
     </script>
 </body>
 
