@@ -55,7 +55,7 @@ Falsos Amigos-sol-a
 
 *Canciones
 
-
+Medias negras-mi-c
 flor hermosa-fa-c j i
 sonora y sus ojos negros-sol-c j i
 dos mares de lagrimas-do-c j h i
@@ -96,6 +96,9 @@ la delgadina-re-b d i
 
 *Rancheritas
 
+Caballo R15-fa-d
+Se va muriendo mi alma-mi-d
+San Juan de Ulua-do-d
 un rinconcito en el cielo-fa-d i e
 prenda querida-mi-d i
 flor de capono-mi-d i
@@ -121,8 +124,8 @@ El diagusto-mi memol-d h
 
 *Cumbias
 
-
- el tao tao-fa-g
+El hombre apasionado de Javier Rosas-fa-g
+el tao tao-fa-g
 el mono colorado-fa-g
 el gilberton-sol-g
 agua de te-fa-g
@@ -143,6 +146,7 @@ Cuate colas-fa-g
 la yaquesita-fa-k g
 el sinaloense-fa-k
  el pistolero-mi-k l
+
 
 
 *huapangos
