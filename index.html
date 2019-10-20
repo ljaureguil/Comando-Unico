@@ -118,8 +118,8 @@
             right: 1%;
             background: url(logo.jpg);
             background-size: 100% 100%;
-            color: white;
-            font-size: 20px;
+            color: #0000ff;
+            font-weight:bold;
             width: 48px;
             height: 48px;
             font-size: 30px;
@@ -130,7 +130,7 @@ visibility:visible;
         }
     </style>
     <div id="todo">
-        <button id="logo" onclick="sortear('')"></button>
+        <button id="logo" onclick="sortear('')">&#9834;</button>
 
         <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
 
@@ -202,6 +202,7 @@ visibility:visible;
          //////////////////////////////////////
         loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
             etitulo.innerHTML = ". . . Repertorio:"
+            
             var cc = cont.split("/clases")
             cmi = cc[0].split("\n"),
                 arcmi = [],
@@ -214,6 +215,7 @@ visibility:visible;
             orremix = cc[1].split("\n")
             // oremix = [];
             //class
+            
             for (i = 0; i < cmi.length; i++) {
                 if (cmi[i].indexOf("-") > 0) {
                     arcmi.push(cmi[i].replace(/(\r\n|\n|\r)/gm, ""))
@@ -222,6 +224,19 @@ visibility:visible;
                     cid.push(f[0]); //letra
                 }
             }
+           ////////////////////////////////////////////
+            var total=[]
+            for(i = 0; i < orremix.length; i++) {
+                if(orremix[i].indexOf("-") > 0){
+                    total.push(orremix[i]);
+                    if(i==orremix.length-1) alert(total.length);
+            }
+          
+        //  
+            }
+            ////kj
+         etitulo.innerHTML= ". . . Repertorio . . . Total Songs: "+total.length
+            ////////////////////////////////////////////////
             for (i = 0; i < orremix.length; i++) {
                 //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
                 if (orremix[i].indexOf("-") > 0 || orremix[i].indexOf("*") >= 0) {
@@ -318,6 +333,8 @@ visibility:visible;
             ebarra.value = cancion + " letra";
             //   window.open(ebarra.value, '_blank');
             esrch.click()
+           ebarra.value ="";
+  
         }
         function loadText(file, callback) {
             fetch(file).then(response => response.text()).then((data) => {
@@ -378,7 +395,7 @@ visibility:visible;
             //     alert(cl); 
             var ch = eli.children;
             if (cl === "") {
-                cl = ". . . Repertorio . . . "
+                cl = ". . . Repertorio . . . Total Songs: "+total.length;
                 for (i = 0; i < ch.length; i++) {
                     ch[i].style.display = "";
                 }
@@ -409,6 +426,7 @@ visibility:visible;
             var ix = arindex[0][0] * 1,
                 ixx = 0;
             // alert(arindex.length);
+           
             for (i = 0; i < rca.length; i++) {
                 var node = document.createElement("LI");
                 var textnode = document.createElement('p');
