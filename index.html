@@ -118,14 +118,15 @@
             right: 1%;
             background: url(logo.jpg);
             background-size: 100% 100%;
-            color: #0000ff;
+            color: #ffffff;
             font-weight:bold;
             width: 48px;
             height: 48px;
             font-size: 30px;
             border-radius: 8px;
-             box-shadow: inset 0 0 20px #ffffff;
-		opacity:.65;
+       //      box-shadow: inset 0 0 20px #ffffff;
+             background-color:black;
+	//	opacity:.65;
 visibility:visible;
         }
     </style>
@@ -185,6 +186,7 @@ visibility:visible;
     </div>
 
     <script>
+    var total=[]
         var btit = true;
         edc = document.getElementById("todo")
          doc = ifr.contentWindow.document;
@@ -225,17 +227,17 @@ visibility:visible;
                 }
             }
            ////////////////////////////////////////////
-            var total=[]
+            
             for(i = 0; i < orremix.length; i++) {
                 if(orremix[i].indexOf("-") > 0){
                     total.push(orremix[i]);
-                    if(i==orremix.length-1) alert(total.length);
+                 //   if(i==orremix.length-1); // alert(total.length);
             }
           
         //  
             }
             ////kj
-         etitulo.innerHTML= ". . . Repertorio . . . Total Songs: "+total.length
+         etitulo.innerHTML= ". . . Repertorio: "+total.length+" Songs";
             ////////////////////////////////////////////////
             for (i = 0; i < orremix.length; i++) {
                 //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
@@ -395,7 +397,7 @@ visibility:visible;
             //     alert(cl); 
             var ch = eli.children;
             if (cl === "") {
-                cl = ". . . Repertorio . . . Total Songs: "+total.length;
+                cl = ". . . Repertorio: "+total.length+" Songs";
                 for (i = 0; i < ch.length; i++) {
                     ch[i].style.display = "";
                 }
