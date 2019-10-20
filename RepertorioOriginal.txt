@@ -55,6 +55,7 @@ Falsos Amigos-sol-a
 
 *Canciones
 
+Mi padre mi amigo-do-c
 Medias negras-mi-c
 flor hermosa-fa-c j i
 sonora y sus ojos negros-sol-c j i
@@ -97,6 +98,8 @@ la delgadina-re-b d i
 
 *Rancheritas
 
+
+Cruz de madera-fa-d
 Dos pasages-mim-d
 Y por esa calle vive-re-d
 Caballo R15-fa-d
