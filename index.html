@@ -153,7 +153,7 @@
         <a id="edventana" target="_blank">Edit</a>
 
         <div id="ctrls">
-            <button class=btns onclick='opendoc( "repPrac")'>Practicar</button>
+          <button class=btns  onclick='opendoc( "repPrac")'><font color=0xff0000>Practicar</font></button>
             <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
             <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
             <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
@@ -205,7 +205,6 @@
          //////////////////////////////////////
         loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
             etitulo.innerHTML = ". . . Repertorio:"
-
             var cc = cont.split("/clases")
             cmi = cc[0].split("\n"),
                 arcmi = [],
@@ -218,7 +217,6 @@
             orremix = cc[1].split("\n")
             // oremix = [];
             //class
-
             for (i = 0; i < cmi.length; i++) {
                 if (cmi[i].indexOf("-") > 0) {
                     arcmi.push(cmi[i].replace(/(\r\n|\n|\r)/gm, ""))
@@ -228,13 +226,11 @@
                 }
             }
             ////////////////////////////////////////////
-
             for (i = 0; i < orremix.length; i++) {
                 if (orremix[i].indexOf("-") > 0) {
                     total.push(orremix[i]);
                     //   if(i==orremix.length-1); // alert(total.length);
                 }
-
                 //  
             }
             ////kj
@@ -272,7 +268,6 @@
             createbtns(cclas)
             //   preparesongs()     
         });
-
         function setclasesmix(repertorio) {
             var cl = [],
                 rp = [],
@@ -310,7 +305,6 @@
                     edivrep.style.display = "block";
                     ifr.style.display = "none";
                     eli.style.display = "block";
-
                 }
             } else {
                 // 
@@ -323,11 +317,9 @@
                     eli.style.display = "block";
                     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepPractica.txt", function(r) {
                         alert(r)
-
                     });
                 }
-
-
+              else{
                 if (op === "open rep") {
                     //ebarra.value="";
                     //  sortear("")
@@ -336,33 +328,28 @@
                     eli.style.display = "block";
                 }
                 if (op === "rep") {
-
                     edivrep.style.display = "block";
                     ifr.style.display = "none";
                     eli.style.display = "block";
                     sortear("");
                 }
+              }
             }
         }
-
         function getletra() {
             showletra(ebarra.value)
         }
-
         function showletra(cancion) {
             ebarra.value = cancion + " letra";
             //   window.open(ebarra.value, '_blank');
             esrch.click()
             ebarra.value = "";
-
         }
-
         function loadText(file, callback) {
             fetch(file).then(response => response.text()).then((data) => {
                 callback(data); //
             })
         }
-
         function createbtns(li) {
             for (i = 0; i < li.length; i++) {
                 var bt = document.createElement('button');
@@ -372,7 +359,6 @@
                 edivrep.appendChild(bt);
             }
         }
-
         function addca(cl) {
             //     alert(cl); 
             var ch = eli.children;
@@ -404,12 +390,10 @@
             edc.scrollTop = 200;
             etitulo.innerHTML = ". . . " + cl + " . . .";
         }
-
         function preparesongs() {
             var ix = arindex[0][0] * 1,
                 ixx = 0;
             // alert(arindex.length);
-
             for (i = 0; i < rca.length; i++) {
                 var node = document.createElement("LI");
                 var textnode = document.createElement('p');
@@ -437,7 +421,6 @@
             //          alert(rsongs[10].estado);
             //   
         }
-
         function crnode(song, to, cl) {
             if (song.indexOf("*") === 0) {
                 var t = document.createElement("p");
@@ -459,15 +442,12 @@
                 return node;
             }
         }
-
         function update(v) {
             //   alert(v+"ffffff");
         }
-
         function sortear(filter) {
             if (filter === "") {
                 addca("");
-
                 ectrls.style.display = "";
                 edivrep.style.display = "";
             } else {
@@ -492,7 +472,6 @@
                 }
             }
         }
-
         function settot(op) {
             //getElementsByClassName()
             var a = document.getElementsByClassName("cind");
