@@ -1,505 +1,525 @@
 <html>
 
-<head>
+  <head>
     <meta name="viewport" content="width=device-width" name="theme-color" content="#4285f4">
-    <link rel="shortcut icon" href="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/66105070_2606484239385650_1488724510487085056_n.jpg?_nc_cat=106&_nc_oc=AQnx7XRzS47pDYNv0h-dDfqV4kE07czctw5Vm7DOCPn0EMJa2QGEbh-PAJWE2tmrGyo&_nc_ht=scontent-atl3-1.xx&oh=6f6b09b8d92c3007c254fd5ba07f45d7&oe=5DA91A9C"
-    type="image/x-icon" />
+    <link rel="shortcut icon" href="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/66105070_2606484239385650_1488724510487085056_n.jpg?_nc_cat=106&_nc_oc=AQnx7XRzS47pDYNv0h-dDfqV4kE07czctw5Vm7DOCPn0EMJa2QGEbh-PAJWE2tmrGyo&_nc_ht=scontent-atl3-1.xx&oh=6f6b09b8d92c3007c254fd5ba07f45d7&oe=5DA91A9C" type="image/x-icon" />
 
-</head>
+  </head>
 
-<body>
+  <body>
     <style>
-        body {
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-            font-size: 30px;
-        }
-        #todo {
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-            overflow-x: hidden;
-            transition: overflow-y 0.5s ease;
-        }
-        #ifr {
-            width: 100%;
-            height: 75%;
-            background: white;
-            border-radius: 15px;
-            display: none;
-        }
-        #ifrs {
-            width: 100%;
-            // height: 40%;
-            font-size: 25px;
-            border-radius: 15px;
-        }
-        .btns {
-            color: white;
-            font-weight: bold;
-            margin: 5px;
-            border-radius: 5px;
-            background: #000070;
-            font-size: 15px;
-            // font-weight: bold;
-            width: 27%;
-            height: 8%;
-        }
-        #ed {
-            background: rgba(0, 255, 0, .5);
-            color: white;
-            position: absolute;
-            top: 90%;
-            bottom: right: 5%;
-        }
-        #edventana {
-            font-size: 20px;
-            background: rgba(0, 200, 0, .5);
-            color: red;
-            position: absolute;
-            right: 5%;
-            bottom: 5%;
-            border-radius: 500px;
-            border-style: double;
-            border-color: blue;
-            border-width: 15px;
-            padding: 4px;
-        }
-        #divrep {
-            font-size: 18px;
-            //position: absolute;
-            bottom: 2%;
-            width: 100%;
-            // height: 85%;
-            // background: white;
-            overflow-y: auto;
-            overflow-x: hidden;
-            display: none;
-            border-radius: 15px;
-            padding: 5%;
-        }
-        #lirep {
-            background: black;
-            color: white;
-            width: 83%;
-            // height: 40%;
-            font-size: 15px;
-            font-weight: bold;
-            border-radius: 15px;
-            padding: 5%;
-            border-color: white;
-            border-style: double;
-            border-width: 10px;
-        }
-        .songs {
-            color: #50ff50;
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .songsdone {
-            color: #50ff50;
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .cind {
-            // color: #0ff000;
-            background: green;
-            font-size: 30px;
-            font-weight: bold;
-        }
-        #titulo {
-            color: #0ff000;
-            background: blue;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        #logo {
-            position: absolute;
-            top: 1%;
-            right: 1%;
-            background: url(logo.jpg);
-            background-size: 100% 100%;
-            color: #ffffff;
-            font-weight: bold;
-            width: 48px;
-            height: 48px;
-            font-size: 30px;
-            border-radius: 8px;
-            // box-shadow: inset 0 0 20px #ffffff;
-            background-color: black;
-            // opacity: .65;
-            visibility: visible;
-        }
-      #ppr{
-        background:#0f0;
-        color:#00f;
-        
-        
+      body {
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        font-size: 30px;
       }
+
+      #todo {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: overflow-y 0.5s ease;
+      }
+
+      #ifr {
+        width: 100%;
+        height: 75%;
+        background: white;
+        border-radius: 15px;
+        display: none;
+      }
+
+      #ifrs {
+        width: 100%;
+        // height: 40%;
+        font-size: 25px;
+        border-radius: 15px;
+      }
+
+      .btns {
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 5px;
+        background: #000070;
+        font-size: 15px;
+        // font-weight: bold;
+        width: 27%;
+        height: 8%;
+      }
+
+      #ed {
+        background: rgba(0, 255, 0, .5);
+        color: white;
+        position: absolute;
+        top: 90%;
+        bottom: right: 5%;
+      }
+
+      #edventana {
+        font-size: 20px;
+        background: rgba(0, 200, 0, .5);
+        color: red;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        border-radius: 500px;
+        border-style: double;
+        border-color: blue;
+        border-width: 15px;
+        padding: 4px;
+      }
+
+      #divrep {
+        font-size: 18px;
+        //position: absolute;
+        bottom: 2%;
+        width: 100%;
+        // height: 85%;
+        // background: white;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: none;
+        border-radius: 15px;
+        padding: 5%;
+      }
+
+      #lirep {
+        background: black;
+        color: white;
+        width: 83%;
+        // height: 40%;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 15px;
+        padding: 5%;
+        border-color: white;
+        border-style: double;
+        border-width: 10px;
+      }
+
+      .songs {
+        color: #50ff50;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .songsdone {
+        color: #50ff50;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .cind {
+        // color: #0ff000;
+        background: green;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      #titulo {
+        color: #0ff000;
+        background: blue;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      #logo {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        background: url(logo.jpg);
+        background-size: 100% 100%;
+        color: #ffffff;
+        font-weight: bold;
+        width: 48px;
+        height: 48px;
+        font-size: 30px;
+        border-radius: 8px;
+        // box-shadow: inset 0 0 20px #ffffff;
+        background-color: black;
+        // opacity: .65;
+        visibility: visible;
+      }
+
+      #ppr {
+        background: #0f0;
+        color: #00f;
+
+
+      }
+
     </style>
     <div id="todo">
-        <button id="logo" onclick="sortear('')">&#9834;</button>
+      <button id="logo" onclick="sortear('')">&#9834;</button>
 
-        <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
+      <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
 
-            <div>
-                <table border="0" align="center" cellpadding="0">
-                    <tr>
-                        <td>
-                            <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
-                            <input id="srch" type="submit" '_blank' style="display:none" />
-                            <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
+        <div>
+          <table border="0" align="center" cellpadding="0">
+            <tr>
+              <td>
+                <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
+                <input id="srch" type="submit" '_blank' style="display:none" />
+                <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
 
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-        </form>
-
-        <a id="edventana" target="_blank">Edit</a>
-
-        <div id="ctrls">
-          <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. Practica .</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
-            <button class=btns onclick='opendoc( "rep")'>Repertorio</button>
-            <button class=btns onclick='opendoc( "open rep")'>R Temp</button>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div id=ifrs>
+
+      </form>
+
+      <a id="edventana" target="_blank">Edit</a>
+
+      <div id="ctrls">
+        <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. Practica .</button>
+        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
+        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
+        <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
+        <button class=btns onclick='opendoc( "rep")'>Repertorio</button>
+        <button class=btns onclick='opendoc( "open rep")'>R Temp</button>
+      </div>
+      <div id=ifrs>
 
 
 
-            <div id="dsr">
+        <div id="dsr">
 
-                <form action="http://google.com/search" target="_blank" style="display:none">
-                    <input name="q" oninput="sortear(this.value)">
-                    <input type="submit">
-                </form>
+          <form action="http://google.com/search" target="_blank" style="display:none">
+            <input name="q" oninput="sortear(this.value)">
+            <input type="submit">
+          </form>
 
 
-
-            </div>
-        </div>
-        <iframe id="ifr"></iframe>
-
-        <div id="divrep"></div>
-        <div id="bclas"></div>
-        <p id="titulo"></p>
-        <div id="lirep">
 
         </div>
+      </div>
+      <iframe id="ifr"></iframe>
+
+      <div id="divrep"></div>
+      <div id="bclas"></div>
+      <p id="titulo"></p>
+      <div id="lirep">
+
+      </div>
     </div>
 
     <script>
-        //https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw
-        var total = []
-        var btit = true;
-        edc = document.getElementById("todo")
-         doc = ifr.contentWindow.document;
-        etitulo = document.getElementById("titulo");
-        ectrls = document.getElementById("ctrls");
-        eli = document.getElementById("lirep")
-         repmix = "";
-        esrch = document.getElementById('srch');
-        ebarra = document.getElementById('barra');
-        eedventana = document.getElementById('edventana');
-        edivrep = document.getElementById('divrep');
-        efr = document.getElementById("ifr")
-         arindex = [];
-        arsongs = [];
-         //////////////////////////////////////
-        loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
-            etitulo.innerHTML = ". . . Repertorio:"
-            var cc = cont.split("/clases")
-            cmi = cc[0].split("\n"),
-                arcmi = [],
-                cid = [],
-                cclas = [],
-                rca = [],
-                rto = [],
-                rsongs = [],
-                rcl = [];
-            orremix = cc[1].split("\n")
-            // oremix = [];
-            //class
-            for (i = 0; i < cmi.length; i++) {
-                if (cmi[i].indexOf("-") > 0) {
-                    arcmi.push(cmi[i].replace(/(\r\n|\n|\r)/gm, ""))
-                    var f = cmi[i].split("-");
-                    cclas.push(f[1]); //clase
-                    cid.push(f[0]); //letra
-                }
-            }
-            ////////////////////////////////////////////
-            for (i = 0; i < orremix.length; i++) {
-                if (orremix[i].indexOf("-") > 0) {
-                    total.push(orremix[i]);
-                    //   if(i==orremix.length-1); // alert(total.length);
-                }
-                //  
-            }
-            ////kj
-            etitulo.innerHTML = ". . . Repertorio: " + total.length + " Songs";
-            ////////////////////////////////////////////////
-            for (i = 0; i < orremix.length; i++) {
-                //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
-                if (orremix[i].indexOf("-") > 0 || orremix[i].indexOf("*") >= 0) {
-                    if (orremix[i].indexOf("*") >= 0) {
-                        arindex.push([rca.length, orremix[i]])
-                        eli.appendChild(crnode(orremix[i]));
-                    } else {
-                        var f = orremix[i].split("-");
-                        var ca = f[2].split(" "),
-                            tt = "";
-                        var ff = [];
-                        for (ii = 0; ii < ca.length; ii++) {
-                            var ind = cid.indexOf(ca[ii]);
-                            if (ind >= 0) {
-                                //alert(cclas[ind])
-                                ff.push(cclas[ind]);
-                            }
-                        }
-                        /* hacer la rutina para cambiar letras por normbres de clases
-                         
-                        */
-                        rca.push(f[0]);
-                        rto.push(f[1]);
-                        rcl.push(ff);
-                        eli.appendChild(crnode(f[0], f[1], ff));
-                    }
-                }
-            }
-            //   alert(arindex);
-            createbtns(cclas)
-            //   preparesongs()     
-        });
-        function setclasesmix(repertorio) {
-            var cl = [],
-                rp = [],
-                clt = "";
-            for (i = 0; i < repertorio.length; i++) {
-                if (repertorio[i] != "undefined" || repertorio[i] != "" || repertorio[i] != " ") {
-                    rp = repertorio[i].split("-");
-                    //alert(rp)
-                    if (rp != "" || rp != null || rp != undefinef) clt += rp[2] + " "
-                }
-            }
-            //  alert(clt);
-            return cl;
+      //https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw
+      var total = []
+      var btit = true;
+      edc = document.getElementById("todo")
+      doc = ifr.contentWindow.document;
+      etitulo = document.getElementById("titulo");
+      ectrls = document.getElementById("ctrls");
+      eli = document.getElementById("lirep")
+      repmix = "";
+      esrch = document.getElementById('srch');
+      ebarra = document.getElementById('barra');
+      eedventana = document.getElementById('edventana');
+      edivrep = document.getElementById('divrep');
+      efr = document.getElementById("ifr")
+      arindex = [];
+      arsongs = [];
+      //////////////////////////////////////
+      loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
+        etitulo.innerHTML = ". . . Repertorio:"
+        var cc = cont.split("/clases")
+        cmi = cc[0].split("\n"),
+          arcmi = [],
+          cid = [],
+          cclas = [],
+          rca = [],
+          rto = [],
+          rsongs = [],
+          rcl = [];
+        orremix = cc[1].split("\n")
+        // oremix = [];
+        //class
+        for (i = 0; i < cmi.length; i++) {
+          if (cmi[i].indexOf("-") > 0) {
+            arcmi.push(cmi[i].replace(/(\r\n|\n|\r)/gm, ""))
+            var f = cmi[i].split("-");
+            cclas.push(f[1]); //clase
+            cid.push(f[0]); //letra
+          }
         }
-         ///////////////////////////////////////   
-        function opendoc(op) {
-            doc.close();
-            //alert(op);
-            eedventana.href = op; //eedventana.click();
-            if (op.indexOf("https") >= 0) {
-                var re = prompt("Write your password");
-                var d = new Date().toString();
-                var m = d.split(" ");
-                d = "andy " + m[1] + " " + m[2];
-                d = d.toUpperCase();
-                re = re.toUpperCase();
-                if (d === re) {
-                    eli.style.display = "none";
-                    ifr.style.display = "block";
-                    edivrep.style.display = "none";
-                    ifr.src = op;
-                } else {
-                    alert("Wrong Pasword");
-                    //   edivrep.style.display = "block";
-                    edivrep.style.display = "block";
-                    ifr.style.display = "none";
-                    eli.style.display = "block";
-                }
+        ////////////////////////////////////////////
+        for (i = 0; i < orremix.length; i++) {
+          if (orremix[i].indexOf("-") > 0) {
+            total.push(orremix[i]);
+            //   if(i==orremix.length-1); // alert(total.length);
+          }
+          //  
+        }
+        ////kj
+        etitulo.innerHTML = ". . . Repertorio: " + total.length + " Songs";
+        ////////////////////////////////////////////////
+        for (i = 0; i < orremix.length; i++) {
+          //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
+          if (orremix[i].indexOf("-") > 0 || orremix[i].indexOf("*") >= 0) {
+            if (orremix[i].indexOf("*") >= 0) {
+              arindex.push([rca.length, orremix[i]])
+              eli.appendChild(crnode(orremix[i]));
             } else {
-                // 
-                if (op === "repPrac") {
-                    //ebarra.value="";
-                    //  sortear("")
-                    edivrep.style.display = "block";
-                  
-                    ifr.style.display = "none";
-                    eli.style.display = "block";
-                    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepPractica.txt", function(r) {
-                        alert(r)
-                    });
-                }
-              else{
-                if (op === "open rep") {
-                    //ebarra.value="";
-                    //  sortear("")
-                    edivrep.style.display = "block";
-                    ifr.style.display = "none";
-                    eli.style.display = "block";
-                }
-                if (op === "rep") {
-                    edivrep.style.display = "block";
-                    ifr.style.display = "none";
-                    eli.style.display = "block";
-                    sortear("");
+              var f = orremix[i].split("-");
+              var ca = f[2].split(" "),
+                tt = "";
+              var ff = [];
+              for (ii = 0; ii < ca.length; ii++) {
+                var ind = cid.indexOf(ca[ii]);
+                if (ind >= 0) {
+                  //alert(cclas[ind])
+                  ff.push(cclas[ind]);
                 }
               }
+              /* hacer la rutina para cambiar letras por normbres de clases
+               
+              */
+              rca.push(f[0]);
+              rto.push(f[1]);
+              rcl.push(ff);
+              eli.appendChild(crnode(f[0], f[1], ff));
             }
+          }
         }
-        function getletra() {
-            showletra(ebarra.value)
+        //   alert(arindex);
+        createbtns(cclas)
+        //   preparesongs()     
+      });
+
+      function setclasesmix(repertorio) {
+        var cl = [],
+          rp = [],
+          clt = "";
+        for (i = 0; i < repertorio.length; i++) {
+          if (repertorio[i] != "undefined" || repertorio[i] != "" || repertorio[i] != " ") {
+            rp = repertorio[i].split("-");
+            //alert(rp)
+            if (rp != "" || rp != null || rp != undefinef) clt += rp[2] + " "
+          }
         }
-        function showletra(cancion) {
-            ebarra.value = cancion + " letra";
-            //   window.open(ebarra.value, '_blank');
-            esrch.click()
-            ebarra.value = "";
-        }
-        function loadText(file, callback) {
-            fetch(file).then(response => response.text()).then((data) => {
-                callback(data); //
-            })
-        }
-        function createbtns(li) {
-            for (i = 0; i < li.length; i++) {
-                var bt = document.createElement('button');
-                bt.innerHTML = li[i];
-                bt.setAttribute('onclick', "addca('" + li[i] + "')");
-                bt.setAttribute("class", "btns")
-                edivrep.appendChild(bt);
+        //  alert(clt);
+        return cl;
+      }
+      ///////////////////////////////////////   
+      function opendoc(op) {
+        doc.close();
+        //alert(op);
+        eedventana.href = op; //eedventana.click();
+        if (op.indexOf("https") >= 0) {
+          var re = prompt("Write your password");
+          var d = new Date().toString();
+          var m = d.split(" ");
+          d = "andy " + m[1] + " " + m[2];
+          d = d.toUpperCase();
+          re = re.toUpperCase();
+          if (d === re) {
+            eli.style.display = "none";
+            ifr.style.display = "block";
+            edivrep.style.display = "none";
+            ifr.src = op;
+          } else {
+            alert("Wrong Pasword");
+            //   edivrep.style.display = "block";
+            edivrep.style.display = "block";
+            ifr.style.display = "none";
+            eli.style.display = "block";
+          }
+        } else {
+          // 
+          if (op === "repPrac") {
+
+            loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepPractica.txt", function(r) {
+              alert(r)
+            });
+          } else {
+            if (op === "open rep") {
+              //ebarra.value="";
+              //  sortear("")
+              edivrep.style.display = "block";
+              ifr.style.display = "none";
+              eli.style.display = "block";
             }
+            if (op === "rep") {
+              edivrep.style.display = "block";
+              ifr.style.display = "none";
+              eli.style.display = "block";
+              sortear("");
+            }
+          }
         }
-        function addca(cl) {
-            //     alert(cl); 
-            var ch = eli.children;
-            if (cl === "") {
-                cl = ". . . Repertorio: " + total.length + " Songs";
-                for (i = 0; i < ch.length; i++) {
-                    ch[i].style.display = "";
+      }
+
+      function getletra() {
+        showletra(ebarra.value)
+      }
+
+      function showletra(cancion) {
+        ebarra.value = cancion + " letra";
+        //   window.open(ebarra.value, '_blank');
+        esrch.click()
+        ebarra.value = "";
+      }
+
+      function loadText(file, callback) {
+        fetch(file).then(response => response.text()).then((data) => {
+          callback(data); //
+        })
+      }
+
+      function createbtns(li) {
+        for (i = 0; i < li.length; i++) {
+          var bt = document.createElement('button');
+          bt.innerHTML = li[i];
+          bt.setAttribute('onclick', "addca('" + li[i] + "')");
+          bt.setAttribute("class", "btns")
+          edivrep.appendChild(bt);
+        }
+      }
+
+      function addca(cl) {
+        //     alert(cl); 
+        var ch = eli.children;
+        if (cl === "") {
+          cl = ". . . Repertorio: " + total.length + " Songs";
+          for (i = 0; i < ch.length; i++) {
+            ch[i].style.display = "";
+          }
+        } else {
+          if (cl != undefined) {
+            //              eli.innerHTML = '<font color="#50ff50" fontWeight="bold" fontSize="25"><u>' + cl + '</u></font>' + "<br><br>";
+            for (i = 0; i < ch.length; i++) {
+              //  alert(ch[i].clase);
+              //  alert(ch[0].innerHTML);
+              if (ch[i].song != undefined) {
+                if (ch[i].clase.indexOf(cl) >= 0) {
+                  //  alert(ch[1].clase);
+                  //    eli.appendChild(rsongs[i]);
+                  ch[i].style.display = "";
+                } else {
+                  if (ch[i].title != undefined) ch[i].style.display = "none";
                 }
+              } else {
+                ch[i].style.display = "none";
+              }
+            }
+          }
+        }
+        edc.scrollTop = 200;
+        etitulo.innerHTML = ". . . " + cl + " . . .";
+      }
+
+      function preparesongs() {
+        var ix = arindex[0][0] * 1,
+          ixx = 0;
+        // alert(arindex.length);
+        for (i = 0; i < rca.length; i++) {
+          var node = document.createElement("LI");
+          var textnode = document.createElement('p');
+          textnode.innerHTML = rca[i] + "    . . . . Tono " + rto[i];
+          textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + rca[i] + '")');
+          node.appendChild(textnode);
+          node.estado = true;
+          node.index = i;
+          node.clase = rcl[i];
+          node.songname = rca[i];
+          node.tono = rto
+          if (ix === i) {
+            var t = document.createElement("p");
+            t.setAttribute("class", "cind");
+            t.innerHTML = arindex[ixx][1];
+            t.titulo = arindex[ixx][1];
+            t.visible = true;
+            ixx++;
+            if (arindex.length > ixx) ix = arindex[ixx][0];
+            eli.appendChild(t);
+          }
+          eli.appendChild(node);
+          //   rsongs.push(node);
+        }
+        //          alert(rsongs[10].estado);
+        //   
+      }
+
+      function crnode(song, to, cl) {
+        if (song.indexOf("*") === 0) {
+          var t = document.createElement("p");
+          t.setAttribute("class", "cind");
+          t.innerHTML = song;
+          t.name = "cltit"
+          return t;
+        } else {
+          var node = document.createElement("LI");
+          var textnode = document.createElement('p');
+          textnode.innerHTML = song + "    . . . . Tono " + to;
+          textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
+          node.appendChild(textnode);
+          node.estado = true;
+          node.index = i;
+          node.clase = cl;
+          node.song = song;
+          node.tono = to;
+          return node;
+        }
+      }
+
+      function update(v) {
+        //   alert(v+"ffffff");
+      }
+
+      function sortear(filter) {
+        if (filter === "") {
+          addca("");
+          ectrls.style.display = "";
+          edivrep.style.display = "";
+        } else {
+          settot(false)
+          ectrls.style.display = "none";
+          edivrep.style.display = "none";
+          var ul, li, a, i, txtValue;
+          filter = filter.toUpperCase(); //input.value.toUpperCase();
+          ul = eli;
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            txtValue = li[i].textContent || li[i].innerText;
+            var aa = txtValue.split(" . .");
+            txtValue = aa[0];
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+              if (txtValue != ""); //ebarra.value=txtValue;
+              else; //ebarra.value="";
             } else {
-                if (cl != undefined) {
-                    //              eli.innerHTML = '<font color="#50ff50" fontWeight="bold" fontSize="25"><u>' + cl + '</u></font>' + "<br><br>";
-                    for (i = 0; i < ch.length; i++) {
-                        //  alert(ch[i].clase);
-                        //  alert(ch[0].innerHTML);
-                        if (ch[i].song != undefined) {
-                            if (ch[i].clase.indexOf(cl) >= 0) {
-                                //  alert(ch[1].clase);
-                                //    eli.appendChild(rsongs[i]);
-                                ch[i].style.display = "";
-                            } else {
-                                if (ch[i].title != undefined) ch[i].style.display = "none";
-                            }
-                        } else {
-                            ch[i].style.display = "none";
-                        }
-                    }
-                }
+              li[i].style.display = "none";
             }
-            edc.scrollTop = 200;
-            etitulo.innerHTML = ". . . " + cl + " . . .";
+          }
         }
-        function preparesongs() {
-            var ix = arindex[0][0] * 1,
-                ixx = 0;
-            // alert(arindex.length);
-            for (i = 0; i < rca.length; i++) {
-                var node = document.createElement("LI");
-                var textnode = document.createElement('p');
-                textnode.innerHTML = rca[i] + "    . . . . Tono " + rto[i];
-                textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + rca[i] + '")');
-                node.appendChild(textnode);
-                node.estado = true;
-                node.index = i;
-                node.clase = rcl[i];
-                node.songname = rca[i];
-                node.tono = rto
-                if (ix === i) {
-                    var t = document.createElement("p");
-                    t.setAttribute("class", "cind");
-                    t.innerHTML = arindex[ixx][1];
-                    t.titulo = arindex[ixx][1];
-                    t.visible = true;
-                    ixx++;
-                    if (arindex.length > ixx) ix = arindex[ixx][0];
-                    eli.appendChild(t);
-                }
-                eli.appendChild(node);
-                //   rsongs.push(node);
+      }
+
+      function settot(op) {
+        //getElementsByClassName()
+        var a = document.getElementsByClassName("cind");
+        if (op) {
+          if (!a[0].visible) {
+            //activarlas 
+            for (i = 0; i < a.length; i++) {
+              a[i].style.display = "";
+              a[0].visible = true
             }
-            //          alert(rsongs[10].estado);
-            //   
-        }
-        function crnode(song, to, cl) {
-            if (song.indexOf("*") === 0) {
-                var t = document.createElement("p");
-                t.setAttribute("class", "cind");
-                t.innerHTML = song;
-                t.name = "cltit"
-                return t;
-            } else {
-                var node = document.createElement("LI");
-                var textnode = document.createElement('p');
-                textnode.innerHTML = song + "    . . . . Tono " + to;
-                textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
-                node.appendChild(textnode);
-                node.estado = true;
-                node.index = i;
-                node.clase = cl;
-                node.song = song;
-                node.tono = to;
-                return node;
+          } else return;
+        } else {
+          if (a[0].style.display === "") {
+            //desactivarlas
+            for (i = 0; i < a.length; i++) {
+              a[i].style.display = "none"
+              a[0].visible = false
             }
+          }
         }
-        function update(v) {
-            //   alert(v+"ffffff");
-        }
-        function sortear(filter) {
-            if (filter === "") {
-                addca("");
-                ectrls.style.display = "";
-                edivrep.style.display = "";
-            } else {
-                settot(false)
-                ectrls.style.display = "none";
-                edivrep.style.display = "none";
-                var ul, li, a, i, txtValue;
-                filter = filter.toUpperCase(); //input.value.toUpperCase();
-                ul = eli;
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    txtValue = li[i].textContent || li[i].innerText;
-                    var aa = txtValue.split(" . .");
-                    txtValue = aa[0];
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
-                        if (txtValue != ""); //ebarra.value=txtValue;
-                        else; //ebarra.value="";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
-        }
-        function settot(op) {
-            //getElementsByClassName()
-            var a = document.getElementsByClassName("cind");
-            if (op) {
-                if (!a[0].visible) {
-                    //activarlas 
-                    for (i = 0; i < a.length; i++) {
-                        a[i].style.display = "";
-                        a[0].visible = true
-                    }
-                } else return;
-            } else {
-                if (a[0].style.display === "") {
-                    //desactivarlas
-                    for (i = 0; i < a.length; i++) {
-                        a[i].style.display = "none"
-                        a[0].visible = false
-                    }
-                }
-            }
-        }
+      }
+
     </script>
-</body>
+  </body>
 
 </html>
