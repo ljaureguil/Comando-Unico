@@ -55,6 +55,7 @@ Falsos Amigos-sol-a
 
 *Canciones
 
+Los laureles-fa-c
 Mi padre mi amigo-do-c
 Medias negras-mi-c
 flor hermosa-fa-c j i
@@ -100,8 +101,10 @@ la delgadina-re-b d i
 
 *Rancheritas
 
+
+Por una mujer casada-fa-d
 Me cai de la nuve-solsost-d
-Deja lobre mi camino-mim-d
+Deja libre mi camino-mim-d
 Cruz de madera-fa-d
 Dos pasages-mim-d
 Y por esa calle vive-re-d
@@ -114,7 +117,7 @@ flor de capono-mi-d i
 cuanto me gusta ese rancho-do-d e j
 celos del viento-re-d 
 me voy a cortar las venas-sol#-d i e
- a qui en mi corazon tu mandas-do-d e
+a qui en mi corazon tu mandas-do-d e
 el palomito-fa-d i e
 piquito de oro-sol#-d i e
 amores fingidos-fa-d i e
@@ -140,13 +143,13 @@ el gilberton-sol-g
 agua de te-fa-g
 La loba del mar-fa-g
 pavido navido-fa-g
- clavelito chino chino-fa-b d i
-  La chona-fa-g e j
+clavelito chino chino-fa-b d i
+La chona-fa-g e j
 El pito de mi carrito-mimol-g j
 La pelota de lolita-fa-g j
 Camaron pelao-do-g j
 Cumbia sampusana-la-g j e
- la vecina me puso el dedo-fa-g j e
+la vecina me puso el dedo-fa-g j e
 El tucanazo-re-g
 Cuate colas-fa-g
 
