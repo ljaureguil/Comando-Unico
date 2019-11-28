@@ -18,22 +18,17 @@ l-huapangos
 
 *Corridos
 
+mi 45-mib-a j
 el 701-rc-a
 el chaparrito-mib-a
 la muerte del comandante-do-a
 el caballero-do-a
 pio diaz-do-a
-el costal lleno de piedras-sol-a b h j
-el centenario-mib-a b e i j
 el guero bastidas-fa-a
 la fuga del jefe-fa-a
 comboy del pelo chino-fa-a
-muchacho alegre-fa-e g j k
-catarino y los rurales-fa-b d i j
 los rumbos del dorado-fa-a
 gallo de calidad-do-a
-rafael caro quintero-sol-a
-mi 45-mib-a j
 gente de accionar-mib-a
 18 libras-do-a
 gente del chapo-fa-a
@@ -43,13 +38,13 @@ Los drones-fa-a
 Calibre 40-mi-a
 El tecnico-mi-a
 Chino piloto-fa-a
-El basucazo-re-a b i j
 El Karma-do-a
 Buscando al cholo-?-a
 Falsos Amigos-sol-a
 
 *Canciones
 
+Naraja de oro-solSos-c
 Negra cruz-mimem-c
 Los laureles-fa-c
 Mi padre mi amigo-do-c
@@ -75,6 +70,12 @@ dolor y amor-do--c j d  h i
 
 *Corridos Clasicos
 
+
+muchacho alegre-fa-e g j k
+catarino y los rurales-fa-b d i j
+El basucazo-re-a b i j
+el costal lleno de piedras-sol-a b h j
+el centenario-mib-a b e i j
 Pistoleros famosos-solsost-b
 Vida mafiosa-mim-b
 Chito Cano-mim-b
@@ -90,9 +91,6 @@ caballo de la acordada-do-b j d i
 los contrabandistas-fa-b 
 El albañil-re-b j 
 La carcel de cananea-sol-b j d
-
-
-la delgadina-re-b d i
 
 
 *Rancheritas
@@ -127,11 +125,12 @@ la canelera-fa-d e j
 de esta sierra a la otra sierra-fa-d j e 
 mi caballo ensillado-fa-d e j
 
-El diagusto-mi memol-d h
+El disgusto-mi memol-d h
 
 
 *Cumbias
 
+la yaquesita-fa-k g
 El hombre apasionado de Javier Rosas-fa-g
 el tao tao-fa-g
 el mono colorado-fa-g
@@ -149,9 +148,8 @@ la vecina me puso el dedo-fa-g j e
 El tucanazo-re-g
 Cuate colas-fa-g
 
-
 *Zapateados
-la yaquesita-fa-k g
+
 el sinaloense-fa-k
 el pistolero-mi-k l
 
