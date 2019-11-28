@@ -24,7 +24,7 @@ la muerte del comandante-do-a
 el caballero-do-a
 pio diaz-do-a
 el costal lleno de piedras-sol-a b h j
- el centenario-mib-a b e i j
+el centenario-mib-a b e i j
 el guero bastidas-fa-a
 la fuga del jefe-fa-a
 comboy del pelo chino-fa-a
@@ -33,28 +33,24 @@ catarino y los rurales-fa-b d i j
 los rumbos del dorado-fa-a
 gallo de calidad-do-a
 rafael caro quintero-sol-a
- mi 45-mib-a j
+mi 45-mib-a j
 gente de accionar-mib-a
 18 libras-do-a
 gente del chapo-fa-a
 el ayudante-fa-a
- comando x-sib-a
- soy mencho-so-a
 javier díaz-sol-a
-chiquen little-do-a
-surcando el camino-fa-a
 Los drones-fa-a
 Calibre 40-mi-a
 El tecnico-mi-a
 Chino piloto-fa-a
 El basucazo-re-a b i j
-El toro encantado-sol-a
-El Karma-?-a
+El Karma-do-a
 Buscando al cholo-?-a
 Falsos Amigos-sol-a
 
 *Canciones
 
+Negra cruz-mimem-c
 Los laureles-fa-c
 Mi padre mi amigo-do-c
 Medias negras-mi-c
@@ -64,7 +60,7 @@ dos mares de lagrimas-do-c j h i
 tragos de amargo licor-sib-c j d 
 alma enamorada-sib-c j i
 entre copa y copa-do-c j i
- el columpio-do-c j h i
+el columpio-do-c j h i
 dos botellas de mescal-sol-c j h
 porque se habra ido-fa-c j h
 Arriba de 120-re-c
@@ -83,10 +79,10 @@ Pistoleros famosos-solsost-b
 Vida mafiosa-mim-b
 Chito Cano-mim-b
 Juan marta-sol-b d
- 24 de junio-sib-b j d i
+24 de junio-sib-b j d i
 cuerno de chivo-mib-b j
- se les pelo baltazar-sol#-b j d
- Los traficantes-re-b
+se les pelo baltazar-sol#-b j d
+Los traficantes-re-b
 dimas de leon-fa-b j d 
 los dos amigos-fa-b j d i
 laurita garza-sol-b j d i
@@ -101,7 +97,7 @@ la delgadina-re-b d i
 
 *Rancheritas
 
-
+Dos puñales-fa-d
 Por una mujer casada-fa-d
 Me cai de la nuve-solsost-d
 Deja libre mi camino-mim-d
@@ -157,7 +153,7 @@ Cuate colas-fa-g
 *Zapateados
 la yaquesita-fa-k g
 el sinaloense-fa-k
- el pistolero-mi-k l
+el pistolero-mi-k l
 
 
 
@@ -165,8 +161,8 @@ el sinaloense-fa-k
 
 El caballo de la sierra-sol-l
 el tejanito-mi-l
- el fronterizo-mi-l
- mi primer servo-mi-l
+el fronterizo-mi-l
+mi primer servo-mi-l
 pistoleros-mi-l
 
 *sierreño
