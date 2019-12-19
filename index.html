@@ -12,7 +12,6 @@
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
         font-size: 30px;
       }
-
       #todo {
         width: 100%;
         height: 100%;
@@ -20,7 +19,6 @@
         overflow-x: hidden;
         transition: overflow-y 0.5s ease;
       }
-
       #ifr {
         width: 100%;
         height: 75%;
@@ -28,14 +26,12 @@
         border-radius: 15px;
         display: none;
       }
-
       #ifrs {
         width: 100%;
         // height: 40%;
         font-size: 25px;
         border-radius: 15px;
       }
-
       .btns {
         color: white;
         font-weight: bold;
@@ -47,7 +43,6 @@
         width: 27%;
         height: 8%;
       }
-
       #ed {
         background: rgba(0, 255, 0, .5);
         color: white;
@@ -55,7 +50,6 @@
         top: 90%;
         bottom: right: 5%;
       }
-
       #edventana {
         font-size: 20px;
         background: rgba(0, 200, 0, .5);
@@ -69,7 +63,6 @@
         border-width: 15px;
         padding: 4px;
       }
-
       #divrep {
         font-size: 18px;
         //position: absolute;
@@ -83,7 +76,6 @@
         border-radius: 15px;
         padding: 5%;
       }
-
       #lirep {
         background: black;
         color: white;
@@ -97,33 +89,28 @@
         border-style: double;
         border-width: 10px;
       }
-
       .songs {
         color: #50ff50;
         font-weight: bold;
         font-size: 25px;
       }
-
       .songsdone {
         color: #50ff50;
         font-weight: bold;
         font-size: 25px;
       }
-
       .cind {
         // color: #0ff000;
         background: green;
         font-size: 30px;
         font-weight: bold;
       }
-
       #titulo {
         color: #0ff000;
         background: blue;
         font-size: 20px;
         font-weight: bold;
       }
-
       #logo {
         position: absolute;
         top: 1%;
@@ -141,14 +128,10 @@
         // opacity: .65;
         visibility: visible;
       }
-
       #ppr {
         background: #0f0;
         color: #00f;
-
-
       }
-
     </style>
     <div id="todo">
       <button id="logo" onclick="sortear('')">&#9834;</button>
@@ -207,6 +190,7 @@
 
     <script>
       //https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw
+      var repstate=true;
       var total = []
       var btit = true;
       edc = document.getElementById("todo")
@@ -267,6 +251,7 @@
               var ca = f[2].split(" "),
                 tt = "";
               var ff = [];
+              //clases
               for (ii = 0; ii < ca.length; ii++) {
                 var ind = cid.indexOf(ca[ii]);
                 if (ind >= 0) {
@@ -288,7 +273,6 @@
         createbtns(cclas)
         //   preparesongs()     
       });
-
       function setclasesmix(repertorio) {
         var cl = [],
           rp = [],
@@ -330,7 +314,6 @@
         } else {
           // 
           if (op === "repPrac") {
-
             loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepPractica.txt", function(r) {
               alert(r)
             });
@@ -341,34 +324,33 @@
               edivrep.style.display = "block";
               ifr.style.display = "none";
               eli.style.display = "block";
+             // repstate= false;
             }
             if (op === "rep") {
+            //    repstate=true;
               edivrep.style.display = "block";
               ifr.style.display = "none";
               eli.style.display = "block";
               sortear("");
             }
+           // else repstate=false;
           }
         }
       }
-
       function getletra() {
         showletra(ebarra.value)
       }
-
       function showletra(cancion) {
         ebarra.value = cancion + " letra";
         //   window.open(ebarra.value, '_blank');
         esrch.click()
         ebarra.value = "";
       }
-
       function loadText(file, callback) {
         fetch(file).then(response => response.text()).then((data) => {
           callback(data); //
         })
       }
-
       function createbtns(li) {
         for (i = 0; i < li.length; i++) {
           var bt = document.createElement('button');
@@ -378,7 +360,6 @@
           edivrep.appendChild(bt);
         }
       }
-
       function addca(cl) {
         //     alert(cl); 
         var ch = eli.children;
@@ -410,7 +391,6 @@
         edc.scrollTop = 200;
         etitulo.innerHTML = ". . . " + cl + " . . .";
       }
-
       function preparesongs() {
         var ix = arindex[0][0] * 1,
           ixx = 0;
@@ -442,7 +422,6 @@
         //          alert(rsongs[10].estado);
         //   
       }
-
       function crnode(song, to, cl) {
         if (song.indexOf("*") === 0) {
           var t = document.createElement("p");
@@ -452,8 +431,16 @@
           return t;
         } else {
           var node = document.createElement("LI");
-          var textnode = document.createElement('p');
-          textnode.innerHTML = song + "    . . . . Tono " + to;
+          var textnode = document.createElement('p');//alert(cl);
+        // var cll=cl.toString();alert(cl.indexOf("repertorio tocada"));
+         if(cl.indexOf("repertorio tocada")<0){// && repstate=== true
+             textnode.innerHTML = song + "    . . . . Tono " + to;
+         }
+         else {
+             var ccl=cl[0];
+             textnode.innerHTML = '<font size="4" color="#0f0">-'+ccl+' - tocada</font><br>'+song + "    . . . . Tono " + to;
+         }
+                 
           textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
           node.appendChild(textnode);
           node.estado = true;
@@ -464,11 +451,9 @@
           return node;
         }
       }
-
       function update(v) {
         //   alert(v+"ffffff");
       }
-
       function sortear(filter) {
         if (filter === "") {
           addca("");
@@ -496,7 +481,6 @@
           }
         }
       }
-
       function settot(op) {
         //getElementsByClassName()
         var a = document.getElementsByClassName("cind");
@@ -518,7 +502,6 @@
           }
         }
       }
-
     </script>
   </body>
 
