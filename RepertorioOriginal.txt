@@ -12,6 +12,7 @@ i-clasicas
 j-cajon
 k-zapateados
 l-huapangos
+x-repertorio tocada
 
 
 /clases
@@ -21,45 +22,45 @@ l-huapangos
 mi 45-mib-a j
 el 701-rc-a
 el chaparrito-mib-a
-la muerte del comandante-do-a
-el caballero-do-a
-pio diaz-do-a
-el guero bastidas-fa-a
-la fuga del jefe-fa-a
+la muerte del comandante-do-a x
+el caballero-do-a x
+pio diaz-do-a x
+el guero bastidas-fa-a x
+la fuga del jefe-fa-a x
 comboy del pelo chino-fa-a
 los rumbos del dorado-fa-a
-gallo de calidad-do-a
+gallo de calidad-do-a x
 gente de accionar-mib-a
-18 libras-do-a
+18 libras-do-a x
 gente del chapo-fa-a
-el ayudante-fa-a
+el ayudante-fa-a x
 javier díaz-sol-a
-Los drones-fa-a
+Los drones-fa-a x
 Calibre 40-mi-a
-El tecnico-mi-a
+El tecnico-mi-a x
 Chino piloto-fa-a
-El Karma-do-a
+El Karma-do-a x
 Buscando al cholo-?-a
-Falsos Amigos-sol-a
+Falsos Amigos-sol-a x
 
 *Canciones
 
-Tres ramitas-re-c
-Naraja de oro-solSos-c
-Negra cruz-mimem-c
-Los laureles-fa-c
+Tres ramitas-re-c x
+Baraja de oro-solSos-c x
+Negra cruz-mimem-c x
+Los laureles-fa-c x
 Mi padre mi amigo-do-c
-Medias negras-mi-c
+Medias negras-mi-c x
 flor hermosa-fa-c j i
 sonora y sus ojos negros-sol-c j i
-dos mares de lagrimas-do-c j h i
-tragos de amargo licor-sib-c j d 
+dos mares de lagrimas-do-c j h i x
+tragos de amargo licor-sib-c j d  x
 alma enamorada-sib-c j i
-entre copa y copa-do-c j i
-el columpio-do-c j h i
-dos botellas de mescal-sol-c j h
-porque se habra ido-fa-c j h
-Arriba de 120-re-c
+entre copa y copa-do-c j i x
+el columpio-do-c j h i x
+dos botellas de mescal-sol-c j h x
+porque se habra ido-fa-c j h x
+Arriba de 120-re-c x
 Las iluciones-mi#-c i
 El ausente-sol-c j i
 30 cartas-mi-c j
