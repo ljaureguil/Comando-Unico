@@ -45,12 +45,12 @@ Falsos Amigos-sol-a
 
 *Canciones
 
-Tres ramitas-re-c  x
+Tres ramitas-re-c  
 Baraja de oro-solSos-c  
-Negra cruz-mimem-c x
+Negra cruz-mimem-c 
 Los laureles-fa-c 
 Mi padre mi amigo-do-c
-Medias negras-mi-c x
+Medias negras-mi-c 
 flor hermosa-fa-c j i
 sonora y sus ojos negros-sol-c j i
 dos mares de lagrimas-do-c j h i 
@@ -60,7 +60,7 @@ entre copa y copa-do-c j i
 el columpio-do-c j h i 
 dos botellas de mescal-sol-c j h 
 porque se habra ido-fa-c j h 
-Arriba de 120-re-c x
+Arriba de 120-re-c 
 Las iluciones-mi#-c i
 El ausente-sol-c j i
 30 cartas-mi-c j
@@ -79,25 +79,25 @@ El basucazo-re-a b i j
 el costal lleno de piedras-sol-a b h j
 el centenario-mib-a b e i j
 Pistoleros famosos-solsost-b
-Vida mafiosa-mim-b x
-Chito Cano-mim-b x
+Vida mafiosa-mim-b 
+Chito Cano-mim-b 
 Juan marta-sol-b d
 24 de junio-sib-b j d i
 cuerno de chivo-mib-b j
-se les pelo baltazar-sol#-b j d x
-Los traficantes-re-b x
+se les pelo baltazar-sol#-b j d 
+Los traficantes-re-b 
 dimas de leon-fa-b j d 
 los dos amigos-fa-b j d i
 laurita garza-sol-b j d i
 caballo de la acordada-do-b j d i
-los contrabandistas-fa-b  x
-El albañil-re-b j  x
-La carcel de cananea-sol-b j d x
+los contrabandistas-fa-b  
+El albañil-re-b j  
+La carcel de cananea-sol-b j d 
 
 
 *Rancheritas
 
-Que casualidad-sol-d x
+Que casualidad-sol-d 
 Dos puñales-fa-d
 Por una mujer casada-fa-d
 Me cai de la nuve-solsost-d
