@@ -22,35 +22,35 @@ x-repertorio tocada
 mi 45-mib-a j
 el 701-rc-a
 el chaparrito-mib-a
-la muerte del comandante-do-a x
-el caballero-do-a x
-pio diaz-do-a x
-el guero bastidas-fa-a x
-la fuga del jefe-fa-a x
+la muerte del comandante-do-a
+el caballero-do-a 
+pio diaz-do-a 
+el guero bastidas-fa-a 
+la fuga del jefe-fa-a 
 comboy del pelo chino-fa-a
 los rumbos del dorado-fa-a
-gallo de calidad-do-a x
+gallo de calidad-do-a 
 gente de accionar-mib-a
-18 libras-do-a x
+18 libras-do-a 
 gente del chapo-fa-a
-el ayudante-fa-a x
+el ayudante-fa-a 
 javier díaz-sol-a
-Los drones-fa-a x
+Los drones-fa-a 
 Calibre 40-mi-a
-El tecnico-mi-a x
+El tecnico-mi-a 
 Chino piloto-fa-a
-El Karma-do-a x
+El Karma-do-a 
 Buscando al cholo-?-a
-Falsos Amigos-sol-a x
+Falsos Amigos-sol-a 
 
 *Canciones
 
 Tres ramitas-re-c  x
-Baraja de oro-solSos-c  x
-Negra cruz-mimem-c 
+Baraja de oro-solSos-c  
+Negra cruz-mimem-c x
 Los laureles-fa-c 
 Mi padre mi amigo-do-c
-Medias negras-mi-c 
+Medias negras-mi-c x
 flor hermosa-fa-c j i
 sonora y sus ojos negros-sol-c j i
 dos mares de lagrimas-do-c j h i 
@@ -79,13 +79,13 @@ El basucazo-re-a b i j
 el costal lleno de piedras-sol-a b h j
 el centenario-mib-a b e i j
 Pistoleros famosos-solsost-b
-Vida mafiosa-mim-b
-Chito Cano-mim-b
+Vida mafiosa-mim-b x
+Chito Cano-mim-b x
 Juan marta-sol-b d
 24 de junio-sib-b j d i
 cuerno de chivo-mib-b j
-se les pelo baltazar-sol#-b j d
-Los traficantes-re-b
+se les pelo baltazar-sol#-b j d x
+Los traficantes-re-b x
 dimas de leon-fa-b j d 
 los dos amigos-fa-b j d i
 laurita garza-sol-b j d i
@@ -97,7 +97,7 @@ La carcel de cananea-sol-b j d x
 
 *Rancheritas
 
-Que vasualidad-sol-d
+Que casualidad-sol-d x
 Dos puñales-fa-d
 Por una mujer casada-fa-d
 Me cai de la nuve-solsost-d
