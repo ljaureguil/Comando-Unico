@@ -206,6 +206,8 @@
       efr = document.getElementById("ifr")
       arindex = [];
       arsongs = [];
+      
+      loadText('https://drive.google.com/open?id=1VU-tkhVUVDJke1m49YNcJiAfbnN_ZDYHEGxckW20KZM',function(r){alert(r.indexOf("libreta"))})
       //////////////////////////////////////
       loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
         etitulo.innerHTML = ". . . Repertorio:"
@@ -438,7 +440,7 @@
          }
          else {
              var ccl=cl[0];
-             textnode.innerHTML = '<font size="4" color="#0f0">-'+ccl+' - tocada</font><br>'+song + "    . . . . Tono " + to;
+             textnode.innerHTML = '<font size="5" color="#ff0">-'+ccl+' - tocada</font><br>'+song + "    . . . . Tono " + to;
          }
                  
           textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
