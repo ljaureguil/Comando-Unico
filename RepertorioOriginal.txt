@@ -45,90 +45,90 @@ Falsos Amigos-sol-a
 
 *Canciones
 
-Tres ramitas-re-c  
+Tres ramitas-re-c  x
 Baraja de oro-solSos-c  
-Negra cruz-mimem-c 
-Los laureles-fa-c 
+Negra cruz-mimem-c x
+Los laureles-fa-c x
 Mi padre mi amigo-do-c
-Medias negras-mi-c 
-flor hermosa-fa-c j i
+Medias negras-mi-c x
+flor hermosa-fa-c j i x
 sonora y sus ojos negros-sol-c j i
 dos mares de lagrimas-do-c j h i 
 tragos de amargo licor-sib-c j d  
 alma enamorada-sib-c j i
 entre copa y copa-do-c j i 
-el columpio-do-c j h i 
-dos botellas de mescal-sol-c j h 
-porque se habra ido-fa-c j h 
-Arriba de 120-re-c 
+el columpio-do-c j h i x
+dos botellas de mescal-sol-c j h x
+porque se habra ido-fa-c j h x
+Arriba de 120-re-c x
 Las iluciones-mi#-c i
 El ausente-sol-c j i
-30 cartas-mi-c j
-porque te vas de mi-fa-c j i
+30 cartas-mi-c j x
+porque te vas de mi-fa-c j i x
 me dan celos-fa-c j 
 Tatuajes-do--c
-dolor y amor-do--c j d  h i
+dolor y amor-do--c j d  h i x
 
 
 *Corridos Clasicos
 
 
 muchacho alegre-fa-e g j k
-catarino y los rurales-fa-b d i j
-El basucazo-re-a b i j
-el costal lleno de piedras-sol-a b h j
+catarino y los rurales-fa-b d i j x
+El basucazo-re-a b i j x
+el costal lleno de piedras-sol-a b h j x
 el centenario-mib-a b e i j
-Pistoleros famosos-solsost-b
-Vida mafiosa-mim-b 
-Chito Cano-mim-b 
-Juan marta-sol-b d
-24 de junio-sib-b j d i
+Pistoleros famosos-solsost-b x
+Vida mafiosa-mim-b x
+Chito Cano-mim-b x
+Juan marta-sol-b d x
+24 de junio-sib-b j d i x
 cuerno de chivo-mib-b j
-se les pelo baltazar-sol#-b j d 
+se les pelo baltazar-sol#-b j d x
 Los traficantes-re-b 
-dimas de leon-fa-b j d 
+dimas de leon-fa-b j d x
 los dos amigos-fa-b j d i
-laurita garza-sol-b j d i
+laurita garza-sol-b j d i x
 caballo de la acordada-do-b j d i
 los contrabandistas-fa-b  
-El albañil-re-b j  
-La carcel de cananea-sol-b j d 
+El albañil-re-b j x
+La carcel de cananea-sol-b j d x
 
 
 *Rancheritas
 
-Que casualidad-sol-d 
+Que casualidad-sol-d x
 Dos puñales-fa-d
-Por una mujer casada-fa-d
-Me cai de la nuve-solsost-d
-Deja libre mi camino-mim-d
-Cruz de madera-fa-d
-Dos pasages-mim-d
-Y por esa calle vive-re-d
-Caballo R15-fa-d
+Por una mujer casada-fa-d x
+Me cai de la nuve-solsost-d x
+Deja libre mi camino-mim-d x
+Cruz de madera-fa-d x
+Dos pasages-mim-d x
+Y por esa calle vive-re-d x
+Caballo R15-fa-d x
 Se va muriendo mi alma-mi-d
 San Juan de Ulua-do-d
-un rinconcito en el cielo-fa-d i e
+un rinconcito en el cielo-fa-d i e x
 prenda querida-mi-d i
 flor de capono-mi-d i
-cuanto me gusta ese rancho-do-d e j
+cuanto me gusta ese rancho-do-d e j x
 celos del viento-re-d 
-me voy a cortar las venas-sol#-d i e
-a qui en mi corazon tu mandas-do-d e
-el palomito-fa-d i e
-piquito de oro-sol#-d i e
-amores fingidos-fa-d i e
-Que tal si te vas conmigo-do-d
-Quiero que sepas-sol#-d
-Mi casa nueva-fa-d i 
-Linda morena-mi-d i
+me voy a cortar las venas-sol#-d i e x
+a qui en mi corazon tu mandas-do-d e x
+el palomito-fa-d i e x
+piquito de oro-sol#-d i e x
+amores fingidos-fa-d i e x
+Que tal si te vas conmigo-do-d x
+Quiero que sepas-sol#-d x
+Mi casa nueva-fa-d i x
+Linda morena-mi-d i x
 Noches tenebrosas-sol-d i
-Golpe traidor-mi-d h
-la canelera-fa-d e j
+Golpe traidor-mi-d h x
+la canelera-fa-d e j x
 de esta sierra a la otra sierra-fa-d j e 
-mi caballo ensillado-fa-d e j
+mi caballo ensillado-fa-d e j x
 
-El disgusto-mi memol-d h
+El disgusto-mi memol-d h x
 
 
 *Cumbias
@@ -137,24 +137,24 @@ la yaquesita-fa-k g
 El hombre apasionado de Javier Rosas-fa-g
 el tao tao-fa-g
 el mono colorado-fa-g
-el gilberton-sol-g
+el gilberton-sol-g x
 agua de te-fa-g
-La loba del mar-fa-g
-pavido navido-fa-g
-clavelito chino chino-fa-b d i
-La chona-fa-g e j
-El pito de mi carrito-mimol-g j
-La pelota de lolita-fa-g j
+La loba del mar-fa-g x
+pavido navido-fa-g x
+clavelito chino chino-fa-b d i x
+La chona-fa-g e j x
+El pito de mi carrito-mimol-g j x
+La pelota de lolita-fa-g j x
 Camaron pelao-do-g j
-Cumbia sampusana-la-g j e
+Cumbia sampusana-la-g j e x
 la vecina me puso el dedo-fa-g j e
-El tucanazo-re-g
-Cuate colas-fa-g
+El tucanazo-re-g x
+Cuate colas-fa-g x
 
 *Zapateados
 
-el sinaloense-fa-k
-el pistolero-mi-k l
+el sinaloense-fa-k x
+el pistolero-mi-k l x
 
 
 
