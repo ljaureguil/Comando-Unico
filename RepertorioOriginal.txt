@@ -19,29 +19,29 @@ x-repertorio tocada
 
 *Corridos
 
-mi 45-mib-a j
-el 701-rc-a
+mi 45-mib-a j x
+el 701-rc-a x
 el chaparrito-mib-a
-la muerte del comandante-do-a
-el caballero-do-a 
-pio diaz-do-a 
+la muerte del comandante-do-a x
+el caballero-do-a x
+pio diaz-do-a x
 el guero bastidas-fa-a 
-la fuga del jefe-fa-a 
+la fuga del jefe-fa-a x
 comboy del pelo chino-fa-a
 los rumbos del dorado-fa-a
-gallo de calidad-do-a 
+gallo de calidad-do-a x
 gente de accionar-mib-a
-18 libras-do-a 
+18 libras-do-a x
 gente del chapo-fa-a
-el ayudante-fa-a 
-javier díaz-sol-a
+el ayudante-fa-a x
+javier díaz-sol-a x
 Los drones-fa-a 
 Calibre 40-mi-a
-El tecnico-mi-a 
+El tecnico-mi-a x
 Chino piloto-fa-a
 El Karma-do-a 
 Buscando al cholo-?-a
-Falsos Amigos-sol-a 
+Falsos Amigos-sol-a x
 
 *Canciones
 
@@ -109,10 +109,10 @@ Caballo R15-fa-d x
 Se va muriendo mi alma-mi-d
 San Juan de Ulua-do-d
 un rinconcito en el cielo-fa-d i e x
-prenda querida-mi-d i
-flor de capono-mi-d i
+prenda querida-mi-d i x
+flor de capono-mi-d i x
 cuanto me gusta ese rancho-do-d e j x
-celos del viento-re-d 
+celos del viento-re-d x
 me voy a cortar las venas-sol#-d i e x
 a qui en mi corazon tu mandas-do-d e x
 el palomito-fa-d i e x
@@ -122,7 +122,7 @@ Que tal si te vas conmigo-do-d x
 Quiero que sepas-sol#-d x
 Mi casa nueva-fa-d i x
 Linda morena-mi-d i x
-Noches tenebrosas-sol-d i
+Noches tenebrosas-sol-d i x
 Golpe traidor-mi-d h x
 la canelera-fa-d e j x
 de esta sierra a la otra sierra-fa-d j e 
