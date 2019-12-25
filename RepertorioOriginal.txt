@@ -45,7 +45,7 @@ Falsos Amigos-sol-a
 
 *Canciones
 
-Tres ramitas-re-c  
+
 Baraja de oro-solSos-c  
 Negra cruz-mimem-c 
 Los laureles-fa-c 
@@ -62,12 +62,9 @@ dos botellas de mescal-sol-c j h
 porque se habra ido-fa-c j h 
 Arriba de 120-re-c 
 Las iluciones-mi#-c i
-El ausente-sol-c j i
 30 cartas-mi-c j 
 porque te vas de mi-fa-c j i 
-me dan celos-fa-c j 
-Tatuajes-do--c
-dolor y amor-do--c j d  h i 
+
 
 
 *Corridos Clasicos
@@ -97,6 +94,12 @@ La carcel de cananea-sol-b j d
 
 *Rancheritas
 
+
+me dan celos-fa-d c j 
+Tatuajes-mi-d c
+dolor y amor-mi-d c j d  h i 
+El ausente-sol-d c j d
+Tres ramitas-re-d  
 Que casualidad-sol-d 
 Dos puñales-fa-d
 Por una mujer casada-fa-d 
@@ -125,6 +128,7 @@ Linda morena-mi-d i
 Noches tenebrosas-sol-d i 
 Golpe traidor-mi-d h 
 la canelera-fa-d e j 
+clavelito chino chino-fa-d b i 
 de esta sierra a la otra sierra-fa-d j e 
 mi caballo ensillado-fa-d e j 
 
@@ -139,9 +143,6 @@ el tao tao-fa-g
 el mono colorado-fa-g
 el gilberton-sol-g 
 agua de te-fa-g
-La loba del mar-fa-g 
-pavido navido-fa-g 
-clavelito chino chino-fa-b d i 
 La chona-fa-g e j 
 El pito de mi carrito-mimol-g j 
 La pelota de lolita-fa-g j 
@@ -154,17 +155,18 @@ Cuate colas-fa-g
 *Zapateados
 
 el sinaloense-fa-k 
-el pistolero-mi-k l 
-
+La loba del mar-fa-k g 
+pavido navido-fa-k g 
 
 
 *huapangos
 
+el pistolero-mi-l k 
 El caballo de la sierra-sol-l
 el tejanito-mi-l
 el fronterizo-mi-l
 mi primer servo-mi-l
-pistoleros-mi-l
+
 
 *sierreño
 elenita-?-f d
