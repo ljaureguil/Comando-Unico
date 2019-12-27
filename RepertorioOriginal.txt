@@ -13,6 +13,7 @@ j-cajon
 k-zapateados
 l-huapangos
 x-repertorio tocada
+xp-practica
 
 
 /clases
@@ -30,12 +31,12 @@ el guero bastidas-fa-a
 la fuga del jefe-fa-a 
 comboy del pelo chino-fa-a
 los rumbos del dorado-fa-a
-gallo de calidad-do-a 
+gallo de calidad-do-a x xp
 gente de accionar-mib-a
-18 libras-do-a 
+18 libras-do-a  xp
 gente del chapo-fa-a
 el ayudante-fa-a 
-javier díaz-sol-a 
+javier díaz-sol-a xp
 Los drones-fa-a 
 Calibre 40-mi-a
 El tecnico-mi-a 
@@ -60,7 +61,7 @@ alma enamorada-sib-c j i x
 entre copa y copa-do-c j i x
 el columpio-do-c j h i 
 dos botellas de mescal-sol-c j h 
-porque se habra ido-fa-c j h x
+porque se habra ido-fa-c j h x xp
 Arriba de 120-re-c x
 Las iluciones-mi#-c i x
 30 cartas-mi-c j 
@@ -88,7 +89,7 @@ dimas de leon-fa-b j d
 los dos amigos-fa-b j d i
 laurita garza-sol-b j d i 
 caballo de la acordada-do-b j d i
-los contrabandistas-fa-b  
+los contrabandistas-fa-b xp
 El albañil-re-b j 
 La carcel de cananea-sol-b j d 
 
@@ -108,8 +109,8 @@ Me cai de la nuve-solsost-d
 Deja libre mi camino-mim-d x
 Cruz de madera-fa-d 
 Dos pasages-mim-d x
-Y por esa calle vive-re-d x
-Caballo R15-fa-d x
+Y por esa calle vive-re-d x xp
+Caballo R15-fa-d x xp
 Se va muriendo mi alma-mi-d x
 San Juan de Ulua-do-d x
 un rinconcito en el cielo-fa-d i e 
@@ -117,10 +118,10 @@ prenda querida-mi-d i x
 flor de capono-mi-d i x
 cuanto me gusta ese rancho-do-d e j x
 celos del viento-re-d 
-me voy a cortar las venas-sol#-d i e 
+me voy a cortar las venas-sol#-d i e xp
 a qui en mi corazon tu mandas-do-d e x
 el palomito-fa-d i e 
-piquito de oro-sol#-d i e 
+piquito de oro-sol#-d i e xp
 amores fingidos-fa-d i e x
 Que tal si te vas conmigo-do-d x
 Quiero que sepas-sol#-d 
