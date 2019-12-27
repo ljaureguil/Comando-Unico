@@ -19,7 +19,8 @@ x-repertorio tocada
 
 *Corridos
 
-mi 45-mib-a j 
+El numero uno-do- a x
+mi 45-mib-a j x
 el 701-rc-a 
 el chaparrito-mib-a
 la muerte del comandante-do-a 
@@ -46,22 +47,22 @@ Falsos Amigos-sol-a
 *Canciones
 
 
-Baraja de oro-solSos-c  
+Baraja de oro-solSos-c x
 Negra cruz-mimem-c 
 Los laureles-fa-c 
 Mi padre mi amigo-do-c
 Medias negras-mi-c 
 flor hermosa-fa-c j i 
 sonora y sus ojos negros-sol-c j i
-dos mares de lagrimas-do-c j h i 
+dos mares de lagrimas-do-c j h i x
 tragos de amargo licor-sib-c j d  
-alma enamorada-sib-c j i
-entre copa y copa-do-c j i 
+alma enamorada-sib-c j i x
+entre copa y copa-do-c j i x
 el columpio-do-c j h i 
 dos botellas de mescal-sol-c j h 
-porque se habra ido-fa-c j h 
-Arriba de 120-re-c 
-Las iluciones-mi#-c i
+porque se habra ido-fa-c j h x
+Arriba de 120-re-c x
+Las iluciones-mi#-c i x
 30 cartas-mi-c j 
 porque te vas de mi-fa-c j i 
 
@@ -69,20 +70,20 @@ porque te vas de mi-fa-c j i
 
 *Corridos Clasicos
 
-Reto a la ley-mimemol-b
+Reto a la ley-mimemol-b x
 muchacho alegre-fa-e g j k
-catarino y los rurales-fa-b d i j 
+catarino y los rurales-fa-b d i j x
 El basucazo-re-a b i j 
-el costal lleno de piedras-sol-a b h j 
-el centenario-mib-a b e i j
-Pistoleros famosos-solsost-b 
-Vida mafiosa-mim-b 
-Chito Cano-mim-b 
-Juan marta-sol-b d 
+el costal lleno de piedras-sol-a b h j x
+el centenario-mib-a b e i j x
+Pistoleros famosos-solsost-b x
+Vida mafiosa-mim-b x
+Chito Cano-mim-b x
+Juan marta-sol-b d x
 24 de junio-sib-b j d i 
-cuerno de chivo-mib-b j
-se les pelo baltazar-sol#-b j d 
-Los traficantes-re-b 
+cuerno de chivo-mib-b j x
+se les pelo baltazar-sol#-b j d x
+Los traficantes-re-b x
 dimas de leon-fa-b j d 
 los dos amigos-fa-b j d i
 laurita garza-sol-b j d i 
@@ -95,38 +96,38 @@ La carcel de cananea-sol-b j d
 *Rancheritas
 
 
-me dan celos-fa-d c j 
+me dan celos-fa-d c j x
 Tatuajes-mi-d c
 dolor y amor-mi-d c j d  h i 
 El ausente-sol-d c j d
-Tres ramitas-re-d  
+Tres ramitas-re-d x
 Que casualidad-sol-d 
 Dos puñales-fa-d
 Por una mujer casada-fa-d 
 Me cai de la nuve-solsost-d 
-Deja libre mi camino-mim-d 
+Deja libre mi camino-mim-d x
 Cruz de madera-fa-d 
-Dos pasages-mim-d 
-Y por esa calle vive-re-d 
-Caballo R15-fa-d 
-Se va muriendo mi alma-mi-d
-San Juan de Ulua-do-d
+Dos pasages-mim-d x
+Y por esa calle vive-re-d x
+Caballo R15-fa-d x
+Se va muriendo mi alma-mi-d x
+San Juan de Ulua-do-d x
 un rinconcito en el cielo-fa-d i e 
-prenda querida-mi-d i 
-flor de capono-mi-d i 
-cuanto me gusta ese rancho-do-d e j 
+prenda querida-mi-d i x
+flor de capono-mi-d i x
+cuanto me gusta ese rancho-do-d e j x
 celos del viento-re-d 
 me voy a cortar las venas-sol#-d i e 
-a qui en mi corazon tu mandas-do-d e 
+a qui en mi corazon tu mandas-do-d e x
 el palomito-fa-d i e 
 piquito de oro-sol#-d i e 
-amores fingidos-fa-d i e 
-Que tal si te vas conmigo-do-d 
+amores fingidos-fa-d i e x
+Que tal si te vas conmigo-do-d x
 Quiero que sepas-sol#-d 
-Mi casa nueva-fa-d i 
-Linda morena-mi-d i 
-Noches tenebrosas-sol-d i 
-Golpe traidor-mi-d h 
+Mi casa nueva-fa-d i x
+Linda morena-mi-d i x
+Noches tenebrosas-sol-d i x
+Golpe traidor-mi-d h x
 la canelera-fa-d e j 
 clavelito chino chino-fa-d b i 
 de esta sierra a la otra sierra-fa-d j e 
@@ -137,20 +138,20 @@ El disgusto-mi memol-d h
 
 *Cumbias
 
-la yaquesita-fa-k g
-El hombre apasionado de Javier Rosas-fa-g
-el tao tao-fa-g
-el mono colorado-fa-g
+la yaquesita-fa-k g x
+El hombre apasionado de Javier Rosas-fa-g x
+el tao tao-fa-g x
+el mono colorado-fa-g x
 el gilberton-sol-g 
-agua de te-fa-g
+agua de te-fa-g x
 La chona-fa-g e j 
 El pito de mi carrito-mimol-g j 
 La pelota de lolita-fa-g j 
-Camaron pelao-do-g j
-Cumbia sampusana-la-g j e 
-la vecina me puso el dedo-fa-g j e
-El tucanazo-re-g 
-Cuate colas-fa-g 
+Camaron pelao-do-g j x
+Cumbia sampusana-la-g j e x
+la vecina me puso el dedo-fa-g j e x
+El tucanazo-re-g x
+Cuate colas-fa-g x
 
 *Zapateados
 
@@ -161,10 +162,10 @@ pavido navido-fa-k g
 
 *huapangos
 
-el pistolero-mi-l k 
+el pistolero-mi-l k x
 El caballo de la sierra-sol-l
 el tejanito-mi-l
-el fronterizo-mi-l
+el fronterizo-mi-l x
 mi primer servo-mi-l
 
 
