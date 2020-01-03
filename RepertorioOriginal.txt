@@ -20,7 +20,7 @@ xp-practica
 
 *Corridos
 
-El numero uno-do- a 
+
 mi 45-mib-a j 
 el 701-rc-a 
 el chaparrito-mib-a
@@ -35,8 +35,6 @@ gallo de calidad-do-a xp
 gente de accionar-mib-a
 18 libras-do-a. xp
 gente del chapo-fa-a
-el ayudante-fa-a 
-javier díaz-sol-a 
 Los drones-fa-a 
 Calibre 40-mi-a
 El tecnico-mi-a 
@@ -47,87 +45,94 @@ Falsos Amigos-sol-a xp
 
 *Canciones
 
-Hablando claro-re-c
-Baraja de oro-solSos-c 
-Negra cruz-mimem-c 
-Los laureles-fa-c 
+La cosecha-mi-c h 
+No sufras madre-re-c h
+Hablando claro-re-c h 
+Baraja de oro-solSos-c h 
+Negra cruz-mimem-c h 
+Los laureles-fa-c h 
 Mi padre mi amigo-do-c
-Medias negras-mi-c 
+Medias negras-mi-c h
 flor hermosa-fa-c j i 
-sonora y sus ojos negros-sol-c j i
+sonora y sus ojos negros-sol-c j i h 
 dos mares de lagrimas-do-c j h i 
-tragos de amargo licor-sib-c j d  
-alma enamorada-sib-c j i 
-entre copa y copa-do-c j i 
+tragos de amargo licor-sib-c j d h  
+alma enamorada-sib-c j i h
+entre copa y copa-do-c j i h
 el columpio-do-c j h i 
 dos botellas de mescal-sol-c j h 
 porque se habra ido-fa-c j h 
 Arriba de 120-re-c 
-Las iluciones-mi#-c i 
-30 cartas-mi-c j 
-porque te vas de mi-fa-c j i 
+Las iluciones-mi#-c i h 
+30 cartas-mi-c j h
+porque te vas de mi-fa-c j i h 
 
 
 
 *Corridos Clasicos
 
+el ayudante-fa-b 
+El numero uno-do-b 
 Reto a la ley-mimemol-b 
 muchacho alegre-fa-e g j k
 catarino y los rurales-fa-b d i j 
 El basucazo-re-a b i j 
 el costal lleno de piedras-sol-a b h j 
 el centenario-mib-a b e i j 
-Pistoleros famosos-solsost-b 
+Pistoleros famosos-solsost-b h 
 Vida mafiosa-mim-b 
-Chito Cano-mim-b 
+Chito Cano-mim-b h
 Juan marta-sol-b d 
 24 de junio-sib-b j d i 
 cuerno de chivo-mib-b j 
-se les pelo baltazar-sol#-b j d 
+se les pelo baltazar-sol#-b j d h 
 Los traficantes-re-b 
 dimas de leon-fa-b j d 
-los dos amigos-fa-b j d i
-laurita garza-sol-b j d i 
+los dos amigos-fa-b j d i h
+laurita garza-sol-b j d i h 
 caballo de la acordada-do-b j d i
-los contrabandistas-fa-b 
-El albañil-re-b j 
-La carcel de cananea-sol-b j d 
+los contrabandistas-fa-b h 
+El albañil-re-b j h 
+La carcel de cananea-sol-b j d h
 
 
 *Rancheritas
 
-Mi golondrina-mi-d
-me dan celos-fa-d c j 
-Tatuajes-mi-d c
+Un puño de tierra-sol-d h
+El amor nunca se vende-mi-c h 
+Con cartitas-sol#-d c h
+Mi golondrina-mi-d h 
+me dan celos-fa-d c j h 
+Tatuajes-mi-d c h 
 dolor y amor-mi-d c j d  h i 
 El ausente-sol-d c j d
-Tres ramitas-re-d 
-Que casualidad-sol-d 
+Tres ramitas-re-d h 
+Que casualidad-sol-d h 
 Dos puñales-fa-d
-Por una mujer casada-fa-d 
-Me cai de la nuve-solsost-d 
-Deja libre mi camino-mim-d 
-Cruz de madera-fa-d 
-Dos pasages-mim-d 
-Y por esa calle vive-re-d xp
-Caballo R15-fa-d 
-Se va muriendo mi alma-mi-d 
-San Juan de Ulua-do-d 
-un rinconcito en el cielo-fa-d i e 
-prenda querida-mi-d i 
-flor de capono-mi-d i 
+Por una mujer casada-fa-d h 
+Me cai de la nuve-solsost-d h 
+Deja libre mi camino-mim-d h 
+Cruz de madera-fa-d h 
+Dos pasages-mim-d h 
+Y por esa calle vive-re-d h 
+Caballo R15-fa-d h
+Se va muriendo mi alma-mi-d h xp
+San Juan de Ulua-do-d h
+un rinconcito en el cielo-fa-d i e h 
+prenda querida-mi-d i h 
+flor de capono-mi-d i h 
 cuanto me gusta ese rancho-do-d e j 
-celos del viento-re-d 
-me voy a cortar las venas-sol#-d i e 
-a qui en mi corazon tu mandas-do-d e 
-el palomito-fa-d i e 
-piquito de oro-sol#-d i e 
-amores fingidos-fa-d i e 
-Que tal si te vas conmigo-do-d 
-Quiero que sepas-sol#-d 
-Mi casa nueva-fa-d i 
+celos del viento-re-d h 
+me voy a cortar las venas-sol#-d i e h 
+a qui en mi corazon tu mandas-do-d e h 
+el palomito-fa-d i e h 
+piquito de oro-sol#-d i e h 
+amores fingidos-fa-d i e h 
+Que tal si te vas conmigo-do-d h
+Quiero que sepas-sol#-d h 
+Mi casa nueva-fa-d i h 
 Linda morena-mi-d i 
-Noches tenebrosas-sol-d i 
+Noches tenebrosas-sol-d i h 
 Golpe traidor-mi-d h 
 la canelera-fa-d e j 
 clavelito chino chino-fa-d b i 
