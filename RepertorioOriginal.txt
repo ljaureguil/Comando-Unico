@@ -20,7 +20,7 @@ xp-practica
 
 *Corridos
 
-
+Con la suela roja-re-a
 mi 45-mib-a j f 
 el 701-rc-a 
 el chaparrito-mib-a
@@ -43,8 +43,12 @@ El Karma-do-a f
 Buscando al cholo-?-a
 Falsos Amigos-sol-a xp
 
+
+
 *Canciones
 
+
+No sufras madre-re-c
 La cosecha-mi-c h f 
 No sufras madre-re-c h f
 Hablando claro-re-c h f 
@@ -71,6 +75,8 @@ porque te vas de mi-fa-c j i h f
 
 *Corridos Clasicos
 
+
+Con cartitas-sol#-b
 el ayudante-fa-b f 
 El numero uno-do-b 
 Reto a la ley-mimemol-b 
@@ -98,6 +104,8 @@ La carcel de cananea-sol-b j d h
 
 *Rancheritas
 
+Un puño de tierra-sol-b
+El amor nunca se vende-re-d
 Un puño de tierra-sol-d h
 El amor nunca se vende-mi-c h f
 Con cartitas-sol#-d c h
