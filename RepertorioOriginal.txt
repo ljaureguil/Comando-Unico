@@ -81,7 +81,7 @@ El numero uno-do-b
 Reto a la ley-mimemol-b x
 muchacho alegre-fa-e g j k f
 catarino y los rurales-fa-b d i j f x
-El basucazo-re-a b i j f 
+El bazucazo-re-a b i j f 
 el costal lleno de piedras-sol-a b h j f
 el centenario-mib-a b e i j f x
 Pistoleros famosos-solsost-b h x
@@ -103,6 +103,8 @@ La carcel de cananea-sol-b j d h x
 
 *Rancheritas
 
+
+40 cartas-ga-d f
 Un puño de tierra-sol-d h
 El amor nunca se vende-mi-c h f x
 Con cartitas-sol#-d c h x
