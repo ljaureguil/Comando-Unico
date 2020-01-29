@@ -49,7 +49,8 @@ Falsos Amigos-sol-a
 
 *Canciones
 
-La cosecha-mi-c h f x
+Recuerdos de un amigo-do-c 
+La cosecha-mi-c h f 
 No sufras madre-re-c h f
 Hablando claro-re-c h f x
 Baraja de oro-solSos-c h x
@@ -104,8 +105,8 @@ La carcel de cananea-sol-b j d h x
 
 *Rancheritas
 
-
-40 cartas-ga-d f
+Y ahora te vas-fa-d
+40 cartas-fa-d f
 Un puño de tierra-sol-d h
 El amor nunca se vende-mi-c h f x
 Con cartitas-sol#-d c h x
@@ -152,6 +153,7 @@ Elenita-re-f
 
 *Cumbias
 
+No me alcansa-do-g
 Camaron caramelo-do-g 
 la yaquesita-fa-k g 
 El hombre apasionado de Javier Rosas-fa-g 
