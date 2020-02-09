@@ -23,7 +23,7 @@ xp-practica
 
 
 
-Sentado en una llelera-do-a
+Sentado en una llelera-mimemol-a
 Por los rumbos del dorado-sol-a
 Chuy berduras-do-a
 Mi pasado y mi presente-sol-a
@@ -55,7 +55,7 @@ Falsos Amigos-sol-a
 
 *Canciones
 
-
+Nieves de enero-fa-c
 Recuerdos de un amigo-do-c 
 La cosecha-mi-c h f 
 No sufras madre-re-c h f
@@ -112,6 +112,7 @@ La carcel de cananea-sol-b j d h
 
 *Rancheritas
 
+Tengoiedo-solsost-d
 Rancherita-solsostenido-d
 Soy trokero-mimemol-d
 Y ahora te vas-fa-d
