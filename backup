@@ -50,19 +50,7 @@
         top: 90%;
         bottom: right: 5%;
       }
-      #edventana {
-        font-size: 20px;
-        background: rgba(0, 200, 0, .5);
-        color: red;
-        position: absolute;
-        right: 5%;
-        bottom: 5%;
-        border-radius: 500px;
-        border-style: double;
-        border-color: blue;
-        border-width: 15px;
-        padding: 4px;
-      }
+   
       #divrep {
         font-size: 18px;
         //position: absolute;
@@ -153,7 +141,7 @@
 
       </form>
 
-      <a id="edventana" target="_blank">Edit</a>
+  
 
       <div id="ctrls">
         <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. Practica .</button>
@@ -201,7 +189,7 @@
       repmix = "";
       esrch = document.getElementById('srch');
       ebarra = document.getElementById('barra');
-      eedventana = document.getElementById('edventana');
+    //  eedventana = document.getElementById('edventana');
       edivrep = document.getElementById('divrep');
       efr = document.getElementById("ifr")
       arindex = [];
@@ -293,7 +281,7 @@
       function opendoc(op) {
         doc.close();
         //alert(op);
-        eedventana.href = op; //eedventana.click();
+     //   eedventana.href = op; //eedventana.click();
         if (op.indexOf("https") >= 0) {
           var re = prompt("Write your password");
           var d = new Date().toString();
