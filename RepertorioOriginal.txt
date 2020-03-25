@@ -21,7 +21,7 @@ xp-practica
 
 *Corridos
 
-
+Sigo chambeando-mimemol-a
 Martes 13-solsos-a
 Sentado en una llelera-mimemol-a x
 Por los rumbos del dorado-sol-a
@@ -84,6 +84,7 @@ porque te vas de mi-fa-c j i h f
 
 *Corridos Clasicos
 
+Carga blanca-fa-b
 El Viejo Paulino-mimemol-b
 Arbol de la horca-mimemol-b
 La martina-fa-b
@@ -118,6 +119,10 @@ La carcel de cananea-sol-b j d h
 
 *Rancheritas
 
+Adios madre querida-mimemol-d
+Una flor quise cortar-aimemol-d
+Vete con el hombre-sol-d
+Pideme la luna-sol-d
 Hermosisimo lucero-do-d
 Cajita de oro-fa-d x
 Los ojos de pancha-fa-d
@@ -171,6 +176,7 @@ Elenita-re-f x
 
 *Cumbias
 
+Roberto Ruiz-sol-g
 No me alcansa-do-g
 Camaron caramelo-do-g 
 la yaquesita-fa-k g 
