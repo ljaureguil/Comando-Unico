@@ -55,6 +55,8 @@ Falsos Amigos-sol-a x
 
 *Canciones
 
+Rifar mi suerte-mimemol-c
+Cancion mixteca-do-c
 El pajarillo-fa-c x
 Nieves de enero-fa-c 
 Recuerdos de un amigo-do-c 
@@ -119,6 +121,7 @@ La carcel de cananea-sol-b j d h
 
 *Rancheritas
 
+El corton-mimemol-d
 Adios madre querida-mimemol-d
 Una flor quise cortar-aimemol-d
 Vete con el hombre-sol-d
