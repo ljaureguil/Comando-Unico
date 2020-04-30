@@ -6,6 +6,7 @@
     type="image/x-icon" />
 
 </head>
+  <script src='file:///android_asset/app.js'></script>
 
 <body>
     <style>
@@ -127,7 +128,7 @@
             height: 98%;
             position: absolute;
             padding: 20px;
-            overflow: auto;
+           // overflow: auto;
             background: black;
             border: solid;
         }
@@ -137,6 +138,8 @@
             font-size: 18px;
             width: 90%;
             height: 90%;
+         //   overflow: auto;
+            
            // border-style: solid;
            border-radius:5px;
             font-weight: bold;
@@ -149,13 +152,29 @@
             left: 0%;
             width:100%;
         }
+         #inicsld {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background:rgba(0,150,0,.50);//#00aa00;
+            color:#ffffff;
+                    box-shadow:inset 0 0 5px 1px #66aa66; 
+        }      
     </style>
     <div id="dle">
-        <textarea id="le"></textarea readonly>
-        <button id="clle" onclick='edle.style.display="none"'>Close</button>
-    </div>
+
+        <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)" ></textarea  >
+        <button id="clle" onclick='einicsld.style.background="rgba(0,150,0,.50)";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)'>Close</button>
+        <button id="inicsld" onclick='clearInterval(scintervalo);inicScrolling();'>Start</button>
+   
+   
+    </div>  
+    <button id="logo" onclick="sortear('')">&#9834;</button>
     <div id="todo">
-        <button id="logo" onclick="sortear('')">&#9834;</button>
+ 
 
         <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
 
@@ -214,6 +233,8 @@
         var repstate = true;
         var total = []
         var btit = true;
+        var Letras=""; 
+        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Letras.txt", function(r) {Letras=r;});
 
         ele = document.getElementById("le");
         edle = document.getElementById("dle");
@@ -369,27 +390,30 @@
             showletra(ebarra.value)
         }
 
-        function showletra(cancion) {
-            if (cancion === "Quinientos Novillos") {
-                loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Letras.txt",
-                    function(r) {
-                        edle.style.display = "block";
-                        var as = r.indexOf("*" + cancion)
-                        var vt = r.slice(as, r.indexOf("*", as + 1));
-                        //      alert(r.indexOf("*",as));
+          function showletra(cancion) { //Corrido de Roberto Gastelum
+           var as = Letras.indexOf("*" + cancion);
+           //    alert(as+"oooooooooo");
+           if (as >= 0) {
 
-                        ele.value = vt;
+               edle.style.display = "block";
+               var vt = Letras.slice(as, Letras.indexOf("*", as + 1));
+               var vt = Letras.slice(as, Letras.indexOf("*", as + 1));
+               le.value = vt;
+               sch = ele.offsetHeight * 1;
+               scy = 0;
+               tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000*60;
+             // alert(tiempo);
+            //   inicScrolling();
 
-                    });
+           }
+           else {
+               ebarra.value = cancion + " letra";
+               //   window.open(ebarra.value, '_blank');
+               esrch.click()
+               ebarra.value = "";
+           }
 
-            } else {
-                ebarra.value = cancion + " letra";
-                //   window.open(ebarra.value, '_blank');
-                esrch.click()
-                ebarra.value = "";
-            }
         }
-
         function loadText(file, callback) {
             fetch(file).then(response => response.text()).then((data) => {
                 callback(data); //
@@ -548,6 +572,25 @@
                 }
             }
         }
+        var sch=ele.offsetHeight*1,scy=0,scintervalo=null,tiempo=500*60,sctiempo=0,iti=0,einicsld=document.getElementById("inicsld");
+    function  movescroll(h,y){
+        sch=h;
+        scy=y;
+    //    app.ShowPopup(h+"\n\n"+y+"\n\n"+ele.offsetHeight);
+        
+    }
+    function inicScrolling(){
+        sctiempo=tiempo/(ele.scrollHeight+sch);//alert(sctiempo)
+        it=0;
+        document.getElementById("clle").focus();
+        einicsld.style.background="rgba(150,0,0,.50)";
+        scintervalo=setInterval(function(){
+            it++;//ele.scrollTop+=1;//ele.scrollHeight/2
+           if(it>ele.offsetHeight/2) {ele.scrollTop+=1;}
+           
+            if(it>(ele.scrollHeight)) {  einicsld.style.background="rgba(0,150,0,.50)";clearInterval(scintervalo);}
+        },sctiempo);
+    }
     </script>
 
 </body>
