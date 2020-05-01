@@ -56,6 +56,9 @@ Falsos Amigos-sol-a x
 
 *Canciones
 
+Ingrato amor-mimemol-c
+Adios amigos-mimemol-c
+Tomando de dia-mimemol-c
 Rifar mi suerte-mimemol-c
 Cancion mixteca-do-c
 El pajarillo-fa-c x
@@ -86,7 +89,11 @@ porque te vas de mi-fa-c j i h f
 
 
 *Corridos Clasicos
-Quinientos Novillos-fae-b
+
+Corrido de los Perez-mimemol-b
+La negra noche-mimemol-b
+El muchacho desidido-mimemol-b
+Quinientos Novillos-fa-b
 Carga blanca-fa-b
 El Viejo Paulino-mimemol-b
 Arbol de la horca-mimemol-b
@@ -122,6 +129,8 @@ La carcel de cananea-sol-b j d h
 
 *Rancheritas
 
+
+Pero quererte jamas-fa-d
 El corton-mimemol-d
 Adios madre querida-mimemol-d
 Una flor quise cortar-aimemol-d
