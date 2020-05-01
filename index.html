@@ -580,7 +580,7 @@
         
     }
     function inicScrolling(){
-        sctiempo=tiempo/(ele.scrollHeight+sch);//alert(sctiempo)
+        sctiempo=tiempo/(ele.scrollHeight-sch+1);//alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
         it=0;
         document.getElementById("clle").focus();
         einicsld.style.background="rgba(150,0,0,.50)";
