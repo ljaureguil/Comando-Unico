@@ -1,4 +1,4 @@
-*Reto a la ley ... 2.5
+*Reto a la ley ... 2.5 ...7
 
 LLAMO AL SHERIFF DEL CONDADO
 MOSTRANDO SU VALENTIA
@@ -38,7 +38,8 @@ Y AQUEL QUE LES HIZO EL RETO
 NO VOLVIERON A SABER
 
 
-*Quinientos Novillos. ... 2.5 
+*Quinientos Novillos. ... 2.5 ...7
+
 
 
 
@@ -85,9 +86,8 @@ De los quinientos novillos.
 
 
 
-*Corrido de Roberto Gastelum ...2.3
 
-
+*Corrido de Roberto Gastelum ...2.3 ...7
 
 
 
@@ -137,5 +137,7 @@ De un hombre muy respetuoso
 Un hombre trabajador
 Es conocido en los campos
 Es Roberto si señor.
+
+
 
 
