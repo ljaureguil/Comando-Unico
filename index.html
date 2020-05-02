@@ -145,6 +145,7 @@
             font-weight: bold;
             background: #000070;
            box-shadow:inset 0 0 30px 4px #6666ff;
+          scroll-behavior: smooth;
         }
         #clle {
             position: absolute;
@@ -401,10 +402,13 @@
                le.value = vt;
                sch = ele.offsetHeight * 1;
                scy = 0;
-               tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000*60;
-             // alert(tiempo);
-            //   inicScrolling();
-
+            //   tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000*60;
+            
+            tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("...",vt.indexOf("...")+1))*1000*60;
+    //         tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000*60;
+           //   d1 = vt.indexOf("...", vt.indexOf("...") + 1);
+    delay=vt.slice(vt.lastIndexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000;
+    //    alert(delay)
            }
            else {
                ebarra.value = cancion + " letra";
@@ -579,18 +583,39 @@
     //    app.ShowPopup(h+"\n\n"+y+"\n\n"+ele.offsetHeight);
         
     }
-    function inicScrolling(){
-        sctiempo=tiempo/(ele.scrollHeight-sch+1);//alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
-        it=0;
-        document.getElementById("clle").focus();
-        einicsld.style.background="rgba(150,0,0,.50)";
-        scintervalo=setInterval(function(){
-            it++;//ele.scrollTop+=1;//ele.scrollHeight/2
-           if(it>ele.offsetHeight/2) {ele.scrollTop+=1;}
+    delay=4000;
+    function inicScrolling() {
+         document.getElementById("clle").focus();
+      einicsld.style.background = "rgba(150,0,0,.50)";        
+         
+        
+        setTimeout(function(){
            
-            if(it>(ele.scrollHeight)) {  einicsld.style.background="rgba(0,150,0,.50)";clearInterval(scintervalo);}
-        },sctiempo);
-    }
+      sctiempo = (tiempo-delay) / (ele.scrollHeight - ele.offsetHeight);//    //-sch+1  //alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
+      it = 0;
+ //     alert(tiempo / (ele.scrollHeight+))// 
+      var tinic = new Date().getTime() * 1;
+      var tprog = null;
+ 
+      var dint = new Date().getTime() * 1;
+      scintervalo = setInterval(function() {
+          tprog = new Date().getTime() * 1;
+
+          var dif = tprog - tinic; //alert(dif);
+          var s = new Date().getTime() * 1 - dint;//alert("s="+s);
+          if (s > sctiempo/2) {
+            // app.ShowPopup(s);
+              dint = new Date().getTime() * 1;//alert("dint="+dint);
+              it += 1;
+              ele.scrollTop += .5;
+          }
+          if (dif > tiempo-delay) {
+              einicsld.style.background = "rgba(0,150,0,.50)";
+              clearInterval(scintervalo);
+          }
+      }, 10);
+        },delay);
+  }
     </script>
 
 </body>
