@@ -135,7 +135,7 @@
         #le {
             padding: 15px;
             color: white;
-            font-size: 18px;
+            font-size: 17px;
             width: 90%;
             height: 90%;
          //   overflow: auto;
@@ -391,7 +391,11 @@
             showletra(ebarra.value)
         }
 
-          function showletra(cancion) { //Corrido de Roberto Gastelum
+        function getletra() {
+           showletra(ebarra.value)
+       }
+
+       function showletra(cancion) { //Corrido de Roberto Gastelum
            var as = Letras.indexOf("*" + cancion);
            //    alert(as+"oooooooooo");
            if (as >= 0) {
@@ -402,22 +406,22 @@
                le.value = vt;
                sch = ele.offsetHeight * 1;
                scy = 0;
-            //   tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000*60;
-            
-            tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("...",vt.indexOf("...")+1))*1000*60;
-    //         tiempo=vt.slice(vt.indexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000*60;
-           //   d1 = vt.indexOf("...", vt.indexOf("...") + 1);
-    delay=vt.slice(vt.lastIndexOf("...")+3,vt.indexOf("\n",vt.indexOf("...")+1))*1000;
-    //    alert(delay)
-           }
-           else {
+//               tiempo = vt.slice(vt.indexOf("...") + 3, vt.indexOf("...", vt.indexOf("...") + 1)) * 1000 * 60;
+//               delay = vt.slice(vt.lastIndexOf("...") + 3, vt.indexOf("\n", vt.indexOf("...") + 1)) * 1000;
+                var par= vt.slice(vt.indexOf("(")+1 , vt.indexOf(")"));
+                par=par.split(",");
+               tiempo = par[0]* 1000 * 60;
+               dilay = par[1] * 1000;
+        //        alert(par.toString());
+           } else {
                ebarra.value = cancion + " letra";
                //   window.open(ebarra.value, '_blank');
                esrch.click()
                ebarra.value = "";
            }
 
-        }
+       }
+        
         function loadText(file, callback) {
             fetch(file).then(response => response.text()).then((data) => {
                 callback(data); //
@@ -583,15 +587,15 @@
     //    app.ShowPopup(h+"\n\n"+y+"\n\n"+ele.offsetHeight);
         
     }
-    delay=4000;
+    dilay=4000;
     function inicScrolling() {
          document.getElementById("clle").focus();
       einicsld.style.background = "rgba(150,0,0,.50)";        
-         
+    //     alert(tiempo+"\n\n"+dilay);
         
         setTimeout(function(){
            
-      sctiempo = (tiempo-delay) / (ele.scrollHeight - ele.offsetHeight);//    //-sch+1  //alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
+      sctiempo = (tiempo-dilay) / (ele.scrollHeight - ele.offsetHeight);//    //-sch+1  //alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
       it = 0;
  //     alert(tiempo / (ele.scrollHeight+))// 
       var tinic = new Date().getTime() * 1;
@@ -609,12 +613,12 @@
               it += 1;
               ele.scrollTop += .5;
           }
-          if (dif > tiempo-delay) {
+          if (dif > tiempo-dilay) {
               einicsld.style.background = "rgba(0,150,0,.50)";
               clearInterval(scintervalo);
           }
       }, 10);
-        },delay);
+        },dilay);
   }
     </script>
 
