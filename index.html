@@ -155,20 +155,23 @@
         }
          #inicsld {
             position: absolute;
-            top: 0%;
-            left: 0%;
-            width:50px;
-            height:50px;
-            border-radius:50%;
+            bottom: 82px;
+            right: 42px;
+            width:80px;
+            height:80px;
+            border-radius:10px;
             background:rgba(0,150,0,.50);//#00aa00;
             color:#ffffff;
+            font-size:20px;
+            font-weight:bold;
+            border-style:double;
                     box-shadow:inset 0 0 5px 1px #66aa66; 
         }      
     </style>
     <div id="dle">
 
         <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)" ></textarea  >
-        <button id="clle" onclick='einicsld.style.background="rgba(0,150,0,.50)";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)'>Close</button>
+        <button id="clle" onclick='einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)'>Close</button>
         <button id="inicsld" onclick='clearInterval(scintervalo);inicScrolling();'>Start</button>
    
    
@@ -590,14 +593,11 @@
     dilay=4000;
     function inicScrolling() {
          document.getElementById("clle").focus();
-      einicsld.style.background = "rgba(150,0,0,.50)";        
-    //     alert(tiempo+"\n\n"+dilay);
-        
-        setTimeout(function(){
-           
+      einicsld.style.background = "rgba(150,0,0,.50)";
+         setTimeout(function(){
       sctiempo = (tiempo-dilay) / (ele.scrollHeight - ele.offsetHeight);//    //-sch+1  //alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
       it = 0;
- //     alert(tiempo / (ele.scrollHeight+))// 
+ 
       var tinic = new Date().getTime() * 1;
       var tprog = null;
  
@@ -608,6 +608,7 @@
           var dif = tprog - tinic; //alert(dif);
           var s = new Date().getTime() * 1 - dint;//alert("s="+s);
           if (s > sctiempo/2) {
+              if(einicsld.style="block"){     einicsld.style.display="none";}
             // app.ShowPopup(s);
               dint = new Date().getTime() * 1;//alert("dint="+dint);
               it += 1;
@@ -615,6 +616,7 @@
           }
           if (dif > tiempo-dilay) {
               einicsld.style.background = "rgba(0,150,0,.50)";
+               einicsld.style.display="block";
               clearInterval(scintervalo);
           }
       }, 10);
