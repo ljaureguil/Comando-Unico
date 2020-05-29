@@ -27,21 +27,21 @@ Martes 13-solsos-a
 Sentado en una llelera-mimemol-a 
 Por los rumbos del dorado-sol-a
 Chuy berduras-do-a
-Mi pasado y mi presente-sol-a x
-Con la suela roja-re-a x
-mi 45-mib-a j f x
+Mi pasado y mi presente-sol-a 
+Con la suela roja-re-a 
+mi 45-mib-a j f 
 el 701-rc-a 
 el chaparrito-mib-a
-la muerte del comandante-do-a x
+la muerte del comandante-do-a 
 el caballero-do-a f 
-pio diaz-do-a x
-el guero bastidas-fa-a f x
-la fuga del jefe-fa-a x
+pio diaz-do-a 
+el guero bastidas-fa-a f 
+la fuga del jefe-fa-a 
 comboy del pelo chino-fa-a
 los rumbos del dorado-fa-a
 gallo de calidad-do-a x
 gente de accionar-mib-a
-18 libras-do-a f x
+18 libras-do-a f 
 gente del chapo-fa-a
 Los drones-fa-a 
 Calibre 40-mi-a
@@ -131,6 +131,7 @@ La carcel de cananea-sol-b j d h x
 *Rancheritas
 
 
+El soltero-mi-d
 Pero quererte jamas-fa-d
 El corton-mimemol-d
 Adios madre querida-mimemol-d
