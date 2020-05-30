@@ -42,7 +42,7 @@
             background: #000070;
             font-size: 15px;
             // font-weight: bold;
-            width: 27%;
+            width: 46%;
             height: 8%;
         }
         #ed {
@@ -118,8 +118,12 @@
             visibility: visible;
         }
         #ppr {
-            background: #790808;
-            color: #F1F1F1;
+            background: #0000FF;
+            color: #ffffff;
+            font-size:25px;
+            border-radius:100px;
+             box-shadow: inset 5px -5px 30px #000020, inset -5px 5px 30px #000088;
+            
         }
         #dle {
             color: white;
@@ -200,12 +204,11 @@
 
 
         <div id="ctrls">
-            <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. *Notes .</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
-            <button class=btns onclick='opendoc( "rep")'>Repertorio</button>
-            <button class=btns onclick='opendoc( "open rep")'>R Temp</button>
+            <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. *NOTES* .</button>
+         <button class=btns onclick='sortearTocada()'>Repertorio Tocada</button>
+            <button class=btns onclick='opendoc( "open rep")'>Repertorio Mix.</button>
+           <button class=btns onclick='opendoc( "rep")'>Repertorio</button>
+
         </div>
         <div id=ifrs>
 
@@ -233,6 +236,15 @@
     </div>
 
     <script>
+    /*
+    
+                <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
+            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
+            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
+ 
+    
+    
+    */
         //https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw
         var repstate = true;
         var total = []
@@ -512,7 +524,8 @@
                 var node = document.createElement("LI");
                 var di = "<font color='#00ffff'> _ </font>";
                 di = "";
-                node.innerHTML = di + song + di; //"    . . ." Tono " + to;
+ 
+                node.innerHTML = di + song + di+" . . . " + to; //
 
                 node.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
                 node.estado = true;
@@ -524,7 +537,7 @@
                     node.style.color = "#ff0";
                 }
                 if (cl.indexOf("repertorio tocada") >= 0) {
-                    node.style.color = "#0ff";
+                //    node.style.color = "#0ff";
                 }
                 return node;
             }
@@ -551,6 +564,7 @@
                     txtValue = li[i].textContent || li[i].innerText;
                     var aa = txtValue.split(" . .");
                     txtValue = aa[0];
+                 //   app.ShowPopup(li[i].clase);
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
                         li[i].style.display = "";
                         if (txtValue != ""); //ebarra.value=txtValue;
@@ -622,6 +636,21 @@
       }, 10);
         },dilay);
   }
+  
+  
+  function sortearTocada() {
+  li = eli.getElementsByTagName("li");    
+     for (i = 0; i < li.length; i++) {
+         if (li[i].clase.indexOf('repertorio tocada') == -1) {
+             li[i].style.display = "none";
+         }
+         else {
+             li[i].style.display = "block";
+         }
+     }
+
+ }
+  
     </script>
 
 </body>
