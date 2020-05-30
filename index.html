@@ -170,7 +170,11 @@
             font-weight:bold;
             border-style:double;
                     box-shadow:inset 0 0 5px 1px #66aa66; 
-        }      
+        }     
+        #mainrep{
+             font-size:18px;
+            background:#aa0000;
+        }
     </style>
     <div id="dle">
 
@@ -205,9 +209,9 @@
 
         <div id="ctrls">
             <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. *NOTES* .</button>
-         <button class=btns onclick='sortearTocada()'>Repertorio Tocada</button>
+            <button id=mainrep class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
             <button class=btns onclick='opendoc( "open rep")'>Repertorio Mix.</button>
-           <button class=btns onclick='opendoc( "rep")'>Repertorio</button>
+         <button class=btns onclick='sortearTocada()'>Repertorio Tocada</button>  
 
         </div>
         <div id=ifrs>
@@ -477,7 +481,7 @@
                 }
             }
             edc.scrollTop = 200;
-            etitulo.innerHTML = ". . . " + cl + " . . .";
+            etitulo.innerHTML = cl ;//+ " . . ."; ". . . " +
         }
 
         function preparesongs() {
