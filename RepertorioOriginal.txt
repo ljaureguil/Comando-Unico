@@ -21,7 +21,7 @@ xp-practica
 
 *Corridos
 
-Corrido de Roberto Gastelum-fa-a
+Corrido de Roberto Gastelum-fa-a x
 Sigo chambeando-mimemol-a
 Martes 13-solsos-a
 Sentado en una llelera-mimemol-a 
@@ -91,42 +91,42 @@ porque te vas de mi-fa-c j i h f
 
 *Corridos Clasicos
 
-Mataron a los Mendez-do-b
-Corrido de los Perez-mimemol-b xp
+Mataron a los Mendez-do-b x
+Corrido de los Perez-mimemol-b x
 La negra noche-mimemol-b 
 El muchacho desidido-mimemol-b 
 Quinientos Novillos-fa-b 
-Carga blanca-fa-b 
-El Viejo Paulino-mimemol-b
-Arbol de la horca-mimemol-b 
-La martina-fa-b
-Juan Ramos-fa-b
-Julio beltran-re-a 
+Carga blanca-fa-b x
+El Viejo Paulino-mimemol-b x
+Arbol de la horca-mimemol-b x
+La martina-fa-b x
+Juan Ramos-fa-b x
+Julio beltran-re-a x
 Clave 7-fa-b 
 Con cartitas-sol#-b 
 el ayudante-fa-b f 
 El numero uno-do-b 
-Reto a la ley-mimemol-b 
+Reto a la ley-mimemol-b x
 muchacho alegre-fa-e g j k f
-catarino y los rurales-fa-b d i j f 
+catarino y los rurales-fa-b d i j f x
 El bazucazo-re-a b i j f 
 el costal lleno de piedras-sol-a b h j f
 el centenario-mib-a b e i j f 
-Pistoleros famosos-solsost-b h 
+Pistoleros famosos-solsost-b h x
 Vida mafiosa-mim-b f 
-Chito Cano-mim-b h 
-Juan marta-sol-b d 
-24 de junio-sib-b j d i 
+Chito Cano-mim-b h x
+Juan marta-sol-b d x
+24 de junio-sib-b j d i x
 cuerno de chivo-mib-b j 
 se les pelo baltazar-sol#-b j d h 
-Los traficantes-re-b 
-dimas de leon-fa-b j d 
-los dos amigos-fa-b j d i h f 
-laurita garza-sol-b j d i h 
+Los traficantes-re-b x
+dimas de leon-fa-b j d x
+los dos amigos-fa-b j d i h f x
+laurita garza-sol-b j d i h x
 caballo de la acordada-do-b j d i 
-los contrabandistas-fa-b h 
+los contrabandistas-fa-b h x
 El albañil-re-b j h 
-La carcel de cananea-sol-b j d h 
+La carcel de cananea-sol-b j d h x
 
 
 *Rancheritas
