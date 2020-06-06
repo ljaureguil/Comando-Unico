@@ -70,7 +70,7 @@
             color: white;
             width: 83%;
             // height: 40%;
-            font-size: 15px;
+            font-size: 20px;
             font-weight: bold;
             border-radius: 15px;
             padding: 5%;
@@ -184,7 +184,7 @@
    
    
     </div>  
-    <button id="logo" onclick="sortear('')">&#9834;</button>
+    <button id="logo" onclick="ChFont()">&#9881;</button>
     <div id="todo">
  
 
@@ -654,10 +654,18 @@
      }
 
  }
-  
+  function ChFont(){
+ 
+ var x = prompt("Font Size:\n\nEnter a Value\nFrom 20 to 60", "20");
+ var s = parseInt(x);
+document.getElementById("lirep").style.fontSize = s+"px";
+
+      
+  }
     </script>
 
 </body>
+
 
 
 
