@@ -208,10 +208,10 @@
 
 
         <div id="ctrls">
-            <button class=btns id="ppr" onclick='opendoc( "repPrac")'>. *NOTES* .</button>
-            <button id=mainrep class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
-            <button class=btns onclick='opendoc( "open rep")'>Repertorio Mix.</button>
-         <button class=btns onclick='sortearTocada()'>Repertorio Tocada</button>  
+            <button class="btns"  id="ppr" onclick='opendoc( "repPrac")'>. *NOTES* .</button>
+            <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
+            <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
+         <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>  
 
         </div>
         <div id=ifrs>
@@ -656,7 +656,7 @@
  }
   function ChFont(){
  
- var x = prompt("Font Size:\n\nEnter a Value\nRecommended From 15 to 35", "20");
+ var x = prompt("Font Size:\n\nRecommended Enter a Value\nFrom 20 to 35", "20");
  var s = parseInt(x);
 document.getElementById("lirep").style.fontSize = s+"px";
 
