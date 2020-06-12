@@ -1,236 +1,3463 @@
-Clases:
-
-a-corridos
-f-sierreño
-b-corr. clas.
-c-canciones
-d-rancheritas
-e-bailables
-g-cumbias
-h-pisteadoras
-
-i-clasicas
-j-cajon
-k-zapateados
-l-huapangos
-x-repertorio tocada
-xp-practica
-
-
-/clases
-
-*Corridos
-
-El niño de la tuna-la-a
-El señor de la monyaña-mi-a
-Corrido de Roberto Gastelum-fa-a x
-Sigo chambeando-mimemol-a
-Martes 13-solsos-a
-Sentado en una llelera-mimemol-a 
-Por los rumbos del dorado-sol-a
-Chuy berduras-do-a
-Mi pasado y mi presente-sol-a 
-Con la suela roja-re-a 
-mi 45-mib-a j f 
-el 701-rc-a 
-el chaparrito-mib-a
-la muerte del comandante-do-a 
-el caballero-do-a f 
-pio diaz-do-a 
-el guero bastidas-fa-a f 
-la fuga del jefe-fa-a 
-comboy del pelo chino-fa-a
-los rumbos del dorado-fa-a
-gallo de calidad-do-a 
-gente de accionar-mib-a
-18 libras-do-a f 
-gente del chapo-fa-a
-Los drones-fa-a 
-Calibre 40-mi-a
-El tecnico-mi-a 
-Chino piloto-fa-a
-El Karma-do-a f 
-Prostipirugolfo-do-a 
-Buscado al cholo-?-a
-Falsos Amigos-sol-a 
 
 
 
-*Canciones
 
-Dos visios-mi-c
-Al pie de la tumba-re-c
-Mi gusto es-mi-c
-Ingrato amor-mimemol-c
-Adios amigos-mimemol-c 
-Tomando de dia-mimemol-c 
-Rifar mi suerte-mimemol-c 
-Cancion mixteca-do-c 
-La pajarera-fa-c 
-Las Nieves De Enero-fa-c 
-Recuerdos de un amigo-do-c 
-La cosecha-mi-c h f 
-No sufras madre-re-c h f
-Hablando claro-re-c h f 
-Baraja de oro-solSos-c h 
-Negra cruz-mimem-c h 
-Los laureles-fa-c h 
-Mi padre mi amigo-do-c f 
-Medias negras-mi-c h f 
-flor hermosa-fa-c j i f 
-sonora y sus ojos negros-sol-c j i h f 
-dos mares de lagrimas-do-c j h i 
-tragos de amargo licor-sib-c j d h 
-alma enamorada-sib-c j i h 
-entre copa y copa-do-c j i h xp
-el columpio-do-c j h i 
-dos botellas de mescal-sol-c j h f
-porque se habra ido-fa-c j h f 
-Arriba de 120-re-c 
-Las iluciones-mi#-c i h 
-30 cartas-mi-c j h 
-porque te vas de mi-fa-c j i h f 
+*El chaparrito (3,10)
 
+Muy de noche y en una avioneta lo vieron llegar
+5 hombres estaban esperando al chapito Guzman
+Buenas noches chavalones como les ha ido
+que hay de novedad
 
+Muy tranquilo pidió una cerveza pa estar relajado
+Un ejercito en alrededores lo estaban cuidando
+El 20 gente del cholo de ese operativo
+era el encargado
 
-*Corridos Clasicos
+Con mi super del 11 otra vez ya me volví a juntar
+Hay gente que no duerme creían que iba a regresar
+Todo lo he encontrado en orden muchas gracias cholo
+y también Ivan
 
-Tres mujeres-mi-b
-Mariano Resendez-re-b xd x
-Mataron a los Mendoza-do-b x
-Corrido de los Perez-mimemol-b x
-La negra noche-mimemol-b 
-El muchacho desidido-mimemol-b 
-Quinientos Novillos-fa-b 
-Carga blanca-fa-b x
-El Viejo Paulino-mimemol-b x
-Arbol de la horca-mimemol-b x
-La martina-fa-b x
-Juan Ramos-fa-b x
-Julio beltran-re-a x
-Clave 7-fa-b 
-Con cartitas-sol#-b 
-el ayudante-fa-b f 
-El numero uno-do-b 
-Reto a la ley-mimemol-b x
-muchacho alegre-fa-e g j k f
-catarino y los rurales-fa-b d i j f x
-El bazucazo-re-a b i j f 
-el costal lleno de piedras-sol-a b h j f
-el centenario-mib-a b e i j f 
-Pistoleros famosos-solsost-b h x
-Vida mafiosa-mim-b f 
-Chito Cano-mim-b h x
-Juan marta-sol-b d x
-24 de junio-sib-b j d i x
-cuerno de chivo-mib-b j 
-se les pelo baltazar-sol#-b j d h 
-Los traficantes-re-b x
-dimas de leon-fa-b j d x
-los dos amigos-fa-b j d i h f x
-laurita garza-sol-b j d i h x
-caballo de la acordada-do-b j d i 
-los contrabandistas-fa-b h x
-El albañil-re-b j h 
-La carcel de cananea-sol-b j d h x
+(Musica)
+
+Ahora si que el gobierno de espaldas se fueron pa' atrás
+Hay algo que yo tengo que ustedes nunca lo tendrán
+Me refiero a mi cerebro y como hacer las cosas
+para trabajar
+
+Tengo muchos amigos a quienes les debo favores
+El dinero mueve al mundo pero hay cosas mas mejores
+Una amistas puede mucho hasta abrirte la tierra
+Eso es cierto señores
+
+Con permiso mi gente ahora si me paso a retirar
+Hay trabajo y ajustes muchas cosas voy a alinear
+Me dicen el chaparrito y otros me conocen
+Por Chapo Guzman
 
 
-*Rancheritas
 
 
-El soltero-mi-d
-Pero quererte jamas-fa-d
-El corton-mimemol-d
-Adios madre querida-mimemol-d
-Una flor quise cortar-aimemol-d
-Vete con el hombre-sol-d 
-Pideme la luna-sol-d xp
-Hermosisimo lucero-do-d
-Cajita de oro-fa-d 
-Los ojos de pancha-fa-d
-Tengo miedo-solsost-d
-Soy trokero-mimemol-d 
-Y ahora te vas-fa-d 
-40 cartas-fa-d f xp
-Un puño de tierra-sol-d h
-El amor nunca se vende-mi-c h f 
-Con cartitas-sol#-d c h 
-Mi golondrina-mi-d h 
-me dan celos-fa-d c j h f 
-Tatuajes-mi-d c h 
-dolor y amor-mi-d c j d  h i f 
-El ausente-sol-d c j d
-Tres ramitas-re-d h 
-Que casualidad-sol-d h 
-Dos puñales-fa-d xp
-Por una mujer casada-fa-d h 
-Me cai de la nuve-solsost-d h 
-Deja libre mi camino-mim-d h f 
-Cruz de madera-fa-d h 
-Dos pasages-mim-d h 
-Y por esa calle vive-re-d h f 
-Caballo R15-fa-d h x
-Se va muriendo mi alma-mi-d h xp
-San Juan de Ulua-do-d h 
-un rinconcito en el cielo-fa-d i e h 
-prenda querida-mi-d i h 
-flor de capono-mi-d i h 
-cuanto me gusta ese rancho-do-d e j f 
-celos del viento-re-d h f 
-me voy a cortar las venas-sol#-d i e h 
-a qui en mi corazon tu mandas-do-d e h 
-el palomito-fa-d i e h 
-piquito de oro-sol#-d i e h f 
-amores fingidos-fa-d i e h 
-Que tal si te vas conmigo-do-d h 
-Quiero que sepas-sol#-d h f 
-Mi casa nueva-fa-d i h 
-Linda morena-mi-d i 
-Noches tenebrosas-sol-d i h xp
-Golpe traidor-mi-d h 
-la canelera-fa-d e j f 
-clavelito chino chino-fa-d b i 
-de esta sierra a la otra sierra-fa-d j e f c 
-mi caballo ensillado-fa-d e j f x
+*El 701 (3,12)
 
-El disgusto-mi memol-d h c xp
-Elenita-re-f 
+Estoy en la lista de los mas buscados,
+En el mundo entero ya todos lo saben,
+Medios me comparan con ese bin laden,
+Porque tambien cuento con mis talibanes.
 
-*Cumbias
+701 a mi me califican en la lista de los millonarios,
+De ricos influyentes que cargan billetes,
+Pero mi riqueza es amistad de mi jente.
 
-Roberto Ruiz-sol-g
-No me alcansa-do-g 
-Camaron caramelo-do-g xp
-la yaquesita-fa-k g 
-El hombre apasionado de Javier Rosas-fa-g 
-el tao tao-fa-g 
-la del moño colorado-fa-g 
-el gilberton-sol-g 
-agua de te-fa-g 
-La chona-fa-g e j 
-El pito de mi carrito-mimol-g j 
-La pelota de lolita-fa-g j 
-Camaron pelao-do-g j 
-Cumbia sampusana-la-g j e 
-la vecina me puso el dedo-fa-g j e xp
-El tucanazo-re-g 
-Cuate colas-fa-g 
-El manisero-la-f
+Que andan ofreciendo 10 milloncitos,
+Por mi cabeza y la de mi compadre,
+En los estados unidos de sabe,
+Pero ni la recompensa va poder ayudarles.
 
-*Zapateados
+Cuando estas abajo si se sufre mucho,
+Cuando estas arriva sufres mucho mas,
+Porque es un deber a la jente ayudar,
+Y si pierdes a un hijo nunca lo has de olvidar.
 
-La presumida-sol-k
-el sinaloense-fa-k 
-La loba del mar-fa-k g 
-pavido navido-fa-k g 
+Ahi que brindar por los que estan ausentes,
+Tambien por mi jente que ahora esta presente,
+Mi compadre mayo estamos bien pendientes,
+Alfredo e ivan que tambien son guzman.
+
+No creo que ocupe desirles mi nombre,
+Ya esta en la revista que se llama forces,
+Esta publicado entre los mas buscados,
+Solo por mi piden tan solo 5 millones.
 
 
-*huapangos
 
-el pistolero-mi-l k 
-El caballo de la sierra-sol-l
-el tejanito-mi-l
-el fronterizo-mi-l 
-mi primer servo-mi-l
 
+*mi 45 (3,12)
+
+Mi 45 conmemorativa
+Fajada al cinto,
+Cinco cargadores
+Equipado pal peligro…
+
+Las cachas son blancas supone
+Que pa buena suerte,
+Gracias a dios
+Me protegen de la muerte…
+
+Porto sombrero
+Porque sigo siendo un ranchero,
+Camisa fajada
+Indica hombre de respeto…
+
+Ando en la mafia,
+Responsable y con mucho talento,
+La mano pal amigo
+Proyectil pal enemigo…
+
+No digo mi nombre
+Y solo mi clave ahorita les digo,
+Soy el Chayón
+Hermano del Güero Quinto.
+
+(Música)
+
+Acá en Guadalajara
+Si no en Culiacán Sinaloa radico,
+Somos gente nueva
+Pistoleros del Chapito…
+
+Gobierno mexicano
+Mató a mi hermano en el 2005,
+Será un fantasma
+O porque sigue vivo…
+
+Y tengan cuidado
+Aquellos traicioneros
+Que se fueron del equipo,
+Yo sigo firme con Iván y Alfredito…
+
+Ya me despido de toda mi gente
+Al rato los miro,
+Con el tiro arriba
+Porto mi 4 5.
+
+
+
+
+*el niño de la tuna (3,10)
+
+Cuando nació pregunto la partera le dijo
+como le van a poner
+por apellido el sera Guzmán Loera
+y se llamara Juaquin
+de niño vendió naranjas aya por la sierra
+nomas pa poder comer
+nunca se avergüenza de eso
+al contrario lo dice que fue un orgullo pa el
+
+pa los que no saben quien es Guzmán Loera
+con gusto les voy hablar
+apoyado por el Mayo por Nacho y Juanito
+y amigos que andan por ay
+el forma parte del cartel
+mas fuerte que existe
+es de puro culiacan
+trae la camisa bien puesta orgulloso lo dice
+yo soy el Chapo Guzmán
+
+mis hijos son mi alegría también mi tristeza
+edgar te voy a extrañar
+fuiste de mi gran confianza mi mano derecha
+fuiste un cHAPITO Guzmán
+Iván Archidaldo estoy de veras orgulloso
+de que tu seas un Guzmán
+tambien a tu hermano Alfredo saben que los quiero
+Dios me los a de cuidar
+
+aunque no soy tan grandote
+mas bien soy chapito
+muy pocos me ande llegar
+soy bravo ya por herencia también soy amigo
+así somos los Guzman
+un saludo pa mi gente de Badiraguato
+y también de Culiacan
+rancho de Jesús maría yo nunca te olvido
+conmigo te e de llevar.
+
+
+
+
+*falsos amigos (3,10)
+
+En donde quedo el dinero con el que antes me humillaban
+yo traigo una feriecita pa' darles unas heladas
+mas que sea una cervecita las que ustedes no me daban
+
+El dinero que les sirva para ayudar a la gente
+no pa' humillar a los pobres ni pa' andar de prepotentes
+porque el dinero se acaba muy pocas manos lo tienen
+
+Y cuando tuve problemas ninguno se me acercaba
+porque no tenia dinero no salieron las tanteadas
+la vida es un sube y baja y aveces mas de bajada
+
+Se han acabado bodegas de billetes los mafiosos
+cuanti mas una fajita en la bolsa te hace estorbo
+no vemos y no escuchamos estamos ciegos y sordos
+
+Yo todo lo que he vivido se los canto en mis corridos
+tienes mas de otra persona hasta de un desconocido
+la familia es envidiosa por eso no están unidos
+
+Y cuando tuve problemas ninguno se me acercaba
+porque no tenia dinero no salieron las tanteadas
+la vida es un sube y baja y aveces mas de bajada.
+
+
+
+*un rinconcito en el cielo (3,10)
+
+Voy a buscar,
+un rinconcito en el cielo,
+para llevar a mi Amor.
+
+Voy a buscar,
+un rinconcito en el cielo,
+para escondernos tú y yo.
+
+Un rinconcito en el cielo,
+juntos unido tú y yo,
+y cuando caiga la noche te daré mi Amor.
+
+Voy a buscar,
+un rinconcito en el cielo,
+para llevar a mi Amor.
+
+
+ 
+Voy a buscar,
+un rinconcito en el cielo,
+para escondernos tú y yo.
+
+Un rinconcito en el cielo,
+juntos unido tú y yo,
+y cuando caiga la noche te daré mi Amor.
+
+
+*Y por esa calle vive (3,10)
+
+Y por esa calle vive la que a mi me abandono,
+Su mama tuvo la culpa pues ella la desanimó.
+
+Y por esa calle vive la que a mi me abandono,
+Su mama tuvo la culpa pues ella la desanimó.
+
+Ella lloraba otro dia por la mañana,
+De un sentimiento que ella guardaba,
+De agachaba y sonreía pensaria que le rogaba yo,
+
+Mentiras yo no le ruego ese tiempo ya se acabo.
+Ella lloraba otro dia por la mañana,
+De un sentimiento que ella guardaba,
+Se agachaba y sonreía pensaría que le rogaba yo,
+Mentiras yo no le ruego ese tiempo ya se acabó.
+
+
+*caballo R15 (3,10)
+
+Qué bonito se ve el potro que va Montando Javier,
+Con sus espuelas de plata y su montura pitiada, a ver a su linda esposa, haya por la madrugada.
+Su pelaje bien le brilla por los rayos de la luna, dónde Javier la ha jugado ha ganado una fortuna, su reloj chapeado de oro de plata sus herraduras.
+Caballo Prieto azabache que se llama el r15
+En la sierra de agua Prieta se oye lindo su relinche, a este bonito corrido niun verso de le repite.
+En su gran charger del año se pasea por Obregón,
+Con amigos y parientes que quiere de corazón
+Javier es hombre derecho se los.digo con razón
+Ya con esta me despido, cantándole este corrido
+
+Caballo Prieto R15 por su amo muy consentido el orgullo de Javier amigo de los amigos
+
+
+
+
+*se va muriendo mi alma (3,10)
+
+Por pensar que tu volverías conmigo
+y saber que ahora tu ya tienes abrigo
+aquí se va muriendo mi alma
+y va creciendo este vació en mi
+que no lleno con nada
+
+porque la vida no me dice nada
+porque tengo temor a las miradas
+aquí se va muriendo mi alma
+y va creciendo cada día mas
+el cielo de mi esperanza
+
+es tu amor el que no me deja vivir
+el que no puedo resistir
+pues muy adentro se quedo
+como una luz que nunca se apago
+como la noche eterna que nunca amaneció
+
+olvidar como es posible olvidar
+la única vez que supe amar y ahora
+tengo que renunciar a lo mas
+a lo mas bello que jamas sentí
+pero ahora solo hiere y tu ni
+te acuerdas de mi
+
+es tu amor el que no me deja vivir
+el que no puedo resistir
+pues muy adentro se quedo
+como una luz que nunca se apago
+como la noche eterna que nunca amaneció
+
+olvidar como es posible olvidar
+la única vez que supe amar ahora
+tengo que renunciar a lo mas
+bello que jamas sentí
+pero ahora solo hiere y tu ni
+te acuerdas de mi
+
+
+
+*san juan de ulua (3,10)
+
+Preso me encuentro tras de la reja
+Tras de la reja de mi prisión
+Cantar quisiera llorar no puedo
+Le faltan fuerzas al corazón
+
+Preso me encuentro por una ingrata
+Por una ingrata que tanto ame
+También la ira me dijo mata
+También la ingrata me abandono
+
+Una mañana salí al jurado
+Y en el banquillo se me sentó
+El licenciado y el juez de letras
+Como causante me sentencio
+
+Pena de muerte pedía la gente
+Hay cielo santo lo que sentí
+Y lo confieso sinceramente
+Que como un niño me estremecí
+
+Hace trece días que a mi ventana
+Un pajarito me fue a cantar
+Era mi madre que en forma de ángel
+A su hijo amado vino a cantar
+
+Era la barca ni la barquilla
+Lo que me espera en el ancho mar
+Es el terrible San Juan de Ulúa
+Donde mis penas voy a pagar
+
+Cuando haya muerto bien entre los mares
+Vayan mis restos a sepultar
+Una plegaria por dios les pido
+Que fui asesino de tanto amar.
+
+
+
+*prenda querida (3,10)
+
+En las cumbres de un verde mesquite
+tristemente cantaba un jilgero
+y desia en sus cantares tan tristes
+como daña un amor traicionero
+
+por lo poco que pude entenderle
+son sus penas igual que las mias
+por que yo que si supe quererte
+sin pensar en que me olvidarias
+
+vuelve vuelve bien de mi vida
+mira que sufro por tu abandono
+vuelve vuelve prenda querida
+por lo pasado yo te perdono
+
+esperando que vuelvas conmigo
+yo vendre cada noche de luna
+aunque sea por querer mi castigo
+o de plano me mande a la tumba
+
+vuelve vuelve bien de mi vida
+mira que sufro por tu abandono
+vuelve vuelve prenda querida
+por lo pasado yo te perdono
+
+
+
+
+
+*Flor De Capomo (3,10)
+
+Trigueñita hermosa
+linda vas creciendo,
+como los capomos
+que se encuentran en la flor.
+
+Tu mi chiquitita
+te ando vacilando,
+te ando enamorando
+con grande fervor.
+
+Mañana o pasado
+yo voy a tu casa,
+tu mama te ordena
+una silla para mi.
+
+Tu mi chiquita
+finje no mirarme,
+ponte muy contenta
+porque estoy aqui.
+
+Trigueñita hermosa
+cuando tomo vino,
+siento tantas ganas
+de contigo platicar.
+
+Tu mi chiquitita
+te ando vacilando,
+te ando enamorando
+y en ti me pongo a pensar.
+
+Mañana o pasado
+yo voy a tu casa,
+tu mama te ordena
+una silla para mi,
+tu mi chiquitita
+finje no mirarme,
+ponte muy contenta
+porque estoy aqui.
+
+
+
+
+
+*cuanto me gusta ese rancho (3,10)
+
+Cuanto me gusta este rancho
+por eso seguido vengo
+mañana vuelvo a venir
+a ver a un amor que tengo
+
+eres chiquita y bonita
+y asi como eres te quiero
+paraces amapolita
+cortada en el mes de enero
+
+ya no vivo donde vivia
+ahora vivo en una loma
+quisiera ser gavilan
+y que tu fueras paloma
+
+ya no vivo donde vivia
+ahora vivo en un estero
+esa joven me la llevo
+aunque me cueste dinero
+
+eres chiquita y bonita
+y asi como eres te quiero
+paraces amapolita
+cortada en el mes de enero
+
+cuanto me gusta este rancho
+por eso seguido vengo
+mañana vuelvo a venir
+a ver a un amor que tengo
+
+
+
+
+
+
+
+ 
+*celos del viento (3,10)
+
+Tuve una grandepresiòn
+por eso estaba muy triste
+habia una desiluciòn
+me encontre a una mujer bella
+que llego a revivir
+en mi una nueva ilusiòn
+
+Ella es tan bella, tan bella
+que cuando a mi se me acerca
+agita mi corazòn
+te quiero y te amo preciosa
+por eso hoy vengo a decirte
+aqui en mi humilde canciòn
+
+Ya tengo celos del viento
+por que acaricia tu pelo
+y penetra en tu corazòn
+ya tengo celos del agua
+por que resbala en tu cuerpo
+y hasta del mismo jabòn
+
+Quisiera ser yo tu almohada
+para saber lo que sueñas
+cuando duermes corazòn
+la sabana que te abraza
+hasta el colchòn de tu cama
+tambien quisiera ser yo
+
+Tengo sueños atrevidos
+los dos somos abusivos
+por que hay derroche de amor
+las partes de nuestros cuerpos
+lloraron era mentira
+fue un sueño de tentaciòn
+
+Ya tengo celos del viento
+por que acaricia tu pelo
+y penetra en tu corazòn
+ya tengo celos del agua
+por que resbala en tu cuerpo
+y hasta del mismo jabòn.
+
+
+
+
+*me voy a cortar las venas (3,10)
+
+Me voy a cortar las venas
+pa demostrar que te quiero
+que mi sangre sea la prueba
+no importa si por ti yo muero
+
+ya no allo que pruebas darte
+por eso me he desidido
+a quitarme la existencia
+y entiendas que te he kerido
+
+yo creo que apenas muerto
+vas a entender mis pasiones
+pero ya sera muy tarde
+muerto estaran mis amores
+
+no entiendo porke no kieres
+corresponder mi cariño
+ya no allo que pruebas darte
+por eso me he desidido
+
+
+*a qui en mi corazon tu mandas (3,10)
+
+Aquí en mi corazón tu mandas
+Y tú pones las condiciones
+Esclavo soy de tus amores
+Mi vida entera te la doy
+
+Tú tienes muchas cosas buenas
+Que en mi despiertan las pasiones
+Y me hago tantas ilusiones de ser el dueño de tu amor
+
+Tú tienes que vivir conmigo
+Y dile adiós a tus querencias
+Que tú serás la mera dueña
+La dueña de mi corazón.
+
+Tú tienes muchas cosas buenas
+Que en mi despiertan las pasiones
+Y me hago tantas ilusiones de ser el dueño de tu amor
+
+Tú tienes que vivir conmigo
+Y dile adiós a tus querencias
+Que tú serás la mera dueña
+La dueña de mi corazón.
+
+
+
+
+
+
+*el palomito (3,10)
+
+una palomita blanca
+de piquito colorado
+ayer yo la vi llorando
+por las cumbres de un guayabo
+
+currucu currucu
+le cantaba al palomito
+currucu currucu
+que volviera a su nidito
+
+blanca palomita vuela
+vuela por esa pradera
+aqui te estare esperando
+aunque de dolor me muera
+
+currucu currucu
+le cantaba al palomito
+currucu currucu
+que volviera a su nidito
+
+en las cumbres del guayabo
+muy cerca del palomar
+ahi estaba la paloma
+llorando sin descansar
+
+currucu currucu
+le cantaba al palomito
+currucu currucu
+que volviera a su nidito
+
+
+
+
+*piquito de oro (3,10)
+
+Yo tengo un amorcito que la quiero mas que a mi vida
+por ella me muero y sabe bien que es mi consentida
+a ella le digo con cariño mi piquito de oro
+le gusta que la besa y que le diga mi lindo tesoro
+
+ahi viene, mi piquito de oro
+ahi viene, a darme sus amores
+ahi viene, mi piquito de oro
+ahi viene, mi lindo tesoro
+
+Yo tengo un amorcito que la quiero mas que a mi vida
+por ella me muero y sabe bien que es mi consentida
+a ella le digo con cariño mi piquito de oro
+le gusta que la besa y que le diga mi lindo tesoro
+
+ahi viene, mi piquito de oro
+ahi viene, a darme sus amores
+ahi viene, mi piquito de oro
+ahi viene, mi lindo tesoro
+
+
+
+
+*amores fingidos
+
+Si supieras chaparita cuanto te amo
+es porque tu eres el bien de mi vida
+chaparita tu seras la concentida y anda y andale
+correspondale a mi amor
+
+para que quieres amores fingidos
+para que quieres amores que tengan dueno
+chaparita todas las noches te sueno y anda y andale
+correspondale a mi amor
+
+para que quieres amores fingidos
+para que quieres amores que tengan dueno
+chaparita todas las noches te sueno y anda y andale
+correspondale a mi amor
+
+
+
+
+*que tal si te vas conmigo (3,10)
+
+que tal si te vas conmigo
+aunque no tengas permiso
+al cabo soy hombresito
+para echarme un compromiso
+ya tienes la edad cumplida
+tu mama ya me lo dijo
+
+que tal si te vas conmigo
+aunque sea una temporada
+ya me contaron el chisme
+de que tu fuiste casada
+por eso no te preocupes
+a mi no me importa nada
+
+si tus parientes se oponen
+a que tu seas mi querida
+dicen que males y vicios
+no duran toda la vida
+vamonos prieta del alma
+tu seras mi consentida
+
+yo ya no quiero esperarme
+por que no te vas conmigo
+al cabo que si me quieres
+formaremos nuestro nido
+no le hace que tus parientes
+no te quieran ver conmigo
+
+que tal si te vas conmigo
+aunque sea una temporada
+ya me contaron el chisme
+de que tu fuiste casada
+por eso no te preocupes
+a mi no me importa nada
+
+
+
+
+*Mi casa nueva (3,10)
+
+Te escribi una carta y no me contestaste
+Fui a buscarte y ya cambiaste direccion
+Como tengo unas cosas que reclamarte
+me obligaste a que te cante esta cancion
+
+Deje mi casa por vivir feliz contigo
+y me pagaste como algunas pagan mal
+por tu culpa estoy viviendo donde ahora vivo
+y a esta vida no me puedo acostumbrar
+
+a veces lloro muy cerca de las botellas
+especialmente cuando me acuerdo de ti
+si amanece no se miran las estrellas
+oscurece y nunca brillan para mi
+
+una radiola y dos amigas me acompañan
+mi casa nueva muy distinta a las demas
+tiene un letrero de color en la vidriera
+y una cualquiera es la que ocupa tu lugar
+
+
+
+
+
+ 
+*linda morena (3,10)
+
+Ven linda morena
+no tengas miedo
+que al cabo aqui estoi yo
+no tengas miedo
+son puros batos
+que solo en bola presumen
+su valor..
+
+ven ven a mis brazos
+yo lo que qiero
+es tenerte junto a mi
+ven a mis brazos
+nos tengas pena
+que yo mi vida
+gustozo doi por ti..
+
+Yo no soi valiente
+pero una cosa les voi asegurar
+de uno por uno
+que le entren 20
+para empezarme
+nomas a calentar..
+
+Entrele a la buena
+si son tan hombres
+no se hagan al monton
+tiene envidia a mi morena
+por que no pueden
+robarle el corazon..
+
+
+
+
+*nochea tenebrosas (3,10)
+
+Era una noche tenebrosa y fria, cuando las horas en silencio me pasaban
+Las dos y media en un reloj tal ves seria, el aleteo de un sensontle que bagaba
+
+A una mujer mi amor le avia ofrecido, jure quererla mientras ella fuera firme
+Mas sin saber que aya en su pecho avia escondido, el agijon de una serpiente para herirme
+
+Anda mujer con dios que te bendiga, ahora que quieres tener muchos amigos
+En esta piedra a sincel, martillo escribo, estas perdonada alevanto tu castigo
+
+Anda mujer con dios que te perdone. ya no quisiste vivir de mis pobresas
+Tal ves otro hombre te prometera riquesa, yo no te ofresco mas que un pobre corazon
+
+Busca mujer alguien que te bendiga, ya le rompiste a mi pecho las cadenas
+El mismo viento trai calor para mis penas, alguien me dice, bete joven y no temas
+
+Era una noche tenebrosa y fria, cuando las horas en silencio me pasaban
+Las dos y medio en reloj talves serian, el aleteo de un sensontle que bagaba
+
+
+
+*golpe traidor (3,10)
+
+Nunca pensé que algún día
+tú me pagarías con una traición,
+tu falso amor me dejó,
+herido del corazón.
+
+Con tus ardientes caricias
+y tus besos brujos
+me hiciste soñar,
+y me dejaste recuerdos
+que nunca en la vida
+los he de olvidar.
+
+Juraste que me querías
+poniendo tu mano en el corazón
+dulces promesas de amor
+me llenaron de ilusión.
+
+Cuando más seguro estaba
+me diste en el alma el golpe traidor
+por lo que hiciste conmigo
+tendrás tu castigo
+lo juro por dios.
+
+Cuando más seguro estaba
+me diste en el alma el golpe traidor
+por lo que hiciste conmigo
+tendrás tu castigo
+lo juro por dios.
+
+
+
+
+*clavelito chino chino (3,10)
+
+Eres clavelito chino
+retratado el la pared
+cómo quieres que te olvide
+si ahora te empiezo
+a querer
+
+Cuánto quiero yo mi prieta
+y no la puedo olvidar
+ay si dios me da licencia
+con ella me he de casar
+Ay si dios me da licencia
+con ella me he de casar
+
+Clavelito chino
+chino dime quién te bautizó
+quién te puso clavelito
+para que te amara yo
+
+Con los rizos de tu frente
+me mandaste amarrar
+si los rizos se revientan
+a tus brazos voy a dar
+Si los rizos se revientan
+a tus brazos voy a dar
+
+Clavelito chino
+chino ven para decirte adiós
+no me dejes ir solito
+vámonos juntos los dos
+
+Tú serás mi consentida
+tú serás mi adoración
+aunque tus padres
+no quieran te llevo
+en mi corazón
+Aunque tus padres no
+quieran te llevo
+en mi corazon.
+
+
+
+
+*de esta sierra a la otra sierra (3,10)
+
+De esta sierra a la otra sierra
+se devisa San Jose
+vida mia de mis amores
+que me vine y los deje..
+
+Cuando andaba con los gueros
+yo empeza a recordar
+que mis padres me dijeron
+que nos los fuera olvidar..
+
+Solo yo iva caminando
+sin saber a donde ir
+otra tierra iva buscando
+sin saber que iva sufrir...
+
+no lloro por que lejos
+de mi tierra que deje
+me acuerdo de los consejos
+de mis padres que olvide..
+
+cuando sale de mi casa
+de nade me despidi
+solo de mi china amante
+y un gato que estaba ahii...
+
+Solo yo iva caminando
+sin saber a donde ir
+otra tierra iva buscando
+sin saber que iva sufrir...
+
+
+
+*Mi caballo ensillado (3,10)
+
+Mi caballo ensillado me esta esperando ya,
+Mi vida se las dejo, mi corazón se va
+
+Mi caballo ensillado, empieza a relinchar
+Mirándote a mi lado, mas gusto le ha de dar
+
+Por medio del placer, por medio del dolor
+Serás trigueña hermosa la dueña de mi amor
+
+Adiós niña bonita, párate en tu ventana
+Para decirte adiós, porque me voy mañana
+
+Adiós niña bonita, acércate al balcón,
+Para decirte adiós, por última ocasión
+
+Por medio del placer, por medio del dolor
+Serás trigueña hermosa la dueña de mi amor
+
+Si acaso en el camino, me llegan a matar
+Con un tierno suspiro, te mandare avisar
+
+Ya cuando vaya lejos, mi amor recordaras
+Te mandare un suspiro que el viento llevara
+
+Por medio del placer, por medio del dolor
+Serás trigueña hermosa la dueña de mi amor
+
+
+
+
+*El disgusto (3,10)
+
+Yo se que al verme me muestras disgusto,
+Y mi presencia te produce enfado,
+Y te hace daño que a buscarte venga,
+Y vas huyendo siempre de mi lado
+
+Ojos que lloran sin saber de mí,
+Y van llorando por el mundo entero,
+Pero tú en cambio me muestras desdenes,
+Y así me pagas lo que yo te quiero
+
+Que no me quieres, eso no me importa,
+Que me desprecies es un bien que me haces,
+Que no me quieres eso no me puede,
+Que al fin y al cabo como matas mueres
+
+Ojos que lloran sin saber de mí,
+Y van llorando por el mundo entero,
+Pero tú en cambio me muestras desdenes,
+Y así me pagas lo que yo te quiero
+
+
+
+
+*elenita (3,10)
+
+Desde el momento en que mis ojos te miraron
+Te penetraste en mi pecho como una espina
+No eh de negar que mis ojos por ti han llorado
+Por ser hermosa y por ser la mujer más linda
+
+Que culpa tengo de quererte sin medida
+Si noche y día aquí en mí mente estas presente
+Si me quisieras hasta lo imposible haría
+De ser felices hasta que venga la muerte
+
+Quiero decirte que tengo muchos defectos
+Quizás por eso tú te niegues a quererme
+También te digo que en el mundo no hay perfectos
+Tengo esperanzas de que algún día llegues a amarme.
+
+Si tú pensaras en todo lo que te digo
+Comprenderías toditito lo que siento
+Si me quisieras tu serias feliz conmigo
+Porque olvidarte solamente que este muerto
+
+Mira Elenita yo te canto apasionado
+Para que sepas lo que mi pobre alma siente
+De tu belleza yo me siento enamorado
+Y soy esclavo de tu imagen solamente
+
+Ya me despido de la flor de mil colores
+Así te digo porque eres la más bonita
+Adiós adiós amor de todos mis amores
+Hay nos veremos otro día mi Elenita.
+
+
+
+
+
+
+ 
+
+*la carcel de cananea (3,10)
+
+Voy a dar un pormenor
+De lo que a mi me ha pasado,
+Que me han agarrado preso
+Siendo un galla tan jugado.
+
+Yo me fui para Agua Prieta
+A ver quien me conocia
+Y a las once de la noche
+Me aprehendio la policia.
+
+Me aprehendieron los gendarmes
+Al estilo americano,
+Como un hombre de delito,
+Todos con pistola en mano.
+
+La carcel de Cananea
+Esta situada en una Mesa
+Y en ella fui procesado
+Por causa de mi torpeza.
+
+Despedida no la doy
+Porque no la traigo aqui
+Se la deje al santo nino
+Y al senor de Mapimi
+
+
+
+*el albañil (3,10)
+
+Ya llego la cal de piedra y aquí me tienen ahora
+No crean que soy un cualquiera, ni tampoco soy malora
+Dicen que soy golondrina, pero mi bolsa no llora
+
+Soy albañil es muy cierto, pero si soy parrandero
+A mi no me llora el muerto, ni me grita el cantinero
+Cuando una copa yo ofrezco, es porque traigo dinero
+
+Mi pantalón es de peto, mi chamarra es de mezclilla,
+Y no me la hagan de pleito, porque también soy malilla,
+Me gusta tomar correcto, con toda mi palomilla
+
+Por un amor no suspiro, ni el color pierdo en la cara,
+Yo soy como el gallo giro, que canta donde se para
+El dinero que yo giro, lo gano con mi cuchara
+
+Las mujeres me persiguen, pero eso no es cosa mía,
+Y si dinero me piden, se los doy con alegría,
+Para que nunca se olviden, de un albañil algún día
+
+Aquí se apago el candil, señores hasta mañana
+Se despide este albañil, ya se va a ganar más lana,
+Pa’ hacerle gasto al barril, los 6 días de la semana
+
+
+
+*los contrabandistas (3,10)
+
+El día 22 de mayo, del año 73
+Se agarraron a balazos, bandidos contra la ley
+
+La carretera a Laredo, siempre muy bien vigilada,
+Pero con el contrabando, pasan en la madrugada
+
+Venían los contrabandistas, procedentes de Galeana
+Iban para Houston Texas, con carga de marihuana,
+
+Cuando pasaron la aduana, los siguió la federal,
+Pero en lugar de pararse, comenzaron a tirar
+
+El federal reporto, por radio a sus compañeros,
+Que sigan la camioneta, que va rumbo a Laredo
+
+Ese día en la madrugada, los gallos tristes cantaron,
+Un policía estaba muerto, los de la troca escaparon
+
+Otro agente federal, que muere en la carretera,
+Por unos contrabandistas, miembros de larga cadena
+
+
+
+*caballo de la acordada (3,10)
+
+Ay que bonito caballo, ese de la crin dorada
+El que en vida lo monto, es uno de “la Cordada”
+Cuando Antonio, se alisto, no lo querían aceptar
+Le pusieron muchas trabas, porque le faltaba edad
+
+Antonio López García, a su jefe demostró,
+La edad no forma a los hombres,
+Se forman por su valor
+
+En Reynosa lo pusieron, al frente de “La Cordada”
+Fueron más de 100 bandidos, a los que Antonio colgara
+
+De su propio chocolate, el destino le mando
+Y en un cambio de gobierno, un general lo colgó
+
+Le preguntaron a Antonio, por su ultima voluntad
+Que no maten mi caballo, que le den su libertad
+Caballo de “La Cordada”, que traes adentro el demonio
+Hoy relinchas de tristeza, cuando te acuerdas de Antonio
+
+
+
+
+*Laurita Garza (3,10)
+
+A orillas de rió bravo
+En una hacienda escondida
+Laurita mato a su novio por que
+Ya no la quería y con otra iba a casarse
+Nomás por que las podía
+
+Hallaron dos cuerpos muertos
+Al fondo de una parcela
+
+Uno era el de Emilio guerra el prometido de estela
+El otro el de laura garza la maestra de la escuela
+
+La ultima vez se vieron ella lo mando llamar
+Cariño del alma mía
+Tu no te puedes casar no decías que me amabas
+Que era cuestión de esperar
+
+Tú no puedes hacerme esto
+Que pensara mi familia
+No puedes abandonarme después que te di mi vida
+No digas que no me quieres como antes si me querías
+
+Solo vine a despedirme Emilio le contesto
+Tengo mi novia pedida por ti mi amor se acabo
+Que te sirva de experiencia lo que esta vez te paso
+
+No sabía que estaba armada y su muerte muy cerquita
+De la bolsa de su abrigo saco una escuadra cortita
+Con ella le dio seis tiros luego se mato laurita
+
+
+
+
+*los dos amigos (3,10)
+
+Estos eran, dos amigos
+que venian de Mapimi
+que por no venirse de oquis
+robaron Guanacevi
+
+Ellos traiban, dos caballos
+un oscuro y un jovero
+en el oscuro cargan ropa
+y en el jovero el dinero
+
+Tambien traiban, maquinaria
+y muy buenas baterias
+para desclavar los rieles
+y hacer los cambios de via
+
+Martin le dice a Jose
+no te pongas amarillo
+vamos a robar el tren
+que viene de Vermejillo
+
+Amarillo no me pongo
+amarillo es mi color
+he robado trenes grandes
+y maquinas de vapor
+
+Valgame el santo ninito
+ya agarraron a Jose
+en la esquina del mercado
+lo ataron y se les fue
+
+Seria por sus oraciones
+que su madre le rezaba
+seria por su buena suerte
+que a Jose no le tocaba
+
+
+
+*Dimas de leon (3,10)
+
+Un día 10 de Septiembre,
+de un domingo que paso,
+En el puerto Matamoros,
+un velador lo mato
+
+Dimas salió de Reynosa,
+en su carro preparado,
+A visitar a su amante,
+así lo tenía pensado
+
+Dimas y dos compañeros,
+en un cabaret tomaban
+Como le tenían miedo,
+ya todos se preparaban
+
+El velador temeroso,
+de que Dimas lo matara
+Mando llamar los empleados,
+para que lo desarmaran
+
+Primero a Daniel Cantú,
+la pistola le quitaron
+Y también a Cayetano,
+que en el carro lo encontraron
+
+A Dimas lo detuvieron,
+cuando este iba a intervenir
+Por la espalda le pegaron,
+no lo dejaron salir
+
+De pronto Miguel Balderas,
+su pistola disparo,
+De dos balazos certeros,
+el cráneo le atravesó
+
+Adiós Reynosa querido,
+orgullo de la frontera,
+Donde Dimas se paseaba,
+con su pistola por fuera
+
+Ya con esta y me despido,
+señores de esta región
+Aquí termina el corrido,
+ya murió Dimas De León
+
+
+
+
+*los traficantes (3,10)
+
+No podían pasar a Texas
+Porque el río venía bufando
+eran unos traficantes
+que formaban una banda
+con ellos venia una dama
+Que se llamaba Yolanda.
+
+El rio venia muy revuelto
+su caudal venia aumentando
+cuando le dijo Yolanda
+vamos a cruzar nadando
+El patero se ha marchado
+creo que nos ha traicionado.
+
+Les dijo Silvano Guerra
+con una voz muy opaca
+llevamos 3O millones
+y nos pagan con migajas
+y los que nos la rajamos
+somos los hombres de paga.
+
+
+
+Con las bolsas en la espalda
+bien repletas de heroina
+se lanzaron a las aguas
+cubiertos por la neblina
+tres ahogados en el Bravo
+Silvano gano la orilla.
+
+Unos perros rastreadores
+encontraron a Yolanda
+con seis kilos de heroina
+bien atados a la espalda
+a Leon Bravo y a Brunelas
+los encontraron los guardias.
+
+Silvano logro pasar
+y logro entregar su parte
+pero cuando regresaba
+lo pararon en el puente
+como no sabia rajarse
+también lo encontro la muerte.
+
+
+
+*se les pelo Baltazar
+
+Estando moliendo
+Caña en mi ranchito
+Kerido buscaban
+A Baltazar para llevarlo
+Al presidio eran
+Buenos cazadores con
+Experiencia el codillo
+
+Un venado lampareado
+Es difícil de cazar aunk
+Le pongan la trampa
+Tiene experiencia al
+Brincar se kedaron
+Con las ganas
+Se les pelo Baltazar
+
+Solo el k carga el
+Morral le sabe su
+Contenido por eso
+La federal keria llevarlo
+Al presidio no se les
+comprobo nada
+Se les bajo en el
+Camino
+
+Se fue con rumbo a
+La sierra montado en
+Su bailador su caballo
+Preferido k lo kiere con
+Amor lo mismo baila
+Un guapango un corrido
+Una canción
+
+Hay Culiacán tan hermoso
+Desde el filo de la sierra tus
+Luces yo las diviso como
+Mirar las estrellas como
+Extraño a mis amigos tambien
+A mis lindas güeras
+
+Afinen los instrumentos
+voy a empezar a cantar
+la arrolladora el limon
+ya va a empezar a tocar
+el merito 6
+De enero se festeja baltazar
+
+
+
+
+*cuerno de chivo (3,10)
+
+Yo pinto la raya en el agua,
+Dijo silverio monarez,
+Si pretenden mi pellego,
+Tendran que rifar sus reales,
+Yo con mi cuenrno de chivo,
+No respeto federales.
+
+El pedro salio insortado,
+Junto con dos colombianos,
+Traian un avion pequeño,
+Pero muy bien pesperchado,
+Traian buena carga blanca,
+Los amos del contrabando.
+
+De culiacan a tijuana,
+Se ha visto ese cargamento,
+Tambien el paso y nogales,
+Tienes que ver en el cuento,
+Nadie sabe como le hacen,
+Pero van pa` sacramento.
+
+Los chinos de san francisco,
+Se sintieron invadidos,
+Se aventaron a los guachos,
+Tambien gente de chalino,
+Ahi escuche la balada ,
+Que canta el cuerno de chivo.
+
+Tambien ponciano de sica,
+Codiciaba el cargamento,
+El paso dinero falso,
+Tratando de derrumbarlo,
+Pero pago con su vida,
+En un lago de chicago.
+
+La suerte cuando se cambia,
+Se convierte en enemigo,
+Un veintidos de noviembre,
+Lo mato un cuerno de chivo,
+Esa cabeza la debe,
+La gavilla de chalino.
+
+
+*24 de Junio (3,10)
+
+El 24 de Junio
+el mero día de San Juan
+un baile se celebraba
+en ese pueblo de Istlan.
+
+Micaela desde temprano sonriendo le dice a Juan
+por ser el día de tu santo
+al baile me has de llevar.
+
+No quiero hacerte el desaire
+pero algo presiento yo;
+de que esta noche en el baile
+se te amargue la función
+
+Mira Micaela que te hablo
+no vayas a esa reunión
+que esta tentándome el diablo
+de echarme al plato a Simón
+
+Llego Micaela temprano
+se puso luego a bailar.
+Se encontró de compañero al mero rival de Juan
+
+Alegres pasan las horas
+las 12 marca el reloj
+cuando un tiro de pistola
+2 cuerpos atravesó
+
+Vuela, vuela palomita
+pasa por aquel panteón
+donde ha de estar Micaelita con su querido Simón.
+
+
+
+
+
+
+
+*Juan Marta (3,10)
+
+Decian que cargaba el
+diablo mentiras no traia nada
+lo que traiba en su cintura era una
+pistola escuadra
+
+robaba y mataba gente
+por que asi se divertia su cabeza
+tenia precio 15 mil pesos
+valia
+
+juan martha era aguerrido y temido
+del gobierno los rurales le temian
+como si fuera veneno
+
+si madrecita lloraba ,lloraba y se
+lo decia si tuvieran libre a mi hijo
+15 mil pesos daria
+
+ya no llores madrecita ya
+no les ofrescas nada que llegando
+aquel cerrito yo me rio de la cordada
+
+ya no llores madrecita
+ya no me estes atormentando
+que de 100 vidas que debo con
+una la estoy pagando
+
+ya con esta me despido pero
+les dejo una carta para que sigan
+cantando el corrido de
+juan martha
+
+
+*Chito cano (3,10)
+
+Año del 71
+el mes de octubre corria
+en Reynosa tamaulipas
+al despuntar nuevo dia
+hirieron a Chito Cano
+no se sabe quien seria
+
+Que bonitos son los hombres
+no se les puede negar
+aun despues de caido
+tuvo la fuerza de hablar
+no corran no sean cobardes
+acabenme de matar
+
+Con un balazo en la espalda
+el todavia se reia
+no los creia tan cobardes
+hampones o policias
+me pegaron por la espalda
+de frente no se podia
+
+Se presento Chon Garcia
+a hablar con la judicial
+para que maten a chito
+trabajo les ha de dar
+nomas salganle al camino
+sombreros han de sobrar
+
+De Reynosa a Matamoros
+de Monterrey a Laredo
+anden con mucho cuidado
+agentes y pistoleros
+todavia soy Chito Cano
+y todavia no me muero
+
+Ya con esta me despido
+sin agravio ni rencores
+lo que se presta se paga
+tengan presente senores
+si al cielo avientas la daga
+va en busca de los traidores
+
+
+*Vida mafiosa (3,10)
+
+Sentado en una hielera
+y escuchando un corrido
+le galo un cuerno de chivo
+rodeado de mis amigos
+con los versos recordaba
+todo lo k en vida he sido.
+
+Se me calentó el terreno
+me buscaban por mafioso
+me achacaron varias muertes
+por la prensa publicaron
+y como si fueran poco
+asta rifles me achacaron.
+
+Me pierdo por temporadas
+cuando no hay k dar la cara
+obscura estoy no amanezco
+si se trata de una chamba
+yo no tengo a quien me empuje
+solito me aviento al agua.
+
+Me gusta escuchar consejos
+pero no me manden a nada
+cuando algo me sale mal
+a mi nadie me regaña
+me paseo por donde quiera
+con damas y camaradas.
+
+
+*Pistoleros famosos (3,10)
+
+Por Las Márgenes Del Rio
+De Reinos Hasta Laredo
+Se Acabaron Los Bandidos
+Se Acabaron Los Pateros
+Y Así Se Están Acabando
+A Todos Los Pistoleros.
+
+Cayeron Dimas De León
+Generoso Garza Cano
+Y Los Hermanos De Fierro
+Y Uno Que Otro Americano
+A Todos Los Más Valientes
+A Traición Los Han Matado.
+
+Lucio Cayó En Monterrey
+Silvano En El Rio Grande
+Lo Mataron A Mansalva
+Los Rinches Que Son Cobardes
+En Los Pueblitos De Norte
+Siempre Ha Corrido La Sangre.
+
+Le Tiraron A Ezequiel
+Por El Año Del Cuarenta
+José López En Linares
+Sigue Aumentando La Cuenta
+Arturo Garza Treviño
+Allá En El Once Sesenta.
+
+Los Pistoleros De Fama
+Una Ofensa No La Olvidan
+Si Se Mueren En La Raya
+No Les Importa La Vida
+Los Panteones Son Testigos
+Es Cierto No Son Mentira.
+
+Así Se Están Acabando
+Todos Los Más Decididos
+Desde aquí se les recuerda
+Cantándoles sus corridos
+Murieron por que eran hombres
+No por que fueran bandidos
+
+
+
+
+
+*El bazucazo (3,10)
+
+Todo empezó en Obregón,
+Una bazuca tronaba,
+A la gente del gobierno,
+Ese día la desarmaban,
+Eran varios pistoleros
+Que no le temen a nada…
+
+Tenían en su poder,
+Armas muy sofisticadas,
+Traían calibre 50,
+Y también lanzagranadas,
+Bazuca y cuerno de chivo
+Venían en trocas blindadas.
+
+Tomaron la 15 sur,
+Con rumbo pa Sinaloa,
+Les pusieron un retén,
+Al entrar a Navojoa,
+Ahí parecía el infierno
+Pelearon casi una hora…
+
+Estaba la PFP,
+Judiciales del estado,
+Municipales y guachos,
+Pero no los respetaron,
+Entre esa lluvia de balas
+Aquellos hombres pasaron.
+
+Todavía los persiguieron,
+Pero algo más sucedió,
+Dicen que un boludo negro,
+Volando los levanto,
+Y entre los cerros cercanos
+Se les desapareció…
+
+Dicen que es gente del M,
+Otros dicen que era El Chapo,
+Se baja al cerro y no toca,
+Pues son de muy alto rango,
+Son de los más poderosos,
+Que tienen la voz de mando.
+
+
+*Catarino y los rurales
+
+Catarino y los rurales
+Se agarraron a balazos
+Hermanito demi vida
+Vienen mas de cien rurales
+
+Catarino le gritaba
+Que bonitos arenales
+Para agarrarme a balazos
+Con los mentados rurales
+
+Catarino le gritaba
+Brincando el cerco de alambre
+Todavia me sobra parque, bandidos
+Y muertos de hambre
+
+Catarino les gritaba
+Arriscandose el sombrero
+Todavia me sobra parque
+Son puras balas de acero
+
+Catarino les gritaba
+Con toda su voz completa
+Que alcabo no me hacen nada
+Yo soy del rio de jintonhueca
+
+Ya con esta me despido
+Deshojando unos rosales
+Aqui termina el corrido
+De catarino y los rurales
+
+
+*El muchacho alegrr (3,10)
+
+Yo soy el muchacho alegre
+Que me amanezco tomando
+Con mi botella de vino
+Y con la banda tocando.
+
+No tengo padre, ni madre
+Ni quien se duela de mi
+Solo la cama en que duermo
+Se compadece de mi
+
+Si quieres saber quien soy
+Preguntenselo a cúpido
+Yo soy el muchacho alegre
+Del cielo favorecido.
+
+Con una baraja nueva
+Los quisiera ver jugar
+Y a ver si conmigo pierden
+Hasta el modito de andar.
+
+Eres como la sandia
+Tienes lo verde por fuera
+Si quieres que otro te goce
+Pidele a dios que me muera.
+
+Ya con esta me despido
+A orillas de un campo verde
+Aquí se acaban cantando
+Versos del muchacho alegre
+
+*El numero uno (3,10)
+
+Yo no mate a camarena
+Les dijo el numero uno
+Rafael Caro Quintero
+
+Fue un traficante sin nombre
+Ejecutor de los narcos
+Que andan en nuestros terrenos
+
+Busquenlo y den con su pista
+Eso es problema de ustedes
+Les doy solo una semana
+
+Para que aclaren el caso
+Y me den la libertad
+Quiero que empiecen mañana
+
+Paloma blanca, paloma
+Vuela por todos mis campos
+Buscame a todos mis hombres
+
+Diles que estoy prisionero
+Que vengan a liberarme
+Quiero morirme con ellos
+
+Aqui ya traigo en mi lista
+Nombres de diez comandantes
+Para cuando salga libre
+
+Muchos agentes traidores
+Que se decian sus amigos
+Van a empezar a morirse
+
+Voy a ocupar mil fusiles
+Quien quisiera acompañarme
+A liberar a un amigo
+
+En la celda de castigo
+Le dicen numero uno
+Quien se la juega conmigo
+
+Y si logramos sacarle
+Va comenzar la pelea
+Y no va quedar ninguno
+
+Se que recuerdas a Borja
+Hombre nacido en la gloria
+Rafael numero uno
+
+*El ayudante (3,10)
+
+Un tiempo fui campesino
+Y desde muy niño
+Me enseñe a sembrar
+
+Pero vivía en la pobresa
+Todo era tristeza
+Tuve que cambiar
+
+Me convertí en traficante
+Primero ayudante
+De un hombre famoso
+
+Pero cambiaron las cosas
+La vida es curiosa
+Hoy soy poderoso
+
+Mucho anduve trabajando
+Allá por Durango
+Y por Zacatecas
+
+Por mucho otros lugares
+Allá por Nogales
+También Agua Prieta
+
+Me gusta tener amigos
+Que sean decididos
+Y que me sean fieles
+
+Y cuando estoy con Alfredo
+Canten el halcón
+Para estar alegres
+
+Esa carcel de Durango
+Hace algunos años
+Fui su prisionero
+
+Pero no pude aguantarme
+Tuve que fugarme
+Con mis compañeros
+
+Cantando ya me despido
+Del rancho querido
+Que me vio nacer
+
+Ese rancho de la palma
+Tengo tantas ganas
+De volverlo a ver
+
+*Con cartitas (3,10)
+
+Con cartitas y palabras
+Se enamora una mujer
+Ya cuando se ven perdidas
+Nos echan aborrecer
+
+Mi novia me dio una carta
+Tratando me de olvidar
+Que pensaba esa criatura
+Que yo le habría de rogar
+
+Que pensaba esa criatura
+Que yo le habría de rogar
+Mejorcitas he tenido
+Y les he pagado mal
+
+Mejorcitas he tenido
+Y les he pagado mal
+Contimas esa criatura
+Que ahora empieza a enamorar
+
+Hay les va la despedida
+Aquí se las vengo a dar
+La que no pueda ver
+Tampoco la he de mirar
+
+
+
+*Albur de amor (3,10)
+
+Yo como creído me equivoqué
+Triste es mi vida
+Joven querida y ése albur
+Yo lo jugué
+
+Y todavía valor me sobra
+Hasta donde tuve aposte
+
+Si me matan a balazos
+Que me maten y al cabo y qué
+
+Albur de amor me gustó
+Yo lo jugué
+
+Como era pobre yo mi vida
+La hipotequé
+Y todavía valor me sobra
+Hasta donde tuve aposte
+
+Si me matan a balazos
+Que me maten y al cabo y qué
+
+
+*Te vas a volar gabiota (3,10)
+
+Te fuiste a volar gaviota,
+cruzaste el ancho mar,
+por otro amor me dejaste
+y yo sin poder volar,
+
+Mañana cuando amanesca,
+me voy por la orilla del mar
+y si logro encontrarte, las alas te he de cortar,
+
+Para que, para que nunca me dejes y
+que sepas y que entiendas que te quiero,
+ya no quiero andar. sufriendo en esta vida,
+
+Para que, para que si no hay porque.
+
+Mañana cuando amanesca,
+me voy por la orilla del mar y
+si logro encontrarte las alas te he de cortar,
+
+Para que, para que nunca me dejes
+y que sepas y que entiendas que te quiero,
+ya no quiero andar sufriendo en esta vida,
+
+Para que, para que si no hay porque.
+
+*Tres mujeres (3,10)
+
+Por ahi dice una leyenda
+Que en el rancho de Canales
+Se aparecen tres mujeres
+Que en vida fueron rivales
+Se dieron de puñaladas
+Ahia entre los mezquitales
+
+El causante de sus muertes
+Santos Valdez se llamaba
+A las tres por separado
+Les decia que las amaba
+Pero a ninguna queria
+Nadamas las engañaba
+
+Luzita era de la posta
+Del charco azul Maria Inez
+Esthela era de reynosa
+La mas drama de las tres
+Decia io pierdo la vida
+Antes que a Santos Valdez
+
+Dicen que en Laguna Seca
+Cuando la gente pasaba
+Se oian gritos de mujeres
+Cuando ia el sol se ocultaba
+Eran aquellas valientes
+Que ya de muertas penaban
+
+Santo Valdez fue a sus tumbas
+Para pedirles perdon
+Resaba sus oraciones
+Con todo su corazon
+Y quien habia de pensarlo
+Que ahia murio en el panteon
+
+Luzita era de la posta
+Del charco azul Maria Inez
+Esthela era de reynosa
+La mas drama de las tres
+Decia io pierdo la vida
+Antes que a Santos Valdez
+
+*Mataron a los Mendoza (3,10)
+
+Asienda de tierra blanca
+Llegaste a ser muy famosa
+Recuerdo a través del tiempo
+Cuando vivían los Mendoza
+
+José Francisco era el nombre
+De aquel rico potentó
+Igual robaba un caballo
+Que una punta de canao
+
+Una vez que lo agarraron
+Con el cuerpo de delito
+Cargó con cinco rurales
+A tiro limpio el solito
+
+Con un balazo en el pecho
+No era posible escapar
+Hijo sálvate si puedes
+La sangre me quiere ahogar
+
+
+Imposible abandonarte
+Aquí quedamos los dos
+No se puede vivir tanto
+Contra las leyes de Dios
+
+Me quedan cinco en la carga
+Y seis en la carrillera
+Alcanzó a llevarse cuatro
+Antes de que se muriera
+
+La muerte me está llevando
+Quisiera hacer testamento
+Lo que les robé a los ricos
+No llega ni al diez porciento
+
+Mataron a los Mendoza
+La asienda ha quedado sola
+Los bienes ¿Dónde quedaron?
+Nadie supo con la bola
+
+*corrido de los Perez (3,10)
+
+En mil novecientos once,
+Les voy a explicar muy bien,
+Mataron a dos hermanos
+Y a un primo hermano tambien.
+El jueves veinte de abril
+Como a las tres de la tarde,
+Murio Don Mariano Perez
+En las manos de un cobarde.
+Carreras tan desgraciadas,
+Esas carreras del cerro,
+Perdieron vida y caballos,
+Y perdieron su dinero.
+
+El dos Monico de Luna,
+Fue el que la mecha prendio,
+Y a los primeros balazos,
+Fue el primero que corrio.
+Gabino Perez decia,
+Muy macizo en sus razones,
+Yo tambien muero en la raya,
+No soy cria de correlones.
+Isidro Perez le dijo,
+Dejala ya por la paz,
+Pues asi nos convendria,
+Sea por Dios no digo mas.
+Gabino…
+
+*La negra noche (3,10)
+
+La negra noche tendió su manto
+Surgió la niebla, murió la luz
+Y en las tinieblas de mi alma triste
+Como una sombra llegaste tú
+
+Ven, ilumina la árida senda
+Por donde vaga loca ilusión
+Dame tan solo una esperanza
+Que fortifique mi corazón
+
+Como en la noche nace el rocío
+Y en los jardines nace la flor
+Así en mi alma, niña adorada
+Nació mi amor
+
+Ya veo que asoma tras la ventana
+Tu rostro de ángel encantador
+Siento la dicha dentro de mi alma
+Ya no hay tinieblas, ya no hay tinieblas
+Ya salió el sol
+
+*Carga blanca (3,10)
+
+Cruzaron el rio bravo ya casi al amanecer,
+Con bastante carga blanca que tenían que vender,
+Llegaron a San Antonio sin ninguna novedad,
+Y se fueron derechito a la calle navidad.
+
+En una casa de piedra entraron Jose y Ramon,
+Y en la truca se quedo esperandolos simon,
+2, 800 pesos entrego don Nicanor,
+Y le entregaron la carga eso si de lo mejor.
+
+Apenas iban llegando a la calle Veracruz,
+Cuando les cerro el camino Un carro negro sin luz,
+No hagan ningun movimiento sino se quieren morir,
+Entreguenos el dinero que acaban de recibir.
+
+Varios tiros de pistola y unos gritos de dolor,
+Se escucharon de repente esa noche de terror,
+Dos muertos y tres heridos la ambulancia levanto,
+Pero el rollo de billetes de ahí desaparecio.
+
+Despedida se las diera pero ya se me perdio,
+Dejen los negocios chuecos ya ven lo que sucedio.
+
+*El arbol de la horca (3,10)
+
+El viento lo balanceaba, ay que recuerdo tan negro
+Era el cuerpo de mi padre, que tenía una soga al cuello
+Lo habían colgado en domingo, de las ramas de aquel cedro
+Apenas tenia diez años, lancé mi llanto de niño
+
+El perro tenía un balazo, lo supe por sus ahullidos
+Pero arrastraba una espuela, era de los asesinos
+
+Señor juez le pertenece, tal vez ya se le olvido
+Yo soy Jesus Maldonado, hijo de aquel que colgó
+Ya supondrá los motivos, por los que lo busco yo
+
+Después de todo, las leyes no van a poder salvarlo
+Si usted no quiere pelear, lo arrastraré en mi caballo
+De las ramas de aquel cedro, lo voy a dejar colgado
+
+En el paso del coyote,…
+
+*La Martina (3,10)
+
+Quince anos tenia Martina cuando su amor me entrego
+A los diecises cumplidos una traicion me jugo
+
+Y estaban en la conquista
+Cuando el marido llego
+Que estas haciendo Martina que no estas en tu color
+
+Aqui me estado sentada
+No me podido dormir
+Si mi tienes disconfiasa no te separes de mi
+
+De quien es esa pistola
+De quien es ese reloj
+De quien es ese caballo que en mi corral relincho
+
+Ese caballo es muy tuyo tu papa te lo mando
+Pa que jueras a la boda
+De tu hermana la menor
+
+Yo pa que quero caballos si caballos tengo yo
+Lo que quero es que me digas
+Quien en mi cama durmio
+
+En tu cama naiden duerme cuando tu no estas aqui
+Si me tienes desconfianza no te separes de mi
+
+Y la tomo de la mano a sus papas la llevo
+Segros aqui esta Martina que una traicion me jugo
+
+Llevate la tu mi yerno la iglesia te la entrego
+Y si ella te ah traicionado la culpa no tego yo
+
+Incadita de rodillas nomas sies tiros le dio
+El amigo del caballo ni por la silla volvio.
+
+
+*Juan Ramos (3,10)
+
+Jefe de nuevo laredo ke
+Pronto se te olvido ke
+Andavamos de pateros
+Ase tiempo usted y yo
+
+Ganandonos el dinero
+Traicionando a la nacion,
+Hoi por ke trae uniforme
+Y trae la ley en sus manos
+
+Se olbida ke yo fui
+El hombre ke una ves
+Le dio la mano cuando
+En la lancha en ke andaba
+Se volco ii se andaba ahogando
+
+No me recuerdes pasados
+Y ya tengo mucho dinero
+Ni me importa el contrabando
+Ahora tengo muy buen puesto
+
+Te iba a llevar prisionero
+Pero te prefiero muerto
+
+Sabe ke estoi desarmado
+De eso no tenga pendiente
+Con morirme había soñado en
+Las manos de un teniente
+
+Y que ganara otro grado
+Pa' lucirlo ante su gente
+A su pistola echo mano matandolo
+A sangre fría cayo bien muerto
+
+Juan ramos y en su rostro
+Se veía como que se estaba riendo
+De lo que el nunca creía
+Después que ya lo mato se quedo
+
+Muy pensativo y se apunto
+Al corazón también pegándose
+Un tiro para que quiero la vida
+Si ehh matado a un gran amigo.
+
+*Julio Beltran (3,10)
+
+Rafagas de rey de cuerno
+Otra vez se oyen sonar
+Los rayos ya no cantaron
+Se pusieron a llorar
+Cuando oyeron la noticia
+Que en culiacan capital
+En forma muy ebrebosa
+Matan a julio beltran
+
+No le dieron tiempo a nada
+Porque el miedo era muy grande
+Mas de 300 balasos
+Dispararon los cobardes
+No respetaron al jefe
+Se volaron el alambre
+Ponganse trucha cabrones
+Les van a partir su madre
+
+Dicen que el mayo zambada
+Los guzman y los beltranes
+Y el jabali esta muy triste
+Siempre te han de recordar
+Por jugueton y travieso
+Mucho mas te han de extrañar
+El pun pun va con tristesa
+Se pusieron ha llorar
+
+Les van a tirar con leña
+No se la van a acabar
+Empesaron los ajustes
+De mexico a culiacan
+Anda la gallaga brava
+Y andan listo pa pelear
+Jalenle la cuerda al trompo
+Si es que lo saben bailar
+
+Julio con su cuerno egipcio
+No les pudo disparar
+Le ganaron la partida
+Jugo al gallo de san juan
+Cayo como caen los grandes
+Y el era grande en verdad
+Compadrito del mochomo
+Tambien del chapo guzman
+
+A mi conjunto norteño
+No lo quiero ver llorar
+Aunque llore compa guicho
+Canten la de mi carnal
+Y el secuestro de mi madre
+Y que no vaya a fallar
+Mi cancion el despreciado
+No se les vaya a olvidar.
+
+*Clave 7 (3,10)
+
+En el reten de la loma, estaban 100 federales,
+Preguntando por Pedrito, también por Paulino Burgos
+Pero andaban despistados, le preguntaban a un mudo
+
+Clave 7 es la consigna, de agentes y de soldados,
+Ese león ya crío melena, van a tener que matarlo,
+Nomás no se arriesguen mucho,
+Primero hay que traicionarlo
+
+En la ciudad de Hermosillo, hubo una concentración
+También pusieron retenes, por todita la nación
+Lo cierto es que los transportes, Pedrito los regalo
+
+Le mandaron 2 agentes, que le pidieran dinero,
+Veinte millones de pesos, era el precio de su cuero
+Pero como era camuco, lo tomaron prisionero
+
+Junto con dos compañeros, además dos señoritas
+Los llevaron a la Y griega, era la ultima cita
+Ahí los acribillaron, junto con más jovencitas
+
+Desde ese día inolvidable, no rola tanto dinero,
+Y unos agentes traidores, ahora estrenan carro nuevo,
+Y un hombre en Guadalajara, no duerme de puro miedo
+
+Adiós señor comandante, aquí lo llevo en mi lista
+Usted me echo por delante, ahí lo espero en la revista
+Ya que tumbo mi panal, ahora toree las avispas
+
+Mis armas no las entrego, van a quedar en el cerro,
+Yo no me fio de esa gente, que la deslumbra el dinero,
+Ya murió el león de la sierra, venga a quitarle el cuero
+
+Adiós todos mis amigos, del valle de Culiacán,
+Ninguna ley del gobierno, mi nombre podrá cambiar.
+
+
+
+*Mariano Resendez (3,10)
+
+Año de 1900, dejó un recuerdo muy grande
+Murió Mariano Resendez,
+lo mató Nieves Hernández
+
+Le iban a quebrar la puerta,
+cuando llegó el otro hermano
+Con ansias le preguntaba,
+donde se halla Don Mariano
+
+José María Resendez,
+su contestación fue buena,
+Señores yo no se nada,
+yo vengo de Santa Elena
+
+El carro donde iba Mariano,
+iba rodeado de lanzas
+Decía Mariano Resendez,
+no pierdo las esperanzas
+
+Como le tuvieron miedo,
+que recibiera algún cargo
+Lo mataron entre medio,
+de Agualeguas y Cerralvo
+
+Decía Mariano Resendez,
+al pie de su contrabando
+Venga a llevar indiana,
+se las estoy regalando
+
+Empleaditos de guerrero,
+a todos lo llevo en lista
+Ya no morirán de susto,
+ya murió el contrabandista
+
+Ya con esta ahi me despido,
+cortando una flor de mato
+Aquí se acaban cantando
+los versos de Don mariano.
+
+
+*Rifar mi suerte (3,10)
+Ahora que me encuentro lejos
+de la tierra en que nací
+Hay de mis padres queridos
+cuánto han sufrido por mi
+Pobrecita de mi madre
+cuantos consejos me dio
+Con lágrimas en sus ojos
+sus bendiciones me echo
+Ya no llores madrecita
+yo se que, te hago sufrir
+Déjame rifar mi suerte
+voy buscando un porvenir
+También deje mi amorcito
+que le prometí volver
+Yo se bien que ella me espera
+Dios me lo ha de conceder
+Virgencita milagrosa
+bien sabes mi padecer
+De rodillas iré a verte
+si me concedes volver
+
+
+
+*Tomando de dia (3,10);
+Pa que esperar a que venga la noche
+pa brindar por el celo y el dolor
+con la luz de este sol en derroche
+me siento solo, me siento solo
+
+Pa que esperar a empezar con el vino
+si tomando no logro tu amor
+si me toca este amargo destino
+por eso tomo, por eso tomo
+
+Porque me desprecias
+por mi pobreza, por mi tristeza o por mi frialdad
+porque me desprecias
+si por que te ruego o por que me entrego con sinceridad
+
+Aunque de día me miren borracho
+que me queda en el mundo que hacer
+aunque digan que yo soy muy macho
+por ella lloro, por ella lloro
+
+Por que me desprecias
+por mi pobreza, por mi tristeza o por mi frialdad
+por que me desprecias
+si por que te ruego o por que me entrego con sinceridad
+
+Aunque de día me miren borracho
+que me queda en el mundo qué hacer
+aunque digan que yo soy muy macho
+por ella lloro, por ella lloro
+
+
+*Mi gusto es (3,10)
+Mi gusto es
+Y quien me lo quitara
+Solamente dios del cielo
+Me lo quita, mi gusto es
+El amarte jovencita
+Tope en eso, tope en eso que al cabo
+Mi gusto es
+Mi gusto es
+Y quien me lo quitara
+Solamente dios del cielo
+Me lo quita, mi gusto es
+Aunque me den de balazos
+Tope en eso, tope en eso que al cabo
+Mi gusto es
+Pero chiquitita yo te he de seguir amando
+Mi gusto es
+Pero chiquitita yo te he de seguir los pasos
+A donde estés
+Aunque me den de balazos
+Tope en eso, tope en eso que al cabo
+Mi gusto es
+Pero chiquitita yo te he seguir amando
+Mi gusto es
+Pero chiquitita yo seré seguir los pasos
+A donde estés
+Aunque me den de balazos
+Tope en eso, tope en eso que al cabo
+Mi gusto es
+
+
+
+*30 Cartas (3,10)
+
+Mi ranchito quedo abandonado
+desde que te fuiste
+muy triste quedo mujer
+el cacal donde el amor nos dimos
+esta tan solito
+desde que ya no te ve.
+
+Y a la sombra que daba el naranjo
+donde nos sentabamos
+a platicar mi amor, por no verte
+se fue marchitando y se fue
+secando igual que mi corazon.
+
+
+ 
+Ya no vendra, y tu recuerdo
+me persigue a donde voy
+sufro al mirar
+y hasta los campos me preguntan
+cuando vuelve y yo no se
+que contestar porque no se
+si volvera, lo mas seguro
+esque ya no regrese.
+
+30 cartas ya van
+que te mando
+y de ellas no tengo
+aun su contestacion
+sera porque no las has leido
+o porque no te causan
+ninguna preocupacion.
+
+Ya no vendra, y tu recuerdo
+me persigue a donde voy
+sufro al mirar
+y hasta los campos
+me preguntan cuando vuelve
+y yo no se que contestar
+porque no se si volvera,
+lo mas seguro es que ya no regrese
+y yo no se que contestar
+porque no se si volvera
+lo mas seguro es que ya no regres
+
+
+*Pero quererte jamas (3,7)
+
+
+
+Si es que te marches
+o me quieres ver llorar
+pero te juro que no lo vas a lograr
+por que te dije muchas veces que te amaba
+que tu eras mi todo
+pero fue en la intimidad
+
+Es un consejo
+quiero que lo entiendas bien
+que no te creas de quien te diga querer
+pues en tu caso po ser la mas creida
+te dije que te amaba
+y que sin ti no vivo mas
+
+
+ 
+Pero quererte jamas
+por que mi amor no se dispersa pordoquier
+antes de ti yo ya tenia otra querer
+si te dije te quiero es por que siempre te desie
+
+Pero quererte jamas
+por que mi amor ya pertenece a otra mujer
+te soy sincero al hacertelo saber
+que estoy agradecido por tus noches de placer
+
+Es un consejo
+quiero que lo entiendas bien
+que no te creas de quien te diga querer
+pues en tu caso po ser la mas creida
+te dije que te amaba
+y que sin ti no vivo mas
+
+Pero quererte jamas
+po que mi amor no se dispersa pordoquier
+antes de ti yo ya tenia otra mujer
+si te dije te quiero es por que siempre te desie
+
+
+ 
+Pero quererte jamas
+por que mi amor ya pertenece a otra mujer
+te soy sincero al hacertelo saber
+que estoy agradecido por tus noches de placer
+
+
+*Las Nieves De Enero (2,8,19)
+
+Se ha llegado el momento chatita
+Del alma de hablar sin mentiras,
+Espere mucho tiempo pa' ver si
+Cambiabas y tu ni me miras.
+
+Al principio dijiste que ya
+Que vinieran las nieves de enero,
+Ir a ver a la virgen y luego
+El casarnos seria lo primero.
+
+Ya se fueron las nieves de enero
+Y llegaron las flores de mayo,
+Ya lo vez me e aguantado a lo macho
+Y mi amargo dolor me lo cayo.
+
+Ya se se fueron las flores
+Y llego el invierno y tu ni me miras,
+Es por eso que digo se llego
+El momento de hablar sin mentiras.
+
+Al principio dijiste que ya
+Que vinieran las nieves de enero,
+Ir a ver a la virgen y luego
+El casarnos seria lo primero.
+
+No soporto ya mas tus mentiras
+Esta espera me esta destrozando,
+Al mirar que han pasado los a
+
+
+
+*Cancion mixteca (2.8,10)
+
+Que lejos estoy del suelo.
+Donde he nacido.
+Inmensa nostalgia invade
+Mi pensamiento.
+Y al verme tan solo y triste
+Cual hoja al viento.
+Quisiera llorar,
+Quisiera morir de sentimento.
+
+!Oh! tierra del sol,
+Suspiro por verte,
+Ahora que lejos.
+yo vivo sin luz, sin amor
+Y al verme tan solo y triste
+Cual hoja al viento.
+Quisiera llorar,
+Quisiera morir de sentimento.
+
+
+
+
+*Rifare Mi Suerte (2.8,10)
+Ahora que me encuentro lejos
+de la tierra onde naci
+hay de mis padres queridos
+cuanto han sufrido por mi
+
+pobrecita de mi madre
+cuantos concejos me dio
+con lagrimas en sus ojos
+sus bendiciones me hecho
+
+ya no llores madresita
+yo se que te hago sufrir
+dejame rifar mi suerte
+voi buscando un porvenir.
+
+
+ 
+tambien deje a mi amorsito
+que le prometi volver
+yo se bien que ella me espera
+dios me lo ha de conceder
+
+virgencita milagrosa
+bien sabes mi padeser
+de rodillas ire a verte
+si me concedes volver
+
+
+
+
+*Tomando Todo El Día (2.8,10)
+
+Pa que esperar a que venga la noche
+pa brindar por el celo y el dolor
+con la luz de este sol en derroche
+me siento solo, me siento solo
+
+Pa que esperar a empezar con el vino
+si tomando no logro tu amor
+si me toca este amargo destino
+por eso tomo, por eso tomo
+
+Por que me deprecias
+por mi pobreza, por mi tristeza o por mi frialdad
+por que me deprecias
+si por que te ruego o por que me entrego con sinceridad
+
+
+Aunque de día me miren borracho
+que me queda en el mundo que hacer
+aunque digan que yo soy muy macho
+por ella lloro, por ella lloro
+
+Por que me deprecias
+por mi pobreza, por mi tristeza o por mi frialdad
+por que me deprecias
+si por que te ruego o por que me entrego con sinceridad
+
+Aunque de día me miren borracho
+que me queda en el mundo que hacer
+aunque digan que yo soy muy macho
+por ella lloro, por ella lloro
+
+
+
+
+
+
+*Adios amigos (3,10)
+
+Adios Amigos
+Mis compañeros de aventuras
+
+Adios Amigos
+Tal vez ya no los vuelva a ver
+Las emociones
+Los mil momentos de locura
+Nuestras canciones
+Hoy pertenecen al ayer
+
+Si alguna vez
+No fui tan buen amigo, no lo se
+Hay veces que por un error
+Nos ofuscamos sin razon
+Y si tal vez
+
+
+ 
+Dije algo que pudiera ofender
+No tuve nunca esa intencion
+Perdon amigos
+
+Y si una vez
+Por cosas del destino, puede ser
+Que no halles fuerzas en tu afan
+De hacer tus suenos realidad
+Y si tal vez
+Se te cirra un
+camino, mira atras
+Y en tu recuerdo encontraras
+Siempre un amigo
+
+Adios amigos
+En horas malas y horas buenas
+Adios amigos
+Vivimos tanto de ilusiones
+Hoy mi guitarra
+Testigo De alegrias y penas
+Esta callada
+En un lugar del corazon
+
+(Hablando)
+Adios amigos
+De tantos y tantos
+momentos vividos
+Amigos de experiencia,
+Amigos de existencia
+Amigos de los que siempre recibi
+Mas de lo que hubiese esperado
+Juntos crecimos
+En muchos aspectos de la vida
+Juntos compartimos
+Amargos y gratos momentos
+Amigos De Corazon
+Amigos De Siempre.
+
+
+
+*Ingrato amor (2.7,10)
+
+Ingrato amOr
+amOr ingrato
+amor que se aleja
+y en el alma deja
+triztesa y dolor.
+
+Ingrato amor
+amor que un dia
+mataste a mi vida
+abriendo una herida
+en mi corazon
+
+ingrato amor
+que tanto lloro
+mas ya no implooro
+besar esa boca
+que tanto bese
+
+ingrato amor
+pedazito de mi alma
+amorsito que tanto adore
+ingrato amOr.
+
+
+Ingrato amor
+que tanto lloro
+mas ya no imploro
+besar esaa boca
+que tanto bese
+
+ingrato amor
+pedazito de mi alma
+amorsito que tanto adore
+ingrato amOr.
+
+
+*El Viejo Paulino (3,10)
+
+Venia bajando del cerro en su cuaco simarron
+Huyendo de aquel teniente ,al mando del peloton ,
+Lo que no sabian los guachos, es que el viejo era cabron.
+
+Paulino sembraba mota, en el barranco del cerro,
+Pero no se imaginaba que alguien le pusiera el dedo ,
+Por eso los federales lo traian al puro pedo
+
+
+ 
+Les preparo la enboscada, a la orilla del camino
+Se puso dos pericasos tambien un trago de vino ,
+Van ha saber estos vatos quien es el viejo paulino.
+
+Se oye el trote de caballos por el cañon del olivo,
+Paulino se la jugaba y siempre salia vivo,
+Nomas jalo el llamador de su fiel cuerno de chivo.
+
+Nomas me falta el soplon, para acabar de vengarme,
+Segun mi punto de vista, se me hace que es mi compadre,
+Voy a buscarlo a su rancho , para partirle su madre,
+
+Habra muchas despedidas , pero como esta ninguna,
+Una, dos, tres, cuatro, cinco, cinco, cuatro, tres, dos, una,
+Siempre fue cabron paulino desde que estubo en la cuna.
+
+
+
+
+
+
+
+*El muchacho decidido  (3,10)
+
+
+Cuando paso por la calle donde vive mi querida,
+Voy dispuesto a no cuartear me y a vender toda mi vida
+
+Porque a mi no se me asusta con chifletas ni bufidos,
+Pertenezco a la cuadrilla de los hombres decididos
+
+Yo no soy de los que corren cuando me consiento herido,
+Antes me les abalanzó y les hecho un alarido.
+
+Yo les digo a mis amigos y es como debe de ser,
+Que todo el que es de tirón se tiene que resolver.
+
+Por los besos de mi chata yo no me hago para atrás,
+Si por los besos no rajo que será por lo demás.
+
+Lo que digo lo sostengo no me la ando recargando
+Y aver quien me sale al frente para quitarle lo pando.
+
+6 letras tiene mi nombre 6 letras mi apelativo,
+Aquí se acaba el corrido del Muchacho decidido.
+
+
+
+
+
+
+*La presumida (3.5,10)
+
+Le dije a la presumida
+Que si me lavaba el paño
+
+Le dije a la presumida
+Que si me lavaba el paño
+
+
+Me contesto la maldita
+Si usted quiere hasta lo baño
+Nomas vengase temprano
+Porque tarde le hace daño.
+
+La puerca no quiere el maíz
+Ni los puerquitos la leche
+
+La puerca no quiere el maíz
+Ni los puerquitos la leche
+
+Un perico en un nopal
+Nomas le llovian las balas
+
+Un perico en un nopal
+Nomas le llovian las balas
+
+Y le dice el gabilan
+Cuidado con tus tanteadas
+El gallo para cantar primero truena las alas.
+
+Le dije a la presumida
+Que si me lavaba el paño
+
+Le dije a la presumida
+Que si me lavaba el paño
+
+
+
+
+
+*Reto a la ley (3,10)
+
+LLAMO AL SHERIFF DEL CONDADO
+MOSTRANDO SU VALENTIA
+Y LE DIJO MUY CALMADO
+QUE UNA CARGA PASARIA
+Y COMO SI FUERA POCO
+LE DIJO LA HORA Y EL DIA
+NO ESTOY HABLANDO DE HIERBA
+NO ME REBAJO A ESE GRADO
+ESTOY HABLANDO DE POLVO
+QUE VA PARA SU CONDADO
+LO RETO A QUE ME DETENGA
+ES LO QUE SIEMPRE HA DESEADO
+FUE EL DIA CINCO DE MAYO
+CORRIA EL AÑO DEL OCHENTA
+EN EL CONDADO DE HIDALGO
+TODA LA GENTE LO CUENTA
+SE ESPERABA UN TRAFICANTE
+A BORDO DE CAMIONETA
+TODO ESTABA PREPARADO
+TENIAN MUCHA PRECAUCION
+LOS NARCOS DEL OTRO LADO
+Y AGENTES DE INMIGRACION
+ESPERABAN IMPACIENTES
+QUE HICIERA SU APARICION
+LA CARGA LLEGO AL CONDADO
+PERO NO FUE POR LA ADUANA
+LA PASARON POR EL RIO
+A LAS DOS DE LA MAÑANA
+LE TENDIERON UNA TRAMPA
+A LA LEY AMERICANA
+LA LEY SE QUEDO ESPERANDO
+COMO YA LO HAN DE SABER
+AQUEL FUERTE CONTRABANDO
+FUE INUTIL DE DETENER
+Y AQUEL QUE LES HIZO EL RETO
+NO VOLVIERON A SABER
+
+
+*Quinientos Novillos. (2.7,7)
+
+
+
+
+Eran quinientos novillos
+Todititos muy livianos
+No los pudieron parar
+Entre 20 americanos. 
+
+Cuando salimos de Kansas
+Con la fuerte novillada
+Ay qué trabajos pasamos
+En aquella gran llanada. 
+
+En la hacienda de Pirules
+Se solto un toro bragado
+El caporal lo lazo
+en su caballo el melado. 
+
+Como el caballo era bueno
+Todo se le fue en correr
+El caporal le desia
+Ya no pensaba volver. 
+
+En la hacienda de palomas
+Se solto un fuerte aguacero
+Para amarrar el ganado 
+Le formamos tiroteo. 
+
+La mama de un vaquero 
+Le pregunta al caporal
+Que razon me da de mijo
+Que no lo e visto llegar. 
+
+Señora si le dijera
+Se podria usted a llorar
+Su hijo lo a matado un toro
+En las trancas de un corral. 
+
+falta mucho que contarle 
+Y por eso me despido
+Aqui termina el corrido
+De los quinientos novillos.
+
+
+
+
+
+*Corrido de Roberto Gastelum (2.4,7)
+
+
+
+
+Hombre de mucho respeto,
+Trabajador no lo niego
+Lleva por nombre Roberto
+Gastelum es su apellido
+Es orgullo de su pueblo
+Y admirado por sus hijos.
+
+Trabajo desde niño
+En el rancho de sus padres
+Salió a buscar su fortuna
+Y Dios no se la nego
+Dandole muy buena esposa
+Y sus buenos negocios.
+
+Trabajando con sus trailers 
+luego en su carnicería,
+Volvió a mover el ganado
+A sido  todo un triunfador
+No lo  puedo yo negar
+Es todo un hombre de acción.
+ 
+Es conocido en Sonora
+También en varios estados
+Pues moviendo su ganado
+Mucho tuvo que viajar
+No se olvida de Chihuahua
+Ciudad juárez mucho más.
+
+En su rancho el pretexto
+Donde se siente feliz
+Viendo crecer su ganado
+Para poder producir
+Tomándose unas heladas
+Siempre lo miran así.
+
+ ( -Y esta va para usted tambien
+ compa Sopi y la gente
+ que los recuerda. -)
+
+Ya con esta me despido
+Cantandoles este corrido
+De un hombre muy respetuoso
+Un hombre trabajador
+Es conocido en los campos
+Es Roberto si señor.
+
+
+
+
+
+
+
+
+
+
+*dos visios (3,10)
+ 
+Dos vicios tengo en la vida
+No son dinero ni fama
+Dos cosas hay en el mundo
+Que me hacen perder la calma
+El lomo de un buen caballo
+Y las ancas de una dama
+
+
+Al lomo de un buen caballo
+Bajo a ver a mi ranchera
+Aunque me siento buen gallo
+Me pierden unas caderas
+A un cuaco nunca le fallo
+Y a una dama lo que quiera
+
+
+Cuando me muera quisiera
+Que con mi cuero forraran
+El fuste de una montura
+Y que lo usara una dama
+Asi ya despues de muerto
+Y el cielo mi alma reclama
+Estar entre mis dos vicios
+Los lomos de un buen caballo
+Y las ancas de una dama 
+
+
+*Al pie de la tumba (3,10)
+Me fui al cementerio a soltar mi llanto
+A ver si llorando te puedo olvidar
+Ahora comprendo que es imposible
+Porque ya ni muerta te dejo de amar
+
+
+Al pie de la tumba
+Mirando hacia el cielo
+Quisiera escuhar tu voz
+Quisiera habrazarte Quisiera besarte
+Pero es imposible tu ya estas con dios
+
+
+Dormido te sueño despierto y te miro
+Muy dentro de mi alma Siempre viviras
+No puedo olvidarte yo quiero seguirte
+Que me lleves lejos a donde tu estas
+
+
+Al pie de la tumba
+Mirando hacia el cielo
+Quisiera escuhar tu voz
+Quisiera abrazarte 
+Quisiera besarte
+Pero es imposible tu ya estas con dios
+
+
+*Recuerdos a un amigo (3,10)
+
+
+En esa tumba triste descansa un buen amigo,
+Se le cumplió el deseo que en vida había
+Pedido, el de estar con su padre en un panteón
+Lejano, en su rancho querido y a lado de su hermano.
+
+
+Les decía a sus amigos que eran de su confianza,
+El día en que o me muera me entierren con la banda,
+Que canten las canciones que a mi mas me
+Gustaban, a si me iré contento a donde me reclaman.
+
+
+Como se sopla vuelas al cielo a descansar,
+Pero yo estoy seguro que a dios le cantaras,
+Tu siempre lo decías hay que saber vivir,
+Porque al final toditos nos vamos a morir.
+
+
+Querías que no lloraran ante tu sepultura,
+Eso no se te cumple que triste desventura,
+Porque todos lloramos al ver que te
+Marchabas, dejándonos a todos el alma destrozada.
+
+
+Ahora te recordamos con triste desconsuelo,
+Y pedimos a dios que te tenga en el cielo pues todos
+Compartimos reímos y lloramos,
+Fuimos como compadres amigos y hermanos...
+Fuimos como compadres amigos y hermanos.
+
+*La cosecha (3,10)
+
+
+Con solo verte
+con eso estoy muy contento
+con solo verte
+se acaba mi sifrimiento.
+
+
+Dime morena
+si sientes lo que yo siento,
+dimelo pronto
+
+
+si conmigo eres feliz.
+Si correspondes
+al cariño que te tengo,
+nomas me dejas
+la cosecha levantada.
+
+
+Te lo aseguro
+que con el tiempo tendremos,
+a un heredero
+que nos venga a consolar.
+
+
+No te arrepientas
+ni le hagas caso a la gente,
+no te arrepientas
+que tu me quieres a mi.
+
+
+Aunque te digan
+que soy borracho y perdido,
+soy hombresito
+y a la cita ire por ti. 
+
+
+*No sufras madre (3,10)
+
+
+Voy por la vida, triste y desolado 
+Lleno de angustia y dolor mortal
+
+
+Al recordar, de mis pobres padres 
+De mis hermanos y mi dulce hogar
+
+
+Mi pobre madre, que me dio existencia 
+Mi pobre padre, que me dio este ser
+
+
+Donde estarán, llorando por mi ausencia 
+Sin esperanza, de volverme a ver
+
+
+Mi pobre madre, muy desconsolada 
+Llorando triste, sin poderme ver
+
+
+No sufras madre, busca tu consuelo 
+Es mi destino sufrir y padecer
+
+
+Si acaso muero, por mi triste vida 
+Padre y hermanos, con todo mi ser
+
+
+Velen el cuerpo, de un hijo querido 
+Que por su ignorancia, no supo comprender
+
+
+Adiós oh madre, con dolor profundo 
+Tal vez sera, por ultima ocasión
+
+
+Solo te pido, me des en este mundo 
+Tu maternal y santa bendición
+
+
+*Hablando claro (3,10)
+ 
+Siento en el alma
+muchas ganas de llorar
+pero no lloro
+por que tengo mucho orgullo
+has despreciado
+este amor que fue tan tuyo
+nomas por irte
+por el mundo aventurar..
+Pero es inutil
+vale mas que no regreses
+si es que no qieres
+saborear una venganza
+tu bien lo sabes
+que mi amor no lo mereces
+hablando claro
+no te tengo ya confianza...
+
+
+Pero algun dia
+de mi amor te has acordaras
+y tu a mi lado
+volveras arrepentida
+con la esperanza
+que te cure yo la heridda
+y el sufrimiento
+que en alma tu trairas...
+Pero es inutil
+vale mas que no regreses
+si es que no qieres
+saborear una venganza
+tu bien lo sabes
+que mi amor no lo mereces
+hablando claro
+no te tengo ya confianza...
+
+
+*Baraja de oro (3,10)
+
+
+Voy a jugarme un albur
+Con una baraja de oro
+Que si lo gano ya estuvo
+Y si lo pierdo ni modo
+Porque yo soy de los hombres
+que cuando pierdo no lloro.
+
+
+Las mujeres son barajas
+De que saber barajar
+Pa saber cuál es la tuya
+Es la que vas apostar
+No ya después de perdido
+Quieras volver a jugar.
+
+
+Y si juegas sin malicia
+Porque no les tienes miedo
+Esperando a sota de oros
+Te aparece un caballero.
+Dispense mi buen amigo
+Es que yo llegué primero.
+
+
+El que no lo quiera creer
+Que le entre a lo pantera
+Pierde dinero y mujer
+Y hasta la portamoneda
+A veces llega a su casa
+Con la camisa de fuera.
+
+
+Y ni modo de reclamos
+Porque yo llegué a caballo
+Estoy regando el rosal pa cortar
+La flor de Mayo.
+Perdóneme rey de copas
+Pero yo soy de a caballo.
+
+
+Y si juegas sin malicia
+Porque no les tienes miedo
+Esperando a sota de oros
+Te aparece un caballero
+Dispense mi buen amigo
+Es que yo llegué primero.
+
+
+*Negra cruz (3,10)
+
+
+Ya no llores corazón, no seas cobarde
+Ay que no ves lo que me haces padecer
+
+
+Ya no llores corazón que ya es muy tarde
+Pues a los dos nos tocó la de perder
+
+
+Yo me muero y tú me pierdes para siempre
+Y te quedas en el mundo a navegar
+
+
+Ten cuidado, pisa bien y no resbales
+Mas no seas tonta, no te dejes engañar
+
+
+Ahora quieres con tu llanto regresarme
+De aquel camino que tú misma me enseñaste
+
+
+En el vaso tú pusiste el veneno
+Aquel veneno que para mí preparaste
+
+
+En mi tumba pon la cruz que yo te diga
+Y que sea negra, no la quiero de color
+
+
+Porque negra todo el tiempo fue mi suerte
+Mujer traidora, ahí te dejo mi dolor
+
+
+*Los laureles (3,10)
+
+¡Ay, que laureles tan verdes!¡Que rosas tan encendidas!
+Si piensas abandonarme mejor quitame la vida
+Alza los ojos a verme
+Si no estas comprometido
+
+
+Eres mata de algodon
+Que vives en el capullo
+Ay, que tristeza me da
+Cuando te llenas de orgullo
+De ver a mi corazón
+Enredado con el tuyo
+
+
+Eres rosa de Castilla
+Que solo en mayo se ve
+Quisiera hacerte un invite
+Pero la verdad no se
+Si tienes quien te lo evite
+Mejor me separaré
+
+
+Por ahí va la despedida
+Chinito por tus quereres
+La perdición de los hombres
+Son las benditas mujeres
+Y aquí se acaban cantando
+Los versos de los laureles.
+
+
+*Medias negras (3,10)
+
+
+Lo primero que miré, nomás al cruzar las puerta
+Aquel hermoso par de piernas cubiertas con medias negras
+Desde un banco de la barra lanzaba miradas tiernas
+Prometiendo, con sus ojos, noches de pasión eterna
+
+
+Era una mujer extraña, se veía cara su ropa
+Me acerqué y le dije: "hola, ¿puedo invitarte una copa?"
+Ella dijo al cantinero: "un champaña, por favor"
+Y yo dije: "a mí, un tequila, pero que sea del mejor"
+
+
+Ella llevaba medias negras, de eso, bien me acuerdo yo
+Cuando le dije: "¿bailamos?", dijo: "claro, ¿por qué no?""
+Su cuerpo pegado al mío, la sangre me alborotó
+Y, después de dos canciones, en la boca me besó
+
+
+Allá, en un hotel de paso, las negras medias volaron
+También volaron mis ansias y en su cuerpo aterrizaron
+En sublime comunión, nuestros cuerpos se juntaron
+Quisimos amarnos más, pero las fuerzas nos faltaron
+
+
+Desperté como a las nueve, no sé a qué hora se marchó
+Solo hallé las medias negras que me dejó en el buró
+La he buscado en aquel bar, pero ella nunca volvió
+Me dejó sus medias negras, pero mi alma se llevó
+
+
+*sonora y sus ojos negros (3,10)
+
+
+En un camión pasajero
+De esos que van para Sonora
+Yo iba cansado con sueño
+Cuando subió una señora 
+Con unos ojazos negros
+De veras encantadora
+
+
+Por ahí llegando a los Mochis
+Yo le di buenos modales
+Le pregunté de donde era
+Me dijo que de Nogales
+Que iba para Magdalena 
+A visitar a sus padres
+
+
+Desde Obregon a hermosilla
+Platicamos muy bonito
+Me gusta usted para amigo
+Y se me arrimó un poquito
+Pero en Santa Ana de plano 
+Se dejó dar un besito
+
+
+Dame otro beso en la boca 
+Pero que nadie nos vea
+Que importa si aquí es Caborca, 
+Agua Prieta o Cananea
+Iba para Magdalena 
+Ahora voy por donde sea
+
+
+En Santa Ana y Guampabampo
+Siempre fui muy maltratada
+Si no me ha querido tanto 
+No me trajera abrazada
+A usted lo mando algún santo
+Para que yo lo encontrara
+
+
+Guaymas y Puerto Peñasco 
+No crean que los e olvidado
+Es que durmió entre mis brazos 
+En San Luis Rio Colorado
+Y al cantarle a sus ojazos 
+Le canto a su lindo estado
+
+
+*Entre copa y copa (3,10)
+
+
+Entre copa y copa, se acaba mi vida
+Llorando borracho tu pérfido amor
+Qué negros recuerdos me traen tus mentiras
+Cómo cuesta lágrimas una traición
+
+
+Traigo penas en el alma
+Que no las mata el licor
+En cambio, ella sí me mata
+Mientras más borracho estoy
+
+
+Quiera Dios que a ti te pague
+Con una traición igual
+Para cuando te emborraches
+Tengas por qué llorar
+
+
+Nomás por quererte, dejé yo mi casa
+Dejé padre y madre por seguirte a ti
+Nomás por tu culpa me hundí en la desgracia
+Ni el cielo ni nadie se apiadan de mí
+
+
+Traigo penas en el alma
+Que no las mata el licor
+En cambio, ella sí me mata
+Mientras más borracho estoy
+
+
+Quiera Dios que a ti te pague
+Con una traición igual
+Para cuando te emborraches
+Tú tengas por qué llorar
+
+
+*dos botellas de mescal (3,10)
+
+
+Cuando me muera
+Como te agradecería
+Que pusieras en mi tumba
+Dos botellas de mezcal
+
+
+Porque se que he de morirme de una cruda
+Sabes bien que es culpa tuya
+Por no poderte olvidar
+
+
+Todas las noches
+Cuando agarro la botella
+Yo te miro dentro de ella
+Y me pongo a platicar
+
+
+Al rato siento
+Que me abrazas y me aprietas
+Cual si fuera cosa cierta
+Te amo y te amo y no es verdad
+
+
+Cuando al fin vuelvo
+De mis locos pensamientos
+Empiezan los sufrimientos
+Porque te busco y no estás
+
+
+De mis ojos, empieza a brotar el llanto
+Y es que yo te quiero tanto
+Y no lo puedo evitar
+
+
+Todas las noches
+Cuando agarro la botella
+Yo te miro dentro de ella
+Y me pongo a platicar
+
+
+Al rato siento
+Que me abrazas y me aprietas
+Cual si fuera cosa cierta
+Te amo y te amo y no es verdad
+
+
+Cuando al fin vuelvo
+De mis locos pensamientos
+Empiezan los sufrimientos
+Porque te busco y no estás
+
+
+De mis ojos, empieza a brotar el llanto
+Y es que yo te quiero tanto
+Y no lo puedo evitar...
+
+
+*30 cartas (3,10)
+
+
+Mi ranchito quedo abandonado
+Desde que te fuiste
+Muy triste quedo mujer
+El jacal donde el amor nos dimos
+Esta tan solito
+Desde que ya no te ve
+
+
+Ya la sombra que daba el naranjo
+Donde nos sentabamos
+A platicar mi amor, por no verte
+Se fue marchitando y se fue
+Secando igual que mi corazon
+
+
+Ya no vendra, y tu recuerdo
+Me persigue a donde voy
+Sufro al mirar
+Y hasta los campos me preguntan
+Cuando vuelve y yo no se
+Que contestar porque no se
+Si volverá, lo mas seguro
+Es que ya no regrese
+
+
+30 cartas ya van
+Que te mando
+Y de ellas no tengo
+Aun su contestacion
+Sera porque no las has leido
+Porque no te causan
+Ninguna preocupacion
+
+
+Ya no vendra, y tu recuerdo
+Me persigue a donde voy
+Sufro al mirar
+Y hasta los campos
+Me preguntan cuando vuelve
+Y yo no se que contestar
+Porque no se si volvera
+Lo mas seguro es que ya no regrese
+Y yo no se que contestar
+Porque no se si volvera
+Lo mas seguro es que ya no regrese.
 
