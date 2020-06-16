@@ -1,3 +1,4 @@
+
 Clases:
 
 a-corridos
@@ -21,6 +22,7 @@ xp-practica
 
 *Corridos
 
+El envidioso-re-a
 El niño de la tuna-la-a
 El señor de la monyaña-mi-a
 Corrido de Roberto Gastelum-fa-a x
@@ -57,6 +59,7 @@ el ayudante-fa-b f
 
 
 *Canciones
+
 
 Dos visios-mi-c
 Al pie de la tumba-re-c
@@ -135,7 +138,7 @@ La carcel de cananea-sol-b j d h x
 
 *Rancheritas
 
-
+Prieta linda-mi-c 
 El soltero-mi-d
 Pero quererte jamas-fa-d
 El corton-mimemol-d
@@ -197,7 +200,7 @@ Elenita-re-f
 *Cumbias
 
 Roberto Ruiz-sol-g
-No me alcansa-do-g 
+No me alcanza-do-g 
 Camaron caramelo-do-g xp
 la yaquesita-fa-k g 
 El hombre apasionado de Javier Rosas-fa-g 
