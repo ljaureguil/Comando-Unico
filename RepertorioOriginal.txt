@@ -20,44 +20,6 @@ xp-practica
 
 /clases
 
-*Corridos
-
-El envidioso-re-a
-El niño de la tuna-la-a
-El señor de la monyaña-mi-a
-Corrido de Roberto Gastelum-fa-a x
-Sigo chambeando-mimemol-a
-Martes 13-solsos-a
-Sentado en una llelera-mimemol-a 
-Por los rumbos del dorado-sol-a
-Chuy berduras-do-a
-Mi pasado y mi presente-sol-a 
-Con la suela roja-re-a 
-mi 45-mib-a j f 
-el 701-rc-a 
-el chaparrito-mib-a
-la muerte del comandante-do-a 
-el caballero-do-a f 
-pio diaz-do-a 
-el guero bastidas-fa-a f 
-la fuga del jefe-fa-a 
-comboy del pelo chino-fa-a
-los rumbos del dorado-fa-a
-gallo de calidad-do-a 
-gente de accionar-mib-a
-18 libras-do-a f 
-gente del chapo-fa-a
-Los drones-fa-a 
-Calibre 40-mi-a
-El tecnico-mi-a 
-Chino piloto-fa-a
-El Karma-do-a f 
-Prostipirugolfo-do-a 
-Buscado al cholo-?-a
-Falsos Amigos-sol-a 
-el ayudante-fa-b f 
-
-
 *Canciones
 
 
@@ -235,3 +197,43 @@ El caballo de la sierra-sol-l
 el tejanito-mi-l
 el fronterizo-mi-l 
 mi primer servo-mi-l
+
+
+*Corridos
+
+El envidioso-re-a
+El niño de la tuna-la-a
+El señor de la monyaña-mi-a
+Corrido de Roberto Gastelum-fa-a x
+Sigo chambeando-mimemol-a
+Martes 13-solsos-a
+Sentado en una llelera-mimemol-a 
+Por los rumbos del dorado-sol-a
+Chuy berduras-do-a
+Mi pasado y mi presente-sol-a 
+Con la suela roja-re-a 
+mi 45-mib-a j f 
+el 701-rc-a 
+el chaparrito-mib-a
+la muerte del comandante-do-a 
+el caballero-do-a f 
+pio diaz-do-a 
+el guero bastidas-fa-a f 
+la fuga del jefe-fa-a 
+comboy del pelo chino-fa-a
+los rumbos del dorado-fa-a
+gallo de calidad-do-a 
+gente de accionar-mib-a
+18 libras-do-a f 
+gente del chapo-fa-a
+Los drones-fa-a 
+Calibre 40-mi-a
+El tecnico-mi-a 
+Chino piloto-fa-a
+El Karma-do-a f 
+Prostipirugolfo-do-a 
+Buscado al cholo-?-a
+Falsos Amigos-sol-a 
+el ayudante-fa-b f 
+
+
