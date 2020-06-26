@@ -6,8 +6,7 @@
     type="image/x-icon" />
 
 </head>
-  <script src='file:///android_asset/app.js'></script>
-
+ 
 <body>
     <style>
         body {
@@ -175,6 +174,59 @@
              font-size:18px;
             background:#aa0000;
         }
+        #ref{
+            position:absolute;
+            background:transparent;
+            top:9%;
+            right:0%;
+            border:none;
+            font-size:36px;
+           // width:32px;
+           // height:30px;
+        }
+    #settings-dlg{
+        overflow:auto;
+        text-align:center;
+  position: absolute;
+  width:90%;
+  height: 60%;
+  background:coral;
+  color:blue;
+  font-size: 20px;
+  font-weight: bold;
+  left: 5%;
+  top: 30%;
+ // padding: 30px;
+  display: none;
+  text-align: center;
+  border:solid;
+
+
+}
+.btnsset{
+    font-size:20px;
+ color:blue;
+ margin: 20px;
+   text-align:center;
+}
+.divpicks{
+    border:solid;fornt-size:10px;
+    padding:15px;
+    color:white;
+    width:80%;
+     text-align:center;  
+}
+#bottonInic{
+    height:30%;
+    color:white;
+    background:#00a000;
+    border-radius:15px;
+    box-shadow: -15px 15px 26px  #335033;
+    font-size:35px;
+    font-weight:bold;
+}
+    
+        
     </style>
     <div id="dle">
 
@@ -184,7 +236,9 @@
    
    
     </div>  
-    <button id="logo" onclick="ChFont()">&#9881;</button>
+   <button id="logo" onclick="showsettings()">&#9881;</button>
+     <button id="ref" onclick="sortear('');edc.scrollTop = 0;">&#9851;</button>
+ 
     <div id="todo">
  
 
@@ -238,7 +292,30 @@
 
         </div>
     </div>
+   <div id="settings-dlg">
+   
+   <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
+   <div id="div-date" class="divpicks" >
+   <label for="pkdate">Pic Date</label>
+<input id="pkdate" type="date">
+</div>
+<br>
+  <div id="div-date" class="divpicks"><label for="pktime">Pic Time</label>
+<input id="pktime" type="time">
+</div><br>
+    <button id="bottonInic" class="btnsset" onclick="inicTocada()">Empesar<br>Tocada</button><br>
+    
+  
+    <button id="bottonInic" class="btnsset" onclick="inic2()">Empesar<br>2 + Hora</button><br>
+  
+    
+<button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button><br>
 
+<button class="btnsset" onclick="closesettings()">Close Dialoge</button>
+
+
+
+</div>
     <script>
     /*
     
@@ -250,14 +327,26 @@
     
     */
         //https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw
+ 
+ 
+ 
+ 
+ 
+ 
+ 
         var repstate = true;
         var total = []
         var btit = true;
         var Letras=""; 
         loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Letras.txt", function(r) {Letras=r;});
-
+ 
+ 
+       esettings = document.getElementById("settings-dlg");
+ 
+   var tocadas=localStorage.getItem("tocadas");
         ele = document.getElementById("le");
         edle = document.getElementById("dle");
+   
         edc = document.getElementById("todo")
          doc = ifr.contentWindow.document;
         etitulo = document.getElementById("titulo");
@@ -415,8 +504,11 @@
        }
 
        function showletra(cancion) { //Corrido de Roberto Gastelum
+     var tc=cancion.toUpperCase();
+          var tl=Letras.toUpperCase();
+          var aas=tl.indexOf("*" + tc);
            var as = Letras.indexOf("*" + cancion);
-           //    alert(as+"oooooooooo");
+                as=aas
            if (as >= 0) {
 
                edle.style.display = "block";
@@ -555,7 +647,7 @@
             if (filter === "") {
                 addca("");
                 ectrls.style.display = "";
-                edivrep.style.display = "";
+               edivrep.style.display = "";
             } else {
                 settot(false)
                 ectrls.style.display = "none";
@@ -654,7 +746,7 @@
      }
 
  }
-  function ChFont(){
+ function ChFont(){
  
  var x = prompt("Font Size:\n\nRecommended Enter a Value\nFrom 20 to 35", "20");
  var s = parseInt(x);
@@ -662,6 +754,101 @@ document.getElementById("lirep").style.fontSize = s+"px";
 
       
   }
+  function showsettings(){
+    esettings.style.display="block";
+  }
+  function closesettings(){
+      esettings.style.display="none"
+  }
+ tiempodetocar=60*60*1000;  
+// tiempodetocar= 10000;
+ 
+  function inic2(){
+      tiempodetocar=45*60*1000;
+ // tiempodetocar= 7500;    
+      inicTocada();
+  }
+  function inicTocada() { 
+      
+      document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
+   eli.style.background = "black";
+    var d = new Date();
+    var hinic = d.getHours();
+    var minic = d.getMinutes();
+    sinic = hinic + ":" + minic
+    localStorage.setItem("inicio", sinic);
+
+
+
+    setTimeout(function() {
+        document.body.style.background = "orange";
+
+    }, tiempodetocar - (5*60*1000));
+    
+  setTimeout(function() {
+        //            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+        document.body.style.background = "red";
+    }, tiempodetocar);
+    
+    setTimeout(function() {
+
+        eli.style.background = "red";
+    }, tiempodetocar +  (2.5*60*1000))
+
+  
+ 
+    closesettings()
+
+    var toc = localStorage.getItem("inicio");
+    if (toc != null) {} else {
+
+    }
+
+}
+var acualTocada;
+
+  function tocada(){
+
+this.date="";
+this.start="";
+this.timeinic=0;
+this.iniciarTocada=function(){
+     this.timeinic=new Date();
+}
+this.setTocada=function(){
+    this.date=prompt("Type Fecha de tocada",new Date());
+    this.horas=prompt("cuantas horas?");
+    this.horadeinic=prompt("a que hora inicia?");
+    this.phone=prompt("Type Costumer Phone Number");
+    this.direccion=prompt("Type La adress de la tocada")
+    this.informacion=prompt("Type Informacion extra si hay");
+    this.costumername=prompt("Type costumer name");
+    this.precio=prompt("Type el precio por hora");
+    alert("Cuando estes listo preciona el boton de 'Iniciar Tocada'");
+
+    
+}
+this.phone="";
+this.costumername="";
+this.direccion="";
+this.horas=0;
+this.precio=0;
+this.horadeinic=0;
+this.informacion="";
+this.horasTocadas=0;
+
+  }
+  function settingUpTocada(){
+     // alert("actualTocada");
+    actualTocada=new tocada(); //   alert(actualTocada);
+    actualTocada.setTocada();  // 
+    var str=JSON.stringify(actualTocada); alert(actualTocada);
+    alert(str);
+  }
+    </script>
+
+  
     </script>
 
 </body>
