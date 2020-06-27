@@ -907,8 +907,9 @@ closesettings();
   function finish(){
       if(confirm("Areyousure?")){
           var toth=localStorage.getItem("horastocadas");
-          var cantidad=(horast-1)*Tocada.precio*1;
-          alert("Total de horas tocadas ="+horast+"\n\nA "+Tocada.precio*1+"\n\nEl Total es: "+cantidad);
+          var ht=horast-1;
+          var cantidad=ht*Tocada.precio*1;
+          alert("Total de horas tocadas ="+ht+"\n\nA "+Tocada.precio*1+"\n\nEl Total es: "+cantidad);
     closesettings();
     
       }
