@@ -294,23 +294,18 @@
         </div>
     </div>
    <div id="settings-dlg">
-     <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button>
+        <button class="btest" onclick="testmode();">*Test Mode*</button>
+ <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button>
    <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
-   <div id="div-date" class="divpicks" >
-   <label for="pkdate">Pic Date</label>
-<input id="pkdate" type="date">
-</div>
+   
 <br>
-  <div id="div-date" class="divpicks"><label for="pktime">Pic Time</label>
-<input id="pktime" type="time">
-</div><br>
+
 
     <button id="bottonInic" class="btnsset" onclick="inicTocada()">Empesar<br><label id="hh">Primer Hora</label></button>  
     <br>
     <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>  
     <br>
-
-    
+  
 <button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button><br>
 
 <button class="btnsset" onclick="closesettings()">Close Dialoge</button>
@@ -333,7 +328,9 @@
  
  
  
- 
+ var Tocada="";
+var horast=1;
+var timewarning, timeout, timeover,test=false;
  
  
         var repstate = true;
@@ -772,24 +769,33 @@ document.getElementById("lirep").style.fontSize = s+"px";
  
   function inic2(){
       tiempodetocar=45*60*1000;
- // tiempodetocar= 7500;    
+  tiempodetocar= 7500;    
       inicTocada();
   }
   
   
   function inicTocada() { 
    ///////////////////   
+   
+   if(test) alert("you are in test mode");
+   
            clearTimeout(timeout);
      clearTimeout(timeover);
      clearTimeout(timewarning);
      
      
      ////////
-      if(horast>1)tiempodetocar=tiempodetocar=45*60*1000;//   tiempodetocar= 7500
+      if(horast>1) tiempodetocar=45*60*1000;
+      else  tiempodetocar=60*60*1000;  
+      if(test) tiempodetocar=tiempodetocar= 7500;
+    //  else tiempodetocar=45*60*1000;
+     
   if(Tocada=="" != Tocada==null){
          alert("preciona primero 'set tocada' y pon las horas")
   }
   else{
+      if(test) tiempodetocar= 12000;
+      else tiempodetocar=60*60*1000; 
       horast++;
       document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
    eli.style.background = "black";
@@ -834,9 +840,7 @@ else{
 }
   }
 }
-var Tocada="";
-var horast=1;
-var timewarning, timeout, timeover;
+
 
   function tocada(){
 
@@ -893,7 +897,9 @@ function resetTocada(){//confirm("Press a button!");
      clearTimeout(timeout);
      clearTimeout(timeover);
      clearTimeout(timewarning);
-
+           document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
+   eli.style.background = "black";
+closesettings();
     }
 
 
@@ -903,7 +909,23 @@ function resetTocada(){//confirm("Press a button!");
           var toth=localStorage.getItem("horastocadas");
           var cantidad=(horast-1)*Tocada.precio*1;
           alert("Total de horas tocadas ="+horast+"\n\nA "+Tocada.precio*1+"\n\nEl Total es: "+cantidad);
+    closesettings();
+    
       }
+      
+  }
+  function testmode(){ 
+    //  
+      if(test){alert("test mode is off");
+      test=false;
+              resetTocada();
+          }
+          else{
+        if(confirm("you are going to test mode")){
+            test=true;
+            resetTocada();
+  }
+  }
   }
     </script>
 
