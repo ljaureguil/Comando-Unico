@@ -189,17 +189,18 @@
         text-align:center;
   position: absolute;
   width:90%;
-  height: 60%;
+  height: 90%;
   background:coral;
   color:blue;
   font-size: 20px;
   font-weight: bold;
   left: 5%;
-  top: 30%;
+  top: 5%;
  // padding: 30px;
   display: none;
   text-align: center;
-  border:solid;
+  border-style:double;
+  border-radius:10px;
 
 
 }
@@ -218,15 +219,15 @@
 }
 #bottonInic{
     height:30%;
+    width: 60%;
     color:white;
-    background:#00a000;
-    border-radius:15px;
-    box-shadow: -15px 15px 26px  #335033;
+    background:rgb(52, 109, 175);
+    border-radius:35px;
+    box-shadow: ;
     font-size:35px;
     font-weight:bold;
-}
-    
-        
+    box-shadow: -15px 15px 26px  #335033, inset 10px -10px 7px #0c1fd1, inset -10px 10px 7px #1eb6e4bb;
+ 
     </style>
     <div id="dle">
 
@@ -293,7 +294,7 @@
         </div>
     </div>
    <div id="settings-dlg">
-   
+     <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button>
    <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
    <div id="div-date" class="divpicks" >
    <label for="pkdate">Pic Date</label>
@@ -303,11 +304,12 @@
   <div id="div-date" class="divpicks"><label for="pktime">Pic Time</label>
 <input id="pktime" type="time">
 </div><br>
-    <button id="bottonInic" class="btnsset" onclick="inicTocada()">Empesar<br>Frst. Hr</button><br>
-    
-  
-    <button id="bottonInic" class="btnsset" onclick="inic2()">Empesar<br>2 + Hora</button><br>
-  
+
+    <button id="bottonInic" class="btnsset" onclick="inicTocada()">Empesar<br><label id="hh">Primer Hora</label></button>  
+    <br>
+    <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>  
+    <br>
+
     
 <button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button><br>
 
@@ -322,7 +324,7 @@
                 <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
             <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
             <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
- 
+    <button id="bottonInic" class="btnsset" onclick="inic2()">Empesar<br>2 + Hora</button><br>
     
     
     */
@@ -755,58 +757,86 @@ document.getElementById("lirep").style.fontSize = s+"px";
       
   }
   function showsettings(){
+      
+      
     esettings.style.display="block";
+         document.getElementById("hh").innerHTML=horast+"a. Hora";
+ 
+    
   }
   function closesettings(){
       esettings.style.display="none"
   }
  tiempodetocar=60*60*1000;  
-// tiempodetocar= 10000;
+ //tiempodetocar= 12000;
  
   function inic2(){
       tiempodetocar=45*60*1000;
  // tiempodetocar= 7500;    
       inicTocada();
   }
+  
+  
   function inicTocada() { 
-      
+   ///////////////////   
+           clearTimeout(timeout);
+     clearTimeout(timeover);
+     clearTimeout(timewarning);
+     
+     
+     ////////
+      if(horast>1)tiempodetocar=tiempodetocar=45*60*1000;//   tiempodetocar= 7500
+  if(Tocada=="" != Tocada==null){
+         alert("preciona primero 'set tocada' y pon las horas")
+  }
+  else{
+      horast++;
       document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
    eli.style.background = "black";
     var d = new Date();
     var hinic = d.getHours();
     var minic = d.getMinutes();
-    sinic = hinic + ":" + minic
+    sinic = hinic + ":" + minic;
+         if(localStorage.getItem("inicio")==="") {
+       
     localStorage.setItem("inicio", sinic);
-
-
-
-    setTimeout(function() {
-        document.body.style.background = "orange";
-
-    }, tiempodetocar - (5*60*1000));
+    localStorage.setItem("horastocadas","1");
     
-  setTimeout(function() {
-        //            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+else{
 
-        document.body.style.background = "red";
+    timewarning=setTimeout(function() {
+        document.body.style.background = "orange";
+      //  var rr=localStorage.getItem("horastocadas")*1+1;
+        localStorage.setItem("horastocadas",horast);
+
+      
+    }, tiempodetocar - 5000);
+ 
+  //  }, tiempodetocar - (5*60*1000));
+    
+  timeout=setTimeout(function() {
+          document.body.style.background = "red";
     }, tiempodetocar);
     
-    setTimeout(function() {
+    timeover=setTimeout(function() {
 
         eli.style.background = "red";
-    }, tiempodetocar +  (2.5*60*1000))
+//    }, tiempodetocar +  (2.5*60*1000))
+ }, tiempodetocar +  2000)
 
-  
- 
     closesettings()
 
     var toc = localStorage.getItem("inicio");
     if (toc != null) {} else {
 
     }
-
 }
-var acualTocada;
+  }
+}
+var Tocada="";
+var horast=1;
+var timewarning, timeout, timeover;
 
   function tocada(){
 
@@ -814,20 +844,21 @@ this.date="";
 this.start="";
 this.timeinic=0;
 this.iniciarTocada=function(){
-     this.timeinic=new Date();
+ //    this.timeinic=new Date();
 }
 this.setTocada=function(){
-    this.date=prompt("Type Fecha de tocada",new Date());
+  //  this.date=prompt("Type Fecha de tocada",new Date());
     this.horas=prompt("cuantas horas?");
-    this.horadeinic=prompt("a que hora inicia?");
-    this.phone=prompt("Type Costumer Phone Number");
-    this.direccion=prompt("Type La adress de la tocada")
-    this.informacion=prompt("Type Informacion extra si hay");
-    this.costumername=prompt("Type costumer name");
-    this.precio=prompt("Type el precio por hora");
-    alert("Cuando estes listo preciona el boton de 'Iniciar Tocada'");
+ //   this.horadeinic=prompt("a que hora inicia?");
+ //   this.phone=prompt("Type Costumer Phone Number");
+ //   this.direccion=prompt("Type La adress de la tocada")
 
-    
+ //   this.costumername=prompt("Type costumer name");
+    this.precio=prompt("Type el precio por hora");
+     this.informacion=prompt("Type Informacion extra si hay"); 
+     
+     alert("Cuando estes listo preciona el boton de 'Iniciar Primer Hora");
+
 }
 this.phone="";
 this.costumername="";
@@ -840,15 +871,40 @@ this.horasTocadas=0;
 
   }
   function settingUpTocada(){
-     // alert("actualTocada");
-    actualTocada=new tocada(); //   alert(actualTocada);
-    actualTocada.setTocada();  // 
-    var str=JSON.stringify(actualTocada); alert(actualTocada);
-    alert(str);
-  }
-    </script>
-
+         clearTimeout(timeout);
+     clearTimeout(timeover);
+     clearTimeout(timewarning);  
+      
+      Tocada=new tocada(); 
+    Tocada.setTocada(); 
+    var str=JSON.stringify(Tocada)+"~";
+    localStorage.setItem("Tocadainfo",str)
+ }
   
+function resetTocada(){//confirm("Press a button!");
+
+    if(confirm("Are your sure?,\n The information of the tocada will be deleted")){
+        localStorage.removeItem("Tocadainfo")
+        localStorage.removeItem("tocadas")
+      localStorage.removeItem("inicio")
+     localStorage.removeItem("horastocadas");
+     horast=1;
+     Tocada="";
+     clearTimeout(timeout);
+     clearTimeout(timeover);
+     clearTimeout(timewarning);
+
+    }
+
+
+}
+  function finish(){
+      if(confirm("Areyousure?")){
+          var toth=localStorage.getItem("horastocadas");
+          var cantidad=(horast-1)*Tocada.precio*1;
+          alert("Total de horas tocadas ="+horast+"\n\nA "+Tocada.precio*1+"\n\nEl Total es: "+cantidad);
+      }
+  }
     </script>
 
 </body>
