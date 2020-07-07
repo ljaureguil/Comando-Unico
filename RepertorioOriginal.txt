@@ -22,7 +22,7 @@ xp-practica
 
 *Canciones
 
-
+A cada rato-sol-c
 Dos visios-mi-c
 Al pie de la tumba-re-c
 Mi gusto es-mi-c
@@ -60,6 +60,7 @@ porque te vas de mi-fa-c j i h f
 
 *Corridos Clasicos
 
+Entre llerva polvo y ploma-fa-b
 Tres mujeres-mi-b
 Mariano Resendez-re-b xd x
 Mataron a los Mendoza-do-b x
@@ -100,6 +101,7 @@ La carcel de cananea-sol-b j d h x
 
 *Rancheritas
 
+Maragarita Margarita-mi-d
 El Tarasco-mi-d
 Te vas a volar gabiota-mi-d
 Prieta linda-mi-d 
