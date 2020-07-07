@@ -51,7 +51,7 @@ entre copa y copa-do-c j i h xp
 el columpio-do-c j h i 
 dos botellas de mescal-sol-c j h f
 porque se habra ido-fa-c j h f 
-Arriba de 120-re-c 
+Arriba de 120-re-c -1ERqTEKUU8JSLNgu-jULjAhhc-cdSuoJP
 Las iluciones-mi#-c i h 
 30 cartas-mi-c j h 
 porque te vas de mi-fa-c j i h f 
@@ -136,7 +136,7 @@ Tu nuevo cariñito-mim-d h f
 Cruz de madera-fa-d h 
 Dos pasages-mim-d h 
 Y por esa calle vive-re-d h f 
-Caballo R15-fa-d h x
+Caballo R15-fa-d h x -1ERD26G8OQyrhaqvqq4ygIlB_hfkc3lca
 Se va muriendo mi alma-mi-d h xp
 San Juan de Ulua-do-d h 
 un rinconcito en el cielo-fa-d i e h 
@@ -205,7 +205,7 @@ mi primer servo-mi-l
 
 *Corridos
 
-El envidioso-re-a
+El envidioso-re-a-1DSNLcV5TbEfIQbGZireAhcVkPpU0EwrM
 El niño de la tuna-la-a
 El señor de la monyaña-mi-a
 Corrido de Roberto Gastelum-fa-a x
