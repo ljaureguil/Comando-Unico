@@ -73,7 +73,7 @@ El Viejo Paulino-mimemol-b x
 El arbol de la horca-mimemol-b x
 La martina-fa-b x
 Juan Ramos-fa-b x
-Julio beltran-re-a x
+Julio beltran-re-a x-1ER3wKhQFvs4ksrUfr_6yogucOnX7Hemw
 Clave 7-fa-b 
 El numero uno-do-b 
 Reto a la ley-mimemol-b x
@@ -116,7 +116,7 @@ Hermosisimo lucero-do-d
 Cajita de oro-fa-d 
 Los ojos de pancha-fa-d
 Tengo miedo-solsost-d
-Soy trokero-mimemol-d 
+Soy trokero-mimemol-d -1EEYg2kMkWFBOQ-8zX_sS7P9scFE36Oqh
 Y ahora te vas-fa-d 
 40 cartas-fa-d f xp
 Un puño de tierra-sol-d h
@@ -201,6 +201,7 @@ El caballo de la sierra-sol-l
 el tejanito-mi-l
 el fronterizo-mi-l 
 mi primer servo-mi-l
+polka unic-fa-l-1EJo1vVsL2ZjfuVm5Nxb4Ot78fPyWbddW
 
 
 *Corridos
