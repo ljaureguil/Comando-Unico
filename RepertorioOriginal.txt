@@ -4,7 +4,6 @@ Clases:
 a-corridos
 f-sierreño
 b-corr. clas.
-c-canciones
 d-rancheritas
 e-bailables
 g-cumbias
@@ -53,7 +52,7 @@ dos botellas de mescal-sol-c j h f
 porque se habra ido-fa-c j h f 
 Arriba de 120-re-c -1ERqTEKUU8JSLNgu~jULjAhhc~cdSuoJP
 Las iluciones-mi#-c i h 
-30 cartas-mi-c j h 
+30 cartas-mi-c j h -13NuXh546CYTv37WODSfZqgCRB47hWSA_
 porque te vas de mi-fa-c j i h f 
 
 
