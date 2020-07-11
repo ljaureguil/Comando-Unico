@@ -100,7 +100,9 @@ La carcel de cananea-sol-b j d h x
 
 
 *Rancheritas
-Mi lupita-mi-d-13EogaFYSVPLnR61xDUov9Rs4OmSCZeg~
+
+
+Tengo a mi Lupe-mi-d-13EogaFYSVPLnR61xDUov9Rs4OmSCZeg~
 Maragarita Margarita-mi-d
 El Tarasco-mi-d
 Te vas a volar gabiota-mi-d
@@ -155,7 +157,7 @@ Mi casa nueva-fa-d i h
 Linda morena-mi-d i 
 Noches tenebrosas-sol-d i h xp
 Golpe traidor-mi-d h 
-la canelera-fa-d e j f 
+la canelera-fa-d e j f -13J4mdni7vEWHQZ_Y3UsMEAIhym_InKu6
 clavelito chino chino-fa-d b i 
 de esta sierra a la otra sierra-fa-d j e f c 
 mi caballo ensillado-fa-d e j f x
