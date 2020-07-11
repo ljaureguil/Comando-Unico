@@ -45,7 +45,7 @@ Medias negras-mi-c h f
 flor hermosa-fa-c j i f 
 sonora y sus ojos negros-sol-c j i h f 
 dos mares de lagrimas-do-c j h i 
-tragos de amargo licor-sib-c j d h 
+tragos de amargo licor-sib-c j d h -13fWfdOgsx~N7G0h0ZcZdy7aXccWBYbpX
 alma enamorada-sib-c j i h 
 entre copa y copa-do-c j i h xp
 el columpio-do-c j h i 
@@ -77,7 +77,7 @@ Julio beltran-re-a x-1ER3wKhQFvs4ksrUfr_6yogucOnX7Hemw
 Clave 7-fa-b 
 El numero uno-do-b 
 Reto a la ley-mimemol-b x
-muchacho alegre-fa-e g j k f
+muchacho alegre-fa-e g j k f -13tOofcUl~MwMHt1~e2qQQgIPAKvBVYeZ
 catarino y los rurales-fa-b d i j f x
 El bazucazo-re-a b i j f 
 el costal lleno de piedras-sol-a b h j f
@@ -121,7 +121,7 @@ Tengo miedo-solsost-d
 Soy trokero-mimemol-d -1EEYg2kMkWFBOQ~8zX_sS7P9scFE36Oqh
 Y ahora te vas-fa-d 
 40 cartas-fa-d f xp
-Un puño de tierra-sol-d h
+Un puño de tierra-sol-d h -13v8JfW8NCeJh7XbLUuhB5ZqouMKQylSt
 El amor nunca se vende-mi-c h f 
 Con cartitas-sol#-d c h 
 Mi golondrina-mi-d h 
