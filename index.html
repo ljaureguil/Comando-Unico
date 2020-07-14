@@ -7,7 +7,7 @@
 
 </head>
  
-<body>
+<body >
     <style>
         body {
             background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -69,7 +69,7 @@
             color: white;
             width: 83%;
             // height: 40%;
-            font-size: 20px;
+            font-size: 16px;// font repertorio
             font-weight: bold;
             border-radius: 15px;
             padding: 5%;
@@ -137,7 +137,7 @@
         }
         #le {
             padding: 15px;
-            color: white;
+            color: black;
             font-size: 17px;
             width: 90%;
             height: 90%;
@@ -146,19 +146,29 @@
            // border-style: solid;
            border-radius:5px;
             font-weight: bold;
-            background: #000070;
-           box-shadow:inset 0 0 30px 4px #6666ff;
+            background: #ffff;
+        //   box-shadow:inset 0 0 30px 4px #6666ff;
           scroll-behavior: smooth;
         }
         #clle {
             position: absolute;
-            bottom: 7%;
+            bottom:5px;
             left: 0%;
-            width:100%;
+            width:60%;
+            
+       
+            height:80px;
+            border-radius:10px;
+            background:rgba(0,150,0,.50);//#00aa00;
+            color:#ffffff;
+            font-size:20px;
+            font-weight:bold;
+            border-style:double;
+             box-shadow:inset 0 0 5px 1px #66aa66;   
         }
          #inicsld {
             position: absolute;
-            bottom: 82px;
+            bottom: 5px;
             right: 42px;
             width:80px;
             height:80px;
@@ -169,7 +179,9 @@
             font-weight:bold;
             border-style:double;
                     box-shadow:inset 0 0 5px 1px #66aa66; 
-        }     
+        }  
+ 
+        
         #mainrep{
              font-size:18px;
             background:#aa0000;
@@ -190,7 +202,7 @@
   position: absolute;
   width:90%;
   height: 90%;
-  background:coral;
+  background:rgba(0, 212, 255, .60);
   color:blue;
   font-size: 20px;
   font-weight: bold;
@@ -218,27 +230,67 @@
      text-align:center;  
 }
 #bottonInic{
-    height:30%;
-    width: 60%;
-    color:white;
-    background:rgb(52, 109, 175);
-    border-radius:35px;
+    height:160px;
+    width: 160px;
+    color:black;
+//    background:rgb(50, 218, 100);
+    border-radius:50%;
     box-shadow: ;
-    font-size:35px;
+    font-size:30px;
     font-weight:bold;
-    box-shadow: -15px 15px 26px  #335033, inset 10px -10px 7px #0c1fd1, inset -10px 10px 7px #1eb6e4bb;
+ //   box-shadow: -15px 15px 26px  #503333, inset 10px -10px 7px #1f0cd1, inset -10px 10px 7px #b61ee4bb;
+}
+#audctrls{
+    position:absolute;
+    width:98%;
+    height:auto;
+       top:35%;
+       transition:  top ease-in-out 2s;
+ //   display: none;
+}
+.cbaudio{
+    color:red;
+    height:255px;
+    width: 35px;
+    position:absolute;
+    background-color: rgba(0, 212, 255, .40);
  
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.80px #f50707;
+-webkit-text-fill-color: #FFFFFF;
+ 
+
+ 
+}
+#bpl{
+left:0%;
+}
+#bpa{
+right: 0%;
+}
+#timerh{
+    color: white;
+ width: 100%;
+ height: auto;
+  font-size: 40px;
+padding: 20px;
+border-style: double;
+border-radius: 10px;
+border-width: .5px;
+}
     </style>
     <div id="dle">
 
         <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)" ></textarea  >
-        <button id="clle" onclick='einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)'>Close</button>
-        <button id="inicsld" onclick='clearInterval(scintervalo);inicScrolling();'>Start</button>
+        <button id="clle" onclick='eactrls.style.top="-50%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)'>Close</button>
+        <button id="inicsld"  onclick='clearInterval(scintervalo);inicScrolling();'>Start</button>
    
    
     </div>  
    <button id="logo" onclick="showsettings()">&#9881;</button>
-     <button id="ref" onclick="sortear('');edc.scrollTop = 0;">&#9851;</button>
+     <button id="ref" onclick="eactrls.style.top='-50%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
  
     <div id="todo">
  
@@ -301,8 +353,18 @@
 <br>
 
 
-    <button id="bottonInic" class="btnsset" onclick="inicTocada()">Empesar<br><label id="hh">Primer Hora</label></button>  
-    <br>
+   <div id="timerh">
+       <p color="white">Timer:</p>
+       <br>
+    <button id="bottonInic" class="btnsset" onclick="inicTocada(1)">1st. Hora</button>  
+    
+    <button id="bottonInic" class="btnsset" onclick="inicTocada(2)">2a. Hora +++</button>  
+
+ 
+
+
+   </div>
+<br>
     <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>  
     <br>
   
@@ -313,19 +375,58 @@
 
 
 </div>
+
+  
+<audio id="myAudio">
+    <source src="" type="audio/ogg">
+  </audio>
+  <div id="audctrls">
+  <button id="bpl" class="cbaudio" onclick="x.play().catch(e => e);">&#9658;</button>
+  <button  id="bpa" class="cbaudio" onclick="eactrls.style.top='-50%';x.pause();">&#9612;&#9612;</button> 
+ </div>
     <script>
-    /*
+        //769  crnode2() para hacer el cambio tocada a cliente
+//    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Canc.txt",function(r){alert(r)})
     
-                <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1jo-7vKtsLhIWWlNNqy-MgARqIt6Y1bL3m73-4f-9KY0")'>Rep. drive</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1f3sDKsDlnt5yPVbVyndd3dfS1QKSaDXYF7MIYCr54ZY")'>Agenda</button>
-            <button class=btns onclick='opendoc( "https://drive.google.com/open?id=1mFV419VmfUa6nL5j-NIHnrUEVdztQ4VETjjx3mQnTrU")'>Contrato</button>
-    <button id="bottonInic" class="btnsset" onclick="inic2()">Empesar<br>2 + Hora</button><br>
+  window.onerror = function(){
+   return true;
+} 
+var arlinks=[];
+var txlinks="";
+loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Canc.txt",function(r){
+arlinks=r.split("\n");
+//alert(txlinks);
+//alert(arlinks.length)
+arlinks=arlinks.filter(function(ar){return ar !="" && ar !=undefined});
+//alert(arlinks)
+txlinks=arlinks.toString();
+//alert(arlinks.length)
+//
+
+inicprs()
+
+});
+
     
+    songs=[];
     
-    */
-        //https://drive.google.com/open?id=1t2D5wteARfH44uZRRxjV2166gUQcP5f4-eWeP70fTxw
+ var x = document.getElementById("myAudio"); 
+//x.setAttribute("src","https://docs.google.com/uc?export=open&id=1ERqTEKUU8JSLNgu-jULjAhhc-cdSuoJP");//https://static.wixstatic.com/mp3/4ee8f5_21f59bb654b34bb3b2f2dcf7bc933e2c.mp3
+//x.onloadstart= x.play(); ;
+function playAudio() { 
  
- 
+  x.play().catch(e => e);; 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+
+} 
+//https://docs.google.com/uc?export=open&id=1ERqTEKUU8JSLNgu-jULjAhhc-cdSuoJP");//https://static.wixstatic.com/mp3/4ee8f5_21f59bb654b34bb3b2f2dcf7bc933e2c.mp3
+  
+  function loadparam(){
+    ;  
+  }
  
  
  var Tocada="";
@@ -345,7 +446,10 @@ var timewarning, timeout, timeover,test=false;
    var tocadas=localStorage.getItem("tocadas");
         ele = document.getElementById("le");
         edle = document.getElementById("dle");
-   
+        eactrls = document.getElementById("audctrls");
+
+        eactrls.style.top="-50%";
+ 
         edc = document.getElementById("todo")
          doc = ifr.contentWindow.document;
         etitulo = document.getElementById("titulo");
@@ -362,7 +466,7 @@ var timewarning, timeout, timeover,test=false;
 
          //    loadText('https://drive.google.com/open?id=1VU-tkhVUVDJke1m49YNcJiAfbnN_ZDYHEGxckW20KZM',function(r){alert(r.indexOf("libreta"))})
          //////////////////////////////////////
-        loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
+     function inicprs(){   loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
             etitulo.innerHTML = ". . . Repertorio:"
             var cc = cont.split("/clases")
             cmi = cc[0].split("\n"),
@@ -384,10 +488,11 @@ var timewarning, timeout, timeover,test=false;
                     cid.push(f[0]); //letra
                 }
             }
+            
             ////////////////////////////////////////////
             for (i = 0; i < orremix.length; i++) {
                 if (orremix[i].indexOf("-") > 0) {
-                    total.push(orremix[i]);
+                    total.push(orremix[i]); //selecciona las canciones
                     //   if(i==orremix.length-1); // alert(total.length);
                 }
                 //  
@@ -399,11 +504,29 @@ var timewarning, timeout, timeover,test=false;
                 //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
                 if (orremix[i].indexOf("-") > 0 || orremix[i].indexOf("*") >= 0) {
                     if (orremix[i].indexOf("*") >= 0) {
-                        arindex.push([rca.length, orremix[i]])
-                        eli.appendChild(crnode(orremix[i]));
-                    } else {
+                        arindex.push([rca.length, orremix[i]]);
+                 //       alert(orremix[i])
+                      //  eli.appendChild(crnode(orremix[i]));
+             ////////    CHANGE MADE RIGHT HERE          
+                      
+                     eli.appendChild(crtitulos(orremix[i]));
+                    } 
+                    else {
                         var f = orremix[i].split("-");
-                        var ca = f[2].split(" "),
+                       var ste=new song();
+                       ste.titulo=f[0];
+                        ste.tono=f[1];
+                   //    alert(f);
+                       var aaa=getClases(f[2].split(" "))
+                         ste.clase=aaa.main;
+                      ste.subclases=aaa.subs;
+                //  alert(ste.titulo);
+                 //      if(f[3]!=undefined){ste.link="https://docs.google.com/uc?export=open&id="+f[3].replace(/~/g,"-");}
+                   ste.link=getlink(ste.titulo);
+           //     if(ste.link.indexOf("http")>0)   alert(ste.link)
+  //         alert(ste.link)
+                        songs.push(ste);
+                         var ca = f[2].split(" "),
                             tt = "";
                         var ff = [];
                         //clases
@@ -420,7 +543,10 @@ var timewarning, timeout, timeover,test=false;
                         rca.push(f[0]);
                         rto.push(f[1]);
                         rcl.push(ff);
-                        eli.appendChild(crnode(f[0], f[1], ff));
+                        
+                        ////////    CHANGE MADE RIGHT HERE
+                     //   eli.appendChild(crnode(f[0], f[1], ff));
+                     eli.appendChild(crnode2(ste))
                     }
                 }
             }
@@ -428,6 +554,7 @@ var timewarning, timeout, timeover,test=false;
             createbtns(cclas)
             //   preparesongs()     
         });
+     }
 
         function setclasesmix(repertorio) {
             var cl = [],
@@ -502,6 +629,39 @@ var timewarning, timeout, timeover,test=false;
            showletra(ebarra.value)
        }
 
+       function showletra2(cancion) { //Corrido de Roberto Gastelum
+   //  var tc=cancion.toUpperCase();
+    var tc=cancion.titulo.toUpperCase();
+          var tl=Letras.toUpperCase();
+          var aas=tl.indexOf("*" + tc);
+      //     var as = Letras.indexOf("*" + cancion.titulo);
+                as=aas
+           if (as >= 0) {
+   if(cancion.link!= undefined) x.setAttribute("src",cancion.link);
+               edle.style.display = "block";
+               var vt = Letras.slice(as, Letras.indexOf("*", as + 1));
+               var vt = Letras.slice(as, Letras.indexOf("*", as + 1));
+               le.value = vt;
+               sch = ele.offsetHeight * 1;
+               scy = 0;
+//               tiempo = vt.slice(vt.indexOf("...") + 3, vt.indexOf("...", vt.indexOf("...") + 1)) * 1000 * 60;
+//               delay = vt.slice(vt.lastIndexOf("...") + 3, vt.indexOf("\n", vt.indexOf("...") + 1)) * 1000;
+                var par= vt.slice(vt.indexOf("(")+1 , vt.indexOf(")"));
+                par=par.split(",");
+               tiempo = par[0]* 1000 * 60;
+               dilay = par[1] * 1000;
+        //        alert(par.toString());
+           } else {
+               ebarra.value = cancion.titulo + " letra";
+               //   window.open(ebarra.value, '_blank');
+               esrch.click()
+               ebarra.value = "";
+           }
+
+       }
+        
+
+
        function showletra(cancion) { //Corrido de Roberto Gastelum
      var tc=cancion.toUpperCase();
           var tl=Letras.toUpperCase();
@@ -509,6 +669,7 @@ var timewarning, timeout, timeover,test=false;
            var as = Letras.indexOf("*" + cancion);
                 as=aas
            if (as >= 0) {
+              
 
                edle.style.display = "block";
                var vt = Letras.slice(as, Letras.indexOf("*", as + 1));
@@ -606,6 +767,77 @@ var timewarning, timeout, timeover,test=false;
             //          alert(rsongs[10].estado);
             //   
         }
+
+function crnode2(song) {
+
+
+                var node = document.createElement("LI");
+                var di = "<font color='#00ffff'> _ </font>";
+                di = "";
+  //        node.setAttribute('onclick', ' setaudio("'+song.link+'");  ;this.style.color="#00ff00";this.links="'+song.link+'";showletra("' + song.titulo + '");x.play()');}
+
+
+                node.innerHTML = di + song.titulo + di+" . . . " + song.tono; //
+     if(song.link.indexOf("http")>=0){
+ //        alert("con link "+song.link)
+ //para clientes        node.setAttribute('onclick', 'eactrls.style.top="35%";x.src="'+song.link+'";  ;this.style.color="#00ff00";this.links="'+song.link+'";showletra("' + song.titulo + '");x.play().catch(e => e);');}
+       //para practica
+         node.setAttribute('onclick', 'eactrls.style.top="35%";x.src="'+song.link+'";  ;this.style.color="#00ff00";this.links="'+song.link+'";showletra("' + song.titulo + '");');
+           node.innerHTML = di + song.titulo + di+" . <font color='#00ffff'>&#9193;</font> . " + song.tono;//+"<font color='#00ff00'>&#9835;</font>"; //
+       
+       
+         }
+        else {
+  //          alert("sin link,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,")
+            node.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song.titulo + '");');
+        }
+                node.estado = true;
+                node.index = i;
+                node.clase = song.clase;
+                node.song = song.titulo;
+                node.tono = song.titulo;
+                if (song.subclases.indexOf("practica") >= 0) {
+                    node.style.color = "#ff0";
+                }
+                if (song.subclases.indexOf("repertorio tocada") >= 0) {
+                //    node.style.color = "#0ff";
+                }
+              
+                return node;
+      
+        }
+
+      function crtitulos(song) {
+            if (song.indexOf("*") === 0) {
+                var t = document.createElement("p");
+                t.setAttribute("class", "cind");
+                t.innerHTML = song;
+                t.name = "cltit"
+                return t;
+            } else {/*
+
+                var node = document.createElement("LI");
+                var di = "<font color='#00ffff'> _ </font>";
+                di = "";
+ 
+                node.innerHTML = di + song + di+" . . . " + to; //
+
+                node.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
+                node.estado = true;
+                node.index = i;
+                node.clase = cl;
+                node.song = song;
+                node.tono = to;
+                if (cl.indexOf("practica") >= 0) {
+                    node.style.color = "#ff0";
+                }
+                if (cl.indexOf("repertorio tocada") >= 0) {
+                //    node.style.color = "#0ff";
+                }
+                return node;*/
+            }
+        }
+
 
         function crnode(song, to, cl) {
             if (song.indexOf("*") === 0) {
@@ -757,7 +989,7 @@ document.getElementById("lirep").style.fontSize = s+"px";
       
       
     esettings.style.display="block";
-         document.getElementById("hh").innerHTML=horast+"a. Hora";
+    //     document.getElementById("hh").innerHTML=horast+"a. Hora";
  
     
   }
@@ -765,16 +997,8 @@ document.getElementById("lirep").style.fontSize = s+"px";
       esettings.style.display="none"
   }
  tiempodetocar=60*60*1000;  
- //tiempodetocar= 12000;
- 
-  function inic2(){
-      tiempodetocar=45*60*1000;
-  tiempodetocar= 7500;    
-      inicTocada();
-  }
-  
-  
-  function inicTocada() { 
+   
+  function inicTocada(h) { 
    ///////////////////   
    
    if(test) alert("you are in test mode");
@@ -782,22 +1006,26 @@ document.getElementById("lirep").style.fontSize = s+"px";
            clearTimeout(timeout);
      clearTimeout(timeover);
      clearTimeout(timewarning);
-       ////////
-      if(horast>1) {
-tiempodetocar=45*60*1000;
- if(test) tiempodetocar= 12000;
+     
+  /*   
+     ////////
+      if(horast>1) tiempodetocar=45*60*1000;
+      else  tiempodetocar=60*60*1000;  
+      if(test) tiempodetocar=tiempodetocar= 7500;
+    //  else tiempodetocar=45*60*1000;
+  */   
 
-}
-      else {
- tiempodetocar=60*60*1000;  
-      if(test) tiempodetocar= 7500;
+  if(h>1) tiempodetocar=45*60*1000;
+      else  tiempodetocar=60*60*1000;  
+      if(test) tiempodetocar=tiempodetocar= 7500;
 
-     }
+
   if(Tocada=="" != Tocada==null){
          alert("preciona primero 'set tocada' y pon las horas")
   }
   else{
-     
+      if(test) tiempodetocar= 12000;
+   //   else tiempodetocar=60*60*1000; 
       horast++;
       document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
    eli.style.background = "black";
@@ -877,7 +1105,10 @@ this.horasTocadas=0;
 
   }
   function settingUpTocada(){
-         clearTimeout(timeout);
+      
+      Tocada=localStorage.getItem("Tocadainfo");
+      if(Tocada==null || Tocada=="" || Tocada==undefined){
+    clearTimeout(timeout);
      clearTimeout(timeover);
      clearTimeout(timewarning);  
       
@@ -886,6 +1117,12 @@ this.horasTocadas=0;
     var str=JSON.stringify(Tocada)+"~";
     localStorage.setItem("Tocadainfo",str)
  }
+ else{
+     var r=confirm("It is a Tocada allready in Process. Do you want to set a new Tocada?");
+     if(r) {localStorage.removeItem("Tocadainfo"); sttingUpTocada();}
+     else alert("Ok I get it, Just continue with actual tocada");
+ }
+  }
   
 function resetTocada(){//confirm("Press a button!");
 
@@ -908,8 +1145,9 @@ closesettings();
 }
   function finish(){
       if(confirm("Areyousure?")){
-          var toth=localStorage.getItem("horastocadas");
-          var ht=horast-1;
+          var ht=localStorage.getItem("horastocadas");
+         // var ht=horast-1;
+         var Tocada=JSON.parse(localStorage.getItem("Tocadainfo"));
           var cantidad=ht*Tocada.precio*1;
           alert("Total de horas tocadas ="+ht+"\n\nA "+Tocada.precio*1+"\n\nEl Total es: "+cantidad);
     closesettings();
@@ -930,7 +1168,116 @@ closesettings();
   }
   }
   }
+  
+  function song(){
+      this.titulo="";
+      this.tono="";
+      this.clase="";
+      this.subclases=[];
+      this.letra="";
+      this.duracion=0;
+      this.link="";
+      
+      
+  }
+  function getClaseName(c) {
+      var ret;
+      var i = cid.indexOf(c[0]);
+//      alert(cclas[i]);
+  //    alert(cclas)
+      if (i >= 0) return cclas[i];
+
+      //    else return "";
+  }
+
+  function getClases(ar) {
+     var cm = {
+          main: "",
+          subs: []
+      };
+     
+ //     alert(ar);
+      var er=getClaseName(ar[0]);// alert(er);
+      cm.main =er ;
+     
+      for (var i = 1; i < ar.length; i++) {
+         if(ar[i]!="") cm.subs.push(getClaseName(ar[i]))
+      }
+  //    alert(JSON.stringify(cm));
+
+      return cm;
+  /**/
+
+  }
+ //454
+ function setaudio(a){
+
+try{
+      if(a!="" && a!=undefined && a.length>10){
+           x.currentTime = 0;
+       //    alert(a);
+           
+      //   if(x.src.indexOf("file")<0) x.setAttribute("src",a); 
+      //   else  alert(x.src);
+      }
+}
+catch(e){
+    alert(e);
+}
+ }
+ 
+function getlink(c){
+ //   alert(c)
+  if(txlinks.indexOf(c)>=0){
+
+   //   alert(txlinks.indexOf(c))
+      for(var iw=0;iw<arlinks.length;iw++){  
+ //         alert(arlinks[iw])
+          if(arlinks[iw].indexOf(c)>=0 && arlinks[iw].indexOf("https://drive.google.com/file/d/")>=0){/* */
+      //        alert("goog\n\n"+arlinks[i].indexOf(c))
+              var pp=arlinks[iw].split("https://drive.google.com/file/d/");
+            //  alert(pp)
+              pp=pp[1].split("/view?usp=sharing");
+           //   alert("ffffffffffffffff\n"+pp)
+              pp="https://docs.google.com/uc?export=open&id="+pp[0]
+      //        alert(pp);
+      iw=arlinks.length
+              return pp;
+
+         
+          }
+        
+      }
+return "";
+  }
+  else return "";
+
+}
+
+
+
+
+
+
+ 
+ 
+ /*
+  function loadDoc(url) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", url, false);
+  xhttp.send();
+  return xhttp.responseXML;  
+}   
+ */
+ 
+ 
+ 
+ 
+ 
+ 
     </script>
+
+
 
 </body>
 
