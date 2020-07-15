@@ -1234,7 +1234,6 @@ function getlink(c){
  //   alert(c)
   if(txlinks.indexOf(c)>=0){
 
-   //   alert(txlinks.indexOf(c))
       for(var iw=0;iw<arlinks.length;iw++){  
  //         alert(arlinks[iw])
           if(arlinks[iw].indexOf(c)>=0 && arlinks[iw].indexOf("https://drive.google.com/file/d/")>=0){/* */
@@ -1242,7 +1241,7 @@ function getlink(c){
               var pp=arlinks[iw].split("https://drive.google.com/file/d/");
             //  alert(pp)
               pp=pp[1].split("/view");
-           //   alert("ffffffffffffffff\n"+pp)
+   
               pp="https://docs.google.com/uc?export=open&id="+pp[0]
       //        alert(pp);
       iw=arlinks.length
