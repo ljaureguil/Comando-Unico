@@ -232,10 +232,11 @@
 #bottonInic{
     height:160px;
     width: 160px;
-    color:black;
-//    background:rgb(50, 218, 100);
-    border-radius:50%;
-    box-shadow: ;
+    color:rgb(250, 0, 0);
+   background:url(https://lh3.googleusercontent.com/m6YEmcXhjRQRdkS7AMBgGzpbdyZLK2gpbju5jB_WUJwp4Ss_fxeKA202ybPMhJixfnrm);
+   background-size: 100% 100%;
+  //  border-radius:50%;
+ //   box-shadow: ;
     font-size:30px;
     font-weight:bold;
  //   box-shadow: -15px 15px 26px  #503333, inset 10px -10px 7px #1f0cd1, inset -10px 10px 7px #b61ee4bb;
@@ -360,9 +361,9 @@ border-width: .5px;
    <div id="timerh">
        <p color="white">Timer:</p>
        <br>
-    <button id="bottonInic" class="btnsset" onclick="inicTocada(1)">1st. Hora</button>  
+    1st. Hora<img id="bottonInic" class="btnsset" onclick="inicTocada(1)">------------
     
-    <button id="bottonInic" class="btnsset" onclick="inicTocada(2)">2a. Hora +++</button>  
+    <img id="bottonInic" class="btnsset" onclick="inicTocada(2)">2a. Hora
 
  
 
@@ -819,13 +820,11 @@ function crnode2(song) {
                 t.name = "cltit"
                 return t;
             } else {/*
-
                 var node = document.createElement("LI");
                 var di = "<font color='#00ffff'> _ </font>";
                 di = "";
  
                 node.innerHTML = di + song + di+" . . . " + to; //
-
                 node.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '")');
                 node.estado = true;
                 node.index = i;
@@ -1200,30 +1199,21 @@ closesettings();
           subs: []
       };
      
- //     alert(ar);
       var er=getClaseName(ar[0]);// alert(er);
       cm.main =er ;
      
       for (var i = 1; i < ar.length; i++) {
          if(ar[i]!="") cm.subs.push(getClaseName(ar[i]))
       }
-  //    alert(JSON.stringify(cm));
-
-      return cm;
-  /**/
-
-  }
+       return cm;
+   }
  //454
  function setaudio(a){
 
 try{
       if(a!="" && a!=undefined && a.length>10){
            x.currentTime = 0;
-       //    alert(a);
-           
-      //   if(x.src.indexOf("file")<0) x.setAttribute("src",a); 
-      //   else  alert(x.src);
-      }
+        }
 }
 catch(e){
     alert(e);
@@ -1235,26 +1225,17 @@ function getlink(c){
   if(txlinks.indexOf(c)>=0){
 
       for(var iw=0;iw<arlinks.length;iw++){  
- //         alert(arlinks[iw])
           if(arlinks[iw].indexOf(c)>=0 && arlinks[iw].indexOf("https://drive.google.com/file/d/")>=0){/* */
-      //        alert("goog\n\n"+arlinks[i].indexOf(c))
-              var pp=arlinks[iw].split("https://drive.google.com/file/d/");
-            //  alert(pp)
-              pp=pp[1].split("/view");
-   
-              pp="https://docs.google.com/uc?export=open&id="+pp[0]
-      //        alert(pp);
-      iw=arlinks.length
+               var pp=arlinks[iw].split("https://drive.google.com/file/d/");
+               pp=pp[1].split("/view");
+               pp="https://docs.google.com/uc?export=open&id="+pp[0]
+             iw=arlinks.length
               return pp;
-
-         
-          }
-        
-      }
+           }
+       }
 return "";
   }
   else return "";
-
 }
 
 
@@ -1288,4 +1269,3 @@ return "";
 
 
 </html>
-
