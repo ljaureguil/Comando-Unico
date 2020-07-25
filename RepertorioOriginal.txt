@@ -8,7 +8,7 @@ d-rancheritas
 e-bailables
 g-cumbias
 h-pisteadoras
-
+c-cansiones
 i-clasicas
 j-cajon
 k-zapateados
