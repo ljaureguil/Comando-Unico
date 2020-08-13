@@ -21,6 +21,9 @@ xp-practica
 
 *Canciones
 
+Platicame de ti-sol-c
+Aca entre nos-si-c
+Vida truncada-fa-c
 Arboles de la barranca-fa-c
 A cada rato-sol-c
 Dos visios-mi-c
@@ -208,6 +211,8 @@ polka unic-fa-l-1EJo1vVsL2ZjfuVm5Nxb4Ot78fPyWbddW
 
 *Corridos
 
+Vida peligrosa-do-a
+La onza-fa-a
 El envidioso-re-a-1DSNLcV5TbEfIQbGZireAhcVkPpU0EwrM
 El niño de la tuna-la-a
 El señor de la monyaña-mi-a
