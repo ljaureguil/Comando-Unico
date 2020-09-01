@@ -40,9 +40,10 @@
             border-radius: 5px;
             background: #000070;
             font-size: 15px;
-            // font-weight: bold;
+           
             width: 45%;
             height: 8%;
+           
         }
         #ed {
             background: rgba(0, 255, 0, .5);
@@ -122,6 +123,7 @@
             background: #0000FF;
             color: #ffffff;
             font-size:16px;
+            width:94%;
             border-radius:10px;
              box-shadow: inset 5px -5px 30px #000020, inset -5px 5px 30px #000088;
             
@@ -365,7 +367,7 @@ display: none;
 
         <div id="ctrls">
             <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
-            <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
+ 
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
          <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>  
 
@@ -444,6 +446,7 @@ display: none;
  </div>
 
     <script>
+        //           <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
 //https://www.file.io/
 
 //https://stackoverflow.com/questions/50481314/hosting-an-editable-single-string-of-text-online
@@ -458,18 +461,39 @@ https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
 
 
 */
-
- 
-    z=0
+     icomplacencias=undefined;
      enota = document.getElementById("ppr");
      esettings = document.getElementById("settings-dlg");
         etimer = document.getElementById("timerh"); 
         complacencias="";
+        complacenciasonoff=true;
+        complacenciaslink="";
+        var arcs=[]
+        iniciargit();
 
+        ionoff=setInterval("iniciargit()",5*60000);
+ function iniciargit() {
+     
+    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+                arcs=cs.split("*");
+                if(arcs[1].indexOf("on")>=0){ 
+                    iniccomplacencias()
+                } 
+                else clearInterval(icomplacencias);
+     });      
+ 
+     
+ }
+    function iniccomplacencias(){
+
+        if(arcs[1].indexOf("on")>=0){ 
+            var link=arcs[2] ;
+      //       alert(arcs)
+//"https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24"
         icomplacencias=setInterval(function(){
-            z++;
+ 
 
-            loadText("https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24",function (r) {
+            loadText(link,function (r) {
                    var p=r.indexOf("cancion")+12;
                 var p2=r.indexOf('"',p+2);
                 var y=r.slice(p,p2-1) 
@@ -483,13 +507,9 @@ https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
             enota.style.background="#0f0";
            }
        });
-       },.2*60*1000);
-
-
-
-
-
-
+       },1*60*1000);
+}
+}
 
 
 
