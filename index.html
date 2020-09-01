@@ -1,5 +1,5 @@
 <html>
-
+    <script src="https://apis.google.com/js/api.js"></script>
 <head>
     <meta name="viewport" content="width=device-width" name="theme-color" content="#4285f4">
     <link rel="shortcut icon" href="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/66105070_2606484239385650_1488724510487085056_n.jpg?_nc_cat=106&_nc_oc=AQnx7XRzS47pDYNv0h-dDfqV4kE07czctw5Vm7DOCPn0EMJa2QGEbh-PAJWE2tmrGyo&_nc_ht=scontent-atl3-1.xx&oh=6f6b09b8d92c3007c254fd5ba07f45d7&oe=5DA91A9C"
@@ -118,10 +118,11 @@
             visibility: visible;
         }
         #ppr {
+            overflow:auto;
             background: #0000FF;
             color: #ffffff;
-            font-size:22px;
-            border-radius:100px;
+            font-size:16px;
+            border-radius:10px;
              box-shadow: inset 5px -5px 30px #000020, inset -5px 5px 30px #000088;
             
         }
@@ -323,9 +324,7 @@ display: none;
     background:url(https://png.pngtree.com/png-clipart/20190619/original/pngtree-vector-web-icon-png-image_3997299.jpg);
     background-size: 100% 100%;
 }
-#notes-timer{
-    
-}
+
     </style>
     <div id="dle">
 
@@ -365,7 +364,7 @@ display: none;
 
 
         <div id="ctrls">
-            <button id="notes-timer" class="btns"  id="ppr" onclick='opendoc( "repPrac")'>. *NOTES* .</button>
+            <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
             <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
          <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>  
@@ -445,13 +444,65 @@ display: none;
  </div>
 
     <script>
-        nextRep=localStorage.getItem("NextRep");
+//https://www.file.io/
+
+//https://stackoverflow.com/questions/50481314/hosting-an-editable-single-string-of-text-online
+//https://pastebin.com/
+
+//When you use the pastebin.com/raw/ + id of your text you get plain text.
+//jzfx2mKq3rYmg4UCnpaDm0oXCraS4EcR
+
+
+/*
+https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
+
+
+*/
+
+ 
+    z=0
+     enota = document.getElementById("ppr");
+     esettings = document.getElementById("settings-dlg");
+        etimer = document.getElementById("timerh"); 
+        complacencias="";
+
+        icomplacencias=setInterval(function(){
+            z++;
+
+            loadText("https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24",function (r) {
+                   var p=r.indexOf("cancion")+12;
+                var p2=r.indexOf('"',p+2);
+                var y=r.slice(p,p2-1) 
+                 y=y.replace(/\\n/g,"<br>");
+          
+                complacencias=y;
+
+           if(y!=localStorage.getItem("complacencias")){
+               localStorage.setItem('complacencias',y);
+               enota.innerHTML=y;
+            enota.style.background="#0f0";
+           }
+       });
+       },.2*60*1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           nextRep=localStorage.getItem("NextRep");
         if(nextRep==null || nextRep =="") nextRep="";
       //  alert(nextRep)
-        marktocada=false;
-          entimer = document.getElementById("notes-timer");
-     esettings = document.getElementById("settings-dlg");
-        etimer = document.getElementById("timerh");
+       marktocada=false;
+    
   
    tiempodetocar=60*60*1000;  
  kt=60*1000;
@@ -710,10 +761,7 @@ var timewarning, timeout, timeover,test=false;
      }
  var clases=[];
  function proceso(cont){
- //    alert(etitulo.innerHTML); 
-
-  //   alert("\n\n\nffffffffff\n\n"+cont)
-  
+ 
     etitulo.innerHTML = ". . . Repertorio:";
             var cc = cont.split("/clases");
             var pc=cc[0].split("\n");
@@ -727,19 +775,11 @@ var timewarning, timeout, timeover,test=false;
             })
           var pr=cc[1].split("\n");
             mc=[];
-          /*   pr=pr.filter(function(a){
-                if(a.includes("*")) mc.push(a);
-               return a.includes("-");
-
-            });
-            */
-            pr=pr.filter(function(a){
+           pr=pr.filter(function(a){
                 return a!="" && a!=undefined;
 
             });
-              //alert(pr)
-
-            pr.forEach(e=>{
+              pr.forEach(e=>{
                 if(e.includes("*")){
                    eli.appendChild(crtitulos(e));
                     mc.push(e);
@@ -751,7 +791,8 @@ var timewarning, timeout, timeover,test=false;
                 songs.push(sng);
                 eli.appendChild(crnode2(sng));
                 }
-            })
+            });
+            etitulo.innerHTML = ". . . Repertorio: " + songs.length + " Songs+";
   
         
  }
@@ -1344,7 +1385,8 @@ function verifyTimer(y) {
                         }
                         if(y==0 || y==undefined || y==null) {
                             if(confirm("The timer will be reseted...")){
-                                 localStorage.setItem("Timer", "");
+                                 localStorage.setItem("Timer", ""); 
+                                 window.location.reload(true);
                                  verifyTimer();
                                  }
                         }
@@ -1353,9 +1395,11 @@ function verifyTimer(y) {
 
          }
          else {
+            
             if(y>0){
             if (confirm("You have a overdue Timer, it will be replaced for "+y/kt+" minutes")){
                 localStorage.setItem("Timer", acd.getTime()+y);
+                window.location.reload(true);
                 
             }
             }
