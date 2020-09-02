@@ -20,6 +20,7 @@ xp-practica
 
 *Canciones
 
+La feria de las flores-mi-c
 Platicame de ti-sol-c
 Aca entre nos-si-c
 Vida truncada-fa-c
@@ -62,6 +63,8 @@ porque te vas de mi-fa-c j i h f
 
 *Corridos Clasicos
 
+Chico fuentes-mi-b
+El sub teniente-fa-b
 Entre llerva polvo y plomo-fa-b
 Tres mujeres-mi-b
 Mariano Resendez-re-b xd x
@@ -103,6 +106,7 @@ La carcel de cananea-sol-b j d h x
 
 *Rancheritas
 
+El chunasco-sol-d
 Homenaje a Carlos y Jose-sol-d
 Tengo a mi Lupe-mi-d-13EogaFYSVPLnR61xDUov9Rs4OmSCZeg~
 Maragarita Margarita-mi-d
