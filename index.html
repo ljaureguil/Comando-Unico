@@ -454,13 +454,37 @@ display: none;
 
 //When you use the pastebin.com/raw/ + id of your text you get plain text.
 //jzfx2mKq3rYmg4UCnpaDm0oXCraS4EcR
-
+///https://jsonblob.com/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61.,    hhhhhhhhhhhhhh
 
 /*
 https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
 
 
+
+
+
+
+curl -i -X "PUT" -d '{"people":["fred", "mark", "andrew"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+
+{"people":["fred","mark","andrew"]}
+
 */
+
+/*
+
+loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
+
+postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
+
+loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
+});
+
+*/
+
      icomplacencias=undefined;
      enota = document.getElementById("ppr");
      esettings = document.getElementById("settings-dlg");
@@ -468,38 +492,236 @@ https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
         complacencias="";
         complacenciasonoff=true;
         complacenciaslink="";
-        var arcs=[]
-        iniciargit();
+       // var arcs=[]
+     //   iniciargit();//elim
+        csob="";
+        cob={};
+        clink="";
+        inter1=undefined;
+        inter2=undefined;
 
-        ionoff=setInterval("iniciargit()",5*60000);
- function iniciargit() {
-     
+    ionoff=undefined;//=setInterval("iniciargit()",1*60000);
+    loadObj();
+
+function loadObj() {
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-                arcs=cs.split("*");
-                if(arcs[1].indexOf("on")>=0){ 
-                    iniccomplacencias()
-                } 
-                else clearInterval(icomplacencias);
-     });      
+    //    alert(cs)
+              loadText(cs,function (r) {
+            var q=r.indexOf("cancion");
+                var q1=r.indexOf('}',q+2);
+                qq='{"'+r.slice(q,q1+1) ;
+                var ob=qq.replace(/\\"/g, '"'); 
+                var obf=JSON.parse(ob);
+                if(obf.frecuency>=0 && obf.chkcomp>=0){
+               //   alert("va por inter1 "+obf.frecuency*60000)
+
+                    ionoff=setInterval(function () {
+                   //     alert("1");inter1();
+                     //   alert("11");
+
+                        },obf.frecuency*60000);
+               //     alert("va por inter2 "+obf.chkcomp*60000)
+                    iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
+               //     alert("paso el primer paso de inicio")
+                }
+              })
+              });
+  
+    
+}
+function getObj(l,callback) {
+       //"https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
  
-     
+    
+    loadText(l,function (r) {
+            var q=r.indexOf("cancion");
+                var q1=r.indexOf('}',q+2);
+                qq='{"'+r.slice(q,q1+1) ;
+                var ob=qq.replace(/\\"/g, '"'); 
+             //   alert(ob);
+                var o=JSON.parse(ob);
+                callback(o);
+                 
+    });
+}
+
+ function a() {
+   // alert("llega a inter2...khlkjhlk..........")
+    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+        clink=cs;
+               getObj(cs,function (r) {
+   
+                var obf=r;
+                var ob=JSON.stringify(r)
+              //  alert(ob)
+                
+
+                if(obf.frecuency>=0 && obf.chkcomp>=0){
+                   
+                    var l=localStorage.getItem("complacencias");
+                    if(l.indexOf("{")<0 || l.indexOf("}")<0){
+                         l=ob;
+                         localStorage.setItem("complacencias",ob);
+                     }
+                   // alert("checar antes    "+l);
+                    var obl=JSON.parse(l);
+                //    alert(l+"\n"+ob+"\n"+l);
+         //          alert(obf.cancion+"\n"+obl.cancion)
+                    if(obf.cancion!=obl.cancion){
+                     enota.innerHTML=obf.cancion;
+                    enota.style.background="#0f0";
+                    localStorage.setItem("complacencias",ob);
+
+                    }
+                    if(obf.frecuency!=obl.frecuency){
+                       localStorage.setItem("complacencias",ob);
+                    clearInterval(ionoff);
+                 //   alert("...........................reinic1")
+                     //    clearInterval(iniccomplacencias);
+                     ionoff=setInterval(function () {a()},obf.frecuency*60000);
+                 
+                    }
+                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
+                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
+                }
+                else{
+                    clearInterval(iniccomplacencias);
+                    clearInterval(ionoff);
+                }
+              })
+              });
  }
-    function iniccomplacencias(){
+function inter1() {
+    alert("llega a interrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr1..........")
+    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+        clink=cs;
+        
+              loadText(cs,function (r) {
+            var q=r.indexOf("cancion");
+                var q1=r.indexOf('}',q+2);
+                qq='{"'+r.slice(q,q1+1) ;
+                var ob=qq.replace(/\\"/g, '"'); 
+                var obf=JSON.parse(ob);
+                if(obf.frecuency>=0 && obf.chkcomp>=0){
+                    var l=localStorage.getItem("complacencias");
+                    var obl=JSON.parse(l);
+                    if(obf.frecuency!=obl.frecuency){
+                       localStorage.setItem("complacencias",ob);
+                    clearInterval(ionoff);
+                    alert("reinic1")
+                     //    clearInterval(iniccomplacencias);
+                     ionoff=setInterval(function () {inter1()},obf.frecuency*60000);
+                 
+                    }
+                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
+                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
+                }
+                else{
+                    clearInterval(iniccomplacencias);
+                    clearInterval(ionoff);
+                }
+              })
+              });
+}
+function inter2() {
+       alert("llega a inter2.............")
+    if(clink.indexOf("http")>=0){
+    loadText(clink,function (r) {
+            var q=r.indexOf("cancion");
+                var q1=r.indexOf('}',q+2);
+                qq='{"'+r.slice(q,q1+1) ;
+                var ob=qq.replace(/\\"/g, '"'); 
+                var obf=JSON.parse(ob);
+                if(obf.frecuency>=0 && obf.chkcomp>=0){
+                    var l=localStorage.getItem("complacencias");
+                    var obl=JSON.parse(l);
+                    if(obf.chkcomp!=obl.chkcomp){
+                        enota.innerHTML=obf.cancion;
+               enota.style.background="#0f0";
+                     localStorage.setItem("complacencias",ob);
+                   
+                    clearInterval(iniccomplacencias);  alert("reinic");
+                     //    clearInterval(iniccomplacencias);
+                     iniccomplacencias=setInterval("inter2()",obf.chkcomp*60000);
+     
+                    }
+                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
+                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
+                }
+                else{
+                    clearInterval(iniccomplacencias);
+                    clearInterval(ionoff);
+                }
+              })
+            }      
+}
+/////////////////////////////////////////
 
-        if(arcs[1].indexOf("on")>=0){ 
-            var link=arcs[2] ;
-      //       alert(arcs)
-//"https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24"
-        icomplacencias=setInterval(function(){
+
+
+ function iniciargit() {
+ //       loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+              loadText(cs,function (r) {
+            var q=r.indexOf("cancion");
+                var q1=r.indexOf('}',q+2);
+                qq='{"'+r.slice(q,q1+1) ;
+                var ob=qq.replace(/\\"/g, '"'); 
+                var obf=JSON.parse(ob);
+ 
+                 if(obf.frecuency>=0){
+                     
+                   var t= localStorage.getItem("cfrec");
+                   if(t!=null){
+                       t=JSON.parse(t);
+                       if(t.frecuency!=obf.frecuency){
+                           clearInterval(ionoff);
+                       ionoff=setInterval(iniciargit,obf.frecuency*60000);
+                       iniccomplacencias(obf);
+                          }
+                   }
+
+                        }
+                        else{
+                            clearInterval(ionoff);clearInterval(icomplacencias);
+                              }
+                     if(obcomp.frecuency>=0){
+               //     obcomp.link=cs;alert("antes de ir "+cs);
+
+                        iniccomplacencias(obcomp);
+                   }
+                   else {
+                        clearInterval(icomplacencias);
+                   clearInterval(ionoff)
+                   }
+                
+        })
+         }
+    );      
+  
+ }
  
 
-            loadText(link,function (r) {
-                   var p=r.indexOf("cancion")+12;
-                var p2=r.indexOf('"',p+2);
-                var y=r.slice(p,p2-1) 
-                 y=y.replace(/\\n/g,"<br>");
+    function iniccomplacencias(ob){
+//   alert("in inic   "+ob.link);
+//"https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24";
+
+        icomplacencias=setInterval(function(){
+     
+            loadText(ob.link,function (r) { 
+                /////////////////
+                var q=r.indexOf("cancion");
+                var q1=r.indexOf('}',q+2);
+                qq='{"'+r.slice(q,q1+1) ;
+               alert(qq)
+              
+                var obs=qq.replace(/\\"/g, '"'); 
+                 alert(obs);
+  obq=JSON.parse(obs);
+                 var y=obq.cancion.replace(/\\n/g,"<br>");
           
                 complacencias=y;
+                 alert("Y\n\n"+y)
 
            if(y!=localStorage.getItem("complacencias")){
                localStorage.setItem('complacencias',y);
@@ -507,9 +729,9 @@ https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
             enota.style.background="#0f0";
            }
        });
-       },1*60*1000);
+       },ob.chkcomp*60*1000);
 }
-}
+
 
 
 
@@ -1012,6 +1234,7 @@ var timewarning, timeout, timeover,test=false;
       
         function loadText(file, callback) {
         //    if(online){
+         //   alert("from ;oadtext\n"+file)
                  fetch(file).then(response => response.text()).then((data) => {
                 callback(data); //
             })
@@ -1737,9 +1960,37 @@ function getlink(c){
 
  }
  
- 
- 
- 
+function loadDoc(url,callback) {
+  var xhttp = new XMLHttpRequest();
+  
+  xhttp.open("GET", url, false);
+  xhttp.send();
+//  var xx=xhttp.responseXML;
+ // alert("...................\n\n"+xx);
+ // var a=xx.getElementById("style");
+//  var b=a[0].innerHTML;
+//  alert(a.length);
+  
+//  return xhttp.responseXML;  
+callback(xhttp.responseText);
+
+}   
+  
+function postDoc(url,ob,callback) {
+  var xhttp = new XMLHttpRequest();
+   xhttp.open("POST", url, true); 
+   
+  xhttp.setRequestHeader("Content-Type", "application/json");
+  
+  
+  //xhr.open("POST", '/server', true);
+
+  
+  
+  xhttp.send(ob);
+callback(xhttp.responseText);
+
+}   
  
     </script>
 
