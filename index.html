@@ -118,14 +118,30 @@
             // opacity: .65;
             visibility: visible;
         }
-        #ppr {
+         #ppr {
             overflow:auto;
             background: #0000FF;
             color: #ffffff;
             font-size:16px;
             width:94%;
             border-radius:10px;
-             box-shadow: inset 5px -5px 30px #000020, inset -5px 5px 30px #000088;
+             box-shadow: inset 5px -5px 30px #000020, inset -5px 5px 30px #000088;;
+        //     display:none;
+            
+        }       
+        
+        #complac {
+            overflow:auto;
+            height:12%;
+            background: #FF4500;
+            color: #fff;
+            font-size:20px;
+            width:94%;
+            border-radius:10px;
+             box-shadow: inset 5px -5px 20px #000020, inset -5px 5px 20px #000088;
+               -webkit-text-stroke: 0.40px #00f;
+                -webkit-text-fill-color: #ffffff;
+             display:none;
             
         }
         #dle {
@@ -328,6 +344,9 @@ display: none;
 }
 
     </style>
+               <button class="btns"  id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
+ 
+    
     <div id="dle">
 
         <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)" ></textarea  >
@@ -486,7 +505,8 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 */
 
      icomplacencias=undefined;
-     enota = document.getElementById("ppr");
+     enota = document.getElementById("complac");
+ //    enota = document.getElementById("ppr");
      esettings = document.getElementById("settings-dlg");
         etimer = document.getElementById("timerh"); 
         complacencias="";
@@ -505,14 +525,21 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 
 function loadObj() {
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-    //    alert(cs)
+       // alert(cs)
               loadText(cs,function (r) {
+                  var obf=null;
+                  if(r[0]==="{"){
+                    obf=JSON.parse(r);  
+                  }
+                  else{ alert(r);
             var q=r.indexOf("cancion");
                 var q1=r.indexOf('}',q+2);
                 qq='{"'+r.slice(q,q1+1) ;
                 var ob=qq.replace(/\\"/g, '"'); 
-                var obf=JSON.parse(ob);
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
+              obf=JSON.parse(ob);//
+                  }
+         //      
+               if(obf.frecuency>=0 && obf.chkcomp>=0){
                //   alert("va por inter1 "+obf.frecuency*60000)
 
                     ionoff=setInterval(function () {
@@ -531,8 +558,13 @@ function loadObj() {
 }
 function getObj(l,callback) {
        //"https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
- 
-    
+       loadText(l,function (r) {
+     //      alert(r);
+           var o=JSON.parse(r);
+                callback(o);
+
+          });
+  /*  
     loadText(l,function (r) {
             var q=r.indexOf("cancion");
                 var q1=r.indexOf('}',q+2);
@@ -542,7 +574,7 @@ function getObj(l,callback) {
                 var o=JSON.parse(ob);
                 callback(o);
                  
-    });
+    });*/
 }
 
  function a() {
@@ -568,8 +600,9 @@ function getObj(l,callback) {
                 //    alert(l+"\n"+ob+"\n"+l);
          //          alert(obf.cancion+"\n"+obl.cancion)
                     if(obf.cancion!=obl.cancion){
+                        enota.style.display="block";
                      enota.innerHTML=obf.cancion;
-                    enota.style.background="#0f0";
+                    enota.style.background="#FF4500";
                     localStorage.setItem("complacencias",ob);
 
                     }
@@ -636,8 +669,9 @@ function inter2() {
                     var l=localStorage.getItem("complacencias");
                     var obl=JSON.parse(l);
                     if(obf.chkcomp!=obl.chkcomp){
+                        enota.style.display="block";
                         enota.innerHTML=obf.cancion;
-               enota.style.background="#0f0";
+               enota.style.background="#FF4500";
                      localStorage.setItem("complacencias",ob);
                    
                     clearInterval(iniccomplacencias);  alert("reinic");
@@ -725,8 +759,10 @@ function inter2() {
 
            if(y!=localStorage.getItem("complacencias")){
                localStorage.setItem('complacencias',y);
+               enota.style.display="block";
                enota.innerHTML=y;
-            enota.style.background="#0f0";
+            enota.style.background="#FF4500";
+            
            }
        });
        },ob.chkcomp*60*1000);
