@@ -1,4 +1,1 @@
-{
-"name":"Lauro:,
-"lastname":"jauregui"
-}
+{"name":"Lauro:,"lastname":"jauregui"}
