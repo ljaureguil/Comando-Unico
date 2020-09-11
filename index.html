@@ -209,7 +209,7 @@
         #ref{
             position:absolute;
             background:transparent;
-            top:9%;
+            top:1%;
             right:0%;
             border:none;
             font-size:36px;
@@ -343,6 +343,35 @@ display: none;
     background-size: 100% 100%;
 }
 
+
+#prg{
+    width: 100%;
+    border-radius: 10px; 
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+   border-radius: 10px; 
+  //width: 250px;
+ // height: 20px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left,  rgb(204,0, 178 ), #f00);
+
+    border-radius: 5px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
     </style>
                <button class="btns"  id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
  
@@ -359,7 +388,7 @@ display: none;
    
     </div>  
   
-   <button id="logo" onclick="showstimer()"></button>
+  
      <button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
  
     <div id="todo">
@@ -385,7 +414,10 @@ display: none;
 
 
         <div id="ctrls">
-            <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
+            <button class="btns"  value="32" max="100" id="ppr" onclick='showstimer()'>
+            Timer:
+            <progress id="prg" value="92" max="100" width="90%"> 32%
+            </progress>
  
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
          <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>  
@@ -479,8 +511,9 @@ display: none;
 https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
 
 //https://gist.github.com/EtienneR/2f3ab345df502bd3d13e
-
-
+           <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
+ 
+ <button id="logo" onclick="showstimer()"></button>
 
 
 curl -i -X "PUT" -d '{"people":["fred", "mark", "andrew"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61
@@ -2072,4 +2105,3 @@ callback(xhttp.responseText);
 
 
 </html>
-
