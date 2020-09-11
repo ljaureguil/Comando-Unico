@@ -133,15 +133,15 @@
         #complac {
             overflow:auto;
             height:12%;
-            background: #FF0000;
+            background: #00FF00;
             color: #fff;
             font-size:20px;
             width:94%;
             border-radius:10px;
              box-shadow: inset 5px -5px 20px #000020, inset -5px 5px 20px #000088;
-               -webkit-text-stroke: 0.40px #00f;
-                -webkit-text-fill-color: #ffffff;
-             display:none;
+               -webkit-text-stroke: 0.3px #f00;
+                -webkit-text-fill-color: #000;
+            display:none;
             
         }
         #dle {
@@ -478,7 +478,7 @@ display: none;
 /*
 https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
 
-
+//https://gist.github.com/EtienneR/2f3ab345df502bd3d13e
 
 
 
@@ -497,12 +497,13 @@ Transfer-Encoding: chunked
 
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
 
-postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
+postDoc("https://jsonblob.com/api/jsonBlob",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
 
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
 });
 
 */
+postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
 
      icomplacencias=undefined;
      enota = document.getElementById("complac");
@@ -602,7 +603,7 @@ function getObj(l,callback) {
                     if(obf.cancion!=obl.cancion){
                         enota.style.display="block";
                      enota.innerHTML=obf.cancion;
-                    enota.style.background="#FF4500";
+                    enota.style.background="#00FF00";
                     localStorage.setItem("complacencias",ob);
 
                     }
@@ -671,7 +672,7 @@ function inter2() {
                     if(obf.chkcomp!=obl.chkcomp){
                         enota.style.display="block";
                         enota.innerHTML=obf.cancion;
-               enota.style.background="#FF4500";
+               enota.style.background="#00FF00";
                      localStorage.setItem("complacencias",ob);
                    
                     clearInterval(iniccomplacencias);  alert("reinic");
@@ -761,7 +762,7 @@ function inter2() {
                localStorage.setItem('complacencias',y);
                enota.style.display="block";
                enota.innerHTML=y;
-            enota.style.background="#FF4500";
+            enota.style.background="#00FF00";
             
            }
        });
@@ -798,7 +799,7 @@ function inter2() {
      this.seconds=date.getSeconds();
      this.timeinic=date.getTime();
      this.chkStatus = function(){
-         alert("ok3")
+    //     alert("ok3")
          var dd=new Date();
          var dif=dd.getTime();
          alert(dif)
@@ -2012,7 +2013,31 @@ callback(xhttp.responseText);
 
 }   
   
-function postDoc(url,ob,callback) {
+function postDoc(url,ob,callback) { //alert("ok");
+  
+  // Update a user
+//var url = "http://localhost:8080/api/v1/users";
+//alert(ob);
+ob.cancion="esa mera"
+//var data = 
+//data.firstname = "John2";
+//data.lastname  = "Snow2";
+var json = JSON.stringify(ob);//JSON.stringify(data);
+
+var xhr = new XMLHttpRequest();
+xhr.open("PUT", url+'/12', true);
+xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+xhr.onload = function () {
+	var users = JSON.parse(xhr.responseText);
+	if (xhr.readyState == 4 && xhr.status == "200") {
+		console.table(users);
+	} else {
+		console.error(users);
+	}
+}
+xhr.send(json);
+  
+  /*
   var xhttp = new XMLHttpRequest();
    xhttp.open("POST", url, true); 
    
@@ -2024,8 +2049,17 @@ function postDoc(url,ob,callback) {
   
   
   xhttp.send(ob);
-callback(xhttp.responseText);
+ 
 
+
+
+
+
+  var aa=xhttp.responseText;
+localStorage.setItem("jss",aa)
+  alert(aa)
+callback(xhttp.responseText);
+*/
 }   
  
     </script>
@@ -2038,3 +2072,4 @@ callback(xhttp.responseText);
 
 
 </html>
+
