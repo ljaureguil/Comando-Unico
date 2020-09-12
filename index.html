@@ -415,8 +415,8 @@ progress[value]::-webkit-progress-value {
 
         <div id="ctrls">
             <button class="btns"  value="32" max="100" id="ppr" onclick='showstimer()'>
-            Timer:
-            <progress id="prg" value="92" max="100" width="90%"> 32%
+            <label id="swt">Timer: 0</label>
+            <progress id="prg" value="0" max="100" width="90%"> 32%
             </progress>
  
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
@@ -536,11 +536,14 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 });
 
 */
+
+var progressTimer=undefined;
 postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
 
      icomplacencias=undefined;
      enota = document.getElementById("complac");
- //    enota = document.getElementById("ppr");
+     eprogress = document.getElementById("prg");
+     etimersw = document.getElementById("swt");
      esettings = document.getElementById("settings-dlg");
         etimer = document.getElementById("timerh"); 
         complacencias="";
@@ -565,26 +568,20 @@ function loadObj() {
                   if(r[0]==="{"){
                     obf=JSON.parse(r);  
                   }
-                  else{ alert(r);
+                  else{// alert(r);
             var q=r.indexOf("cancion");
                 var q1=r.indexOf('}',q+2);
                 qq='{"'+r.slice(q,q1+1) ;
                 var ob=qq.replace(/\\"/g, '"'); 
               obf=JSON.parse(ob);//
                   }
-         //      
                if(obf.frecuency>=0 && obf.chkcomp>=0){
-               //   alert("va por inter1 "+obf.frecuency*60000)
+                         a();
+                      ionoff=setInterval(function () {
+                            },obf.frecuency*60000);
 
-                    ionoff=setInterval(function () {
-                   //     alert("1");inter1();
-                     //   alert("11");
-
-                        },obf.frecuency*60000);
-               //     alert("va por inter2 "+obf.chkcomp*60000)
-                    iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
-               //     alert("paso el primer paso de inicio")
-                }
+                       iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
+                       }
               })
               });
   
@@ -593,22 +590,11 @@ function loadObj() {
 function getObj(l,callback) {
        //"https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
        loadText(l,function (r) {
-     //      alert(r);
-           var o=JSON.parse(r);
+             var o=JSON.parse(r);
                 callback(o);
 
           });
-  /*  
-    loadText(l,function (r) {
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-             //   alert(ob);
-                var o=JSON.parse(ob);
-                callback(o);
-                 
-    });*/
+ 
 }
 
  function a() {
@@ -619,21 +605,14 @@ function getObj(l,callback) {
    
                 var obf=r;
                 var ob=JSON.stringify(r)
-              //  alert(ob)
-                
-
                 if(obf.frecuency>=0 && obf.chkcomp>=0){
-                   
                     var l=localStorage.getItem("complacencias");
                     if(l.indexOf("{")<0 || l.indexOf("}")<0){
                          l=ob;
                          localStorage.setItem("complacencias",ob);
                      }
-                   // alert("checar antes    "+l);
                     var obl=JSON.parse(l);
-                //    alert(l+"\n"+ob+"\n"+l);
-         //          alert(obf.cancion+"\n"+obl.cancion)
-                    if(obf.cancion!=obl.cancion){
+                     if(obf.cancion!=obl.cancion){
                         enota.style.display="block";
                      enota.innerHTML=obf.cancion;
                     enota.style.background="#00FF00";
@@ -643,14 +622,10 @@ function getObj(l,callback) {
                     if(obf.frecuency!=obl.frecuency){
                        localStorage.setItem("complacencias",ob);
                     clearInterval(ionoff);
-                 //   alert("...........................reinic1")
-                     //    clearInterval(iniccomplacencias);
                      ionoff=setInterval(function () {a()},obf.frecuency*60000);
                  
                     }
-                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
-                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
-                }
+                 }
                 else{
                     clearInterval(iniccomplacencias);
                     clearInterval(ionoff);
@@ -680,8 +655,7 @@ function inter1() {
                      ionoff=setInterval(function () {inter1()},obf.frecuency*60000);
                  
                     }
-                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
-                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
+              
                 }
                 else{
                     clearInterval(iniccomplacencias);
@@ -690,39 +664,7 @@ function inter1() {
               })
               });
 }
-function inter2() {
-       alert("llega a inter2.............")
-    if(clink.indexOf("http")>=0){
-    loadText(clink,function (r) {
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-                var obf=JSON.parse(ob);
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
-                    var l=localStorage.getItem("complacencias");
-                    var obl=JSON.parse(l);
-                    if(obf.chkcomp!=obl.chkcomp){
-                        enota.style.display="block";
-                        enota.innerHTML=obf.cancion;
-               enota.style.background="#00FF00";
-                     localStorage.setItem("complacencias",ob);
-                   
-                    clearInterval(iniccomplacencias);  alert("reinic");
-                     //    clearInterval(iniccomplacencias);
-                     iniccomplacencias=setInterval("inter2()",obf.chkcomp*60000);
-     
-                    }
-                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
-                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
-                }
-                else{
-                    clearInterval(iniccomplacencias);
-                    clearInterval(ionoff);
-                }
-              })
-            }      
-}
+
 /////////////////////////////////////////
 
 
@@ -1669,6 +1611,7 @@ function runtimer(rt){
     },1000)
 
 }
+
 function verifyTimer(y) {
       var acd = new Date();
       var d=0;
@@ -1681,8 +1624,15 @@ function verifyTimer(y) {
         d = dif;
        //     alert("diferencia "+d)
         dif = dif / kt;
+
       
         if (dif > 0) {
+
+ 
+
+        /////////////////////
+
+
             var rr = confirm("You have a running timer, still " + dif.toFixed(0) + " minutes left\n\nDo you want to continue it?")
               if (rr){
                   inicTimer(d);
@@ -1743,6 +1693,43 @@ function inicTimer(t) {
           closesettings();
      var aw=new Date().getTime();
   
+       ///////////////
+       clearInterval(progressTimer);
+       eprogress.min=0;
+       eprogress.max=t/kt;//alert(t)
+//////////
+var tem=new Date().getTime();
+            var u=localStorage.getItem("Timer");
+            var dif=(u-tem);
+           // alert(dif/kt)
+            ///////////////
+            var oc=(t-dif)/kt;
+          //  var oc=eprogress.value;
+            eprogress.setAttribute("value",oc);
+            etimersw.innerHTML="Timer: "+(eprogress.max-eprogress.value).toFixed(1)+" min.";
+
+
+
+        //
+        progressTimer=setInterval(function() {
+
+            /////////////////////
+            var tem=new Date().getTime();
+            var u=localStorage.getItem("Timer");
+            var dif=(u-tem);
+           // alert(dif/kt)
+            ///////////////
+            var oc=(t-dif)/kt;;
+          //  var oc=eprogress.value;
+            eprogress.setAttribute("value",oc);
+            etimersw.innerHTML="Timer: "+(eprogress.max-eprogress.value).toFixed(1)+" min.";
+            if(eprogress.value>eprogress.max) clearInterval(progressTimer);
+
+        }, 10000);
+
+
+
+
     var tiempodetocar=t;
  
  
