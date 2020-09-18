@@ -537,6 +537,7 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 
 */
 App={};
+timerset=0;
 AppBk=localStorage.getItem("app");
 var progressTimer=undefined,timerset=0;
 //postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
@@ -653,7 +654,7 @@ function getObj(l,callback) {
                 // alert(cob.chkStatus)
                 if(obf.chkStatus){
                     cob=r;
-                   // cob.timerset=timeset;
+                   cob.timerset=timerset;
                    cob.timeSetglobal= localStorage.getItem("Timer");
                 
    
