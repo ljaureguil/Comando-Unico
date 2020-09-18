@@ -472,9 +472,9 @@ progress[value]::-webkit-progress-value {
     <p onclick="closesettings()" style="position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
     <p color="white">Timer:</p>
    
- 1st. Hora<button id="bottonInic" class="btnsset" onclick="verifyTimer(60);//inicTocada(1)">60 Min</button><br>
+ 1st. Hora<button id="bottonInic" class="btnsset" onclick="timerset=60;verifyTimer(60);//inicTocada(1)">60 Min</button><br>
  . . . . . . . .<br>
- 2a. Hora+<button id="bottonInic" class="btnsset" onclick="verifyTimer(45);//inicTocada(2)">45 Min</button>
+ 2a. Hora+<button id="bottonInic" class="btnsset" onclick="timerset=45;verifyTimer(45);//inicTocada(2)">45 Min</button>
 <br>
 <button class="btnsset" onclick="showsettings()">Open Settings</button>
 
@@ -492,7 +492,7 @@ progress[value]::-webkit-progress-value {
 </button>
   <button  id="bpa" class="cbaudio" onclick="acordeon='';guitarra='';eactrls.style.top='-80%';x.pause();"></button> 
  </div>
- 
+ <textarea id="mmsg"></textarea>
     
  </div>
 
@@ -533,14 +533,16 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 postDoc("https://jsonblob.com/api/jsonBlob",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
 
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
-});
+});https://jsonblob.com/api/jsonBlob/34620735-ebe1-11ea-9641-5deb564a7f24
 
 */
-
-var progressTimer=undefined;
-postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
+App={};
+AppBk=localStorage.getItem("app");
+var progressTimer=undefined,timerset=0;
+//postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
 
      icomplacencias=undefined;
+     emsg = document.getElementById("mmsg");
      enota = document.getElementById("complac");
      eprogress = document.getElementById("prg");
      etimersw = document.getElementById("swt");
@@ -563,10 +565,16 @@ postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 function loadObj() {
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
        // alert(cs)
+   //           getObj(cs,function(a){
+    //              App=a;
+                //  alert(App)
+        //     })
               loadText(cs,function (r) {
+                  //cob=JSON.stringify(r);
                   var obf=null;
                   if(r[0]==="{"){
                     obf=JSON.parse(r);  
+                 
                   }
                   else{// alert(r);
             var q=r.indexOf("cancion");
@@ -575,12 +583,49 @@ function loadObj() {
                 var ob=qq.replace(/\\"/g, '"'); 
               obf=JSON.parse(ob);//
                   }
-               if(obf.frecuency>=0 && obf.chkcomp>=0){
+                  ///////////////////////
+                  cob=obf;
+  //                alert(JSON.stringify(cob))
+                 // alert(cob.chkStatus)
+                  if(cob.chkStatus){
+
+
+
+                   cob.timerset=timerset;
+
+
+
+                   cob.timeLeftglobal= localStorage.getItem("Timer");
+
+ 
+
+                   cob.nota=emsg.value;
+                   cob.chkStatus=false;
+                   cob.timeSetTemporal=eprogress.max;
+                   cob.timeLeft=eprogress.max-eprogress.value;
+                   cob.timeRunning=eprogress.value+" of " + eprogress.max;
+  //               alert("enviar a claud\n"+JSON.stringify(cob));
+           //   localStorage.setItem("complacencias",JSON.stringify(cob))
+                    postDoc(cs,cob,function(t){;})
+/**/
+/*
+
+                   
+                      cob.timerset=timerset;
+                      cob.timeLeft= localStorage.getItem("Timer");
+                      cob.nota=emsg.value;
+                   
+                  cob.chkStatus=false;
+                    alert("enviar a claud\n"+JSON.stringify(cob));
+                      postDoc(cs,cob,function(t){;})*/
+                    }
+                  ////////////////////////////////////
+               if(cob.frecuency>=0 && cob.chkcomp>=0){
                          a();
                       ionoff=setInterval(function () {
-                            },obf.frecuency*60000);
+                            },cob.frecuency*60000);
 
-                       iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
+                       iniccomplacencias=setInterval(function () {a();},cob.chkcomp*60000);
                        }
               })
               });
@@ -602,25 +647,64 @@ function getObj(l,callback) {
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
         clink=cs;
                getObj(cs,function (r) {
+                  obf=r;
+                   //key para settings
+                   /////////////https://jsonblob.com/009e2126-f6c3-11ea-9625-efa12eeddf48  
+                // alert(cob.chkStatus)
+                if(obf.chkStatus){
+                    cob=r;
+                   // cob.timerset=timeset;
+                   cob.timeSetglobal= localStorage.getItem("Timer");
+                
    
-                var obf=r;
-                var ob=JSON.stringify(r)
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
+
+                   cob.nota=emsg.value;
+                   cob.chkStatus=false;
+                   cob.timeSetTemporal=eprogress.max;
+                   cob.timeLeft=eprogress.max-eprogress.value;
+                   cob.timeRunning=eprogress.value+" of " + eprogress.max;
+//                 alert("enviar a claud\n"+JSON.stringify(cob));
+             //   localStorage.setItem("complacencias",JSON.stringify(cob))
+                   postDoc(cs,cob,function(t){})
+        /*            */
+                 }
+
+
+
+             /////////////////////////////////////////////////////      
+                   if(r.timer!=undefined && r.tiempo != undefined){
+                   var ls=localStorage.getItem("Timer")
+                   alert(ls)
+
+                    if(r.timer && ls !=null && ls !="" && ls !=0 ){
+                        setTimer.tiempo;
+
+                    }
+                    else r.tiempo=ls;
+                    }
+
+
+                   /////////////
+            
                     var l=localStorage.getItem("complacencias");
                     if(l.indexOf("{")<0 || l.indexOf("}")<0){
-                         l=ob;
-                         localStorage.setItem("complacencias",ob);
-                     }
+                         l=JSON.stringify(obf);
+                       //  localStorage.setItem("complacencias",l);
+                     } 
+ 
+                if(obf.frecuency>=0 && obf.chkcomp>=0){
+                 
                     var obl=JSON.parse(l);
+         //              alert(obf.cancion+"\n\n"+obl.cancion)
                      if(obf.cancion!=obl.cancion){
                         enota.style.display="block";
                      enota.innerHTML=obf.cancion;
                     enota.style.background="#00FF00";
-                    localStorage.setItem("complacencias",ob);
+                    localStorage.setItem("complacencias",JSON.stringify(obf));
 
                     }
                     if(obf.frecuency!=obl.frecuency){
-                       localStorage.setItem("complacencias",ob);
+                       localStorage.setItem("complacencias",JSON.stringify(obf));
                     clearInterval(ionoff);
                      ionoff=setInterval(function () {a()},obf.frecuency*60000);
                  
@@ -1622,13 +1706,8 @@ function verifyTimer(y) {
      if (ty != null && ty != "") {
         var dif = ty * 1 - acd.getTime() * 1;//global
         d = dif;
-       //     alert("diferencia "+d)
-        dif = dif / kt;
-
-      
-        if (dif > 0) {
-
- 
+          dif = dif / kt;
+       if (dif > 0) {
 
         /////////////////////
 
@@ -1642,6 +1721,8 @@ function verifyTimer(y) {
                  if(y>0){
                 if (confirm("Do yuo want to set "+y/kt+" minutes intead?")) {
                     localStorage.setItem("Timer", acd.getTime()+y);
+                    //qui
+                 
                     inicTimer(y);
                  }
                  else ;//
@@ -1696,7 +1777,7 @@ function inicTimer(t) {
        ///////////////
        clearInterval(progressTimer);
        eprogress.min=0;
-       eprogress.max=t/kt;//alert(t)
+       eprogress.max=t/kt;//alert(eprogress.max)
 //////////
 var tem=new Date().getTime();
             var u=localStorage.getItem("Timer");
@@ -1844,17 +1925,10 @@ this.date="";
 this.start="";
 this.timeinic=0;
 this.iniciarTocada=function(){
- //    this.timeinic=new Date();
 }
 this.setTocada=function(){
-  //  this.date=prompt("Type Fecha de tocada",new Date());
-    this.horas=prompt("cuantas horas?");
- //   this.horadeinic=prompt("a que hora inicia?");
- //   this.phone=prompt("Type Costumer Phone Number");
- //   this.direccion=prompt("Type La adress de la tocada")
-
- //   this.costumername=prompt("Type costumer name");
-    this.precio=prompt("Type el precio por hora");
+     this.horas=prompt("cuantas horas?");
+     this.precio=prompt("Type el precio por hora");
      this.informacion=prompt("Type Informacion extra si hay"); 
      
      alert("Cuando estes listo preciona el boton de 'Iniciar Primer Hora");
@@ -1893,19 +1967,24 @@ this.horasTocadas=0;
 function resetTocada(){//confirm("Press a button!");
 
     if(confirm("Are your sure?,\n The information of the tocada will be deleted")){
+ 
         localStorage.removeItem("Tocadainfo")
         localStorage.removeItem("tocadas")
       localStorage.removeItem("inicio")
-      localStorage.setItem("Timer","");
+      localStorage.removeItem("Timer");
      localStorage.removeItem("horastocadas");
+    // localStorage.removeItem("compacencias");
+    eprogress.value=0;
      horast=1;
      Tocada="";
      clearTimeout(timeout);
      clearTimeout(timeover);
      clearTimeout(timewarning);
-           document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
+     document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
    eli.style.background = "black";
 closesettings();
+etimersw.innerHTML="Timer: 0min.";
+      eprogress.value=0;
     }
 
 
@@ -2033,53 +2112,24 @@ callback(xhttp.responseText);
 
 }   
   
-function postDoc(url,ob,callback) { //alert("ok");
-  
-  // Update a user
-//var url = "http://localhost:8080/api/v1/users";
-//alert(ob);
-ob.cancion="esa mera"
-//var data = 
-//data.firstname = "John2";
-//data.lastname  = "Snow2";
-var json = JSON.stringify(ob);//JSON.stringify(data);
-
+function postDoc(url,ob,callback) { //alert("this will be sent:\n\n"+JSON.stringify(ob));
+ 
+var json = JSON.stringify(ob);
 var xhr = new XMLHttpRequest();
-xhr.open("PUT", url+'/12', true);
+xhr.open("PUT", url+'/12', true);//
 xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
 xhr.onload = function () {
-	var users = JSON.parse(xhr.responseText);
+	var users = JSON.parse(xhr.responseText);//alert("ddddddddddddd\n\n"+xhr.responseText)
 	if (xhr.readyState == 4 && xhr.status == "200") {
-		console.table(users);
+   //     alert("Users strini\n\n"+xhr.responseText)
+        callback(users)
+	
 	} else {
-		console.error(users);
+		alert(users);
 	}
 }
 xhr.send(json);
-  
-  /*
-  var xhttp = new XMLHttpRequest();
-   xhttp.open("POST", url, true); 
-   
-  xhttp.setRequestHeader("Content-Type", "application/json");
-  
-  
-  //xhr.open("POST", '/server', true);
-
-  
-  
-  xhttp.send(ob);
  
-
-
-
-
-
-  var aa=xhttp.responseText;
-localStorage.setItem("jss",aa)
-  alert(aa)
-callback(xhttp.responseText);
-*/
 }   
  
     </script>
