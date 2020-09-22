@@ -416,7 +416,7 @@ progress[value]::-webkit-progress-value {
         <div id="ctrls">
             <button class="btns"  value="32" max="100" id="ppr" onclick='showstimer()'>
             <label id="swt">Timer: 0</label>
-            <progress id="prg" value="0" max="100" width="90%"> 32%
+            <progress id="prg" value="0" max="0" width="90%"> 32%
             </progress>
  
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
@@ -536,7 +536,7 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 });https://jsonblob.com/api/jsonBlob/34620735-ebe1-11ea-9641-5deb564a7f24
 
 */
-App={};
+remotetimer=0;
 timerset=0;
 AppBk=localStorage.getItem("app");
 var progressTimer=undefined,timerset=0;
@@ -620,6 +620,23 @@ function loadObj() {
                     alert("enviar a claud\n"+JSON.stringify(cob));
                       postDoc(cs,cob,function(t){;})*/
                     }
+
+                    if(obf.setTimerTo>0){ 
+                        
+                        remotetimer=obf.setTimerTo;
+                        resetTocada();
+                    // alert("Set de timero to " + obf.setTimerTo+clink);
+                   verifyTimer( obf.setTimerTo);  
+                //  inicTimer(obf.setTimerTo);
+              
+
+                     obf.setTimerTo=0;
+                 //  alert("ddddddddddddddddddddd"+clink)
+                     postDoc(clink,obf)
+                 }
+
+
+
                   ////////////////////////////////////
                if(cob.frecuency>=0 && cob.chkcomp>=0){
                          a();
@@ -668,6 +685,18 @@ function getObj(l,callback) {
              //   localStorage.setItem("complacencias",JSON.stringify(cob))
                    postDoc(cs,cob,function(t){})
         /*            */
+                 }
+                 if(obf.setTimerTo>0){ 
+                      remotetimer=obf.setTimerTo;
+                      resetTocada();
+
+                    // alert("Set de timero to " + obf.setTimerTo+clink);
+                   verifyTimer( obf.setTimerTo);  
+                //  inicTimer(obf.setTimerTo);
+              
+                     obf.setTimerTo=0;
+                 //  alert("ddddddddddddddddddddd"+clink)
+                     postDoc(clink,obf)
                  }
 
 
@@ -1703,17 +1732,22 @@ function verifyTimer(y) {
       if(y===undefined) y=0;
       y=y*kt;
       var ty = localStorage.getItem("Timer");
+      if(remotetimer>0) ty=null;
  //  alert(y+" -------el proximo\n"+acd.getTime()+" ----actual\n"+ty+" -----storage");
      if (ty != null && ty != "") {
         var dif = ty * 1 - acd.getTime() * 1;//global
         d = dif;
           dif = dif / kt;
+
        if (dif > 0) {
 
         /////////////////////
 
-
-            var rr = confirm("You have a running timer, still " + dif.toFixed(0) + " minutes left\n\nDo you want to continue it?")
+        
+            var rr = false;
+         //   alert(remotetimer)
+            if(remotetimer>0){ rr=true; remotetimer=0}
+            else rr=confirm("You have a running timer, still " + dif.toFixed(0) + " minutes left\n\nDo you want to continue it?")
               if (rr){
                   inicTimer(d);
              
@@ -1761,9 +1795,10 @@ function verifyTimer(y) {
     }
     else{
     if(y>0){
-  
+ // alert("dodo")
          localStorage.setItem("Timer",acd.getTime()+y);
                 inicTimer(y);
+                remotetimer=0;
          
          }
          }
@@ -1966,8 +2001,11 @@ this.horasTocadas=0;
   }
   
 function resetTocada(){//confirm("Press a button!");
-
-    if(confirm("Are your sure?,\n The information of the tocada will be deleted")){
+   var rp=false;
+   
+   if(remotetimer>0){rp=true}
+   else rp=confirm("Are your sure?,\n The information of the tocada will be deleted")
+    if(rp){
  
         localStorage.removeItem("Tocadainfo")
         localStorage.removeItem("tocadas")
@@ -2114,7 +2152,7 @@ callback(xhttp.responseText);
 }   
   
 function postDoc(url,ob,callback) { //alert("this will be sent:\n\n"+JSON.stringify(ob));
- 
+// alert(url)
 var json = JSON.stringify(ob);
 var xhr = new XMLHttpRequest();
 xhr.open("PUT", url+'/12', true);//
@@ -2132,6 +2170,12 @@ xhr.onload = function () {
 xhr.send(json);
  
 }   
+
+function otot(ob){
+    var o=JSON.stringify(ob);
+    o=o.replace(/"/g,"");
+    alert(o);
+}
  
     </script>
 
