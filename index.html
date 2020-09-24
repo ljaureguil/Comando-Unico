@@ -416,7 +416,7 @@ progress[value]::-webkit-progress-value {
         <div id="ctrls">
             <button class="btns"  value="32" max="100" id="ppr" onclick='showstimer()'>
             <label id="swt">Timer: 0</label>
-            <progress id="prg" value="0" max="0" width="90%"> 32%
+            <progress id="prg" value="0" max="0" width="90%" backgroundColor="white"> 
             </progress>
  
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
@@ -482,7 +482,6 @@ progress[value]::-webkit-progress-value {
   
 <audio id="myAudio">
     <source src="" type="audio/ogg">
-  </audio>
   <div id="audctrls">
   <button id="bpl" class="cbaudio" onclick="x.src=acordeon;x.play().catch(e => e);">
       &#9658;
@@ -565,12 +564,8 @@ var progressTimer=undefined,timerset=0;
 
 function loadObj() {
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-       // alert(cs)
-   //           getObj(cs,function(a){
-    //              App=a;
-                //  alert(App)
-        //     })
-              loadText(cs,function (r) {
+        clink=cs;
+               loadText(cs,function (r) {
                   //cob=JSON.stringify(r);
                   var obf=null;
                   if(r[0]==="{"){
@@ -586,39 +581,19 @@ function loadObj() {
                   }
                   ///////////////////////
                   cob=obf;
-  //                alert(JSON.stringify(cob))
-                 // alert(cob.chkStatus)
                   if(cob.chkStatus){
-
-
 
                    cob.timerset=timerset;
 
-
-
                    cob.timeLeftglobal= localStorage.getItem("Timer");
-
- 
 
                    cob.nota=emsg.value;
                    cob.chkStatus=false;
                    cob.timeSetTemporal=eprogress.max;
                    cob.timeLeft=eprogress.max-eprogress.value;
                    cob.timeRunning=eprogress.value+" of " + eprogress.max;
-  //               alert("enviar a claud\n"+JSON.stringify(cob));
-           //   localStorage.setItem("complacencias",JSON.stringify(cob))
-                    postDoc(cs,cob,function(t){;})
-/**/
-/*
+                     postDoc(cs,cob,function(t){;})
 
-                   
-                      cob.timerset=timerset;
-                      cob.timeLeft= localStorage.getItem("Timer");
-                      cob.nota=emsg.value;
-                   
-                  cob.chkStatus=false;
-                    alert("enviar a claud\n"+JSON.stringify(cob));
-                      postDoc(cs,cob,function(t){;})*/
                     }
 
                     if(obf.setTimerTo>0){ 
@@ -640,11 +615,19 @@ function loadObj() {
                   ////////////////////////////////////
                if(cob.frecuency>=0 && cob.chkcomp>=0){
                          a();
+                      
                       ionoff=setInterval(function () {
+                        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+                       clink=cs;
+                        })
+
+
+
                             },cob.frecuency*60000);
 
                        iniccomplacencias=setInterval(function () {a();},cob.chkcomp*60000);
-                       }
+                     /*  */
+                    }
               })
               });
   
@@ -662,10 +645,11 @@ function getObj(l,callback) {
 
  function a() {
    // alert("llega a inter2...khlkjhlk..........")
-    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-        clink=cs;
-               getObj(cs,function (r) {
-                  obf=r;
+  //  loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+   //     clink=cs;
+               getObj(clink,function (r) {
+                  obf=r; 
+                
                    //key para settings
                    /////////////https://jsonblob.com/009e2126-f6c3-11ea-9625-efa12eeddf48  
                 // alert(cob.chkStatus)
@@ -683,9 +667,10 @@ function getObj(l,callback) {
                    cob.timeRunning=eprogress.value+" of " + eprogress.max;
 //                 alert("enviar a claud\n"+JSON.stringify(cob));
              //   localStorage.setItem("complacencias",JSON.stringify(cob))
-                   postDoc(cs,cob,function(t){})
+                   postDoc(clink,cob,function(t){})
         /*            */
                  }
+          
                  if(obf.setTimerTo>0){ 
                       remotetimer=obf.setTimerTo;
                       resetTocada();
@@ -731,12 +716,26 @@ function getObj(l,callback) {
                      enota.innerHTML=obf.cancion;
                     enota.style.background="#00FF00";
                     localStorage.setItem("complacencias",JSON.stringify(obf));
+                        }
+                        if(obf.chkcomp!=obl.chkcomp){
 
-                    }
-                    if(obf.frecuency!=obl.frecuency){
                        localStorage.setItem("complacencias",JSON.stringify(obf));
+                    clearInterval(iniccomplacencias);
+                    iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
+                 
+                    }
+
+
+                    
+                    if(obf.frecuency!=obl.frecuency){
+                      localStorage.setItem("complacencias",JSON.stringify(obf));
                     clearInterval(ionoff);
-                     ionoff=setInterval(function () {a()},obf.frecuency*60000);
+                    //
+                     ionoff=setInterval(function () {
+                        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+                       clink=cs;});
+
+                     },obf.frecuency*60000);
                  
                     }
                  }
@@ -745,9 +744,11 @@ function getObj(l,callback) {
                     clearInterval(ionoff);
                 }
               })
-              });
+         //     });
  }
 function inter1() {
+
+
     alert("llega a interrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr1..........")
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
         clink=cs;
