@@ -373,129 +373,142 @@ progress[value]::-webkit-progress-value {
 
 
     </style>
-               <button class="btns"  id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
- 
-    
-    <div id="dle">
-
-        <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)" ></textarea  >
-        <p id="wesea" onclick='if(confirm("Are you sure?")){ebarra.value=websong+" letra";esrch.click();eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo);}' style="opacity:.5;position:absolute;width:40px;height:40px;font-size: 18px;font-weight: bold;right: 15%;bottom: 22%;border-radius: 50%;border-style: solid;"></p>
-  
-        <p onclick='eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)' style="color:black;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 15%;bottom: 11%;border-radius: 50%;border-style: solid;">X</p>
-  
-        <button id="inicsld"  onclick='clearInterval(scintervalo);inicScrolling2();'>Start</button>
-   
-   
-    </div>  
-  
-  
-     <button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
- 
-    <div id="todo">
- 
-
-        <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
-
-            <div>
-                <table border="0" align="center" cellpadding="0">
-                    <tr>
-                        <td>
-                            <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
-                            <input id="srch" type="submit" '_blank' style="display:none" />
-                            <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
-
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-        </form>
+<button class="btns" id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
 
 
+<div id="dle">
 
-        <div id="ctrls">
-            <button class="btns"  value="32" max="100" id="ppr" onclick='showstimer()'>
+    <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)"></textarea>
+    <p id="wesea" onclick='if(confirm("Are you sure?")){ebarra.value=websong+" letra";esrch.click();eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo);}'
+    style="opacity:.5;position:absolute;width:40px;height:40px;font-size: 18px;font-weight: bold;right: 15%;bottom: 22%;border-radius: 50%;border-style: solid;"></p>
+
+    <p onclick='eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)' style="color:black;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 15%;bottom: 11%;border-radius: 50%;border-style: solid;">X</p>
+
+    <button id="inicsld" onclick='clearInterval(scintervalo);inicScrolling2();'>Start</button>
+
+
+</div>
+
+
+<button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
+
+<div id="todo">
+
+
+    <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
+
+        <div>
+            <table border="0" align="center" cellpadding="0">
+                <tr>
+                    <td>
+                        <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
+                        <input id="srch" type="submit" '_blank' style="display:none" />
+                        <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+
+
+
+    <div id="ctrls">
+        <button class="btns" value="32" max="100" id="ppr" onclick='showstimer()'>
             <label id="swt">Timer: 0</label>
-            <progress id="prg" value="0" max="0" width="90%" backgroundColor="white"> 
+            <progress id="prg" value="0" max="0" width="90%" backgroundColor="white">
             </progress>
- 
+
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
-         <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>  
+            <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>
 
-        </div>
-        <div id=ifrs>
-
-
-
-            <div id="dsr">
-
-                <form action="http://google.com/search" target="_blank" style="display:none">
-                    <input name="q" oninput="sortear(this.value)">
-                    <input type="submit">
-                </form>
+    </div>
+    <div id=ifrs>
 
 
 
-            </div>
-        </div>
-        <iframe id="ifr"></iframe>
+        <div id="dsr">
 
-        <div id="divrep"></div>
-        <div id="bclas"></div>
-        <p id="titulo"></p>
-        <div id="lirep">
+            <form action="http://google.com/search" target="_blank" style="display:none">
+                <input name="q" oninput="sortear(this.value)">
+                <input type="submit">
+            </form>
+
+
 
         </div>
     </div>
-   <div id="settings-dlg">
-   <button class="btnsset" onclick="if(marktocada){this.innerHTML='Set Select Mode On';marktocada=false}else{marktocada=true;this.innerHTML='Set Select Mode Off'};closesettings();">Set Select Mode On</button><br>
-   <button class="btnsset" onclick="if(confirm('Are you sure?')){localStorage.removeItem('NextRep');window.location.reload(true);}">Clear all Rep. de Tocada</button><br>
+    <iframe id="ifr"></iframe>
 
- <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button><br>
- 
- 
- <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
-   
-<br>
-<br>
-    <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>  
+    <div id="divrep"></div>
+    <div id="bclas"></div>
+    <p id="titulo"></p>
+    <div id="lirep">
+
+    </div>
+</div>
+<div id="settings-dlg">
+    <button class="btnsset" onclick="if(marktocada){this.innerHTML='Set Select Mode On';marktocada=false}else{marktocada=true;this.innerHTML='Set Select Mode Off'};closesettings();">Set Select Mode On</button>
     <br>
-  
-<button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button><br>
-<p onclick="closesettings()" style="color:white;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
- 
+    <button class="btnsset" onclick="if(confirm('Are you sure?')){localStorage.removeItem('NextRep');window.location.reload(true);}">Clear all Rep. de Tocada</button>
+    <br>
+
+    <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button>
+    <br>
+
+
+    <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
+
+    <br>
+    <br>
+    <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>
+    <br>
+
+    <button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button>
+    <br>
+    <p onclick="closesettings()" style="color:white;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
+
 </div>
 <div id="timerh">
-       <button class="btnsset" onclick="testmode();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;">*Test Mode*</button><br>
-       <button class="btnsset" onclick="resetTocada();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;top:12%;">Reset Timer</button><br>
+    <button class="btnsset" onclick="testmode();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;">*Test Mode*</button>
+    <br>
+    <button class="btnsset" onclick="resetTocada();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;top:12%;">Reset Timer</button>
+    <br>
 
     <p onclick="closesettings()" style="position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
     <p color="white">Timer:</p>
-   
- 1st. Hora<button id="bottonInic" class="btnsset" onclick="timerset=60;verifyTimer(60);//inicTocada(1)">60 Min</button><br>
- . . . . . . . .<br>
- 2a. Hora+<button id="bottonInic" class="btnsset" onclick="timerset=45;verifyTimer(45);//inicTocada(2)">45 Min</button>
-<br>
-<button class="btnsset" onclick="showsettings()">Open Settings</button>
+
+    1st. Hora
+    <button id="bottonInic" class="btnsset" onclick="timerset=60;verifyTimer(60);//inicTocada(1)">60 Min</button>
+    <br>. . . . . . . .
+    <br>2a. Hora+
+    <button id="bottonInic" class="btnsset" onclick="timerset=45;verifyTimer(45);//inicTocada(2)">45 Min</button>
+    <br>
+    <button class="btnsset" onclick="showsettings()">Open Settings</button>
 
 </div>
-  
+
 <audio id="myAudio">
     <source src="" type="audio/ogg">
-  <div id="audctrls">
-  <button id="bpl" class="cbaudio" onclick="x.src=acordeon;x.play().catch(e => e);">
-      &#9658;
-</button>
-<button id="bplg" class="cbaudio" onclick="x.src=guitarra;x.play().catch(e => e);">
-    &#9658;
-</button>
-  <button  id="bpa" class="cbaudio" onclick="acordeon='';guitarra='';eactrls.style.top='-80%';x.pause();"></button> 
- </div>
- <textarea id="mmsg"></textarea>
-    
- </div>
-
-    <script>
+        </audio>
+        <div id="audctrls">
+            <button id="bpl" class="cbaudio" onclick="x.src=acordeon;x.play().catch(e => e);">
+                &#9658;
+            </button>
+            <button id="bplg" class="cbaudio" onclick="x.src=guitarra;x.play().catch(e => e);">
+                &#9658;
+            </button>
+            <button id="bpa" class="cbaudio" onclick="acordeon='';guitarra='';eactrls.style.top='-80%';x.pause();"></button>
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  <script>
         //           <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
 //https://www.file.io/
 
@@ -542,7 +555,7 @@ var progressTimer=undefined,timerset=0;
 //postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
 
      icomplacencias=undefined;
-     emsg = document.getElementById("mmsg");
+//     emsg = document.getElementById("mmsg");
      enota = document.getElementById("complac");
      eprogress = document.getElementById("prg");
      etimersw = document.getElementById("swt");
@@ -599,6 +612,8 @@ function loadObj() {
                     if(obf.setTimerTo>0){ 
                         
                         remotetimer=obf.setTimerTo;
+                        timerset=remotetimer;
+                        
                         resetTocada();
                     // alert("Set de timero to " + obf.setTimerTo+clink);
                    verifyTimer( obf.setTimerTo);  
@@ -606,6 +621,7 @@ function loadObj() {
               
 
                      obf.setTimerTo=0;
+                     obf.timerset=timerset;
                  //  alert("ddddddddddddddddddddd"+clink)
                      postDoc(clink,obf)
                  }
@@ -680,6 +696,7 @@ function getObj(l,callback) {
                 //  inicTimer(obf.setTimerTo);
               
                      obf.setTimerTo=0;
+                     obf.timerset=remotetimer;
                  //  alert("ddddddddddddddddddddd"+clink)
                      postDoc(clink,obf)
                  }
@@ -1443,7 +1460,7 @@ function swc(){
     eactrls.style.top="15%";
     eac.style.opacity=.35;
     egu.style.opacity=.35;
-
+  //  alert(eactrls.style.top);
 }
 ///////////////////////////////////////////////////////////////////
 function crnode2(song) {
