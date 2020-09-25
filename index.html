@@ -371,6 +371,10 @@ progress[value]::-webkit-progress-value {
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
+#mmsg{
+    display:none;
+}
+
 
     </style>
 <button class="btns" id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
@@ -502,7 +506,7 @@ progress[value]::-webkit-progress-value {
             <button id="bpa" class="cbaudio" onclick="acordeon='';guitarra='';eactrls.style.top='-80%';x.pause();"></button>
         </div>
   
-  
+  <textarea id="mmsg"></textarea>
   
   
   
@@ -555,7 +559,7 @@ var progressTimer=undefined,timerset=0;
 //postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
 
      icomplacencias=undefined;
-//     emsg = document.getElementById("mmsg");
+     emsg = document.getElementById("mmsg");
      enota = document.getElementById("complac");
      eprogress = document.getElementById("prg");
      etimersw = document.getElementById("swt");
@@ -669,6 +673,18 @@ function getObj(l,callback) {
                    //key para settings
                    /////////////https://jsonblob.com/009e2126-f6c3-11ea-9625-efa12eeddf48  
                 // alert(cob.chkStatus)
+                
+         if(obf.hideNota){ 
+                     enota.style.display="none";
+                     obf.hideNota=false;
+//
+                    postDoc(clink,obf)
+                 }
+        
+                
+                
+                
+                
                 if(obf.chkStatus){
                     cob=r;
                    cob.timerset=timerset;
@@ -681,8 +697,9 @@ function getObj(l,callback) {
                    cob.timeSetTemporal=eprogress.max;
                    cob.timeLeft=eprogress.max-eprogress.value;
                    cob.timeRunning=eprogress.value+" of " + eprogress.max;
-//                 alert("enviar a claud\n"+JSON.stringify(cob));
-             //   localStorage.setItem("complacencias",JSON.stringify(cob))
+                 if(enota.style.display==="block") cob.stNota=true;
+                  else cob.stNota=false;
+
                    postDoc(clink,cob,function(t){})
         /*            */
                  }
