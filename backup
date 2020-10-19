@@ -133,15 +133,15 @@
         #complac {
             overflow:auto;
             height:12%;
-            background: #FF0000;
+            background: #00FF00;
             color: #fff;
             font-size:20px;
             width:94%;
             border-radius:10px;
              box-shadow: inset 5px -5px 20px #000020, inset -5px 5px 20px #000088;
-               -webkit-text-stroke: 0.40px #00f;
-                -webkit-text-fill-color: #ffffff;
-             display:none;
+               -webkit-text-stroke: 0.3px #f00;
+                -webkit-text-fill-color: #000;
+            display:none;
             
         }
         #dle {
@@ -209,7 +209,7 @@
         #ref{
             position:absolute;
             background:transparent;
-            top:9%;
+            top:1%;
             right:0%;
             border:none;
             font-size:36px;
@@ -343,128 +343,176 @@ display: none;
     background-size: 100% 100%;
 }
 
+
+#prg{
+    width: 100%;
+    border-radius: 10px; 
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+   border-radius: 10px; 
+  //width: 250px;
+ // height: 20px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left,  rgb(204,0, 178 ), #f00);
+
+    border-radius: 5px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#mmsg{
+    display:none;
+}
+
+
     </style>
-               <button class="btns"  id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
- 
-    
-    <div id="dle">
-
-        <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)" ></textarea  >
-        <p id="wesea" onclick='if(confirm("Are you sure?")){ebarra.value=websong+" letra";esrch.click();eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo);}' style="opacity:.5;position:absolute;width:40px;height:40px;font-size: 18px;font-weight: bold;right: 15%;bottom: 22%;border-radius: 50%;border-style: solid;"></p>
-  
-        <p onclick='eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)' style="color:black;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 15%;bottom: 11%;border-radius: 50%;border-style: solid;">X</p>
-  
-        <button id="inicsld"  onclick='clearInterval(scintervalo);inicScrolling2();'>Start</button>
-   
-   
-    </div>  
-  
-   <button id="logo" onclick="showstimer()"></button>
-     <button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
- 
-    <div id="todo">
- 
-
-        <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
-
-            <div>
-                <table border="0" align="center" cellpadding="0">
-                    <tr>
-                        <td>
-                            <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
-                            <input id="srch" type="submit" '_blank' style="display:none" />
-                            <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
-
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-        </form>
+<button class="btns" id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
 
 
+<div id="dle">
 
-        <div id="ctrls">
-            <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
- 
+    <textarea id="le" readonly onscroll="movescroll(this.scrollHeight,this.scrollTop)"></textarea>
+    <p id="wesea" onclick='if(confirm("Are you sure?")){ebarra.value=websong+" letra";esrch.click();eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo);}'
+    style="opacity:.5;position:absolute;width:40px;height:40px;font-size: 18px;font-weight: bold;right: 15%;bottom: 22%;border-radius: 50%;border-style: solid;"></p>
+
+    <p onclick='eactrls.style.top="-80%";x.src="";einicsld.style.background="rgba(0,150,0,.50)";einicsld.style.display="block";ele.value="";ele.scrollTo(0, 0);edle.style.display="none";clearInterval(scintervalo)' style="color:black;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 15%;bottom: 11%;border-radius: 50%;border-style: solid;">X</p>
+
+    <button id="inicsld" onclick='clearInterval(scintervalo);inicScrolling2();'>Start</button>
+
+
+</div>
+
+
+<button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
+
+<div id="todo">
+
+
+    <form method="get" action="http://www.google.com/search" target="_blank" style="border:2px dotted white;padding:4px;width:80%;">
+
+        <div>
+            <table border="0" align="center" cellpadding="0">
+                <tr>
+                    <td>
+                        <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
+                        <input id="srch" type="submit" '_blank' style="display:none" />
+                        <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+
+
+
+    <div id="ctrls">
+        <button class="btns" value="32" max="100" id="ppr" onclick='showstimer()'>
+            <label id="swt">Timer: 0</label>
+            <progress id="prg" value="0" max="0" width="90%" backgroundColor="white">
+            </progress>
+
             <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
-         <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>  
+            <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>
 
-        </div>
-        <div id=ifrs>
-
-
-
-            <div id="dsr">
-
-                <form action="http://google.com/search" target="_blank" style="display:none">
-                    <input name="q" oninput="sortear(this.value)">
-                    <input type="submit">
-                </form>
+    </div>
+    <div id=ifrs>
 
 
 
-            </div>
-        </div>
-        <iframe id="ifr"></iframe>
+        <div id="dsr">
 
-        <div id="divrep"></div>
-        <div id="bclas"></div>
-        <p id="titulo"></p>
-        <div id="lirep">
+            <form action="http://google.com/search" target="_blank" style="display:none">
+                <input name="q" oninput="sortear(this.value)">
+                <input type="submit">
+            </form>
+
+
 
         </div>
     </div>
-   <div id="settings-dlg">
-   <button class="btnsset" onclick="if(marktocada){this.innerHTML='Set Select Mode On';marktocada=false}else{marktocada=true;this.innerHTML='Set Select Mode Off'};closesettings();">Set Select Mode On</button><br>
-   <button class="btnsset" onclick="if(confirm('Are you sure?')){localStorage.removeItem('NextRep');window.location.reload(true);}">Clear all Rep. de Tocada</button><br>
+    <iframe id="ifr"></iframe>
 
- <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button><br>
- 
- 
- <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
-   
-<br>
-<br>
-    <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>  
+    <div id="divrep"></div>
+    <div id="bclas"></div>
+    <p id="titulo"></p>
+    <div id="lirep">
+
+    </div>
+</div>
+<div id="settings-dlg">
+    <button class="btnsset" onclick="if(marktocada){this.innerHTML='Set Select Mode On';marktocada=false}else{marktocada=true;this.innerHTML='Set Select Mode Off'};closesettings();">Set Select Mode On</button>
     <br>
-  
-<button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button><br>
-<p onclick="closesettings()" style="color:white;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
- 
+    <button class="btnsset" onclick="if(confirm('Are you sure?')){localStorage.removeItem('NextRep');window.location.reload(true);}">Clear all Rep. de Tocada</button>
+    <br>
+
+    <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button>
+    <br>
+
+
+    <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
+
+    <br>
+    <br>
+    <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>
+    <br>
+
+    <button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button>
+    <br>
+    <p onclick="closesettings()" style="color:white;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
+
 </div>
 <div id="timerh">
-       <button class="btnsset" onclick="testmode();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;">*Test Mode*</button><br>
-       <button class="btnsset" onclick="resetTocada();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;top:12%;">Reset Timer</button><br>
+    <button class="btnsset" onclick="testmode();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;">*Test Mode*</button>
+    <br>
+    <button class="btnsset" onclick="resetTocada();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;top:12%;">Reset Timer</button>
+    <br>
 
     <p onclick="closesettings()" style="position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
     <p color="white">Timer:</p>
-   
- 1st. Hora<button id="bottonInic" class="btnsset" onclick="verifyTimer(60);//inicTocada(1)">60 Min</button><br>
- . . . . . . . .<br>
- 2a. Hora+<button id="bottonInic" class="btnsset" onclick="verifyTimer(45);//inicTocada(2)">45 Min</button>
-<br>
-<button class="btnsset" onclick="showsettings()">Open Settings</button>
+
+    1st. Hora
+    <button id="bottonInic" class="btnsset" onclick="timerset=60;verifyTimer(60);//inicTocada(1)">60 Min</button>
+    <br>. . . . . . . .
+    <br>2a. Hora+
+    <button id="bottonInic" class="btnsset" onclick="timerset=45;verifyTimer(45);//inicTocada(2)">45 Min</button>
+    <br>
+    <button class="btnsset" onclick="showsettings()">Open Settings</button>
 
 </div>
-  
+
 <audio id="myAudio">
     <source src="" type="audio/ogg">
-  </audio>
-  <div id="audctrls">
-  <button id="bpl" class="cbaudio" onclick="x.src=acordeon;x.play().catch(e => e);">
-      &#9658;
-</button>
-<button id="bplg" class="cbaudio" onclick="x.src=guitarra;x.play().catch(e => e);">
-    &#9658;
-</button>
-  <button  id="bpa" class="cbaudio" onclick="acordeon='';guitarra='';eactrls.style.top='-80%';x.pause();"></button> 
- </div>
- 
-    
- </div>
-
-    <script>
+        </audio>
+        <div id="audctrls">
+            <button id="bpl" class="cbaudio" onclick="x.src=acordeon;x.play().catch(e => e);">
+                &#9658;
+            </button>
+            <button id="bplg" class="cbaudio" onclick="x.src=guitarra;x.play().catch(e => e);">
+                &#9658;
+            </button>
+            <button id="bpa" class="cbaudio" onclick="acordeon='';guitarra='';eactrls.style.top='-80%';x.pause();"></button>
+        </div>
+  
+  <textarea id="mmsg"></textarea>
+  
+  
+  
+  
+  
+  <script>
         //           <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
 //https://www.file.io/
 
@@ -477,6 +525,10 @@ display: none;
 
 /*
 https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
+//https://gist.github.com/EtienneR/2f3ab345df502bd3d13e
+           <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
+ 
+ <button id="logo" onclick="showstimer()"></button>
 curl -i -X "PUT" -d '{"people":["fred", "mark", "andrew"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -486,14 +538,21 @@ Transfer-Encoding: chunked
 
 /*
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
-postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
+postDoc("https://jsonblob.com/api/jsonBlob",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
-});
+});https://jsonblob.com/api/jsonBlob/34620735-ebe1-11ea-9641-5deb564a7f24
 */
+remotetimer=0;
+timerset=0;
+AppBk=localStorage.getItem("app");
+var progressTimer=undefined,timerset=0;
+//postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
 
      icomplacencias=undefined;
+     emsg = document.getElementById("mmsg");
      enota = document.getElementById("complac");
- //    enota = document.getElementById("ppr");
+     eprogress = document.getElementById("prg");
+     etimersw = document.getElementById("swt");
      esettings = document.getElementById("settings-dlg");
         etimer = document.getElementById("timerh"); 
         complacencias="";
@@ -512,32 +571,73 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 
 function loadObj() {
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-       // alert(cs)
-              loadText(cs,function (r) {
+        clink=cs;
+               loadText(cs,function (r) {
+                  //cob=JSON.stringify(r);
                   var obf=null;
                   if(r[0]==="{"){
                     obf=JSON.parse(r);  
+                 
                   }
-                  else{ alert(r);
+                  else{// alert(r);
             var q=r.indexOf("cancion");
                 var q1=r.indexOf('}',q+2);
                 qq='{"'+r.slice(q,q1+1) ;
                 var ob=qq.replace(/\\"/g, '"'); 
               obf=JSON.parse(ob);//
                   }
-         //      
-               if(obf.frecuency>=0 && obf.chkcomp>=0){
-               //   alert("va por inter1 "+obf.frecuency*60000)
+                  ///////////////////////
+                  cob=obf;
+                  if(cob.chkStatus){
 
-                    ionoff=setInterval(function () {
-                   //     alert("1");inter1();
-                     //   alert("11");
+                   cob.timerset=timerset;
 
-                        },obf.frecuency*60000);
-               //     alert("va por inter2 "+obf.chkcomp*60000)
-                    iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
-               //     alert("paso el primer paso de inicio")
-                }
+                   cob.timeLeftglobal= localStorage.getItem("Timer");
+
+                   cob.nota=emsg.value;
+                   cob.chkStatus=false;
+                   cob.timeSetTemporal=eprogress.max;
+                   cob.timeLeft=eprogress.max-eprogress.value;
+                   cob.timeRunning=eprogress.value+" of " + eprogress.max;
+                     postDoc(cs,cob,function(t){;})
+
+                    }
+
+                    if(obf.setTimerTo>0){ 
+                        
+                        remotetimer=obf.setTimerTo;
+                        timerset=remotetimer;
+                        
+                        resetTocada();
+                    // alert("Set de timero to " + obf.setTimerTo+clink);
+                   verifyTimer( obf.setTimerTo);  
+                //  inicTimer(obf.setTimerTo);
+              
+
+                     obf.setTimerTo=0;
+                     obf.timerset=timerset;
+                 //  alert("ddddddddddddddddddddd"+clink)
+                     postDoc(clink,obf)
+                 }
+
+
+
+                  ////////////////////////////////////
+               if(cob.frecuency>=0 && cob.chkcomp>=0){
+                         a();
+                      
+                      ionoff=setInterval(function () {
+                        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+                       clink=cs;
+                        })
+
+
+
+                            },cob.frecuency*60000);
+
+                       iniccomplacencias=setInterval(function () {a();},cob.chkcomp*60000);
+                     /*  */
+                    }
               })
               });
   
@@ -546,72 +646,134 @@ function loadObj() {
 function getObj(l,callback) {
        //"https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
        loadText(l,function (r) {
-     //      alert(r);
-           var o=JSON.parse(r);
+             var o=JSON.parse(r);
                 callback(o);
 
           });
-  /*  
-    loadText(l,function (r) {
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-             //   alert(ob);
-                var o=JSON.parse(ob);
-                callback(o);
-                 
-    });*/
+ 
 }
 
  function a() {
    // alert("llega a inter2...khlkjhlk..........")
-    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-        clink=cs;
-               getObj(cs,function (r) {
-   
-                var obf=r;
-                var ob=JSON.stringify(r)
-              //  alert(ob)
+  //  loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+   //     clink=cs;
+               getObj(clink,function (r) {
+                  obf=r; 
                 
+                   //key para settings
+                   /////////////https://jsonblob.com/009e2126-f6c3-11ea-9625-efa12eeddf48  
+                // alert(cob.chkStatus)
+                
+         if(obf.hideNota){ 
+                     enota.style.display="none";
+                     obf.hideNota=false;
+                     obf.stNota=false;
+//
+                    postDoc(clink,obf)
+                 }
+        
+                
+                
+                
+                
+                if(obf.chkStatus){
+                    cob=r;
+                   cob.timerset=timerset;
+                   cob.timeSetglobal= localStorage.getItem("Timer");
+                
+   
 
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
-                   
+                   cob.nota=emsg.value;
+                   cob.chkStatus=false;
+                   cob.timeSetTemporal=eprogress.max;
+                   cob.timeLeft=eprogress.max-eprogress.value;
+                   cob.timeRunning=eprogress.value+" of " + eprogress.max;
+                 if(enota.style.display==="block") cob.stNota=true;
+                  else cob.stNota=false;
+
+                   postDoc(clink,cob,function(t){})
+        /*            */
+                 }
+          
+                 if(obf.setTimerTo>0){ 
+                      remotetimer=obf.setTimerTo;
+                      resetTocada();
+
+                    // alert("Set de timero to " + obf.setTimerTo+clink);
+                   verifyTimer( obf.setTimerTo);  
+                //  inicTimer(obf.setTimerTo);
+              
+                     obf.setTimerTo=0;
+                     obf.timerset=remotetimer;
+                 //  alert("ddddddddddddddddddddd"+clink)
+                     postDoc(clink,obf)
+                 }
+
+
+
+             /////////////////////////////////////////////////////      
+                   if(r.timer!=undefined && r.tiempo != undefined){
+                   var ls=localStorage.getItem("Timer")
+                   alert(ls)
+
+                    if(r.timer && ls !=null && ls !="" && ls !=0 ){
+                        setTimer.tiempo;
+
+                    }
+                    else r.tiempo=ls;
+                    }
+
+
+                   /////////////
+            
                     var l=localStorage.getItem("complacencias");
                     if(l.indexOf("{")<0 || l.indexOf("}")<0){
-                         l=ob;
-                         localStorage.setItem("complacencias",ob);
-                     }
-                   // alert("checar antes    "+l);
+                         l=JSON.stringify(obf);
+                       //  localStorage.setItem("complacencias",l);
+                     } 
+ 
+                if(obf.frecuency>=0 && obf.chkcomp>=0){
+                 
                     var obl=JSON.parse(l);
-                //    alert(l+"\n"+ob+"\n"+l);
-         //          alert(obf.cancion+"\n"+obl.cancion)
-                    if(obf.cancion!=obl.cancion){
+         //              alert(obf.cancion+"\n\n"+obl.cancion)
+                     if(obf.cancion!=obl.cancion){
                         enota.style.display="block";
                      enota.innerHTML=obf.cancion;
-                    enota.style.background="#FF4500";
-                    localStorage.setItem("complacencias",ob);
+                    enota.style.background="#00FF00";
+                    localStorage.setItem("complacencias",JSON.stringify(obf));
+                        }
+                        if(obf.chkcomp!=obl.chkcomp){
 
-                    }
-                    if(obf.frecuency!=obl.frecuency){
-                       localStorage.setItem("complacencias",ob);
-                    clearInterval(ionoff);
-                 //   alert("...........................reinic1")
-                     //    clearInterval(iniccomplacencias);
-                     ionoff=setInterval(function () {a()},obf.frecuency*60000);
+                       localStorage.setItem("complacencias",JSON.stringify(obf));
+                    clearInterval(iniccomplacencias);
+                    iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
                  
                     }
-                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
-                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
-                }
+
+
+                    
+                    if(obf.frecuency!=obl.frecuency){
+                      localStorage.setItem("complacencias",JSON.stringify(obf));
+                    clearInterval(ionoff);
+                    //
+                     ionoff=setInterval(function () {
+                        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
+                       clink=cs;});
+
+                     },obf.frecuency*60000);
+                 
+                    }
+                 }
                 else{
                     clearInterval(iniccomplacencias);
                     clearInterval(ionoff);
                 }
               })
-              });
+         //     });
  }
 function inter1() {
+
+
     alert("llega a interrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr1..........")
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
         clink=cs;
@@ -633,8 +795,7 @@ function inter1() {
                      ionoff=setInterval(function () {inter1()},obf.frecuency*60000);
                  
                     }
-                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
-                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
+              
                 }
                 else{
                     clearInterval(iniccomplacencias);
@@ -643,39 +804,7 @@ function inter1() {
               })
               });
 }
-function inter2() {
-       alert("llega a inter2.............")
-    if(clink.indexOf("http")>=0){
-    loadText(clink,function (r) {
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-                var obf=JSON.parse(ob);
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
-                    var l=localStorage.getItem("complacencias");
-                    var obl=JSON.parse(l);
-                    if(obf.chkcomp!=obl.chkcomp){
-                        enota.style.display="block";
-                        enota.innerHTML=obf.cancion;
-               enota.style.background="#FF4500";
-                     localStorage.setItem("complacencias",ob);
-                   
-                    clearInterval(iniccomplacencias);  alert("reinic");
-                     //    clearInterval(iniccomplacencias);
-                     iniccomplacencias=setInterval("inter2()",obf.chkcomp*60000);
-     
-                    }
-                  //  ionoff=setInterval(inter1,ob.frecuency*60000);
-                  //  iniccomplacencias=setInterval(inter2,ob.chkcomp*6000);
-                }
-                else{
-                    clearInterval(iniccomplacencias);
-                    clearInterval(ionoff);
-                }
-              })
-            }      
-}
+
 /////////////////////////////////////////
 
 
@@ -748,7 +877,7 @@ function inter2() {
                localStorage.setItem('complacencias',y);
                enota.style.display="block";
                enota.innerHTML=y;
-            enota.style.background="#FF4500";
+            enota.style.background="#00FF00";
             
            }
        });
@@ -785,7 +914,7 @@ function inter2() {
      this.seconds=date.getSeconds();
      this.timeinic=date.getTime();
      this.chkStatus = function(){
-         alert("ok3")
+    //     alert("ok3")
          var dd=new Date();
          var dif=dd.getTime();
          alert(dif)
@@ -1339,7 +1468,7 @@ function swc(){
     eactrls.style.top="15%";
     eac.style.opacity=.35;
     egu.style.opacity=.35;
-
+  //  alert(eactrls.style.top);
 }
 ///////////////////////////////////////////////////////////////////
 function crnode2(song) {
@@ -1615,21 +1744,29 @@ function runtimer(rt){
     },1000)
 
 }
+
 function verifyTimer(y) {
       var acd = new Date();
       var d=0;
       if(y===undefined) y=0;
       y=y*kt;
       var ty = localStorage.getItem("Timer");
+      if(remotetimer>0) ty=null;
  //  alert(y+" -------el proximo\n"+acd.getTime()+" ----actual\n"+ty+" -----storage");
      if (ty != null && ty != "") {
         var dif = ty * 1 - acd.getTime() * 1;//global
         d = dif;
-       //     alert("diferencia "+d)
-        dif = dif / kt;
-      
-        if (dif > 0) {
-            var rr = confirm("You have a running timer, still " + dif.toFixed(0) + " minutes left\n\nDo you want to continue it?")
+          dif = dif / kt;
+
+       if (dif > 0) {
+
+        /////////////////////
+
+        
+            var rr = false;
+         //   alert(remotetimer)
+            if(remotetimer>0){ rr=true; remotetimer=0}
+            else rr=confirm("You have a running timer, still " + dif.toFixed(0) + " minutes left\n\nDo you want to continue it?")
               if (rr){
                   inicTimer(d);
              
@@ -1638,6 +1775,8 @@ function verifyTimer(y) {
                  if(y>0){
                 if (confirm("Do yuo want to set "+y/kt+" minutes intead?")) {
                     localStorage.setItem("Timer", acd.getTime()+y);
+                    //qui
+                 
                     inicTimer(y);
                  }
                  else ;//
@@ -1675,9 +1814,10 @@ function verifyTimer(y) {
     }
     else{
     if(y>0){
-  
+ // alert("dodo")
          localStorage.setItem("Timer",acd.getTime()+y);
                 inicTimer(y);
+                remotetimer=0;
          
          }
          }
@@ -1689,6 +1829,43 @@ function inicTimer(t) {
           closesettings();
      var aw=new Date().getTime();
   
+       ///////////////
+       clearInterval(progressTimer);
+       eprogress.min=0;
+       eprogress.max=t/kt;//alert(eprogress.max)
+//////////
+var tem=new Date().getTime();
+            var u=localStorage.getItem("Timer");
+            var dif=(u-tem);
+           // alert(dif/kt)
+            ///////////////
+            var oc=(t-dif)/kt;
+          //  var oc=eprogress.value;
+            eprogress.setAttribute("value",oc);
+            etimersw.innerHTML="Timer: "+(eprogress.max-eprogress.value).toFixed(1)+" min.";
+
+
+
+        //
+        progressTimer=setInterval(function() {
+
+            /////////////////////
+            var tem=new Date().getTime();
+            var u=localStorage.getItem("Timer");
+            var dif=(u-tem);
+           // alert(dif/kt)
+            ///////////////
+            var oc=(t-dif)/kt;;
+          //  var oc=eprogress.value;
+            eprogress.setAttribute("value",oc);
+            etimersw.innerHTML="Timer: "+(eprogress.max-eprogress.value).toFixed(1)+" min.";
+            if(eprogress.value>eprogress.max) clearInterval(progressTimer);
+
+        }, 10000);
+
+
+
+
     var tiempodetocar=t;
  
  
@@ -1803,17 +1980,10 @@ this.date="";
 this.start="";
 this.timeinic=0;
 this.iniciarTocada=function(){
- //    this.timeinic=new Date();
 }
 this.setTocada=function(){
-  //  this.date=prompt("Type Fecha de tocada",new Date());
-    this.horas=prompt("cuantas horas?");
- //   this.horadeinic=prompt("a que hora inicia?");
- //   this.phone=prompt("Type Costumer Phone Number");
- //   this.direccion=prompt("Type La adress de la tocada")
-
- //   this.costumername=prompt("Type costumer name");
-    this.precio=prompt("Type el precio por hora");
+     this.horas=prompt("cuantas horas?");
+     this.precio=prompt("Type el precio por hora");
      this.informacion=prompt("Type Informacion extra si hay"); 
      
      alert("Cuando estes listo preciona el boton de 'Iniciar Primer Hora");
@@ -1850,21 +2020,29 @@ this.horasTocadas=0;
   }
   
 function resetTocada(){//confirm("Press a button!");
-
-    if(confirm("Are your sure?,\n The information of the tocada will be deleted")){
+   var rp=false;
+   
+   if(remotetimer>0){rp=true}
+   else rp=confirm("Are your sure?,\n The information of the tocada will be deleted")
+    if(rp){
+ 
         localStorage.removeItem("Tocadainfo")
         localStorage.removeItem("tocadas")
       localStorage.removeItem("inicio")
-      localStorage.setItem("Timer","");
+      localStorage.removeItem("Timer");
      localStorage.removeItem("horastocadas");
+    // localStorage.removeItem("compacencias");
+    eprogress.value=0;
      horast=1;
      Tocada="";
      clearTimeout(timeout);
      clearTimeout(timeover);
      clearTimeout(timewarning);
-           document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
+     document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
    eli.style.background = "black";
 closesettings();
+etimersw.innerHTML="Timer: 0min.";
+      eprogress.value=0;
     }
 
 
@@ -1992,21 +2170,31 @@ callback(xhttp.responseText);
 
 }   
   
-function postDoc(url,ob,callback) {
-  var xhttp = new XMLHttpRequest();
-   xhttp.open("POST", url, true); 
-   
-  xhttp.setRequestHeader("Content-Type", "application/json");
-  
-  
-  //xhr.open("POST", '/server', true);
-
-  
-  
-  xhttp.send(ob);
-callback(xhttp.responseText);
-
+function postDoc(url,ob,callback) { //alert("this will be sent:\n\n"+JSON.stringify(ob));
+// alert(url)
+var json = JSON.stringify(ob);
+var xhr = new XMLHttpRequest();
+xhr.open("PUT", url+'/12', true);//
+xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+xhr.onload = function () {
+	var users = JSON.parse(xhr.responseText);//alert("ddddddddddddd\n\n"+xhr.responseText)
+	if (xhr.readyState == 4 && xhr.status == "200") {
+   //     alert("Users strini\n\n"+xhr.responseText)
+        callback(users)
+	
+	} else {
+		alert(users);
+	}
+}
+xhr.send(json);
+ 
 }   
+
+function otot(ob){
+    var o=JSON.stringify(ob);
+    o=o.replace(/"/g,"");
+    alert(o);
+}
  
     </script>
 
