@@ -525,32 +525,22 @@ progress[value]::-webkit-progress-value {
 
 /*
 https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
-
 //https://gist.github.com/EtienneR/2f3ab345df502bd3d13e
            <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
  
  <button id="logo" onclick="showstimer()"></button>
-
-
 curl -i -X "PUT" -d '{"people":["fred", "mark", "andrew"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61
-
 HTTP/1.1 200 OK
 Content-Type: application/json
 Transfer-Encoding: chunked
-
 {"people":["fred","mark","andrew"]}
-
 */
 
 /*
-
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
-
 postDoc("https://jsonblob.com/api/jsonBlob",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
-
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
 });https://jsonblob.com/api/jsonBlob/34620735-ebe1-11ea-9641-5deb564a7f24
-
 */
 remotetimer=0;
 timerset=0;
@@ -587,7 +577,6 @@ function loadObj() {
                   var obf=null;
                   if(r[0]==="{"){
                     obf=JSON.parse(r);  
-                 
                   }
                   else{// alert(r);
             var q=r.indexOf("cancion");
@@ -598,6 +587,7 @@ function loadObj() {
                   }
                   ///////////////////////
                   cob=obf;
+               //   alert(JSON.stringify(cob));
                   if(cob.chkStatus){
 
                    cob.timerset=timerset;
@@ -682,7 +672,12 @@ function getObj(l,callback) {
                     postDoc(clink,obf)
                  }
         
-                
+             if(obf.resetTimer){
+                 resetTocada(true);
+                 obf.resetTimer=false;
+                                  postDoc(clink,obf) 
+                 
+             }
                 
                 
                 
@@ -1626,7 +1621,6 @@ if(song.acordeon!=undefined && song.acordeon!="") {//alert(acordeon);
     function inicScrolling2() {
  /* 
         var bk=ele.value;
-
         he=ele.offsetHeight;
         hc=ele.scrollHeight;
         var dh=hc-he;
@@ -1649,8 +1643,6 @@ if(song.acordeon!=undefined && song.acordeon!="") {//alert(acordeon);
  
               var d=tf-tco; 
               var dp=60-d/1000;//dp=d/1000-dp;
-
-
             ele.value=dp+bk;
                 if(dp>he){
                         ele.value=bk+dp+" Moving ";
@@ -1667,11 +1659,7 @@ if(song.acordeon!=undefined && song.acordeon!="") {//alert(acordeon);
                    
                      }
               //  alert(co)
-
-
             },10);
-
-
         },dilay);
     }
     else alert("noo need scroll")*/
@@ -2036,11 +2024,15 @@ this.horasTocadas=0;
  }
   }
   
-function resetTocada(){//confirm("Press a button!");
+function resetTocada(bypass){//confirm("Press a button!");
    var rp=false;
-   
+   if(bypass===undefined) bypass=false;
+ 
    if(remotetimer>0){rp=true}
-   else rp=confirm("Are your sure?,\n The information of the tocada will be deleted")
+   else{
+       if(!bypass) rp=confirm("Are your sure?,\n The information of the tocada will be deleted");
+       else rp=true;
+   }
     if(rp){
  
         localStorage.removeItem("Tocadainfo")
@@ -2059,7 +2051,8 @@ function resetTocada(){//confirm("Press a button!");
    eli.style.background = "black";
 closesettings();
 etimersw.innerHTML="Timer: 0min.";
-      eprogress.value=0;
+        clearInterval(progressTimer);
+       eprogress.setAttribute("value",0);
     }
 
 
@@ -2206,6 +2199,7 @@ xhr.onload = function () {
 xhr.send(json);
  
 }   
+
 
 function otot(ob){
     var o=JSON.stringify(ob);
