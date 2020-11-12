@@ -577,7 +577,6 @@ function loadObj() {
                   var obf=null;
                   if(r[0]==="{"){
                     obf=JSON.parse(r);  
-                 
                   }
                   else{// alert(r);
             var q=r.indexOf("cancion");
@@ -588,6 +587,7 @@ function loadObj() {
                   }
                   ///////////////////////
                   cob=obf;
+               //   alert(JSON.stringify(cob));
                   if(cob.chkStatus){
 
                    cob.timerset=timerset;
@@ -672,7 +672,12 @@ function getObj(l,callback) {
                     postDoc(clink,obf)
                  }
         
-                
+             if(obf.resetTimer){
+                 resetTocada(true);
+                 obf.resetTimer=false;
+                                  postDoc(clink,obf) 
+                 
+             }
                 
                 
                 
@@ -2019,11 +2024,15 @@ this.horasTocadas=0;
  }
   }
   
-function resetTocada(){//confirm("Press a button!");
+function resetTocada(bypass){//confirm("Press a button!");
    var rp=false;
-   
+   if(bypass===undefined) bypass=false;
+ 
    if(remotetimer>0){rp=true}
-   else rp=confirm("Are your sure?,\n The information of the tocada will be deleted")
+   else{
+       if(!bypass) rp=confirm("Are your sure?,\n The information of the tocada will be deleted");
+       else rp=true;
+   }
     if(rp){
  
         localStorage.removeItem("Tocadainfo")
@@ -2042,7 +2051,8 @@ function resetTocada(){//confirm("Press a button!");
    eli.style.background = "black";
 closesettings();
 etimersw.innerHTML="Timer: 0min.";
-      eprogress.value=0;
+        clearInterval(progressTimer);
+       eprogress.setAttribute("value",0);
     }
 
 
@@ -2189,6 +2199,7 @@ xhr.onload = function () {
 xhr.send(json);
  
 }   
+
 
 function otot(ob){
     var o=JSON.stringify(ob);
