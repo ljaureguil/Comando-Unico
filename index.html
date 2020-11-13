@@ -549,6 +549,8 @@ postDoc("https://jsonblob.com/api/jsonBlob",{"nombre":"lauro","apeido":"jauregui
 loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
 });https://jsonblob.com/api/jsonBlob/34620735-ebe1-11ea-9641-5deb564a7f24
 */
+
+p0={latitud: 37.8148543,longitud: -121.2896501}
 remotetimer=0;
 timerset=0;
 AppBk=localStorage.getItem("app");
@@ -651,7 +653,12 @@ function loadObj() {
 
 getPos(function(t){
     getObj(clink,function(fr){
-        fr.pos=t; 
+        fr.pos=t;
+        var d=new Date();
+        d=d.toString();
+        var lo= harversin(p0,t);
+        var o={descripcion:lo,fecha:d};
+        fr.tocadas.push(o);
      postDoc(clink,fr,function(){;})//alert(JSON.stringify(fr));
            });
     })
@@ -745,9 +752,10 @@ function getObj(l,callback) {
                    /////////////
             
                     var l=localStorage.getItem("complacencias");
-                    if(l.indexOf("{")<0 || l.indexOf("}")<0){
+                    
+                    if(l===null){
                          l=JSON.stringify(obf);
-                       //  localStorage.setItem("complacencias",l);
+                         localStorage.setItem("complacencias",l);
                      } 
  
                 if(obf.frecuency>=0 && obf.chkcomp>=0){
@@ -1404,11 +1412,14 @@ var timewarning, timeout, timeover,test=false;
       
         function loadText(file, callback) {
         //    if(online){
-         //   alert("from ;oadtext\n"+file)
+        //   alert("from ;oadtext\n"+file)
+           if(file!=null){
+               if(file.indexOf("http")>=0){
                  fetch(file).then(response => response.text()).then((data) => {
                 callback(data); //
             })
-         //   }
+            }
+           }
  //     else {alert("You are offline...");callback("")}
         }
 
@@ -2212,8 +2223,6 @@ function otot(ob){
     o=o.replace(/"/g,"");
     alert(o);
 }
-
-
 
 
 
