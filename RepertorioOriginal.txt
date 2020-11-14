@@ -57,8 +57,7 @@ porque se habra ido-fa-c j h f
 Arriba de 120-re-c -1ERqTEKUU8JSLNgu~jULjAhhc~cdSuoJP
 Las iluciones-mi#-c i h 
 30 cartas-mi-c j h -13NuXh546CYTv37WODSfZqgCRB47hWSA_
-porque te vas de mi-fa-c j i h f 
-
+las rnchiladas-mi-c
 
 
 *Corridos Clasicos
@@ -104,11 +103,12 @@ caballo de la acordada-do-b j d i
 los contrabandistas-fa-b h x
 El albañil-re-b j h 
 La carcel de cananea-sol-b j d h x
+El ayudante-sol-b
 
 
 *Rancheritas
 
-Las enchiladas-mi-d
+porque te vas de mi-fa-d j i h f 
 Quiero ver-fa-d
 Cielo azul cielo nublado-mi-d
 Alta y delgadita-re-d
@@ -258,6 +258,4 @@ El Karma-do-a f
 Prostipirugolfo-do-a 
 Buscado al cholo-?-a
 Falsos Amigos-sol-a 
-el ayudante-fa-b f 
-
 
