@@ -5,7 +5,7 @@ https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/80393539_161387425216215_356083315
 
 
 calendario
-https://raw.githubusercontent.com/ljaureguil/comando_news/master/Calendario.html
+https://ljaureguil.github.io/Calendario/
 
 
 San juan de ulua
