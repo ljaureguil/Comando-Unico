@@ -1,10 +1,11 @@
 
-calendario
-https://raw.githubusercontent.com/ljaureguil/comando_news/master/calendario.js
-
 
 tarjeta
 https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/80393539_161387425216215_3560833153184563200_o.jpg?_nc_cat=108&ccb=2&_nc_sid=e3f864&_nc_ohc=kYAKbbSY7o8AX8f41yl&_nc_ht=scontent-dfw5-2.xx&oh=1cf77ba1d570d80f1c04f10eb11b8394&oe=5FB9E615
+
+
+calendario
+https://raw.githubusercontent.com/ljaureguil/comando_news/master/Calendario.html
 
 
 San juan de ulua
