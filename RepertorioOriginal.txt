@@ -21,7 +21,6 @@ xp-practica
 *Canciones
 
 La feria de las flores-mi-c
-Platicame de ti-sol-c
 Aca entre nos-si-c
 Vida truncada-fa-c
 Arboles de la barranca-fa-c
@@ -62,6 +61,8 @@ las rnchiladas-mi-c
 
 *Corridos Clasicos
 
+Las 3 tumbas-mi-b
+El asesino-mi-b
 Quiero charlar con la muerte-me-b
 Contrato con la muerte-fa-b
 Chico fuentes-mi-b
@@ -108,6 +109,8 @@ El ayudante-sol-b
 
 *Rancheritas
 
+Eslavon por wslavon-sol-d
+De pasadita-mi-d
 porque te vas de mi-fa-d j i h f 
 Quiero ver-fa-d
 Cielo azul cielo nublado-mi-d
