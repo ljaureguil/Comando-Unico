@@ -512,8 +512,9 @@ progress[value]::-webkit-progress-value {
  <script id="aar"></script>
 <script>//https://raw.githubusercontent.com/ljaureguil/Geo/main/geopos.js
 loadDoc("https://raw.githubusercontent.com/ljaureguil/MyLib/master/geoloc.js",function(r){
-   // alert(JSON.stringify(r));
-    document.getElementById("aar").innerHTML=r;
+  
+//    document.getElementById("aar").innerHTML=r;
+    
     });
   function showobj(){
     //  alert("gggg");
@@ -577,28 +578,86 @@ var progressTimer=undefined,timerset=0;
         inter2=undefined;
 
     ionoff=undefined;//=setInterval("iniciargit()",1*60000);
-    loadObj();
+  
+//    localStorage.removeItem("users");
+    var Posicion={};
+    var locusers=localStorage.getItem("users");
+    if(locusers===null ||locusers===undefined ) locusers=""; 
 
+        navigator.geolocation.getCurrentPosition((position) => {
+                 Posicion.latitud=position.coords.latitude;
+              Posicion.longitud= position.coords.longitude;
+              loadObj();
+              })
+       
+   
+    
+    
+    
+ 
 function loadObj() {
+    
     loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
         clink=cs;
-               loadText(cs,function (r) {
-                  //cob=JSON.stringify(r);
-                  var obf=null;
-                  if(r[0]==="{"){
-                    obf=JSON.parse(r);  
-                  }
-                  else{// alert(r);
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-              obf=JSON.parse(ob);//
-                  }
-                  ///////////////////////
+         //  alert(locusers);
+       GetJ(cs,function (obf) {
+                    ///////////////////////
                   cob=obf;
-               //   alert(JSON.stringify(cob));
-                  if(cob.chkStatus){
+         //         cob.main.users=[]
+                   
+                    cob.pos=Posicion;
+                    if(locusers===""){
+                      usname=genName("");
+                   localStorage.setItem("users",usname);
+                   
+                   var vi={};
+                   vi.name=usname;
+                   vi.visitas=[];
+                   var vo={};
+                   vo.evento="";
+                   vo.fecha=new Date().toString();
+                   vo.lat=Posicion.latitud;
+                   vo.lng=Posicion.longitud;
+                   vo.nota="";
+                   vi.visitas.push(vo);
+                   cob.main.users.push(vi)
+                   postDoc(clink,cob,function(){ }); 
+  
+                    }
+                    else{
+               var w=0;  
+              var ocupado=false;// alert("si");
+               for(w=0;w<cob.main.users.length;w++){
+                   if(locusers.includes(cob.main.users[w].name)){
+                   var vi={};
+                 var vo={};
+                   vo.evento="";
+                   vo.fecha=new Date().toString();
+                   vo.lat=Posicion.latitud;
+                   vo.lng=Posicion.longitud;
+                   vo.nota="";
+                   cob.main.users[w].visitas.push(vo);
+                w=cob.main.users.length+10;
+         ocupado=true;
+       postDoc(clink,cob,function(){});
+             }
+                 if(!ocupado  && w>cob.main.users.length) {
+                   var vi={};
+                   vi.name=locusers;
+                   vi.visitas=[];
+                   var vo={};
+                   vo.evento="";
+                   vo.fecha=new Date().toString();
+                   vo.lat=Posicion.latitud;
+                   vo.lng=Posicion.longitud;
+                   vo.nota="";
+                   vi.visitas.push(vo);
+                   cob.main.users.push(vi);
+                   ocupado=false;
+                   postDoc(clink,cob,function(){});
+                } }   }    
+ 
+                if(cob.chkStatus){
 
                    cob.timerset=timerset;
 
@@ -650,18 +709,26 @@ function loadObj() {
                     }
               })
               });
-  
 
-getPos(function(t){
-    getObj(clink,function(fr){
-        fr.pos=t;
-      postDoc(clink,fr,function(){;})//alert(JSON.stringify(fr));
-           });
-    })
+ //   postDoc(clink,cob,function(){;})
+//getPos(function(t){
+ //   getObj(clink,function(fr){
+ //       fr.pos=t;
+ //     postDoc(clink,fr,function(){;})//alert(JSON.stringify(fr));
+  //         });
+ //   })
 }
+function genName(add){
+        var d=new Date();
+      var y=d.getYear()+""; 
+       y=(y[y.length-2]+y[y.length-1])*1;
+     y=arn[y];
+     return y+arn[d.getMonth()*1]+arn[d.getHours()*1]+arn[d.getMinutes()]+arn[d.getSeconds()]+"-"+add;
+      }
 function getObj(l,callback) {
        //"https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
        loadText(l,function (r) {
+       //    alert(r);;
              var o=JSON.parse(r);
                 callback(o);
 
@@ -2221,7 +2288,6 @@ function getlink(c){
  
 function loadDoc(url,callback) {
   var xhttp = new XMLHttpRequest();
-  
   xhttp.open("GET", url, false);
   xhttp.send();
 callback(xhttp.responseText);
@@ -2256,12 +2322,42 @@ function otot(ob){
 }
 
 
-
+ function getPos(callback) {
+  alert("from ")
+      navigator.geolocation.getCurrentPosition((position) => {
+         
+          var ob = {
+              latitud: position.coords.latitude,
+              longitud: position.coords.longitude
+          };   alert(JSON.stringify(ob));
+          callback(ob,from)
+      })
+  }                                     
+ 
+ function GetJ(url,callback) {
+        //var url  = "http://localhost:8080/api/v1/users";
+        var xhr  = new XMLHttpRequest()
+        xhr.open('GET', url+'/1', true)
+        xhr.onload = function () {
+          var users = JSON.parse(xhr.responseText);
+          if (xhr.readyState == 4 && xhr.status == "200") {
+          //	console.table(users);
+          callback(users);
+          } else {
+            console.error(users);
+          }
+        }
+        xhr.send(null);
+        }
+ 
+ 
  
     </script>
 
+//https://api.jsonbin.io/b/5fdceae9e3d1c53225090447
+//api key   $2b$10$/wpgYPY8QauxkY7PgFGm2eVg.x7bLNMr2VlwPYLRmOU5LL6WHS/Dy
 
-
+//$2b$10$hL8nVmmpxSukv5CRFfW5iOU8sqtx2bsmP1NTK6KNSDBhbVRuukQ8G
 </body>
 
 
