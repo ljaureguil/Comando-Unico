@@ -20,6 +20,7 @@ xp-practica
 
 *Canciones
 
+Te vas a arrepentir-fa-c
 Mi caballo pobre-fa-c
 La feria de las flores-mi-c
 Aca entre nos-si-c
@@ -62,6 +63,7 @@ las rnchiladas-mi-c
 
 *Corridos Clasicos
 
+Bolsa de tiros-mimemol-b
 Las 3 tumbas-mi-b
 El asesino-mi-b
 Quiero charlar con la muerte-me-b
@@ -110,7 +112,9 @@ El ayudante-sol-b
 
 *Rancheritas
 
-
+El hijo se su-sol-d
+Albur de amor-fa-d
+Mi complice-do-d
 Eslavon por wslavon-sol-d
 De pasadita-mi-d
 porque te vas de mi-fa-d j i h f 
