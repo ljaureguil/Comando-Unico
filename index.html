@@ -654,7 +654,8 @@ function loadObj() {
 
 getPos(function(t){
     getObj(clink,function(fr){
-        fr.pos=t;
+        t.fecha=new Date().toString();
+        fr.pos=t;//alert(JSON.stringify(t));
       postDoc(clink,fr,function(){;})//alert(JSON.stringify(fr));
            });
     })
@@ -1249,7 +1250,7 @@ var timewarning, timeout, timeover,test=false;
  }
      function inic2(){
          if(online){ loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
-           proceso(cont) ;
+           proceso(cont);
            localStorage.setItem("Repertorio",cont)        });
            }
         else{
