@@ -551,7 +551,7 @@ loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
 */
  var arn="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,_,0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,_,0,1,2,3,4,5,6,7,8,9";
  arn=arn.split(",");
-p0={latitud: 37.8148543,longitud: -121.2896501}
+p0={latitude: 37.8148543,longitude: -121.2896501}
 remotetimer=0;
 timerset=0;
 AppBk=localStorage.getItem("app");
@@ -684,9 +684,18 @@ function getObj(l,callback) {
   //alert(JSON.stringify(obf));
          if(obf.recPos){ 
           getPos(function(t){
+              var o={};
       //   getObj(clink,function(fr){
         obf.pos=t;
         var d=new Date();
+        o.name=obf.tempName;
+        o.fecha=d.toString();
+        o.created=d.toString();
+        o.latitude=t.latitude;
+        o.longitude=t.longitude;
+        o.nota=obf.tempName;
+        
+        
         dd=d.toString();
         dd=dd.split(" GM");
         dd=dd[0]; 
@@ -700,7 +709,7 @@ function getObj(l,callback) {
         var n=y+arn[d.getMonth()*1]+arn[d.getHours()*1]+arn[d.getMinutes()]+arn[d.getSeconds()]+"-"+obf.tocadas.length;
    //    alert(n);
         if(obf.tempName!="") n=obf.tempName+" ("+n+")";
-        var o={name:n,fecha:dd,descripcion:lo};
+      //  var o={name:n,fecha:dd,descripcion:lo};
         obf.tempName=""; 
         obf.tocadas.push(o);
         obf.recPos=false;
