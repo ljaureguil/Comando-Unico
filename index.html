@@ -584,6 +584,7 @@ function loadObj() {
         clink=cs;
                loadText(cs,function (r) {
                   //cob=JSON.stringify(r);
+                  
                   var obf=null;
                   if(r[0]==="{"){
                     obf=JSON.parse(r);  
@@ -596,8 +597,12 @@ function loadObj() {
               obf=JSON.parse(ob);//
                   }
                   ///////////////////////
+                  obf.fecha=new Date().toString();
                   cob=obf;
                //   alert(JSON.stringify(cob));
+               
+               
+               
                   if(cob.chkStatus){
 
                    cob.timerset=timerset;
@@ -655,8 +660,9 @@ function loadObj() {
 getPos(function(t){
     getObj(clink,function(fr){
         t.fecha=new Date().toString();
+        
         fr.pos=t;//alert(JSON.stringify(t));
-      postDoc(clink,fr,function(){;})//alert(JSON.stringify(fr));
+      postDoc(clink,fr,function(){;});//alert(JSON.stringify(fr));
            });
     })
 }
@@ -689,7 +695,7 @@ function getObj(l,callback) {
         obf.pos=t;
         var d=new Date();
         o.name=obf.tempName;
-        o.fecha=d.toString();
+        o.fecha=d;
         o.created=d.toString();
         o.latitude=t.latitude;
         o.longitude=t.longitude;
