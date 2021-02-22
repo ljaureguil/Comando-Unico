@@ -3,24 +3,16 @@
 tarjeta2
 https://static.wixstatic.com/media/4ee8f5_3c1e1794e5304364a9c273c37e6a769b~mv2.png
 
-tarjeta
-https://static.wixstatic.com/media/4ee8f5_b2842bc423cb4ac992c120bcd9e8ca60~mv2.png
+tarjetahttps://static.wixstatic.com/media/4ee8f5_b2842bc423cb4ac992c120bcd9e8ca60~mv2.png
  
+
  Dos pasajes
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomando.unico.5%2Fvideos%2F199047978304304%2F%3Fsfnsn%3Dmo&show_text=true&width=552&height=310&appId" width="552" height="310" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 calendario
 https://ljaureguil.github.io/Calendario/
 
-Eslavon por eslavon
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F100045973097527%2Fvideos%2F228661988676236%2F&show_text=true&width=552&height=377&appId" width="552" height="377" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-
-falsos amigos
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Ffb.watch%2F22kSPRtWge%2F&show_text=true&width=552&height=400&appId" width="552" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-  
- pio diaz
- <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Ffb.watch%2F22l4Qf2x6l%2F&show_text=true&width=552&height=375&appId" width="552" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 San juan de ulua
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D1016091168890613%26id%3D100014692176495%26sfnsn%3Dmo&show_text=true&width=552&height=310&appId" width="552" height="310" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
