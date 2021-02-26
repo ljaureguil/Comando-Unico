@@ -64,7 +64,7 @@ las rnchiladas-mi-c
 *Corridos Clasicos
 
 Macario Leyva-sol-b
-Bolsa de tiros-mimemol-b
+
 Las 3 tumbas-mi-b
 El asesino-mi-b
 Quiero charlar con la muerte-me-b
@@ -113,6 +113,7 @@ El ayudante-sol-b
 
 *Rancheritas
 
+Ojitos Verdes-mi-d
 El hijo se su-sol-d
 El nuevo Albur de amor-fa-d
 Mi complice-do-d
@@ -233,6 +234,7 @@ polka unic-fa-l-1EJo1vVsL2ZjfuVm5Nxb4Ot78fPyWbddW
 
 *Corridos
 
+Bolsa de tiros-mimemol-a
 70 calaberas-re-a
 Vida ventajosa-la-a
 El humilde.los dos de Tamaulipas-mi-a
