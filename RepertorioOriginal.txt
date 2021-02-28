@@ -20,6 +20,7 @@ xp-practica
 
 *Canciones
 
+Que no se apague la lumbre-sol-c
 Te vas a arrepentir-fa-c
 Mi caballo pobre-fa-c
 La feria de las flores-mi-c
@@ -64,7 +65,7 @@ las rnchiladas-mi-c
 *Corridos Clasicos
 
 Macario Leyva-sol-b
-
+La camioneta gris-mi-b
 Las 3 tumbas-mi-b
 El asesino-mi-b
 Quiero charlar con la muerte-me-b
