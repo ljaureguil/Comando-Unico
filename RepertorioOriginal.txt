@@ -64,6 +64,7 @@ las rnchiladas-mi-c
 
 *Corridos Clasicos
 
+76El tepozan-fa-b
 Macario Leyva-sol-b
 La camioneta gris-mi-b
 Las 3 tumbas-mi-b
@@ -195,6 +196,8 @@ Elenita-re-f
 
 *Cumbias
 
+Rosa Maria-sol-g
+Los alrgres tecolotes-do-g
 Probocame-sol-g
 Tan bella y presumida-sol-g
 Coco rayado-do-g
@@ -238,6 +241,8 @@ polka unic-fa-l-1EJo1vVsL2ZjfuVm5Nxb4Ot78fPyWbddW
 
 *Corridos
 
+Juan Ignacio-do-a
+chivo tate.ado-fa-a
 Tipo Tren-mi-a
 Voy llegando a California-sol-a
 Bolsa de tiros-mimemol-a
