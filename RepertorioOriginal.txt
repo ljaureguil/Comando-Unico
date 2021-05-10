@@ -64,7 +64,7 @@ las rnchiladas-mi-c
 
 *Corridos Clasicos
 
-76El tepozan-fa-b
+El tepozan-fa-b
 Macario Leyva-sol-b
 La camioneta gris-mi-b
 Las 3 tumbas-mi-b
@@ -240,6 +240,7 @@ polka unic-fa-l-1EJo1vVsL2ZjfuVm5Nxb4Ot78fPyWbddW
 
 
 *Corridos
+
 
 Juan Ignacio-do-a
 chivo tate.ado-fa-a
