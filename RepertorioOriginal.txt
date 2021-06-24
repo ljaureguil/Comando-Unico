@@ -20,6 +20,8 @@ xp-practica
 
 *Canciones
 
+Amor Ingrato-fa-c
+Si supieras como te extran'o vida-do-c
 Que no se apague la lumbre-sol-c
 Te vas a arrepentir-fa-c
 Mi caballo pobre-fa-c
@@ -114,6 +116,9 @@ El ayudante-sol-b
 
 *Rancheritas
 
+La calandria-fa-d
+El hijo del palenque-sol-d
+En tu Dia-sol-d
 Cartas marcadas-fa-d
 Terrible cuerno de chivo-fa-d
 Que tristeza me acomoaña-fa-d
@@ -226,6 +231,7 @@ El manisero-la-f
 
 *Zapateados
 
+El Enamorado-si-g
 La presumida-sol-k -148eJnPQX0iUWgC_bq2OvdsuomNw7E62E
 el sinaloense-fa-k 
 La loba del mar-fa-k g 
@@ -234,6 +240,7 @@ pavido navido-fa-k g
 
 *huapangos
 
+Tolin Infante-do-a
 el pistolero-mi-l k 
 El caballo de la sierra-sol-l
 el tejanito-mi-l
@@ -244,6 +251,7 @@ polka unic-fa-l-1EJo1vVsL2ZjfuVm5Nxb4Ot78fPyWbddW
 
 *Corridos
 
+El terror-mi-a
 Dos letras de jalisco-mi-a
 Alfredo beltran los alegres-mi-a
 Humilde de abolengo-do-a
