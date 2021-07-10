@@ -21,19 +21,7 @@
             overflow-x: hidden;
             transition: overflow-y 0.5s ease;
         }
-        #ifr {
-            width: 100%;
-            height: 75%;
-            background: white;
-            border-radius: 15px;
-            display: none;
-        }
-        #ifrs {
-            width: 100%;
-            // height: 40%;
-            font-size: 25px;
-            border-radius: 15px;
-        }
+   
         .btns {
             color: white;
             font-weight: bold;
@@ -46,38 +34,38 @@
             height: 8%;
            
         }
-        #ed {
-            background: rgba(0, 255, 0, .5);
-            color: white;
-            position: absolute;
-            top: 90%;
-            bottom: right: 5%;
-        }
-        #divrep {
+
+        .btnss{
             font-size: 18px;
-            //position: absolute;
-            bottom: 2%;
-            width: 100%;
-            // height: 85%;
-            // background: white;
-            overflow-y: auto;
-            overflow-x: hidden;
-            display: none;
-            border-radius: 15px;
-            padding: 5%;
+            color:white;
+            margin:3%;
+
         }
+        .ctit{
+           
+            font-size: 30px;
+            color:white;
+            background:#a30303;
+            border-style:solid;
+            border-color:#ffffff
+
+
+        }
+  
         #lirep {
+            margin:3%;
             background: black;
             color: white;
-            width: 83%;
+            width: 94%;
             // height: 40%;
             font-size: 18px;// font repertorio
             font-weight: bold;
             border-radius: 15px;
-            padding: 5%;
-            border-color: white;
+          //  padding: 5%;
+            border-color: blue;
             border-style: double;
-            border-width: 10px;
+            border-width: 5px;
+            
         }
         .songs {
             color: #50ff50;
@@ -100,50 +88,30 @@
             background: blue;
             font-size: 20px;
             font-weight: bold;
+            margin:10px;
         }
-        #logo {
-            position: absolute;
-            top: 0%;
-            right: 1%;
-            background: url(https://lh3.googleusercontent.com/m6YEmcXhjRQRdkS7AMBgGzpbdyZLK2gpbju5jB_WUJwp4Ss_fxeKA202ybPMhJixfnrm);
-            background-size: 100% 100%;
-            color: #ffffff;
-            font-weight: bold;
-            width: 65px;
-            height: 65px;
-            font-size: 30px;
-            border-radius: 50%;
-            border-color: white;
-         
-          //  background-color: rgb(248, 10, 10);
-            // opacity: .65;
-            visibility: visible;
+        .cmsgs{
+            color:white;
+             margin:6px;
+            border-style: solid; 
+       
+            font-size: 22px;
+             width: 95%;
+             height:90%;
+             border-radius: 10px;
+           box-shadow: inset 5px -5px 10px #d7d7f3, inset -5px 5px 10px #5eee95;
         }
-         #ppr {
-            overflow:auto;
-            background: #0000FF;
-            color: #ffffff;
-            font-size:16px;
-            width:94%;
-            border-radius:10px;
-             box-shadow: inset 5px -5px 30px #000020, inset -5px 5px 30px #000088;;
-        //     display:none;
-            
-        }       
-        
-        #complac {
-            overflow:auto;
-            height:12%;
-            background: #00FF00;
-            color: #fff;
+       #complac {
+
+                overflow: auto;
+            height:16%;
+          
             font-size:20px;
-            width:94%;
-            border-radius:10px;
-             box-shadow: inset 5px -5px 20px #000020, inset -5px 5px 20px #000088;
-               -webkit-text-stroke: 0.3px #f00;
-                -webkit-text-fill-color: #000;
+            width:100%;
+            border-style:solid;
+            border-radius:5px;
             display:none;
-            
+  
         }
         #dle {
             color: white;
@@ -162,32 +130,12 @@
             font-size: 17px;
             width: 90%;
             height: 90%;
-         //   overflow: auto;
-            
-           // border-style: solid;
-           border-radius:5px;
+            border-radius:5px;
             font-weight: bold;
             background: #ffff;
-        //   box-shadow:inset 0 0 30px 4px #6666ff;
-          scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
-        #clle {
-            position: absolute;
-            bottom:5px;
-            left: 0%;
-            width:60%;
-            
-       
-            height:80px;
-            border-radius:10px;
-            background-color: rgba(0, 212, 255, .40);
-            color:#ffffff;
-            font-size:20px;
-            font-weight:bold;
-            border-style:double;
-             box-shadow:inset 0 0 5px 1px #66aa66;   
-        }
-         #inicsld {
+        #inicsld {
             position: absolute;
             bottom: 5px;
             right: 42px;
@@ -197,8 +145,7 @@
             background-color: rgba(0, 212, 255, .40);
             color:#ffffff;
             font-size:18px;
-          //  font-weight:bold;
-            border-style:double;
+                border-style:double;
                     box-shadow:inset 0 0 5px 1px #66aa66; 
         }  
  
@@ -358,27 +305,54 @@ progress[value] {
  // height: 20px;
 }
 
-progress[value]::-webkit-progress-value {
-  background-image:
-	   -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left,  rgb(204,0, 178 ), #f00);
-
-    border-radius: 5px; 
-    background-size: 35px 20px, 100% 100%, 100% 100%;
-}
-
 #mmsg{
     display:none;
 }
-
-
+.ced{
+    margin:10px;
+    width:50%;
+}
+#editr{
+    color:white;
+    display:none;
+    border-style: solid;
+    background:rgba(255,25,0,.5);
+    
+}
+#iletra{
+    height: 45%;
+    width: 90%;
+    background-color:rgb(235, 241, 235);
+}
+.btnse{
+    color:white;
+    background:#030;
+    border-radius:5px;
+    font-size: 18px;
+    margin:10px;
+}
     </style>
-<button class="btns" id="complac" onclick='this.style.background="blue";this.innerHTML="Complacencias";this.style.display="none"'>. *Complacencias* .</button>
+
+    <div id="editr" >
+        <button class="btnse" onclick="document.body.style.background='red';openEdit();editr.style.display='none';">Sel Song</button>
+        <button class="btnse" onclick="clre();">clear</button>  
+        <button class="btnse" onclick="document.body.style.background=' linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)';editr.style.display='none';">CLOSE</button>
+ 
+<br>
+         <input id="icancion" type="text" class="ced">Cancion<br>
+        <input id="itono" type="text" class="ced">Tono<br>
+        <select id="icategoria"  type="text" class="ced" oninput=""></select>Categoria<br>
+        <input id="iartista"   type="text" class="ced">Artista<br>
+        <input  id="ilink"  type="text" class="ced">Link<br>
+        <input  id="inota"  type="text" class="ced">Nota<br><br>
+        Letra
+        <textarea id="iletra"   type="text" class="ced"></textarea><br>
+        <button class="btnse" onclick="document.body.style.background=' linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)';editr.style.display='none';addCancion()">ADD NEW SONG</button>
+        <button class="btnse" onclick="delCancion()">Delete Sont</button>
+
+    </div>
+
+<div class="btns" id="complac" ></div>
 
 
 <div id="dle">
@@ -395,7 +369,7 @@ progress[value]::-webkit-progress-value {
 </div>
 
 
-<button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear('');edc.scrollTop = 0;">&#9851;</button>
+<button id="ref" onclick="eactrls.style.top='-80%';x.src='';sortear2('');edc.scrollTop = 0;">&#9851;</button>
 
 <div id="todo">
 
@@ -406,9 +380,9 @@ progress[value]::-webkit-progress-value {
             <table border="0" align="center" cellpadding="0">
                 <tr>
                     <td>
-                        <input id="barra" type="text" name="q" oninput="sortear(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
+                        <input id="barra" type="text" name="q" oninput="sortear2(this.value)" style=" font-size:20px;width:65%;" placeholder="Write a song..." />
                         <input id="srch" type="submit" '_blank' style="display:none" />
-                        <button onclick="getletra()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
+                        <button onclick="getletra2()" style=" background:red;color:white;width:30%;font-size:20px;border-radius:10px;">Letra</button>
 
                     </td>
                 </tr>
@@ -420,78 +394,16 @@ progress[value]::-webkit-progress-value {
 
 
     <div id="ctrls">
-        <button class="btns" value="32" max="100" id="ppr" onclick='showstimer()'>
-            <label id="swt">Timer: 0</label>
-            <progress id="prg" value="0" max="0" width="90%" backgroundColor="white">
-            </progress>
-
-            <button class="btns" onclick='opendoc( "open rep")'>Repertorio Mix.</button>
-            <button class="btns" onclick='sortearTocada()'>Repertorio Tocada</button>
+ 
+            <button class="btns" onclick="eactrls.style.top='-80%';x.src='';sortear2('');edc.scrollTop = 0;">Repertorio Mix.</button>
+            <button class="btns" onclick="document.body.style.background=' linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)';openEdit();editr.style.display='block';//openEditarCanc()">Editar Canciones</button>
 
     </div>
-    <div id=ifrs>
-
-
-
-        <div id="dsr">
-
-            <form action="http://google.com/search" target="_blank" style="display:none">
-                <input name="q" oninput="sortear(this.value)">
-                <input type="submit">
-            </form>
-
-
-
-        </div>
-    </div>
-    <iframe id="ifr"></iframe>
-
-    <div id="divrep"></div>
-    <div id="bclas"></div>
+     <div id="bclas"></div>
     <p id="titulo"></p>
     <div id="lirep">
 
     </div>
-</div>
-<div id="settings-dlg">
-    <button class="btnsset" onclick="if(marktocada){this.innerHTML='Set Select Mode On';marktocada=false}else{marktocada=true;this.innerHTML='Set Select Mode Off'};closesettings();">Set Select Mode On</button>
-    <br>
-    <button class="btnsset" onclick="if(confirm('Are you sure?')){localStorage.removeItem('NextRep');window.location.reload(true);}">Clear all Rep. de Tocada</button>
-    <br>
-
-    <button class="btnsset" onclick="resetTocada();">*Recet Tocada*</button>
-    <br>
-
-
-    <button class="btnsset" onclick="settingUpTocada()">Set a Tocada</button>
-
-    <br>
-    <br>
-    <button id="finish" class="btnsset" onclick="finish()">Terminar Tocada</button>
-    <br>
-
-    <button id="bchfont" onclick="ChFont()" class="btnsset">Change Font Size</button>
-    <br>
-    <p onclick="closesettings()" style="color:white;position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
-
-</div>
-<div id="timerh">
-    <button class="btnsset" onclick="testmode();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;">*Test Mode*</button>
-    <br>
-    <button class="btnsset" onclick="resetTocada();" style="position:absolute;left:2%;top:1%;border-radius:100px;background:red;color:white;top:12%;">Reset Timer</button>
-    <br>
-
-    <p onclick="closesettings()" style="position:absolute;width:30px;height:30px;font-size: 30px;font-weight: bold;right: 10px;top: -20px;border-radius: 50%;border-style: solid;">X</p>
-    <p color="white">Timer:</p>
-
-    1st. Hora
-    <button id="bottonInic" class="btnsset" onclick="timerset=60;verifyTimer(60);//inicTocada(1)">60 Min</button>
-    <br>. . . . . . . .
-    <br>2a. Hora+
-    <button id="bottonInic" class="btnsset" onclick="timerset=45;verifyTimer(45);//inicTocada(2)">45 Min</button>
-    <br>
-    <button class="btnsset" onclick="showsettings()">Open Settings</button>
-
 </div>
 
 <audio id="myAudio">
@@ -515,49 +427,46 @@ loadDoc("https://raw.githubusercontent.com/ljaureguil/MyLib/master/geoloc.js",fu
    // alert(JSON.stringify(r));
     document.getElementById("aar").innerHTML=r;
     });
-  function showobj(){
-    //  alert("gggg");
- GetJ("https://jsonblob.com/api/e17b5980-1d62-11eb-ab21-2fc49933500c",function(r){alert(JSON.stringify(r))});
-  }
+
+  chooseS=false;
+ //localStorage.removeItem("key");
+ /*
  
-        //           <button id="mainrep" class=btns onclick='opendoc( "rep")'>. Repertorio .</button>
-//https://www.file.io/
-
-//https://stackoverflow.com/questions/50481314/hosting-an-editable-single-string-of-text-online
-//https://pastebin.com/
-
-//When you use the pastebin.com/raw/ + id of your text you get plain text.
-//jzfx2mKq3rYmg4UCnpaDm0oXCraS4EcR
-///https://jsonblob.com/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61.,    hhhhhhhhhhhhhh
-
-/*
-https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24
-//https://gist.github.com/EtienneR/2f3ab345df502bd3d13e
-           <button class="btns"  id="ppr" onclick='this.style.background="blue";this.innerHTML="Complacencias";//opendoc( "repPrac")'>. *Complacencias* .</button>
- 
- <button id="logo" onclick="showstimer()"></button>
-curl -i -X "PUT" -d '{"people":["fred", "mark", "andrew"]}' -H "Content-Type: application/json" -H "Accept: application/json" https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61
-HTTP/1.1 200 OK
-Content-Type: application/json
-Transfer-Encoding: chunked
-{"people":["fred","mark","andrew"]}
+var enc=cod("ljaureguil","linkGit='https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt';linkc='https://jsonblob.com/api/dd1dc37f-6728-11eb-82c8-83376f2319bc';linkRep='https://jsonblob.com/api/e86e9eca-db67-11eb-bf92-631e03f93a7b';pass=['andresjv','danieljv','laurojl'];")
+ alert(enc)
+var res=decod("ljaureguil",enc);
+iletra.value=enc;
+localStorage.setItem("keyRep",enc);
+eval(res)
+alert(linkRep)
+GetJ(linkRep,function(r){r.prim=enc;
+     UpdateJ(linkRep,r,function(){alert("chk...");
+     
+     })
+});
+ //linkRep='https://jsonblob.com/api/e86e9eca-db67-11eb-bf92-631e03f93a7b';
+var ss=localStorage.getItem("keyRep")
+alert(ss);
+alert("local storage\n\n"+decod("ljaureguil",ss));
 */
+var linkp='https://jsonblob.com/api/dd638cf7-de79-11eb-80f0-055ac14c8156';
+linkRep='https://jsonblob.com/api/e86e9eca-db67-11eb-bf92-631e03f93a7b';
 
-/*
-loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
-postDoc("https://jsonblob.com/api/jsonBlob",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)
-loadDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",function(t){alert("eto es diecto "+t)});
-});https://jsonblob.com/api/jsonBlob/34620735-ebe1-11ea-9641-5deb564a7f24
-*/
+msdelay=null;
+ObjRep={};
  var arn="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,_,0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,_,0,1,2,3,4,5,6,7,8,9";
  arn=arn.split(",");
 p0={latitude: 37.8148543,longitude: -121.2896501}
 remotetimer=0;
 timerset=0;
-AppBk=localStorage.getItem("app");
+//localstorage.removeItem("app")
+//AppBk=localStorage.getItem("app");
+//alert(AppBk);
 var progressTimer=undefined,timerset=0;
 //postDoc("https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61",{"nombre":"lauro","apeido":"jauregui"},function(t){alert("eto es diecto "+t)})
-
+//linkRep='https://jsonblob.com/api/e86e9eca-db67-11eb-bf92-631e03f93a7b';
+  
+  //  linkRep='https://jsonblob.com/api/85e6ddf8-d5ec-11eb-8853-fb31258c7b15'
      icomplacencias=undefined;
      emsg = document.getElementById("mmsg");
      enota = document.getElementById("complac");
@@ -572,100 +481,11 @@ var progressTimer=undefined,timerset=0;
      //   iniciargit();//elim
         csob="";
         cob={};
-        clink="";
-        inter1=undefined;
+       inter1=undefined;
         inter2=undefined;
 
     ionoff=undefined;//=setInterval("iniciargit()",1*60000);
-    loadObj();
 
-function loadObj() {
-    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-        clink=cs;
-               loadText(cs,function (r) {
-                  //cob=JSON.stringify(r);
-                  
-                  var obf=null;
-                  if(r[0]==="{"){
-                    obf=JSON.parse(r);  
-                  }
-                  else{// alert(r);
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-              obf=JSON.parse(ob);//
-                  }
-                  ///////////////////////
-                  obf.fecha=new Date().toString();
-                  cob=obf;
-               //   alert(JSON.stringify(cob));
-               
-               
-               
-                  if(cob.chkStatus){
-
-                   cob.timerset=timerset;
-
-                   cob.timeLeftglobal= localStorage.getItem("Timer");
-
-                   cob.nota=emsg.value;
-                   cob.chkStatus=false;
-                   cob.timeSetTemporal=eprogress.max;
-                   cob.timeLeft=eprogress.max-eprogress.value;
-                   cob.timeRunning=eprogress.value+" of " + eprogress.max;
-                     postDoc(cs,cob,function(t){;})
-
-                    }
-
-                    if(obf.setTimerTo>0){ 
-                        
-                        remotetimer=obf.setTimerTo;
-                        timerset=remotetimer;
-                        
-                        resetTocada();
-                    // alert("Set de timero to " + obf.setTimerTo+clink);
-                   verifyTimer( obf.setTimerTo);  
-                //  inicTimer(obf.setTimerTo);
-              
-
-                     obf.setTimerTo=0;
-                     obf.timerset=timerset;
-                 //  alert("ddddddddddddddddddddd"+clink)
-                     postDoc(clink,obf)
-                 }
-
-
-
-                  ////////////////////////////////////
-               if(cob.frecuency>=0 && cob.chkcomp>=0){
-                         a();
-                      
-                      ionoff=setInterval(function () {
-                        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-                       clink=cs;
-                        })
-
-
-
-                            },cob.frecuency*60000);
-
-                       iniccomplacencias=setInterval(function () {a();},cob.chkcomp*60000);
-                     /*  */
-                    }
-              })
-              });
-  
-
-getPos(function(t){
-    getObj(clink,function(fr){
-        t.fecha=new Date().toString();
-        
-        fr.pos=t;//alert(JSON.stringify(t));
-      postDoc(clink,fr,function(){;});//alert(JSON.stringify(fr));
-           });
-    })
-}
 function getObj(l,callback) {
        //"https://jsonblob.com/api/jsonBlob/2cf859d7-eec6-11ea-b1f3-6f02c0e4fe61"
        loadText(l,function (r) {
@@ -676,259 +496,78 @@ function getObj(l,callback) {
  
 }
 
- function a() {
-   // alert("llega a inter2...khlkjhlk..........")
-  //  loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-   //     clink=cs;
-               getObj(clink,function (r) {
-                  obf=r; 
-                
-                   //key para settings
-                   /////////////https://jsonblob.com/009e2126-f6c3-11ea-9625-efa12eeddf48  
-                // alert(cob.chkStatus)
- 
-  //alert(JSON.stringify(obf));
-         if(obf.recPos){ 
-          getPos(function(t){
-              var o={};
-      //   getObj(clink,function(fr){
-        obf.pos=t;
-        var d=new Date();
-        o.name=obf.tempName;
-        o.fecha=d;
-        o.created=d.toString();
-        o.latitude=t.latitude;
-        o.longitude=t.longitude;
-        o.nota=obf.tempName;
-        
-        
-        dd=d.toString();
-        dd=dd.split(" GM");
-        dd=dd[0]; 
-        var lo= harversin(p0,t);
-      //  var n=dd+"_"+obf.tocadas.length;
-      var y=d.getYear()+""; // alert("**************\n\n"+JSON.stringify(obf));
-       y=(y[y.length-2]+y[y.length-1])*1;
-     y=arn[y];
-    // alert(y);
-        
-        var n=y+arn[d.getMonth()*1]+arn[d.getHours()*1]+arn[d.getMinutes()]+arn[d.getSeconds()]+"-"+obf.tocadas.length;
-   //    alert(n);
-        if(obf.tempName!="") n=obf.tempName+" ("+n+")";
-      //  var o={name:n,fecha:dd,descripcion:lo};
-        obf.tempName=""; 
-        obf.tocadas.push(o);
-        obf.recPos=false;
-         //    alert(JSON.stringify(obf));
-         postDoc(clink,obf,function(){;})//alert(JSON.stringify(fr));
+getPet();
+chkpet=setInterval(getPet,15000);
+
+function getPet(){
+    GetJ(linkp,function(r){
+        var lo=localStorage.getItem("peticiones");
+           while (complac.firstChild) {
+        complac.removeChild(complac.firstChild);
+    } 
     
-          // }
-         //  );
+   if(r.peticiones.length>0){
+       
+       localStorage.setItem("peticiones",r.peticiones.toString());
+       complac.style.display="block";
+      for(var i=0;i<r.peticiones.length;i++){
+          complac.appendChild(crnota(r.peticiones[i]));
+      }
+   }
+   else complac.style.display="none";
+
     })
-}       
-                 
-                 
-             //       postDoc(clink,obf)
-               //  }
-                       
-         if(obf.hideNota){ 
-                     enota.style.display="none";
-                     obf.hideNota=false;
-                     obf.stNota=false;
-//
-                    postDoc(clink,obf)
-                 }
-        
-             if(obf.resetTimer){
-                 resetTocada(true);
-                 obf.resetTimer=false;
-                                  postDoc(clink,obf) 
-                 
-             }
-                
-                
-                
-                if(obf.chkStatus){
-                    cob=r;
-                   cob.timerset=timerset;
-                   cob.timeSetglobal= localStorage.getItem("Timer");
-                
    
-
-                   cob.nota=emsg.value;
-                   cob.chkStatus=false;
-                   cob.timeSetTemporal=eprogress.max;
-                   cob.timeLeft=eprogress.max-eprogress.value;
-                   cob.timeRunning=eprogress.value+" of " + eprogress.max;
-                 if(enota.style.display==="block") cob.stNota=true;
-                  else cob.stNota=false;
-
-                   postDoc(clink,cob,function(t){})
-        /*            */
-                 }
-          
-                 if(obf.setTimerTo>0){ 
-                      remotetimer=obf.setTimerTo;
-                      resetTocada();
-
-                    // alert("Set de timero to " + obf.setTimerTo+clink);
-                   verifyTimer( obf.setTimerTo);  
-                //  inicTimer(obf.setTimerTo);
-              
-                     obf.setTimerTo=0;
-                     obf.timerset=remotetimer;
-                 //  alert("ddddddddddddddddddddd"+clink)
-                     postDoc(clink,obf)
-                 }
-
-
-
-             /////////////////////////////////////////////////////      
-                   if(r.timer!=undefined && r.tiempo != undefined){
-                   var ls=localStorage.getItem("Timer")
-                   alert(ls)
-
-                    if(r.timer && ls !=null && ls !="" && ls !=0 ){
-                        setTimer.tiempo;
-
-                    }
-                    else r.tiempo=ls;
-                    }
-
-
-                   /////////////
-            
-                    var l=localStorage.getItem("complacencias");
-                    
-                    if(l===null){
-                         l=JSON.stringify(obf);
-                         localStorage.setItem("complacencias",l);
-                     } 
- 
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
-                 
-                    var obl=JSON.parse(l);
-         //              alert(obf.cancion+"\n\n"+obl.cancion)
-                     if(obf.cancion!=obl.cancion){
-                        enota.style.display="block";
-                     enota.innerHTML=obf.cancion;
-                    enota.style.background="#00FF00";
-                    localStorage.setItem("complacencias",JSON.stringify(obf));
-                        }
-                        if(obf.chkcomp!=obl.chkcomp){
-
-                       localStorage.setItem("complacencias",JSON.stringify(obf));
-                    clearInterval(iniccomplacencias);
-                    iniccomplacencias=setInterval(function () {a();},obf.chkcomp*60000);
-                 
-                    }
-
-
-                    
-                    if(obf.frecuency!=obl.frecuency){
-                      localStorage.setItem("complacencias",JSON.stringify(obf));
-                    clearInterval(ionoff);
-                    //
-                     ionoff=setInterval(function () {
-                        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-                       clink=cs;});
-
-                     },obf.frecuency*60000);
-                 
-                    }
-                 }
-                else{
-                    clearInterval(iniccomplacencias);
-                    clearInterval(ionoff);
-                }
-              })
-         //     });
- }
-function inter1() {
-
-
-    alert("llega a interrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr1..........")
-    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-        clink=cs;
-        
-              loadText(cs,function (r) {
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-                var obf=JSON.parse(ob);
-                if(obf.frecuency>=0 && obf.chkcomp>=0){
-                    var l=localStorage.getItem("complacencias");
-                    var obl=JSON.parse(l);
-                    if(obf.frecuency!=obl.frecuency){
-                       localStorage.setItem("complacencias",ob);
-                    clearInterval(ionoff);
-                    alert("reinic1")
-                     //    clearInterval(iniccomplacencias);
-                     ionoff=setInterval(function () {inter1()},obf.frecuency*60000);
-                 
-                    }
-              
-                }
-                else{
-                    clearInterval(iniccomplacencias);
-                    clearInterval(ionoff);
-                }
-              })
-              });
 }
 
-/////////////////////////////////////////
 
+ leido=null;
+function crnota(ms) {
+    var p = document.createElement("button");
+    p.setAttribute("class", "cmsgs");
+    // p.setAttribute("onclick",function(){alert("ok");this.style.opacity=.3});
+    // p.setAttribute("style","")
+    p.style.background = "rgb(" + Math.random() * 128 + "," + Math.random() * 128 + "," + Math.random() * 128 + ")"
 
-
- function iniciargit() {
- //       loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-        loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Complacencias.txt",function (cs) {
-              loadText(cs,function (r) {
-            var q=r.indexOf("cancion");
-                var q1=r.indexOf('}',q+2);
-                qq='{"'+r.slice(q,q1+1) ;
-                var ob=qq.replace(/\\"/g, '"'); 
-                var obf=JSON.parse(ob);
- 
-                 if(obf.frecuency>=0){
-                     
-                   var t= localStorage.getItem("cfrec");
-                   if(t!=null){
-                       t=JSON.parse(t);
-                       if(t.frecuency!=obf.frecuency){
-                           clearInterval(ionoff);
-                       ionoff=setInterval(iniciargit,obf.frecuency*60000);
-                       iniccomplacencias(obf);
-                          }
-                   }
-
-                        }
-                        else{
-                            clearInterval(ionoff);clearInterval(icomplacencias);
-                              }
-                     if(obcomp.frecuency>=0){
-               //     obcomp.link=cs;alert("antes de ir "+cs);
-
-                        iniccomplacencias(obcomp);
-                   }
-                   else {
-                        clearInterval(icomplacencias);
-                   clearInterval(ionoff)
-                   }
+    p.addEventListener('touchstart', function() {
+    
+          msdelay = setTimeout(function() { 
+              this.e=p;
+          var c=confirm("delate "+this.e.innerHTML)
+               if(c){
+                this.e.blur();
+            complac.removeChild(this.e);
+          GetJ(linkp,function(r){ //alert(JSON.stringify(r));
+                r.cumplidas.push(this.e.innerHTML);
+                r.peticiones.splice(r.peticiones.indexOf(this.e.innerHTML), 1);
                 
-        })
-         }
-    );      
-  
- }
- 
+         //       alert(JSON.stringify(r));
+               UpdateJ(linkp,r,function(){getPet()});
+               
+                
+                });
+            
+         /*      */   }
+                else {this.e.style.opacity=.25; this.e.blur();}
+        
+        
+        }, 800)
+
+
+    },true)
+    p.addEventListener('touchend', function() {
+        this.e=p;
+         clearTimeout(msdelay);
+         this.e.blur();
+    },true);
+    /* */
+    p.innerHTML = ms;
+    return p;
+
+}
 
     function iniccomplacencias(ob){
-//   alert("in inic   "+ob.link);
-//"https://jsonblob.com/34620735-ebe1-11ea-9641-5deb564a7f24";
-
+    /*    
         icomplacencias=setInterval(function(){
      
             loadText(ob.link,function (r) { 
@@ -945,7 +584,6 @@ function inter1() {
           
                 complacencias=y;
                  alert("Y\n\n"+y)
-
            if(y!=localStorage.getItem("complacencias")){
                localStorage.setItem('complacencias',y);
                enota.style.display="block";
@@ -955,6 +593,7 @@ function inter1() {
            }
        });
        },ob.chkcomp*60*1000);
+      */ 
 }
 
 
@@ -1003,7 +642,7 @@ function inter1() {
      }
  }
  runningTimer=null;
- verifyTimer();
+ //verifyTimer();
 
 //    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/Canc.txt",function(r){alert(r)})
     online=window.navigator.onLine;
@@ -1047,7 +686,7 @@ var txlinks="";
 arlinks=r.split("\n");
 arlinks=arlinks.filter(function(ar){return ar !="" && ar !=undefined && ar.indexOf("*") < 0 });
 txlinks=r;
-//inicprs()
+
 localStorage.setItem("CancLinks",r)
 
 inic2();
@@ -1109,6 +748,12 @@ var timewarning, timeout, timeover,test=false;
              Letras=r;
              localStorage.setItem("letras",r);
                    //  alert(r)
+
+
+
+
+
+
              });
              else{
                 Letras=localStorage.getItem("Letras");
@@ -1124,188 +769,119 @@ var timewarning, timeout, timeover,test=false;
         eactrls.style.top="-80%";
  
         edc = document.getElementById("todo")
-         doc = ifr.contentWindow.document;
-        etitulo = document.getElementById("titulo");
+           etitulo = document.getElementById("titulo");
         ectrls = document.getElementById("ctrls");
         eli = document.getElementById("lirep")
          repmix = "";
         esrch = document.getElementById('srch');
         ebarra = document.getElementById('barra');
-         //  eedventana = document.getElementById('edventana');
-        edivrep = document.getElementById('divrep');
-        efr = document.getElementById("ifr")
-         arindex = [];
+        arindex = [];
         arsongs = [];
 
          //    loadText('https://drive.google.com/open?id=1VU-tkhVUVDJke1m49YNcJiAfbnN_ZDYHEGxckW20KZM',function(r){alert(r.indexOf("libreta"))})
          //////////////////////////////////////
-     function inicprs(){   loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
-            etitulo.innerHTML = ". . . Repertorio:"
-            var cc = cont.split("/clases")
-            cmi = cc[0].split("\n"),
-                arcmi = [],
-                cid = [],
-                cclas = [],
-                rca = [],
-                rto = [],
-                rsongs = [],
-                rcl = [];
-            orremix = cc[1].split("\n")
-//            alert(orremix)
-            // oremix = [];
-            //class
-            for (i = 0; i < cmi.length; i++) {
-                if (cmi[i].indexOf("-") > 0) {
-                    arcmi.push(cmi[i].replace(/(\r\n|\n|\r)/gm, ""))
-                    var f = cmi[i].split("-");
-                    cclas.push(f[1]); //clase
-                    cid.push(f[0]); //letra
-                }
-            }
-            
-            ////////////////////////////////////////////
-            for (i = 0; i < orremix.length; i++) {
-                if (orremix[i].indexOf("-") > 0) {
-                    total.push(orremix[i]); //selecciona las canciones
-                    //   if(i==orremix.length-1); // alert(total.length);
-                }
-                //  
-            }
-            ////kj
-            etitulo.innerHTML = ". . . Repertorio: " + total.length + " Songs";
-            ////////////////////////////////////////////////
-            for (i = 0; i < orremix.length; i++) {
-                //  if(orremix[i].indexOf("*")>=0) alert(orremix[i])
-                if (orremix[i].indexOf("-") > 0 || orremix[i].indexOf("*") >= 0) {
-                    if (orremix[i].indexOf("*") >= 0) {
-                        arindex.push([rca.length, orremix[i]]);
-                 //       alert(orremix[i])
-                      //  eli.appendChild(crnode(orremix[i]));
-             ////////    CHANGE MADE RIGHT HERE          
-                      
-                     eli.appendChild(crtitulos(orremix[i]));
-                    } 
-                    else {
-                        var f = orremix[i].split("-");
-                       var ste=new song();
-                       ste.titulo=f[0];
-                        ste.tono=f[1];
-                   //    alert(f);
-                       var aaa=getClases(f[2].split(" "))
-                         ste.clase=aaa.main;
-                      ste.subclases=aaa.subs;
-                  ste.links=getlink(ste.titulo);
- 
-                        songs.push(ste);
-                         var ca = f[2].split(" "),
-                            tt = "";
-                        var ff = [];
-                        //clases
-                        for (ii = 0; ii < ca.length; ii++) {
-                            var ind = cid.indexOf(ca[ii]);
-                            if (ind >= 0) {
-                                //alert(cclas[ind])
-                                ff.push(cclas[ind]);
-                            }
-                        }
-                        /* hacer la rutina para cambiar letras por normbres de clases
-                 
-                */
-                        rca.push(f[0]);
-                        rto.push(f[1]);
-                        rcl.push(ff);
-                        
-                        ////////    CHANGE MADE RIGHT HERE
-                     //   eli.appendChild(crnode(f[0], f[1], ff));
-                     eli.appendChild(crnode2(ste))
-                    }
-                }
-            }
-            //   alert(arindex);
-            createbtns(cclas)
-            //   preparesongs()     
-        });
-     }
- var clases=[];
- function proceso(cont){
- 
-    etitulo.innerHTML = ". . . Repertorio:";
-            var cc = cont.split("/clases");
-            var pc=cc[0].split("\n");
-            tpcc=[];
-            var tpc=pc.filter(function(a,index,ar){
-                if(a.includes("-")) { 
-                      var to=a.split("-");
-                      clases.push({id:to[0],nclase:to[1]})
-                      return a;
-                }
-            })
-          var pr=cc[1].split("\n");
-            mc=[];
-           pr=pr.filter(function(a){
-                return a!="" && a!=undefined;
+  var clases=[];
 
-            });
-              pr.forEach(e=>{
-                if(e.includes("*")){
-                   eli.appendChild(crtitulos(e));
-                    mc.push(e);
-                  //  alert(mc)
-                }
+ function proceso(ob){
+    etitulo.innerHTML = ". . . Repertorio: "+ob.canciones.length+"+";
+            var tcat=[];
+            tc=[];
+     var cs=ob.categorias;
+     icategoria.name=cs;
+     cs.forEach(function(e,ix){
+         tcat.push(e);
+         icategoria.innerHTML+=' <option value='+ix+'>'+e+'</option>'
+         var aw=[];
+       aw.push({titulo:e});//.categoria=e;
+       
+         tc.push(aw);
+        })
+  
+   ob.canciones.forEach(function(ce,ix,ar){
+  
+  var tt=tcat;//.toString();
+ 
+         var ic=tt.indexOf(ce.categoria);
+     if(ic>=0){ 
+          tc[ic].push(ce);
+   }
+     else{
+          tcat.push(ce.categoria);
+          tc.push([ce]);
+          tc[tc.length-1].push(ce)
+     }   
+   })
+ 
+   tc.forEach(function(ce,ix,ar){
+       ce.forEach(function(e,ix,ar){
+     
+       if(e.categoria!=undefined){
+        var ele=document.createElement("p");
+                   ele.innerHTML=e.cancion+" . . . "+e.tono;
+                   ele.value=e.cancion;
+                   ele.setAttribute("class","btnss");
+                   var v=JSON.stringify(e);//alert(ele)
+                   ele.setAttribute('onclick', 'this.style.color="#0e0";showletra2(' +v+')');
+                   eli.appendChild(ele);
 
-                else{
-                sng=getsongobj(e)
-                songs.push(sng);
-                eli.appendChild(crnode2(sng));
-                }
-            });
-            etitulo.innerHTML = ". . . Repertorio: " + songs.length + " Songs+";
+       } 
+       else{
+        var ele=document.createElement("p");
+                   ele.innerHTML="***"+e.titulo.toUpperCase();
+                   ele.value=e.titulo.toUpperCase();
+                 //  ele.style.background="red"
+                   ele.setAttribute("class","ctit");
+                   eli.appendChild(ele);
+
+       }
+       }) 
+   })
+
+            etitulo.innerHTML = ". . . Repertorio: " + ob.canciones.length + " Songs+";//songs.length
   
         
  }
+ function showletra2(el){
+if(chooseS){
+    editr.style.display="block"
+    openEdit(el)
+
+}
+else{
+    if(el.letra!=""){ edle.style.display = "block";
+              ele.value=el.letra;
+              websong=el.cancion;
+            }
+            else{
+           
+               ebarra.value =el.cancion+" letra";
+                esrch.click()
+               ebarra.value = "";
+
+            }
+                     
+}
+ }
+
      function inic2(){
+         var re={}
          if(online){ loadText('https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepertorioOriginal.txt', function(cont) {
-           proceso(cont);
-           localStorage.setItem("Repertorio",cont)        });
-           }
+            GetJ(linkRep,function(re){
+  
+           ObjRep=re; 
+
+            proceso(re);
+           localStorage.setItem("Repertorio",JSON.stringify(re))   ;
+
+             });
+      } ) ;    
+          
+            }
         else{
           var rep=localStorage.getItem("Repertorio");
-          if(rep!=null) proceso(rep);
+          if(rep!=null) proceso(JSON.stringify(rep));
           alert("You are offline and there is not a backup")
         }
-
-     }
-     function getsongobj(raw){
-         var so=new song();
-         so.subclases=[];
-         var pa=raw.split("-");
-        
-         so.titulo=pa[0]; 
-         so.tono=pa[1];//alert(so.titulo)
-         var ov=getlink(so.titulo)
-         
-         //alert(JSON.stringify(ov))
-         so.acordeon=ov.acordeon;
-         so.guitarra=ov.guitarra;
-        // alert(JSON.stringify(so))
-         var subc=[];
-         var arc=pa[2].split(" ");
-         arc=arc.filter(ee=>{if(ee!=" " && ee!="") return ee})
-        
-         var arcc=arc.forEach(function(r){
-         
-            for(var i=0;i<clases.length;i++){
-                if(r===clases[i].id){ 
-                     so.subclases.push(clases[i].nclase);
-                     i=clases.length; 
-            }
-            }
-
-         });
-         so.clase=so.subclases.shift();
-         so.raw=raw;
-         return so;
-
 
      }
 
@@ -1324,142 +900,13 @@ var timewarning, timeout, timeover,test=false;
 
     }    
     function gtcl(c){
-        
+    
 
     }    
-
-        function setclasesmix(repertorio) {
-            var cl = [],
-                rp = [],
-                clt = "";
-            for (i = 0; i < repertorio.length; i++) {
-                if (repertorio[i] != "undefined" || repertorio[i] != "" || repertorio[i] != " ") {
-                    rp = repertorio[i].split("-");
-                    //alert(rp)
-                    if (rp != "" || rp != null || rp != undefinef) clt += rp[2] + " "
-                }
-            }
-            //  alert(clt);
-            return cl;
-        }
          ///////////////////////////////////////   
-        function opendoc(op) {
-            doc.close();
-            //alert(op);
-            //   eedventana.href = op; //eedventana.click();
-            if (op.indexOf("https") >= 0) {
-                var re = prompt("Write your password");
-                var d = new Date().toString();
-                var m = d.split(" ");
-                d = "andy " + m[1] + " " + m[2];
-                d = d.toUpperCase();
-                re = re.toUpperCase();
-                if (d === re) {
-                    eli.style.display = "none";
-                    ifr.style.display = "block";
-                    edivrep.style.display = "none";
-                    ifr.src = op;
-                } else {
-                    alert("Wrong Pasword");
-                    //   edivrep.style.display = "block";
-                    edivrep.style.display = "block";
-                    ifr.style.display = "none";
-                    eli.style.display = "block";
-                }
-            } else {
-                // 
-                if (op === "repPrac") {
-                    loadText("https://raw.githubusercontent.com/ljaureguil/Comando-Unico/master/RepPractica.txt", function(r) {
-                //        alert(r)
-                    });
-                } else {
-                    if (op === "open rep") {
-                        //ebarra.value="";
-                        //  sortear("")
-                        edivrep.style.display = "block";
-                        ifr.style.display = "none";
-                        eli.style.display = "block";
-                        // repstate= false;
-                    }
-                    if (op === "rep") {
-                        //    repstate=true;
-                        edivrep.style.display = "block";
-                        ifr.style.display = "none";
-                        eli.style.display = "block";
-                        sortear("");
-                    }
-                    // else repstate=false;
-                }
-            }
-        }
 
- //       function getletra() {
-  //          showletra(ebarra.value)
- //       }
-
-        function getletra() {
-           showletra(ebarra.value)
-       }
-
-       function showletra(cancion, nodec) { //Corrido de Roberto Gastelum
-     if(!marktocada){
-           websong=cancion;
-     var tc=cancion.toUpperCase();
-          var tl=Letras.toUpperCase();
-          var aas=tl.indexOf("*" + tc);
-           var as = Letras.indexOf("*" + cancion);
-                as=aas
-           if (as >= 0) {
-                var na=Letras.indexOf("*",as+2)
-              var cal=Letras.slice(as,na);
-            //  alert(tl)
-            //  alert(as+"\n"+na+"\n"+cal);
-              edle.style.display = "block";
-              ele.value=cal;
-             
-               scy = 0;
-                var par= cal.slice(vt.indexOf("(")+1 , cal.indexOf(")"));
-                par=par.split(",");
-               tiempo = par[0]* 1000 * 60;
-               dilay = par[1] * 1000;
-               sch = ele.offsetHeight * 1;
-           } else {
-               ebarra.value = cancion + " letra";
-                esrch.click()
-               ebarra.value = "";
-           }
-           }
-           else{
-                      var r=nextRep.indexOf(cancion);
-               if(r<0){
-                 
-                    if(confirm("Save "+cancion+" for next Tocada?")){ 
-                        nextRep+="~"+cancion;localStorage.setItem("NextRep",nextRep);
-                         }
-                         else{
-                            if(nodec!=undefined){
-                          nodec.style.color="#fff"
-                      }                           
-                         }
-
-                         }
-               else {
-                   if(confirm("Cancion "+cancion+" ya Existe, do you want to clear it from Rep de tocada?")){
-                      var r="~"+cancion
-                      nextRep=nextRep.replace(r,"")
-                      localStorage.setItem("NextRep",nextRep);
-                      if(nodec!=undefined){
-                          nodec.style.color="#fff"
-                      }
-                      
-                   }
-               }
-                }
-       }
-      
         function loadText(file, callback) {
-        //    if(online){
-        //   alert("from ;oadtext\n"+file)
+
            if(file!=null){
                if(file.indexOf("http")>=0){
                  fetch(file).then(response => response.text()).then((data) => {
@@ -1469,218 +916,33 @@ var timewarning, timeout, timeover,test=false;
            }
  //     else {alert("You are offline...");callback("")}
         }
-
-        function createbtns(li) {
-            for (i = 0; i < li.length; i++) {
-                var bt = document.createElement('button');
-                bt.innerHTML = li[i];
-                bt.setAttribute('onclick', "addca('" + li[i] + "')");
-                bt.setAttribute("class", "btns")
-                edivrep.appendChild(bt);
-            }
-        }
-
-        function addca(cl) {
-            //     alert(cl); 
-            var ch = eli.children;
-            if (cl === "") {
-                cl = ". . . Repertorio: " + total.length + " Songs";
-                for (i = 0; i < ch.length; i++) {
-                    ch[i].style.display = "";
-                }
-            } else {
-                if (cl != undefined) {
-                    for (i = 0; i < ch.length; i++) {
-                        if (ch[i].song != undefined) {
-                            if (ch[i].clase.indexOf(cl) >= 0) {
-                                ch[i].style.display = "";
-                            } else {
-                                if (ch[i].title != undefined) ch[i].style.display = "none";
-                            }
-                        } else {
-                            ch[i].style.display = "none";
-                        }
-                    }
-                }
-            }
-            edc.scrollTop = 200;
-            etitulo.innerHTML = cl ;//+ " . . ."; ". . . " +
-        }
-
-        function preparesongs() {
-            var ix = arindex[0][0] * 1,
-                ixx = 0;
-            // alert(arindex.length);
-            for (i = 0; i < rca.length; i++) {
-                var node = document.createElement("LI");
-                var textnode = document.createElement('p');
-                textnode.innerHTML = rca[i] + "    . . . . Tono " + rto[i];
-                textnode.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + rca[i] + '",this)');
-                node.appendChild(textnode);
-                node.estado = true;
-                node.index = i;
-                node.clase = rcl[i];
-                node.songname = rca[i];
-                node.tono = rto
-                if (ix === i) {
-                    var t = document.createElement("p");
-                    t.setAttribute("class", "cind");
-                    t.innerHTML = arindex[ixx][1];
-                    t.titulo = arindex[ixx][1];
-                    t.visible = true;
-                    ixx++;
-                    if (arindex.length > ixx) ix = arindex[ixx][0];
-                    eli.appendChild(t);
-                }
-                eli.appendChild(node);
-                //   rsongs.push(node);
-            }
-            //          alert(rsongs[10].estado);
-            //   
-        }
-        
  ///////////////////////////////////////////////////////////////////////////////
-function swc(){
-    eactrls.style.top="15%";
-    eac.style.opacity=.35;
-    egu.style.opacity=.35;
-  //  alert(eactrls.style.top);
-}
-///////////////////////////////////////////////////////////////////
-function crnode2(song) {
-                var node = document.createElement("LI");
-                node.sng=song;
-                var di = "<font color='#00ffff'> _ </font>";
-                di = "";
-               node.innerHTML = di + song.titulo + di+" . . . " + song.tono; //
-var tt="";
-if(song.guitarra!=undefined && song.guitarra!="" || song.acordeon!=undefined && song.acordeon!="" ) {
- if(song.guitarra!=undefined && song.guitarra!="") {
-     tt="guitarra='"+song.guitarra+"';egu.style.opacity=1;";
-   }
-  
-if(song.acordeon!=undefined && song.acordeon!="") {//alert(acordeon);
-    tt=tt+";acordeon='"+song.acordeon+"';eac.style.opacity=1;";
- }
-         node.setAttribute('onclick', 'swc(); eac.style.opacity=1;'+tt+'; if(marktocada) this.style.color="#0ff";else this.style.color="#00ff00";showletra("' + song.titulo + '",this);');
-        node.innerHTML = di + song.titulo + di+" . <font color='#00ffff'>&#9193;</font> . " + song.tono;//+"<font color='#00ff00'>&#9835;</font>"; //
-         }
-        else {
-  //          alert("sin link,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,")
-            node.setAttribute('onclick', ' if(marktocada) this.style.color="#0ff";else this.style.color="#00ff00";showletra("' + song.titulo + '",this);');
-        }
-                node.estado = true;
-            //    node.index = i;
-                node.clase = song.clase;
-                node.song = song.titulo;
-                node.tono = song.ono;
-                if (song.subclases.indexOf("practica") >= 0) {
-                 //   node.style.color = "#ff0";
+
+        function sortear2(filter) {
+          var ar = eli.children;
+          try{filter = filter.toUpperCase();}catch{;}
+                  for(var i=0;i<ar.length;i++){
+                   
+                    var ev=ar[i].value;
+                    var e= ar[i];
+                    try{
+                        ev=ev.toUpperCase();
+                      if(ev.indexOf(filter)<0 || ev===undefined && filtro!=""){
+                         e.style.display="none";
+                          }
+                    else{
+                                e.style.display="block";
+                
+                
                 }
-   
-                   if(nextRep.indexOf(song.titulo)>=0) node.style.color = "#0ff";
-
-                return node;
-      
-        }
-
-      function crtitulos(song) {
-            if (song.indexOf("*") === 0) {
-                var t = document.createElement("p");
-                t.setAttribute("class", "cind");
-                t.innerHTML = song;
-                t.name = "cltit"
-                return t;
-            } else {
-            }
-        }
+                     }
+                    catch(e){;}
+    }
 
 
-        function crnode(song, to, cl) {
-            if (song.indexOf("*") === 0) {
-                var t = document.createElement("p");
-                t.setAttribute("class", "cind");
-                t.innerHTML = song;
-                t.name = "cltit"
-                return t;
-            } else {
+            //}
+      }
 
-                var node = document.createElement("LI");
-                var di = "<font color='#00ffff'> _ </font>";
-                di = "";
- 
-                node.innerHTML = di + song + di+" . . . " + to; //
-
-                node.setAttribute('onclick', 'this.style.color="#00ff00";showletra("' + song + '",this)');
-                node.estado = true;
-                node.index = i;
-                node.clase = cl;
-                node.song = song;
-                node.tono = to;
-                if (cl.indexOf("practica") >= 0) {
-                    node.style.color = "#ff0";
-                }
-                if (cl.indexOf("repertorio tocada") >= 0) {
-                //    node.style.color = "#0ff";
-                }
-                return node;
-            }
-        }
-
-        function update(v) {
-            //   alert(v+"ffffff");
-        }
-
-        function sortear(filter) {
-            if (filter === "") {
-                addca("");
-                ectrls.style.display = "";
-               edivrep.style.display = "";
-            } else {
-                settot(false)
-                ectrls.style.display = "none";
-                edivrep.style.display = "none";
-                var ul, li, a, i, txtValue;
-                filter = filter.toUpperCase(); //input.value.toUpperCase();
-                ul = eli;
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    txtValue = li[i].textContent || li[i].innerText;
-                    var aa = txtValue.split(" . .");
-                    txtValue = aa[0];
-                 //   app.ShowPopup(li[i].clase);
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
-                        if (txtValue != ""); //ebarra.value=txtValue;
-                        else; //ebarra.value="";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
-        }
-
-        function settot(op) {
-            //getElementsByClassName()
-            var a = document.getElementsByClassName("cind");
-            if (op) {
-                if (!a[0].visible) {
-                    //activarlas 
-                    for (i = 0; i < a.length; i++) {
-                        a[i].style.display = "";
-                        a[0].visible = true
-                    }
-                } else return;
-            } else {
-                if (a[0].style.display === "") {
-                    //desactivarlas
-                    for (i = 0; i < a.length; i++) {
-                        a[i].style.display = "none"
-                        a[0].visible = false
-                    }
-                }
-            }
-        }
         var sch=ele.offsetHeight*1,scy=0,scintervalo=null,tiempo=500*60,sctiempo=0,iti=0,einicsld=document.getElementById("inicsld");
     function  movescroll(h,y){
         sch=h;
@@ -1690,509 +952,9 @@ if(song.acordeon!=undefined && song.acordeon!="") {//alert(acordeon);
     }
     dilay=1000;   var cto; tiempo=1; var cc=0;
     function inicScrolling2() {
- /* 
-        var bk=ele.value;
-        he=ele.offsetHeight;
-        hc=ele.scrollHeight;
-        var dh=hc-he;
  
-     if(dh>=5){
-         var tco=new Date()
-                co=tco.getTime();
-                var tf=co+tiempo*kt;
-               
-              var vl=hc/(tiempo*kt);
-          alert(vl); 
-  //     einicsld.style.background = "rgba(150,0,0,.50)";
-   ele.focus();   ele.scrollTo(0, 0);
-         setTimeout(function(){
-       scintervalo = setInterval(function() {
-                cc+=vl*10;
-              //  cc+=1;
-    
-                tco=new Date().getTime();
- 
-              var d=tf-tco; 
-              var dp=60-d/1000;//dp=d/1000-dp;
-            ele.value=dp+bk;
-                if(dp>he){
-                        ele.value=bk+dp+" Moving ";
-                        ele.scrollTo(0, 0, 'smooth');
-               // ele.scrollTop+=dp;
-             
-               
-             //   ele.value=bk+co+" Moving ";
-            //              alert(cc)
-                }
-                if(cc>hc){
-                    ele.value=bk+dp+" Done ";  co=0
-                     clearInterval(scintervalo);
-                   
-                     }
-              //  alert(co)
-            },10);
-        },dilay);
-    }
-    else alert("noo need scroll")*/
-  }
-    
-    function inicScrolling() {
-      //  ele.focus();// document.getElementById("le").focus();//clle
-    //  einicsld.style.background = "rgba(150,0,0,.50)";
-         setTimeout(function(){
-      sctiempo = (tiempo-dilay) / (ele.scrollHeight - ele.offsetHeight);//    //-sch+1  //alert(tiempo+"\n\n"+ele.scrollHeight+"\n"+sch+"\n"+sctiempo)
-      it = 0;
- 
-      var tinic = new Date().getTime() * 1;
-      var tprog = null;
- 
-      var dint = new Date().getTime() * 1;
-      scintervalo = setInterval(function() {
-          tprog = new Date().getTime() * 1;
-
-          var dif = tprog - tinic; //alert(dif);
-          var s = new Date().getTime() * 1 - dint;//alert("s="+s);
-          if (s > sctiempo/2) {
-              if(einicsld.style="block"){     einicsld.style.display="none";}
-            // app.ShowPopup(s);
-              dint = new Date().getTime() * 1;//alert("dint="+dint);
-              it += 1;
-              ele.scrollTop += .5;
-          }
-          if (dif > tiempo-dilay) {
-              einicsld.style.background = "rgba(0,150,0,.50)";
-               einicsld.style.display="block";
-              clearInterval(scintervalo);
-          }
-      }, 10);
-        },dilay);
-  }
-  
-  
-  function sortearTocada() {
-  li = eli.getElementsByTagName("li");    
-     for (i = 0; i < li.length; i++) {
-         if (li[i].clase.indexOf('repertorio tocada') == -1) {
-             li[i].style.display = "none";
-         }
-         else {
-             li[i].style.display = "block";
-         }
-     }
-
- }
- function ChFont(){
- 
- var x = prompt("Font Size:\n\nRecommended Enter a Value\nFrom 20 to 35", "20");
- var s = parseInt(x);
-document.getElementById("lirep").style.fontSize = s+"px";
-
-      
-  }
-  function showsettings(){
-      
-    esettings.style.display="block";
-    etimer.style.display="none";
-      
-  }
-   function showstimer(){
-      
-    esettings.style.display="none";
-    etimer.style.display="block";
-      
-  }
-  function closesettings(){
-    
-    etimer.style.display="none"
-      esettings.style.display="none"
-   //     alert("ddd")
-  }
-function runtimer(rt){
-    clearInterval(runningTimer);
-    var tii=new Date();
-    runningTimer=setInterval(function(){
-
-        entimer.innerHTML=tii.getMinutes();
-
-      
-
-
-    },1000)
-
-}
-
-function verifyTimer(y) {
-      var acd = new Date();
-      var d=0;
-      if(y===undefined) y=0;
-      y=y*kt;
-      var ty = localStorage.getItem("Timer");
-      if(remotetimer>0) ty=null;
- //  alert(y+" -------el proximo\n"+acd.getTime()+" ----actual\n"+ty+" -----storage");
-     if (ty != null && ty != "") {
-        var dif = ty * 1 - acd.getTime() * 1;//global
-        d = dif;
-          dif = dif / kt;
-
-       if (dif > 0) {
-
-        /////////////////////
-
-        
-            var rr = false;
-         //   alert(remotetimer)
-            if(remotetimer>0){ rr=true; remotetimer=0}
-            else rr=confirm("You have a running timer, still " + dif.toFixed(0) + " minutes left\n\nDo you want to continue it?")
-              if (rr){
-                  inicTimer(d);
-             
-             }
-             else{
-                 if(y>0){
-                if (confirm("Do yuo want to set "+y/kt+" minutes intead?")) {
-                    localStorage.setItem("Timer", acd.getTime()+y);
-                    //qui
-                 
-                    inicTimer(y);
-                 }
-                 else ;//
-                        }
-                        if(y==0 || y==undefined || y==null) {
-                            if(confirm("The timer will be reseted...")){
-                                 localStorage.setItem("Timer", ""); 
-                                 window.location.reload(true);
-                                 verifyTimer();
-                                 }
-                        }
-                 
-             }
-
-         }
-         else {
-            
-            if(y>0){
-            if (confirm("You have a overdue Timer, it will be replaced for "+y/kt+" minutes")){
-                localStorage.setItem("Timer", acd.getTime()+y);
-                window.location.reload(true);
-                
-            }
-            }
-            else {
-                var res=d/kt;
-               document.body.style.background="#f00"
-                if (confirm("You have an overdue Timer that ended "+res.toFixed(1)+" minutes ago.\n\nDo you want to reset it?")){
-                localStorage.removeItem("Timer");
-                window.location.reload(true);
-            }
-              
-            }
-           }
-    }
-    else{
-    if(y>0){
- // alert("dodo")
-         localStorage.setItem("Timer",acd.getTime()+y);
-                inicTimer(y);
-                remotetimer=0;
-         
-         }
-         }
-}
-var twarn = 5 * 60 * 1000;
-var tovert = 3 * 60 * 1000;
-
-function inicTimer(t) { 
-          closesettings();
-     var aw=new Date().getTime();
-  
-       ///////////////
-       clearInterval(progressTimer);
-       eprogress.min=0;
-       eprogress.max=t/kt;//alert(eprogress.max)
-//////////
-var tem=new Date().getTime();
-            var u=localStorage.getItem("Timer");
-            var dif=(u-tem);
-           // alert(dif/kt)
-            ///////////////
-            var oc=(t-dif)/kt;
-          //  var oc=eprogress.value;
-            eprogress.setAttribute("value",oc);
-            etimersw.innerHTML="Timer: "+(eprogress.max-eprogress.value).toFixed(1)+" min.";
-
-
-
-        //
-        progressTimer=setInterval(function() {
-
-            /////////////////////
-            var tem=new Date().getTime();
-            var u=localStorage.getItem("Timer");
-            var dif=(u-tem);
-           // alert(dif/kt)
-            ///////////////
-            var oc=(t-dif)/kt;;
-          //  var oc=eprogress.value;
-            eprogress.setAttribute("value",oc);
-            etimersw.innerHTML="Timer: "+(eprogress.max-eprogress.value).toFixed(1)+" min.";
-            if(eprogress.value>eprogress.max) clearInterval(progressTimer);
-
-        }, 10000);
-
-
-
-
-    var tiempodetocar=t;
- 
- 
-    twarn = 5 * kt;
-    tovert = 3 * kt;
- 
-    clearTimeout(timeout);
-    clearTimeout(timeover);
-    clearTimeout(timewarning);
-
-    if (test && t < 47) {
-        tiempodetocar = tiempodetocar = 4500;
-        twarn = 5000;
-        tovert = 2000
-    }
-    if (test && t > 47) {
-        tiempodetocar = tiempodetocar = 7500;
-        twarn = 5000;
-        tovert = 2000
-    }
-
-    var dfw = tiempodetocar - twarn,
-        dfo = tiempodetocar + tovert;
-    if (dfw > 0) {
-        timewarning = setTimeout(function() {
-            document.body.style.background = "orange";
-
-            localStorage.setItem("horastocadas", horast);
-        }, dfw);
-    } else document.body.style.background = "orange";
-
-    timeout = setTimeout(function() {
-    document.body.style.background = "red";
-    }, tiempodetocar);
-
-    timeover = setTimeout(function() {
-
-        eli.style.background = "red";
-
-    }, dfo);
-}
-
-   
-  function inicTocada(h) { 
-   ///////////////////   
-   
-   if(test) alert("you are in test mode");
-   
-     clearTimeout(timeout);
-     clearTimeout(timeover);
-     clearTimeout(timewarning);
-  
-  if(h>1) tiempodetocar=45*60*1000;
-      else  tiempodetocar=60*60*1000;  
-      if(test) tiempodetocar=tiempodetocar= 7500;
-
-
-  if(Tocada=="" != Tocada==null){
-         alert("preciona primero 'set tocada' y pon las horas")
-  }
-  else{
-      if(test) tiempodetocar= 12000;
-   //   else tiempodetocar=60*60*1000; 
-      horast++;
-      document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
-   eli.style.background = "black";
-    var d = new Date();
-    var hinic = d.getHours();
-    var minic = d.getMinutes();
-    sinic = hinic + ":" + minic;
-         if(localStorage.getItem("inicio")==="") {
-       
-    localStorage.setItem("inicio", sinic);
-    localStorage.setItem("horastocadas","1");
-    
-}
-else{
-
-    timewarning=setTimeout(function() {
-        document.body.style.background = "orange";
-      //  var rr=localStorage.getItem("horastocadas")*1+1;
-        localStorage.setItem("horastocadas",horast);
-
-      
-    }, tiempodetocar - 5000);
- 
-  timeout=setTimeout(function() {
-          document.body.style.background = "red";
-    }, tiempodetocar);
-    
-    timeover=setTimeout(function() {
-
-        eli.style.background = "red";
-//    }, tiempodetocar +  (2.5*60*1000))
- }, tiempodetocar +  2000)
-
-    closesettings();
-  
-
-    var toc = localStorage.getItem("inicio");
-    if (toc != null) {} else {
-
-    }
-}
-  }
-}
-
-
-  function tocada(){
-
-this.date="";
-this.start="";
-this.timeinic=0;
-this.iniciarTocada=function(){
-}
-this.setTocada=function(){
-     this.horas=prompt("cuantas horas?");
-     this.precio=prompt("Type el precio por hora");
-     this.informacion=prompt("Type Informacion extra si hay"); 
-     
-     alert("Cuando estes listo preciona el boton de 'Iniciar Primer Hora");
-
-}
-this.phone="";
-this.costumername="";
-this.direccion="";
-this.horas=0;
-this.precio=0;
-this.horadeinic=0;
-this.informacion="";
-this.horasTocadas=0;
-
-  }
-  function settingUpTocada(){
-      
-      Tocada=localStorage.getItem("Tocadainfo");
-      if(Tocada==null || Tocada=="" || Tocada==undefined){
-    clearTimeout(timeout);
-     clearTimeout(timeover);
-     clearTimeout(timewarning);  
-      
-      Tocada=new tocada(); 
-    Tocada.setTocada(); 
-    var str=JSON.stringify(Tocada)+"~";
-    localStorage.setItem("Tocadainfo",str)
- }
- else{
-     var r=confirm("It is a Tocada allready in Process. Do you want to set a new Tocada?");
-     if(r) {localStorage.removeItem("Tocadainfo"); sttingUpTocada();}
-     else alert("Ok I get it, Just continue with actual tocada");
- }
-  }
-  
-function resetTocada(bypass){//confirm("Press a button!");
-   var rp=false;
-   if(bypass===undefined) bypass=false;
- 
-   if(remotetimer>0){rp=true}
-   else{
-       if(!bypass) rp=confirm("Are your sure?,\n The information of the tocada will be deleted");
-       else rp=true;
-   }
-    if(rp){
- 
-        localStorage.removeItem("Tocadainfo")
-        localStorage.removeItem("tocadas")
-      localStorage.removeItem("inicio")
-      localStorage.removeItem("Timer");
-     localStorage.removeItem("horastocadas");
-    // localStorage.removeItem("compacencias");
-    eprogress.value=0;
-     horast=1;
-     Tocada="";
-     clearTimeout(timeout);
-     clearTimeout(timeover);
-     clearTimeout(timewarning);
-     document.body.style.background = "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)";
-   eli.style.background = "black";
-closesettings();
-etimersw.innerHTML="Timer: 0min.";
-        clearInterval(progressTimer);
-       eprogress.setAttribute("value",0);
-    }
-
-
-}
-  function finish(){
-      if(confirm("Areyousure?")){
-          var ht=localStorage.getItem("horastocadas");
-         // var ht=horast-1;
-         var Tocada=JSON.parse(localStorage.getItem("Tocadainfo"));
-          var cantidad=ht*Tocada.precio*1;
-          alert("Total de horas tocadas ="+ht+"\n\nA "+Tocada.precio*1+"\n\nEl Total es: "+cantidad);
-    closesettings();
-    
-      }
-      
-  }
-  function testmode(){ 
-    //  
-      if(test){alert("test mode is off");
-      test=false;
-           //   resetTocada();
-          }
-          else{
-        if(confirm("you are going to test mode")){
-            test=true;
-         //   resetTocada();
-  }
-  }
-  }
-  
-
-  /*
-   function song(){
-      this.titulo="";
-      this.tono="";
-      this.clase="";
-      this.subclases=[];
-      this.letra="";
-      this.duracion=0;
-      this.link="";
-      
-      
-  }
-  */
-  function getClaseName(c) {
-      var ret;
-      var i = cid.indexOf(c[0]);
-//      alert(cclas[i]);
-  //    alert(cclas)
-      if (i >= 0) return cclas[i];
-
-      //    else return "";
   }
 
-  function getClases(ar) {
-     var cm = {
-          main: "",
-          subs: []
-      };
-     
-      var er=getClaseName(ar[0]);// alert(er);
-      cm.main =er ;
-     
-      for (var i = 1; i < ar.length; i++) {
-         if(ar[i]!="") cm.subs.push(getClaseName(ar[i]))
-      }
-       return cm;
-   }
- //454
  function setaudio(a){
 
 try{
@@ -2216,24 +978,6 @@ if(ll!=undefined){
 else return "";
 
 }
-function getlink(c){
-   var vers={acordeon:"",guitarra:""}
-      if(txlinks.indexOf(c)>=0){
-     var indi=txlinks.indexOf(c);
-      var inde=txlinks.indexOf("\n",indi);
-      var r=txlinks.slice(indi,inde)
-        if(r.indexOf("ahttps:")) vers.acordeon=fixlink(r.split("ahttps://drive.google.com/file/d/")[1]) 
-      if(r.indexOf("ghttps:")) vers.guitarra=fixlink(r.split("ghttps://drive.google.com/file/d/")[1]); 
-        return vers;
-       }
-
-  else return vers;
-}
-
- function selrep(){
-
-
- }
  
 function loadDoc(url,callback) {
   var xhttp = new XMLHttpRequest();
@@ -2270,16 +1014,255 @@ function otot(ob){
     o=o.replace(/"/g,"");
     alert(o);
 }
+function openEditarCanc(){
+
+
+}
+
+function GetJ(url, callback) {
+
+//var url  = "http://localhost:8080/api/v1/users";
+var xhr = new XMLHttpRequest()
+xhr.open('GET', url + '/1', true)
+xhr.onload = function() {
+    //         (xhr.responseText)
+    var users = JSON.parse(xhr.responseText);
+    if (xhr.readyState == 4 && xhr.status == "200") {
+        //    console.table(users);
+             callback(users);
+    } else {
+        console.error(users);
+    }
+}
+xhr.send(null);
+}
+
+
+// Update a user
+function UpdateJ(url, ob, callback) { //prompt(JSON.stringify(ob))
+var json = JSON.stringify(ob); //JSON.stringify(data);
+//("this will be sent: \n\n"+otot(ob))
+//   alert("dddd\n\n\n"+json)
+var xhr = new XMLHttpRequest();
+xhr.open("PUT", url + '/12', true);
+xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+xhr.onload = function() {
+    var users = JSON.parse(xhr.responseText);
+    if (xhr.readyState == 4 && xhr.status == "200") {
+        //  alert("Forma a sido enviada");
+        //     alert(url)
+        if (callback != undefined) callback(users);
+
+    } else {
+        (users);
+    }
+}
+xhr.send(json);
+}
+///////////////////////////////////////////////////
+
+function cod(clv, r) {
+var chn = "";
+
+for (var i = 0; i < r.length; i++) {
+    var n = 0;
+    i--;
+    for (var ii = 0; ii < clv.length; ii++) {
+        i++;
+        n = r.charCodeAt(i);
+
+        n = n + clv.charCodeAt(ii); // alert(clv.charCodeAt(ii))
+
+        chn += String.fromCharCode(n);
+        //    alert(i+"\n"+ii+"\n"+chn);
+        if (i === r.length - 1) {
+            ii = clv.length;
+            i = r.length;
+        }
+    }
+}
+var ree = chn;
+return ree;
+}
 
 
 
+function decod(clv, r) {
+//alert(r)
+var chn = "";
+var rre = r; //atob(r);
+// rre=rre.split(",");
+var s = "";
+for (var i = 0; i < rre.length; i++) {
+    i--;
+    for (var ii = 0; ii < clv.length; ii++) {
+        i++;
+        var n1 = rre.charCodeAt(i) //rre[i]*1;
+        var n = n1 - clv.charCodeAt(ii);
+        //  n=rre.charCodeAt(i);
+        // chn.push(n);
+        chn += String.fromCharCode(n);
+        //       alert(i+"\n"+ii)
+        //       n=String.fromCharCode(n);
+        //       s+=n;
+        if (i === rre.length - 1) {
+            ii = clv.length;
+            i = rre.length;
+        }
+        if (chn.length === 4) {
+            //       if(chn.indexOf('{"s')===-1) return null }
+           // if (chn.indexOf('{') === -1) return null
+        }
+
+    }
+
+}
+s = chn; //"";//String.fromCharCode(chn);
+// eval('s=String.fromCharCode('+chn+')');
+return s;
+//  if(s.indexOf(clv)>1) return s;
+//  else return null;
+
+}
+function openEdit(e){
+    if(e===undefined){
+       e={}
+    chooseS=true;
+    }
+   else{
+      chooseS=false;
+      icancion.value=e.cancion;
+    icategoria.value=icategoria.name.split(",").indexOf(e.categoria);///////
+    inota.value=e.nota;
+    iletra.value=e.letra;
+    iartista.value=e.artista;
+    itono.value=e.tono;
+    ilink.value=e.link;
+   }
+}
+
+function addCancion() {
+    e = {};
+    e.cancion = icancion.value;
+    e.tono = itono.value
+    e.categoria =icategoria.name.split(",")[icategoria.value];//alert(e.categoria) ///////
+    e.link = ilink.value;
+    e.nota = inota.value 
+    e.artista = iartista.value
+    e.letra = iletra.value
+ 
+    GetJ(linkRep, function(re) {
+         var ac = re.canciones; //ObjRep.canciones;
+        var i = 0;
+        var n = false;
+        for (i = 0; i < ac.length; i++) {
+            if (e.cancion.toUpperCase() === ac[i].cancion.toUpperCase()) {
+             //   alert("reemplasarla\n\n" + JSON.stringify(e));
+               if(confirm("are you sure you want to replace it?")) ac[i] = e;
+                n = true;
+                i = ac.length;
+           }
+        }
+        if (!n) {
+    //        alert("kkkk\n\n"+icategoria.value);
+        if(e.categoria==undefined || e.categoria=="" || e.categoria === null) e.categoria="cansiones"
+      if(confirm("are you sure to add it?")) ac.push(e);
+       //     alert("nuevo\n\n" + JSON.stringify(e));
+        }
+        var p=prompt("type your pasword");
+       if(p=="laurojl" || p=="andresjv"){
+          UpdateJ(linkRep, re, function() {
+            if (confirm("Repertorio has been updated, do you want to save it locally?")) {
+                localStorage.setItem("Repertorio", JSON.stringify(re));
+                window.location.reload();//  inic2();
+            }
+
+        })
+    }
+    else alert("Access denied, you have to be authorised to add a song") 
+  
+
+    })
+}
+  
+  function clre(){
+    icancion.value="";
+    itono.value="";
+    icategoria.value=0;///////
+    ilink.value="";
+    inota.value="";
+      iartista.value="";
+ 
+    iletra.value="";
+  
+ 
+  }
+  function delCancion() {
+      var p = prompt("type your pasword");
+      if (p == "laurojl" || p == "andresjv") {
+          if (confirm("Do you want to delete " + icancion.value + " ?")) {
+              GetJ(linkRep, function(re) {
+                  var ac = re.canciones; //ObjRep.canciones;
+                  var i = 0;
+                  var n = false;
+                  alert(icancion.value)
+                  for (i = 0; i < ac.length; i++) {
+                      if (icancion.value.toUpperCase() === ac[i].cancion.toUpperCase()) {
+                          n = true;
+                          if (confirm("I found " + icancion.value + " Do you really want to delete it?")) {
+                              ac.splice(i, 1);
+                              i = ac.length;
+                              UpdateJ(linkRep, re, function() {
+                                  if (confirm("Repertorio has been updated, do you want to save it locally?")) {
+                                      localStorage.setItem("Repertorio", JSON.stringify(re));
+                                      document.body.style.background = ' linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)';
+                                      editr.style.display = 'none';
+                                      window.location.reload();// inic2();
+                                  }
+
+                              })
+                          }
+
+                      }
+                  }
+                  if (!n) {
+                      alert(icancion.value + " Not found");
+                  }
+              })
+          }
+      } else alert("Access denied, you have to be authorised to delete a song")
+  }
+
+/*
+  preparar();
+  function preparar(){
+     var ks=localStorage.getItem("key")
+     if(ks===null){
+       var k=prompt("Type key or paste it..."); 
+       localStorage.setItem("key",k);
+       alert("It will be restarted...")
+       window.location.reload();
+     }
+     else{
+        eval(ks);
+        setTimeout(function(){
+            var pa=prompt("Type a password")
+            if(password!=pa) {
+                if(confirm("Do you want to reset App?")){localStorage.removeItem("key")}
+                preparar();
+            }
+        },300)
+     }
+    }
+     //
+     
+*/
  
     </script>
 
 
 
 </body>
-
 
 
 
