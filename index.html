@@ -500,6 +500,7 @@ getPet();
 chkpet=setInterval(getPet,15000);
 
 function getPet(){
+
     GetJ(linkp,function(r){
         var lo=localStorage.getItem("peticiones");
            while (complac.firstChild) {
@@ -525,8 +526,6 @@ function getPet(){
 function crnota(ms) {
     var p = document.createElement("button");
     p.setAttribute("class", "cmsgs");
-    // p.setAttribute("onclick",function(){alert("ok");this.style.opacity=.3});
-    // p.setAttribute("style","")
     p.style.background = "rgb(" + Math.random() * 128 + "," + Math.random() * 128 + "," + Math.random() * 128 + ")"
 
     p.addEventListener('touchstart', function() {
@@ -540,11 +539,7 @@ function crnota(ms) {
           GetJ(linkp,function(r){ //alert(JSON.stringify(r));
                 r.cumplidas.push(this.e.innerHTML);
                 r.peticiones.splice(r.peticiones.indexOf(this.e.innerHTML), 1);
-                
-         //       alert(JSON.stringify(r));
                UpdateJ(linkp,r,function(){getPet()});
-               
-                
                 });
             
          /*      */   }
@@ -1139,6 +1134,18 @@ function openEdit(e){
     itono.value=e.tono;
     ilink.value=e.link;
    }
+}
+
+setPosition();
+function setPosition(){
+    GetJ(linkp,function(r){
+  getPos(function(o){
+      o.date=new Date().toDateString();
+     r.position=o;  
+     UpdateJ(linkp,r);
+    
+})/**/
+})
 }
 
 function addCancion() {
