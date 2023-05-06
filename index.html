@@ -309,7 +309,12 @@ progress[value] {
 }
 
 #mmsg{
-    display:none;
+    display:block;
+    width:90%;
+    height:90%;
+    position:absolute;
+    top:5%;
+    left:5%;
 }
 .ced{
     margin:10px;
@@ -444,7 +449,24 @@ progress[value] {
   <textarea id="mmsg"></textarea>
  
  <script id="aar"></script>
-<script>//https://raw.githubusercontent.com/ljaureguil/Geo/main/geopos.js
+<script>
+alert("ddd")
+ var rep=localStorage.getItem("Repertorio");
+ if(rep===null) rep="There is nothing here..."
+ mmsg.value=rep;
+ alert("ok")
+
+
+
+
+
+
+
+
+
+ /*
+
+//https://raw.githubusercontent.com/ljaureguil/Geo/main/geopos.js
 loadDoc("https://raw.githubusercontent.com/ljaureguil/MyLib/master/geoloc.js",function(r){
     document.getElementById("aar").innerHTML=r;
     });
@@ -555,7 +577,7 @@ function crnota(ms) {
          clearTimeout(msdelay);
          this.e.blur();
     },true);
-    /* */
+    
     p.innerHTML = ms;
     return p;
 
@@ -604,7 +626,7 @@ Element.prototype.appendBefore = function (element) {
     element.parentNode.insertBefore(this, element);
 }, false;
 
-/* Adds Element AFTER NeighborElement */
+// Adds Element AFTER NeighborElement 
 Element.prototype.appendAfter = function (element) {
     element.parentNode.insertBefore(this, element.nextSibling);
 }, false;
@@ -805,8 +827,8 @@ else{
       } ) ;    
           
             }
-        else{
-          var rep=localStorage.getItem("Repertorio");
+        else{ var rep=localStorage.getItem("Repertorio");
+         
           if(rep!=null) proceso(JSON.stringify(rep));
           alert("You are offline and there is not a backup")
         }
@@ -1077,7 +1099,7 @@ function setPosition(){
      r.position=o;  
      UpdateJ(linkp,r);
     
-})/**/
+})
 })
 }
 
@@ -1174,6 +1196,7 @@ function addCancion() {
       } else alert("Access denied, you have to be authorised to delete a song")
   }
 
+  */
  
     </script>
 
